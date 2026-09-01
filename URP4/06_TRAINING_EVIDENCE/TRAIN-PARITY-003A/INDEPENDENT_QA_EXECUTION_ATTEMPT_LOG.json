@@ -1,0 +1,22 @@
+{
+  "runner_attempts": [
+    {
+      "attempt": 1,
+      "status": "aborted_before_QA_artifact_commit",
+      "reason": "WindowsPath was not JSON serializable in IQA-023 output packaging",
+      "independent_qa_result_committed": false,
+      "fit_calls": 0,
+      "predict_calls": 0,
+      "prediction_rows": 0,
+      "metric_rows": 0
+    },
+    {
+      "attempt": 2,
+      "status": "completed",
+      "reason": "same read-only checks; Path values serialized as strings",
+      "independent_qa_result_committed": true,
+      "result": "23/23 PASS"
+    }
+  ],
+  "successful_independent_qa_execution_limit": 1
+}

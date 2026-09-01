@@ -1,0 +1,87 @@
+{
+  "contract_id": "COMP-FACTORY-003-BCL-VORONOI-v0.2",
+  "status": "authorized_intake_and_crosswalk",
+  "runtime": {
+    "alias": "KMK312",
+    "python": "3.12.12"
+  },
+  "output_root": "experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-003",
+  "structural_factors": {
+    "path": "experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/01_structural_factors/Structural_Factors_All.xlsx",
+    "sha256": "088255B6D35461B4ABCE0D11F160043169B8824DCE1B62D33D0D543548F9CDA1",
+    "sheet": "Summary"
+  },
+  "bcl": {
+    "primary_performance_files": [
+      {
+        "vf": 30,
+        "path": "experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260802/01_bcl_vf30/New_VF30.xlsx",
+        "sha256": "B75A9A8F749ADB6C01D530BA3164F86865BC3CE3FFE730BE692EAD31777100FA"
+      },
+      {
+        "vf": 45,
+        "path": "experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260802/02_bcl_vf45/New_VF45.xlsx",
+        "sha256": "FDB63F82A7664A96110FB9E94A97152334AC6855A39CD13729F2E1DA9F9683F9"
+      },
+      {
+        "vf": 60,
+        "path": "experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260802/03_bcl_vf60/New_VF60.xlsx",
+        "sha256": "9D2B11CEA91A40AC2E4C4580DA1DADA0AFAC9AC41B42114BFE5EC178FB230E28"
+      }
+    ],
+    "expected_blocks_per_file": 66,
+    "structural_source_value": "B, C, L model_30 mm_merge.xlsx",
+    "crosswalk": "normalized explicit model label plus VF; no row-order inference"
+  },
+  "voronoi": {
+    "primary_performance_file": {
+      "path": "experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260802/04_voronoi/Voronoi_Summary.xlsx",
+      "sha256": "7722E15B9C34B864C1A95236CE0BBCB1155BB6E446AF0F6CA5C1B273D43304F0",
+      "sheet": "Raw data"
+    },
+    "worked_crosscheck_file": {
+      "path": "experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260802/04_voronoi/Compression_Worked_Voronoi.xlsx",
+      "sha256": "7701B00D5D8F0948928911555C526E642A9B527EB60AC7AC9B53C3473216D563",
+      "sheet": "Summary"
+    },
+    "expected_rows": 30,
+    "structural_source_value": "Voronoi_30 mm_merge.xlsx",
+    "crosswalk": "explicit CP_VFxx_CnnnR/U identifier normalization"
+  },
+  "reference_only_files": [
+    "Compression_Worked_VF30.xlsx",
+    "Compression_VF30_Summary.xlsx",
+    "Compression_Worked_VF45.xlsx",
+    "Compression_VF45_Summary.xlsx",
+    "Compression_Worked_VF60.xlsx",
+    "Compression_VF60_Summary.xlsx"
+  ],
+  "target_policy": {
+    "targets": [
+      "Modulus",
+      "Com. Strength",
+      "Com. strain",
+      "APS",
+      "AS",
+      "Yield strength",
+      "Yield strain",
+      "LCC",
+      "EAS",
+      "Densif. strength",
+      "Densifi. strain",
+      "EAE",
+      "SE",
+      "Total energy",
+      "SEA",
+      "Max. Plateau stress"
+    ],
+    "post_ucs_peak": "excluded because cached values are not populated consistently"
+  },
+  "prohibitions": [
+    "modify_raw_workbooks",
+    "row_order_only_crosswalk",
+    "feature_promotion",
+    "production_prediction",
+    "inverse_design_claim"
+  ]
+}

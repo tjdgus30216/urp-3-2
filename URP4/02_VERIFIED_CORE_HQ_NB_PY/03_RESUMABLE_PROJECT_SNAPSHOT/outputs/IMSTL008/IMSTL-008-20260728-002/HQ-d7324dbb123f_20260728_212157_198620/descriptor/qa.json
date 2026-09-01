@@ -1,0 +1,17 @@
+{
+  "model_id": "F1",
+  "source_geometry_sha256": "d76883bc10af4f4b3817ccbe90b2863f97c9b843f30c5214cde81d2f76fdb0f8",
+  "route_id": "IMP-STL-ORIENTED-NONZERO-SCREENING-L28",
+  "algorithm_revision": "ORIENTED_NONZERO_RAW/IMSTL-004/r1",
+  "image_policy": "STREAMING_TEMP_PNG",
+  "slice_rows": 801,
+  "overlay_rows": 800,
+  "slice_component_rows": 39506,
+  "overlay_component_rows": 38187,
+  "readback_mismatch_sum": 0,
+  "flagged_slice_count": 0,
+  "png_created": 1601,
+  "png_deleted": 1601,
+  "remaining_png": 0,
+  "status": "passed"
+}

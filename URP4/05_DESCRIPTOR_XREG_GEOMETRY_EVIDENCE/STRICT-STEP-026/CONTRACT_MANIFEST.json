@@ -1,0 +1,8 @@
+{
+  "run_id": "STRICT-STEP-026-20260731-001",
+  "runtime": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+  "source_step": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\notion_reference_models_20260701\\stp\\C1-Cubic_truss_lattice-SC-FCC.stp",
+  "source_step_sha256": "3c47641d340e85acd9d2464dc46d665676c90895141e0c3c7c04a3b23ffdc73c",
+  "config": "Route A original STEP direct B-rep / N40 / z / P1000 / PHASE-00 / Z801",
+  "scope": "x-only direct LEGACY-PY execution; no y/training/feature selection/NB or source mutation"
+}

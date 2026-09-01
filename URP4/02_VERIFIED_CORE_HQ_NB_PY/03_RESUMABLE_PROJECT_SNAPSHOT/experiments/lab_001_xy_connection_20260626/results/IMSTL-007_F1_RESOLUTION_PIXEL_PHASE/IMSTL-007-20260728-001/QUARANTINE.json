@@ -1,0 +1,7 @@
+{
+  "run_id": "IMSTL-007-20260728-001",
+  "status": "quarantined_partial",
+  "scientific_result": false,
+  "failure_class": "windows_path_length_only",
+  "replacement_run_id": "IMSTL-007-20260728-002"
+}

@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-08-02T00:54:01+09:00",
+  "canonical_python": "tools/envs/KMK312/python.exe",
+  "files": [
+    {
+      "path": "KMK312_CONDA_EXPLICIT_LOCK.txt",
+      "sha256": "b2e714e79b625731205fa4d694e9969811a028ecd89ec465adad7256d7452154",
+      "size_bytes": 34427
+    },
+    {
+      "path": "KMK312_PIP_FREEZE.txt",
+      "sha256": "2241806a36552aa99d31a017c93d02125eadaee660d8a078388103c9cbb4e670",
+      "size_bytes": 7813
+    },
+    {
+      "path": "KMK312_CONDA_META_LOCK.json",
+      "sha256": "c2827529854ba814665fe8176f89928fb13bc09ea95d6c09ca1a48d56c301932",
+      "size_bytes": 78659
+    }
+  ]
+}

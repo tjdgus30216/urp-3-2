@@ -1,0 +1,11 @@
+﻿warning_id,target_id,method_id,severity,evidence,effect
+HELD_GROUP_INSTABILITY,COMP-Y-MODULUS,FS4-METHOD-02,screening_warning,median_fold_r2=-0.7595734036294588;min_fold_r2=-0.9754802525352066,pooled R2 must not be read as stable generalization
+HELD_GROUP_INSTABILITY,COMP-Y-COMP-STRENGTH,FS4-METHOD-04,screening_warning,median_fold_r2=-0.563578104873014;min_fold_r2=-25.35920164622882,pooled R2 must not be read as stable generalization
+HELD_GROUP_INSTABILITY,COMP-Y-APS,FS4-METHOD-04,screening_warning,median_fold_r2=-0.2722489036405977;min_fold_r2=-2.3690952604131046,pooled R2 must not be read as stable generalization
+HELD_GROUP_INSTABILITY,COMP-Y-AS,FS4-METHOD-01,screening_warning,median_fold_r2=-0.2357541196535728;min_fold_r2=-3.4757642633737174,pooled R2 must not be read as stable generalization
+HELD_GROUP_INSTABILITY,COMP-Y-YIELD-STRENGTH,FS4-METHOD-04,screening_warning,median_fold_r2=0.0644436569856911;min_fold_r2=-2.278095566892574,pooled R2 must not be read as stable generalization
+HELD_GROUP_INSTABILITY,COMP-Y-YIELD-STRAIN,FS4-METHOD-01,screening_warning,median_fold_r2=0.2255508610281474;min_fold_r2=-1.5514409587290907,pooled R2 must not be read as stable generalization
+HELD_GROUP_INSTABILITY,COMP-Y-LCC,FS4-METHOD-03,screening_warning,median_fold_r2=-0.4317384049904822;min_fold_r2=-2.591989961478515,pooled R2 must not be read as stable generalization
+HELD_GROUP_INSTABILITY,COMP-Y-MAX-PLATEAU-STRESS,FS4-METHOD-04,screening_warning,median_fold_r2=-0.2722489036405977;min_fold_r2=-2.3690952604131046,pooled R2 must not be read as stable generalization
+CONSOLE_WARNING_CLASS,multiple,FS4-METHOD-02/selection,runtime_warning,ConstantInputWarning and Lasso ConvergenceWarning were emitted during the controlled run,technical outputs remain finite; numerical convergence must be reviewed before any method promotion
+PILOT_ONLY,all,all,claim_boundary,grouped technical screening with fold-local selection,"no production prediction, physical optimum, or inverse-design claim"

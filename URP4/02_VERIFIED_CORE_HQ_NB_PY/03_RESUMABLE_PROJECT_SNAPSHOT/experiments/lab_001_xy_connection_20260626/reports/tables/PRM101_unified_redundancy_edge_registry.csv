@@ -1,0 +1,26 @@
+﻿edge_id,left_candidate_id,right_candidate_id,relation,edge_source,metric_note,selection_rule
+U096-EDGE-001,LIT-X001::solid_chord_x_mean_mm,LIT-X001::solid_chord_y_mean_mm,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,False
+U096-EDGE-002,LIT-X001::solid_chord_x_population_std_mm,LIT-X001::solid_chord_y_population_std_mm,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,False
+U096-EDGE-003,LIT-X002::C2_x_positive_auc_0_20_mm,LIT-X002::C2_y_positive_auc_0_20_mm,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,False
+U096-EDGE-004,LIT-X002::S2_x_r10p0_probability,LIT-X002::S2_y_r10p0_probability,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,False
+U096-EDGE-005,LIT-X002::S2_x_r20p0_probability,LIT-X002::S2_y_r20p0_probability,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,False
+U096-EDGE-006,LIT-X002::S2_x_r2p5_probability,LIT-X002::S2_y_r2p5_probability,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,False
+U096-EDGE-007,LIT-X002::S2_x_r5p0_probability,LIT-X002::S2_y_r5p0_probability,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,False
+U096-EDGE-008,LIT-X003::L_x_auc_mm,LIT-X003::L_y_auc_mm,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,False
+U096-EDGE-009,LIT-X004::chi_solid_26,LIT-X004::chi_solid_26_per_mm3,proportional_duplicate,PRM083_first_wave_internal,interpretable_redundancy,False
+U096-EDGE-010,LIT-X004::chi_void_6,LIT-X004::chi_void_6_per_mm3,proportional_duplicate,PRM083_first_wave_internal,interpretable_redundancy,False
+U096-EDGE-011,LIT-X009::C2_x_10mm,LIT-X002::S2_x_r10p0_probability,high_redundancy,PRM095_crossbank,pearson=0.999929;spearman=1,False
+U096-EDGE-012,LIT-X009::C2_x_10mm,LIT-X002::S2_y_r10p0_probability,high_redundancy,PRM095_crossbank,pearson=0.993982;spearman=0.990649,False
+U096-EDGE-013,LIT-X009::C2_x_2p5mm,LIT-X002::S2_x_r2p5_probability,high_redundancy,PRM095_crossbank,pearson=0.998898;spearman=0.999385,False
+U096-EDGE-014,LIT-X009::C2_x_2p5mm,LIT-X002::S2_y_r2p5_probability,high_redundancy,PRM095_crossbank,pearson=0.993794;spearman=0.987019,False
+U096-EDGE-015,LIT-X009::C2_y_10mm,LIT-X002::S2_x_r10p0_probability,high_redundancy,PRM095_crossbank,pearson=0.993944;spearman=0.990649,False
+U096-EDGE-016,LIT-X009::C2_y_10mm,LIT-X002::S2_y_r10p0_probability,high_redundancy,PRM095_crossbank,pearson=0.999929;spearman=1,False
+U096-EDGE-017,LIT-X009::C2_y_2p5mm,LIT-X002::S2_x_r2p5_probability,high_redundancy,PRM095_crossbank,pearson=0.993558;spearman=0.987019,False
+U096-EDGE-018,LIT-X009::C2_y_2p5mm,LIT-X002::S2_y_r2p5_probability,high_redundancy,PRM095_crossbank,pearson=0.99889;spearman=0.999385,False
+U096-EDGE-019,LIT-X009::C2_z_10mm,LIT-X002::S2_z_r10p0_probability,high_redundancy,PRM095_crossbank,pearson=0.999918;spearman=1,False
+U096-EDGE-020,LIT-X009::C2_z_2p5mm,LIT-X002::S2_z_r2p5_probability,high_redundancy,PRM095_crossbank,pearson=0.998859;spearman=0.999385,False
+U096-EDGE-021,LIT-X016::void_chord_x_mean_mm,LIT-X016::void_chord_y_mean_mm,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,False
+U096-EDGE-022,LIT-X016::void_chord_x_population_std_mm,LIT-X016::void_chord_y_population_std_mm,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,False
+U096-EDGE-023,LIT-X017::beta0_count,LIT-X017::beta0_density,proportional_duplicate,PRM092_second_wave_internal,residual=2.1684e-16,False
+U101-EDGE-024,LIT-X024::ect_abs_auc_direction_mean_per_mm3,LIT-X004::chi_solid_26,high_redundancy,PRM100_full58_crossbank,"full58 pearson/spearman high; retain provenance, primary block",False
+U101-EDGE-025,LIT-X024::ect_abs_auc_direction_mean_per_mm3,LIT-X004::chi_solid_26_per_mm3,high_redundancy,PRM100_full58_crossbank,"full58 pearson/spearman high; retain provenance, primary block",False

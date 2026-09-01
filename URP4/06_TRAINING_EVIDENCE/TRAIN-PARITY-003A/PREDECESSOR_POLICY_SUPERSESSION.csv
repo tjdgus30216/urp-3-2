@@ -1,0 +1,4 @@
+﻿predecessor_target_id,predecessor_wrong_display,actual_column_display,actual_hold_target_id,status,predecessor_policy_hash
+TRAIN2NF::FW,Vibrational response | FRF (g/N) | 300-8000 Hz | AVG,Modulus,TRAIN2NF::HE,superseded_due_to_crosswalk_drift,838f4e9efef884a58b97e5f564456d832b962e37aa9735f829e50c8d9835e85f
+TRAIN2NF::GA,Vibrational response | FRF (g/N) | 6500-8000 Hz | AVG,AS,TRAIN2NF::HK,superseded_due_to_crosswalk_drift,838f4e9efef884a58b97e5f564456d832b962e37aa9735f829e50c8d9835e85f
+TRAIN2NF::HE,Yield strength,Vibrational response | FRF (g/N) | 300-8000 Hz | AVG,TRAIN2NF::GC,superseded_due_to_crosswalk_drift,838f4e9efef884a58b97e5f564456d832b962e37aa9735f829e50c8d9835e85f

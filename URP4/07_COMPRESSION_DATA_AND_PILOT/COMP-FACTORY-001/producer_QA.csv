@@ -1,0 +1,13 @@
+check_id,check,passed,observed,severity
+Q01,summary source hashes match,true,3/3,blocking
+Q02,expected exact performance rows,true,149,blocking
+Q03,only preregistered model IDs missing,true,AI092,blocking
+Q04,performance model IDs unique,true,none,blocking
+Q05,expected structural rows,true,150,blocking
+Q06,structural model IDs unique,true,150,blocking
+Q07,eligible exact x-y joins,true,149,blocking
+Q08,missing target rows preserved as x-only,true,AI092:x_only_missing_target,blocking
+Q09,Summary sheet excluded,true,3/3,blocking
+Q10,no feature selected or promoted,true,45/45,blocking
+Q11,no modeling authorization,true,intake_only,blocking
+Q12,target registry created,true,17,blocking

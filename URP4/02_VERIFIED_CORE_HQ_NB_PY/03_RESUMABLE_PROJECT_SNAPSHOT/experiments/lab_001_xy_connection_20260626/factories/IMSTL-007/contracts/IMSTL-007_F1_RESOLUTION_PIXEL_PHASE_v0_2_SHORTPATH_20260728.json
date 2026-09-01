@@ -1,0 +1,66 @@
+{
+  "contract_id": "IMSTL-007-F1-RESOLUTION-PIXEL-PHASE-v0.2-shortpath",
+  "task_id": "IMSTL-007_F1_SELECTED_SLICE_RESOLUTION_AND_PIXEL_PHASE_DIAGNOSIS_NO_Y",
+  "run_id": "IMSTL-007-20260728-002",
+  "settings_address": "IDX-URP4-1-GEOM-IMPORTED-STL / CFG-IMSTL007-F1-P500-750-1000-1500-PHASE4-SELECTED r1",
+  "supersedes": "IMSTL-007-F1-RESOLUTION-PIXEL-PHASE-v0.1",
+  "change_scope": "Windows output path shortening only; scientific source, slices, resolutions, phases, formulas and gates are unchanged",
+  "runtime": "KMK312 / Python 3.12.12",
+  "source": {
+    "model_id": "F1",
+    "family": "F",
+    "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/F1__0dff3c1b13__N40.stl",
+    "sha256": "d76883bc10af4f4b3817ccbe90b2863f97c9b843f30c5214cde81d2f76fdb0f8",
+    "normalization": "uniform_bbox_to_expected_or_already_40mm",
+    "expected_size_mm": 40.0
+  },
+  "baseline": {
+    "run_id": "IMSTL-006-20260728-002",
+    "table": "experiments/lab_001_xy_connection_20260626/reports/tables/IMSTL-006-20260728-002_selected_slice_gate_detail.csv",
+    "table_sha256": "a5f1c37d33f919f87e127c728af27633bfb66b32f7b391c03201de5ea64624b8",
+    "failed_slices": [200, 600],
+    "frozen_iou_gate": 0.95,
+    "frozen_area_difference_gate": 0.05
+  },
+  "selected_slice_indices": [0, 1, 100, 200, 400, 600, 700, 799, 800],
+  "interior_gate_indices": [1, 100, 200, 400, 600, 700, 799],
+  "resolutions_px": [500, 750, 1000, 1500],
+  "phases": {
+    "P00": [0.0, 0.0],
+    "P50X": [0.5, 0.0],
+    "P50Y": [0.0, 0.5],
+    "P50XY": [0.5, 0.5]
+  },
+  "algorithm": {
+    "route_id": "IMP-STL-ORIENTED-NONZERO-SCREENING-L28",
+    "algorithm_revision": "IMSTL-WINDING-v0.4-raw-oriented-nonzero",
+    "source_mutation": false,
+    "geometry_repair": false,
+    "phase_method": "translate_section_segments_by_fraction_of_current_pixel_before_unchanged_winding_raster",
+    "all_images_retained": true,
+    "physical_min_component_area_mm2": 0.0032,
+    "connectivity": 8
+  },
+  "preregistered_decision": {
+    "integrity": "all 18 P500/P1000 P00 packed-mask hashes must exactly replay IMSTL-006",
+    "resolution_gate": "all interior P1000-to-P1500 same-phase comparisons require IoU >= 0.95, relative area difference <= 0.05, boundary-band explanation >= 0.99 and unchanged filtered component/hole counts",
+    "phase_gate": "all interior P1500 phase-pair comparisons require IoU >= 0.95, relative area difference <= 0.05, boundary-band explanation >= 0.99 and unchanged filtered component/hole counts",
+    "failed_slice_improvement": "slices 200 and 600 P00 P1000-to-P1500 IoU must exceed their P500-to-P1000 IoU and pass the frozen 0.95 gate",
+    "pass_label": "screening_pass_benign_discretization",
+    "fail_label": "hold_resolution_or_pixel_phase_unresolved",
+    "claim_boundary": "A pass supports F1 imported-STL screening and a later separately authorized full extraction; it is not exact-STP parity, all-F, all58 or canonical descriptor approval."
+  },
+  "forbidden": [
+    "full_801_F1_extraction",
+    "all58",
+    "performance_y_access",
+    "x_y_analysis",
+    "feature_selection",
+    "model_training",
+    "feature_promotion",
+    "NB_CURRENT_edit",
+    "LEGACY_PY_edit",
+    "source_geometry_mutation",
+    "inverse_design_claim"
+  ]
+}

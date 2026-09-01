@@ -1,0 +1,42 @@
+{
+  "work_id": "PRM-120",
+  "title": "OVERLAY_PAIR_COMPONENT_COMPOSITION_BC_BATCH_NO_Y",
+  "purpose": "Generate 24 per-overlay-pair component-composition profile summaries from hash-frozen kept-component tables without creating images, masks, meshes, or slices.",
+  "expected": {
+    "models": 58,
+    "new_candidates": 24,
+    "grade_B_candidates": 12,
+    "grade_C_candidates": 12,
+    "values": 1392,
+    "crossbank_relations": 7176,
+    "internal_relations": 276,
+    "diagnostic_pair_values": 48
+  },
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/TOUR-C001/analysis_factory/reports/TOUR-C001-T4R-SLICE-004_output_manifest.csv", "sha256": "53f0b5292020ee8b5274f42dbb1af7b4501fe26703fec6ed298d6a83f712903c"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM119_xreg_v1_2_candidate_bank.csv", "sha256": "ddf5ddf595d6ec7e33cebe2626c8c4e22038ddeb24142821fdea36599bab8a9c"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM119_xreg_v1_2_values_long.csv", "sha256": "3685614fcd774e28100d791c949b2f4115acc524f2e9523bf2f2ee11a93e7cb7"},
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/PRM-119/reports/PRM119_independent_QA_summary.json", "sha256": "42ccc6f4f0b0864799d843d1d02d93ebbf34ec0e5c105ea4ab0cc3fe7ad1fcbb"}
+  ],
+  "candidate_schema": {
+    "RAW-X051": "For each of 800 overlay pairs, summarize the normalized kept-component area composition with inverse-HHI effective count, top-two area share, component-area CV, and component-area Gini; then aggregate each pair profile by mean, population std, q10, q50, q90, and IQR."
+  },
+  "relation_policy": {
+    "scope": "full58_x_only",
+    "exact_duplicate": "np.allclose rtol=1e-10 atol=1e-12",
+    "proportional_duplicate": "normalised L2 residual <= 1e-6",
+    "high_redundancy": "absolute Pearson >= 0.98 and absolute Spearman >= 0.98"
+  },
+  "locks": {
+    "performance_y_read": 0,
+    "x_y_analysis": 0,
+    "model_fit": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "new_masks_or_slicing": 0,
+    "NB_CURRENT_mutation": 0,
+    "LEGACY_PY_mutation": 0,
+    "original_Excel_mutation": 0
+  },
+  "status": "preregistered_pending_execution"
+}

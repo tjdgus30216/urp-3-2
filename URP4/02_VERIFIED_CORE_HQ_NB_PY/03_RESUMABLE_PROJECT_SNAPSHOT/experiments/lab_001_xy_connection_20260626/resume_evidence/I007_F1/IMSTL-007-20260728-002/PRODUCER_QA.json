@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "source_hash_exact": true,
+  "baseline_hash_exact": true,
+  "baseline_mask_replay": "18/18",
+  "mask_images": 144,
+  "contact_sheets": 9,
+  "measurement_rows": 144,
+  "resolution_rows": 216,
+  "phase_rows": 216
+}

@@ -1,0 +1,45 @@
+{
+  "work_id": "PRM-105",
+  "title": "XREG_V0_5_OVERLAY_PHASE_BATCH_CONSOLIDATION_AND_BLOCK_POLICY_NO_Y",
+  "purpose": "Append exactly the independently verified PRM-104 overlay phase-profile cohort to immutable XREG-v0.4, preserve all 28 candidates, and encode all 16 frozen high-redundancy relationships without selecting a representative.",
+  "expected": {
+    "prior_candidates": 143,
+    "new_candidates": 28,
+    "total_candidates": 171,
+    "models": 58,
+    "prior_values": 8294,
+    "new_values": 1624,
+    "total_values": 9918,
+    "inherited_missing": 2,
+    "new_missing": 0,
+    "total_blocks": 135,
+    "prior_edges": 27,
+    "new_edges": 16,
+    "total_edges": 43,
+    "new_changed_or_new_block_ids": 19
+  },
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM103_xreg_v0_4_candidate_bank.csv", "sha256": "abefbafe0ab7b36b91a36c9ee56bcf402785572a4482db6c313066bcc6d34d67"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM103_xreg_v0_4_values_long.csv", "sha256": "91b8cecd59491a4262f7750ed48160f1973ede810ff7b2594e5e40f4aae8aa7e"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM103_unified_redundancy_edge_registry.csv", "sha256": "25eaa864e84b8cf6e8829189d435c79497c23a810f04f5d8c919b183a3aa8ecd"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM103_unified_redundancy_block_registry.csv", "sha256": "3b3143ba20ec29730e7180e4698bba7f0cc6e6107594b51254b55fbc9636195d"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM104_overlay_phase_profile_candidate_registry.csv", "sha256": "1cfadd446a84b1792d916ca3df632423bab38125381f5b36160781556bbc383c"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM104_overlay_phase_profile_values_long.csv", "sha256": "74171ad4e14cb95abdeb0e98f706e7bdbc1725a637806a2287c6e1b142d450ae"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM104_overlay_phase_profile_vs_XREG_v0_4_redundancy.csv", "sha256": "1ae2bb3a251f6163381ab6820fa41119ee74dddc48165d4002edd504a5d78883"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM104_overlay_phase_profile_internal_redundancy.csv", "sha256": "915a02fbbffb363c8b5de1ec21aacfda262c28974f5fb20d2ec4f92c5474b027"},
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/PRM-104/reports/PRM104_independent_QA_summary.json", "sha256": "bcad9f91348213b2bf9e3d45ce3cfd5e15ab8519d690d8023b2e5fc9580f9b0a"}
+  ],
+  "block_policy": "Use the graph closure of 27 predecessor and 16 PRM-104 high-redundancy edges. Preserve unchanged U103 block IDs; issue deterministic U105 block IDs only for changed or new components. No candidate is removed, selected or promoted.",
+  "locks": {
+    "performance_y_read": 0,
+    "x_y_analysis": 0,
+    "model_fit": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "new_masks_or_slicing": 0,
+    "NB_CURRENT_mutation": 0,
+    "LEGACY_PY_mutation": 0,
+    "original_Excel_mutation": 0
+  },
+  "status": "preregistered_pending_execution"
+}

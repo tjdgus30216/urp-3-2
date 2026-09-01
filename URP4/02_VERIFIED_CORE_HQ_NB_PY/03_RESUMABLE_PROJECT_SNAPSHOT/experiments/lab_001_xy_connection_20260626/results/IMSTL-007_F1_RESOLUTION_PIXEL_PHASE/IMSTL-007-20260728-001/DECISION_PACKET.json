@@ -1,0 +1,61 @@
+{
+  "run_id": "IMSTL-007-20260728-001",
+  "task_id": "IMSTL-007_F1_SELECTED_SLICE_RESOLUTION_AND_PIXEL_PHASE_DIAGNOSIS_NO_Y",
+  "settings_address": "IDX-URP4-1-GEOM-IMPORTED-STL / CFG-IMSTL007-F1-P500-750-1000-1500-PHASE4-SELECTED r1",
+  "status": "passed",
+  "decision_label": "screening_pass_benign_discretization",
+  "source_sha256": "d76883bc10af4f4b3817ccbe90b2863f97c9b843f30c5214cde81d2f76fdb0f8",
+  "contract_sha256": "85f3ce58b801926980cb2f7b665b5eb4e4ad332762cc239a126559b28122b37d",
+  "mask_count": 144,
+  "resolution_comparison_count": 216,
+  "phase_comparison_count": 216,
+  "baseline_exact_replay": true,
+  "resolution_gate": true,
+  "phase_gate": true,
+  "failed_slice_improvement": true,
+  "occupancy_gate": true,
+  "improvement_rows": [
+    {
+      "slice_index": 200,
+      "baseline_iou": 0.9490451918732313,
+      "high_resolution_iou": 0.9739854151477826,
+      "improved": true
+    },
+    {
+      "slice_index": 600,
+      "baseline_iou": 0.9490451918732313,
+      "high_resolution_iou": 0.9713204966554827,
+      "improved": true
+    }
+  ],
+  "min_high_resolution_iou": 0.9625907647348253,
+  "max_high_resolution_area_difference": 0.017153334444562303,
+  "min_high_resolution_boundary_explained": 1.0,
+  "min_p1500_phase_iou": 0.9605041641215118,
+  "max_p1500_phase_area_difference": 0.006015789553437486,
+  "min_p1500_phase_boundary_explained": 1.0,
+  "started_at_utc": "2026-07-28T07:13:52.754312+00:00",
+  "completed_at_utc": "2026-07-28T07:14:08.550496+00:00",
+  "normalization": {
+    "normalization_status": "already_expected_size",
+    "normalization_mode": "uniform_bbox_to_expected",
+    "source_bbox_center_mm": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "source_bbox_extent_mm": [
+      40.0,
+      40.0,
+      40.0
+    ],
+    "analysis_uniform_scale": 1.0,
+    "analysis_bbox_extent_mm": [
+      40.0,
+      40.0,
+      40.0
+    ]
+  },
+  "claim_boundary": "A pass supports F1 imported-STL screening and a later separately authorized full extraction; it is not exact-STP parity, all-F, all58 or canonical descriptor approval.",
+  "forbidden_actions_observed": []
+}

@@ -1,0 +1,15 @@
+﻿stop_id,condition,resulting_state,action,active_now
+STOP-001,source notebook hash drift,NO_GO_CONTRACT_DRIFT,stop current and downstream stages; retain evidence; no automatic retry,false
+STOP-002,source workbook hash drift,NO_GO_CONTRACT_DRIFT,stop current and downstream stages; retain evidence; no automatic retry,false
+STOP-003,adapter implementation hash drift,NO_GO_CONTRACT_DRIFT,stop current and downstream stages; retain evidence; no automatic retry,false
+STOP-004,fold manifest hash drift,NO_GO_CONTRACT_DRIFT,stop current and downstream stages; retain evidence; no automatic retry,false
+STOP-005,target ID/name/column/hold-policy crosswalk mismatch,NO_GO_CONTRACT_DRIFT,stop current and downstream stages; retain evidence; no automatic retry,true
+STOP-006,reference runner cannot invoke protected source logic directly,BLOCKED_BY_REFERENCE_RUNNER,stop current and downstream stages; retain evidence; no automatic retry,false
+STOP-007,source and adapter row/group/fold identity cannot be proven,PARITY_FAIL_AT_P0_OR_P1,stop current and downstream stages; retain evidence; no automatic retry,false
+STOP-008,unresolved hidden notebook state,BLOCKED_BY_HIDDEN_STATE,stop current and downstream stages; retain evidence; no automatic retry,false
+STOP-009,prediction ledger lacks row identity,PARITY_FAIL_AT_P5_OR_P7,stop current and downstream stages; retain evidence; no automatic retry,false
+STOP-010,instrumentation changes scientific logic,NO_GO_CONTRACT_DRIFT,stop current and downstream stages; retain evidence; no automatic retry,false
+STOP-011,any of three hold targets enters execution scope,NO_GO_CONTRACT_DRIFT,stop current and downstream stages; retain evidence; no automatic retry,false
+STOP-012,runtime/memory/output ceiling exceeded without branch checkpoint,BLOCKED_BY_RESOURCE_ESTIMATE,stop current and downstream stages; retain evidence; no automatic retry,false
+STOP-013,first P0-P7 mismatch,PARITY_FAIL_AT_Pn; downstream parity evidence invalid,stop current and downstream stages; retain evidence; no automatic retry,false
+STOP-014,P8 final-refit requested,NO_GO_CONTRACT_DRIFT,stop current and downstream stages; retain evidence; no automatic retry,false

@@ -1,0 +1,159 @@
+{
+  "contract_id": "TOUR-C001-T4R-SLICE-003A-v0.1",
+  "cycle_id": "TOUR-C001",
+  "stage_id": "T4R-SLICE",
+  "run_id": "TOUR-C001-T4R-SLICE-003A",
+  "status": "frozen_before_new_image_generation",
+  "created_at_kst": "2026-07-20T11:10:25+09:00",
+  "metadata_errata": {
+    "corrected_at_kst": "2026-07-20T11:23:00+09:00",
+    "field": "created_at_kst",
+    "reason": "The authored timestamp was accidentally future-dated. It was replaced with the filesystem creation time after B3/C1 completed. No panel, source, signal, threshold, gate, formula, or interpretation field changed."
+  },
+  "runtime": {
+    "environment": "KMK312",
+    "python": "3.12.12",
+    "execution_requirement": "tools/envs/KMK312/python.exe only",
+    "predictive_model_fit": false,
+    "performance_y_access": false
+  },
+  "purpose": "Rebuild the B3/C1/L1/F1/F2 no-y panel from source-matched canonical N40 STL files through image generation, saved-PNG readback, pixel/component trace, and direct immutable LEGACY-PY execution before authorizing an all-58 detailed batch.",
+  "triggering_provenance_issue": {
+    "status": "confirmed",
+    "statement": "CINT-02 reused pre-existing B3/C1/L1/F1/F2 PNG directories, while their 020H inventories record empty source_stl and source_sha256 fields. Their numerical outputs remain valid cached LEGACY-PY results, but their geometry identity is not source-matched to the current canonical N40 registry.",
+    "consequence": "T4R-SLICE-002 remains historical evidence that the four signals merit broader computation, but its all-58 value-computation GO is execution-held until this matched-source panel passes."
+  },
+  "fixed_panel": {
+    "model_ids": ["B3", "C1", "L1", "F1", "F2"],
+    "family_coverage": ["B", "C", "L", "F"],
+    "geometry_registry": "experiments/lab_001_xy_connection_20260626/reports/tables/R09-20260715_final_canonical_geometry_registry.csv",
+    "geometry_registry_sha256": "49eb903a5eb63a6f017aaf2cf8af891d77d227de375d890a9b4ba889562a3314",
+    "source_configuration": "P1000_S801 / 40 mm / z axis / endpoint / 1000x1000 px / 801 slices / 0.05 mm",
+    "volume_fraction_argument_for_LEGACY_PY_ANGLE_ALL": 0.30,
+    "transient_png_policy": "Retain six deterministic audit PNGs per model; hash and delete all 1601 transient mask/overlay PNGs per model after direct LEGACY-PY execution."
+  },
+  "fixed_geometry": [
+    {
+      "model_id": "B3",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/B3__a272cdb922__N40.stl",
+      "sha256": "beb368e9c9945669cc202046802bd24ec15e70b61cd472ce061e2e482ba70afc"
+    },
+    {
+      "model_id": "C1",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C1__7755dda7d0__N40.stl",
+      "sha256": "d798f7b032de8eccfd771037e849b201c7604b833fc0ed8ce07e316529cc5729"
+    },
+    {
+      "model_id": "L1",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L1__412f5bec5e__N40.stl",
+      "sha256": "7189d16e6f812608f31cb7bf54f604caaf438272cbb31a45c153b8a2e8b0730a"
+    },
+    {
+      "model_id": "F1",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/F1__0dff3c1b13__N40.stl",
+      "sha256": "d76883bc10af4f4b3817ccbe90b2863f97c9b843f30c5214cde81d2f76fdb0f8"
+    },
+    {
+      "model_id": "F2",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/F2__69a3599146__N40.stl",
+      "sha256": "bd471508c7d2073419cbf2c37f16d0d0a07690a5b4a660c5179230cf4ad285f4"
+    }
+  ],
+  "parent_evidence": [
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/reports/tables/R09-20260715_final_canonical_geometry_registry.csv",
+      "sha256": "49eb903a5eb63a6f017aaf2cf8af891d77d227de375d890a9b4ba889562a3314"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/factories/CINT-02/outputs/CINT-02_panel_replay_actual.json",
+      "sha256": "4906cab7d192278ec81ddec96bc2a01ff3bcc00a6321fea3a42d42a3f8e897f2"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/factories/TOUR-C001/analysis_factory/frozen/TOUR-C001-T4R-SLICE-002_all58_go_hold_decision.csv",
+      "sha256": "bd186879f70cb2e9b3f241df6d039d5002e353c8fb36c1d5b2b960f4b8ced158"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/scripts/TOUR_C001_T4R_SLICE_001_t8_t9_legacy_detail_convergence.py",
+      "sha256": "51fad660f74ada2113d2eb9ca5a72d818718a82a238c802ab6d564f639cec203"
+    }
+  ],
+  "cached_png_inventory_evidence": [
+    {
+      "model_id": "B3",
+      "path": "experiments/lab_001_xy_connection_20260626/reports/tables/R09-20260707-020H_B3_png_inventory_20260707.json",
+      "sha256": "07d4700de3be000f34a183904dd2a1b0374626fe20248ca1cf804f1276af5fa1"
+    },
+    {
+      "model_id": "C1",
+      "path": "experiments/lab_001_xy_connection_20260626/reports/tables/R09-20260707-020H_C1_png_inventory_20260707.json",
+      "sha256": "e6cf23c792d671d6080dbc83388670073b3ed5a6aa9fff37720ab7506a77ce97"
+    },
+    {
+      "model_id": "L1",
+      "path": "experiments/lab_001_xy_connection_20260626/reports/tables/R09-20260707-020H_L1_png_inventory_20260707.json",
+      "sha256": "ff56d1c6f2d77274e1eb8ff96601dccf8a6e530d53eb7bbdd0081a7829c31acc"
+    },
+    {
+      "model_id": "F1",
+      "path": "experiments/lab_001_xy_connection_20260626/reports/tables/R09-20260707-020H_F1_png_inventory_20260707.json",
+      "sha256": "6aee136af0ac3980f0bd60b9e253e93932477d0beb26013862743118750c991f"
+    },
+    {
+      "model_id": "F2",
+      "path": "experiments/lab_001_xy_connection_20260626/reports/tables/R09-20260707-020H_F2_png_inventory_20260707.json",
+      "sha256": "836f00c64117f67f232c249e1d0ed03aa7b608b054cbcd5189ab34a04aceb7bf"
+    }
+  ],
+  "fixed_signal_identities": [
+    {
+      "signal_id": "SIG-A",
+      "candidate_id": "LPA::angle::GLOBAL_WEIGHTED::stdev",
+      "lineage": "LEGACY-PY-ANGLE-ALL / 3._parameter_angle_all_0727.py / weighted_avg_std"
+    },
+    {
+      "signal_id": "SIG-B",
+      "candidate_id": "LPR::angle::IP::stdev",
+      "lineage": "LEGACY-PY-RESULT / 2._Parameter_result_0727.py / component population"
+    },
+    {
+      "signal_id": "SIG-C",
+      "candidate_id": "LPR::angle::LAYER_MEAN::stdev",
+      "raw_candidate_ids": ["LPR::angle::LIP::stdev", "LPR::angle::LTP::stdev"],
+      "lineage": "LEGACY-PY-RESULT / 2._Parameter_result_0727.py / layer-mean population; exact source duplicate counted once"
+    },
+    {
+      "signal_id": "SIG-D",
+      "candidate_id": "LPR::curvature::LTP::stdev",
+      "lineage": "LEGACY-PY-RESULT / 2._Parameter_result_0727.py / sqrt(total red area)+sqrt(total blue area) per layer"
+    }
+  ],
+  "comparison_lanes": [
+    "old cached CINT-02 direct LEGACY-PY value with unresolved geometry provenance",
+    "new canonical-N40 source-matched direct LEGACY-PY value",
+    "R09-RESLICE-003 min-2 component-table-derived diagnostic proxy"
+  ],
+  "pre_registered_gates": {
+    "source_match": "all five geometry path/hash pairs equal the frozen canonical registry and each complete.json records the same pair",
+    "technical_pass": "5/5 runs passed, 801 pixel-read slices, 800 overlays, 40 mapped LEGACY-PY values, zero readback mismatch, zero transient PNG remaining, and six audit PNGs retained per model",
+    "signal_applicability": "new source-matched finite coverage 5/5, unique_count >= 4, population standard deviation > 1e-12, and MAD > 1e-12",
+    "redundancy_identity": "exact duplicates use rtol=1e-12/atol=1e-12; proportional duplicates require max symmetric relative residual <= 0.01",
+    "all58_source_matched_go": "technical/source gates pass, all four signals are finite, at least two signals pass applicability, and at least two nonduplicate redundancy clusters remain",
+    "all58_source_matched_hold": "any preceding GO condition fails"
+  },
+  "interpretation_constraints": [
+    "Old-versus-new disagreement is a provenance diagnostic, not an error in immutable LEGACY-PY.",
+    "R09-RESLICE-003 values are min-component-2 table-derived diagnostic proxies and cannot replace the exact direct LEGACY-PY run.",
+    "F1/F2 remain source/crosswalk-risk cases and cannot canonize a formula.",
+    "Passing permits only a separately frozen all-58 source-matched x-only extraction contract.",
+    "No performance y, predictive fit, formula canon, feature promotion, roster mutation, T5, theta injection, or inverse-design claim is permitted."
+  ],
+  "protected_assets": [
+    "original Excel workbooks",
+    "LEGACY-PY",
+    "NB-ORIG",
+    "NB-CURRENT",
+    "Training and generator notebooks",
+    "Master Ledger v0.2",
+    "Tournament Factory HQ site"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "work_id": "ROUTE-VALID-003_F1_STEP_REFERENCE_PIXEL_PHASE_AND_RESOLUTION_STRESS_TEST_NO_Y",
+  "run_id": "ROUTE-VALID-003-20260729-002",
+  "status": "passed",
+  "checks": {
+    "common_contract_run_id": true,
+    "common_contract_exact_grid": true,
+    "single_explicit_common_transform": true,
+    "route_A_rows_144": true,
+    "route_B_rows_144": true,
+    "route_C_reused_rows_144": true,
+    "all_new_mask_integrity": true,
+    "all_reused_C_integrity": true,
+    "comparison_rows_288": true,
+    "independent_metric_replay": true,
+    "protected_files_unchanged": true,
+    "no_C_regeneration": true
+  },
+  "recomputed_comparisons": 288,
+  "max_metric_error": 0.0,
+  "scope": "independent read-only replay; no source, mask, descriptor, Excel, y, training, or notebook mutation"
+}

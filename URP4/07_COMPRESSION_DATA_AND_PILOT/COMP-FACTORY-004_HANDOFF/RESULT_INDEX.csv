@@ -1,0 +1,11 @@
+artifact_id,cohort,artifact_role,path,status,claim_boundary
+RAW-MANIFEST,all,source preservation manifest,experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260802/SOURCE_MANIFEST.csv,PASS,11 original-copy hashes match
+INTAKE-REPORT,all,explicit model-ID intake report,experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-003/COMP-FACTORY-003-BCL-VORONOI-20260802-001/REPORT.md,PASS,source audit and exact join only
+INTAKE-QA,all,independent intake QA,experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-003/COMP-FACTORY-003-BCL-VORONOI-20260802-001/independent_QA.json,15/15 PASS,no feature or model promotion
+BCL-REPORT,bcl,grouped technical pilot,experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-004/COMP-FACTORY-004-BCL-FS4-20260802-001/REPORT.md,PASS_WITH_WARNINGS,leave-one-family-out screening only
+BCL-QA,bcl,independent QA v2,experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-004/COMP-FACTORY-004-BCL-FS4-20260802-001/independent_QA_v2.json,10/10 PASS_WITH_WARNINGS,scientific promotion false
+BCL-SUMMARY,bcl,target screening summary,experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-004/COMP-FACTORY-004-BCL-FS4-20260802-001/target_screening_summary.csv,SCREENING_ONLY,pooled and held-family metrics must be read together
+VOR-REPORT,voronoi,grouped technical pilot,experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-004/COMP-FACTORY-004-VORONOI-FS4-20260802-001/REPORT.md,PASS_WITH_WARNINGS,leave-one-VF-out screening only
+VOR-QA,voronoi,independent QA v2,experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-004/COMP-FACTORY-004-VORONOI-FS4-20260802-001/independent_QA_v2.json,10/10 PASS_WITH_WARNINGS,scientific promotion false
+VOR-SUMMARY,voronoi,target screening summary,experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-004/COMP-FACTORY-004-VORONOI-FS4-20260802-001/target_screening_summary.csv,SCREENING_ONLY,small cohort and held-VF metrics require caution
+

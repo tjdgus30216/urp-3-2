@@ -1,0 +1,5 @@
+"""Source-exact, no-fit numerical branch adapter for TRAIN-2ND-NEWFEATURE."""
+
+ADAPTER_VERSION = "TRAIN-2ND-NEWFEATURE-EXACT-ADAPTER-v0.1"
+PORT_VERSION = "TRAIN-PARITY-002A-BRANCH-PORT-v0.1"
+EXECUTION_STATUS = "no_fit_no_prediction"

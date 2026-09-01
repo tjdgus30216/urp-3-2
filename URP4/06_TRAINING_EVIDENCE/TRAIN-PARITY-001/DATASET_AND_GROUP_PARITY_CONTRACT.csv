@@ -1,0 +1,21 @@
+contract_id,gate,comparison_item,source_contract,required_match,comparison_method,failure_state,next_check
+DGP-001,P0,source notebook SHA,11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2,exact,SHA-256,blocked_by_contract_gap,verify protected source bytes
+DGP-002,P0,input workbook SHA,4a6ec7d03d92fa25851998689768d9db9f63227f00e778a528d758b368851dce,exact,SHA-256,blocked_by_contract_gap,verify workbook bytes
+DGP-003,P0,runtime environment,KMK312 Python 3.12.12 environment hash d9a2d201...,exact,canonical environment manifest,blocked_by_contract_gap,recreate environment manifest
+DGP-004,P1,sheet,총정리,exact,string equality,blocked_by_contract_gap,inspect workbook
+DGP-005,P1,header rows,2 main and 3|4|5 sub,exact,integer sequence equality,blocked_by_contract_gap,compare extractor config
+DGP-006,P1,data rows,Excel rows 7..204 inclusive,exact,ordered source-row ledger,blocked_by_adapter_gap,implement dataset extractor
+DGP-007,P1,X columns,I:FU,exact,ordered Excel-letter ledger,blocked_by_adapter_gap,implement column ledger
+DGP-008,P1,Y source range,FV:HL,exact,ordered Excel-letter ledger,blocked_by_adapter_gap,implement target extractor
+DGP-009,P1,selected Y columns,FW|FX|FZ|GA|GC|GG|GJ|GZ|HA|HB|HC|HD|HE|HG|HI|HK,exact,ordered equality,blocked_by_adapter_gap,implement target mapping
+DGP-010,P1,normalized X headers,169 surviving numeric headers in source order,exact,string and order equality,blocked_by_adapter_gap,export header ledger
+DGP-011,P1,numeric X values,198x169 after coercion and all-missing removal,exact,float and NaN-mask comparison,blocked_by_adapter_gap,export canonical matrix
+DGP-012,P1,target values and masks,16 target columns with target-specific 25..193 rows,exact,float and NaN-mask comparison,blocked_by_adapter_gap,export target mask ledger
+DGP-013,P1,row order,original Excel row order retained before target-specific reset,exact,source_excel_row sequence,blocked_by_adapter_gap,carry source row ID
+DGP-014,P2,X rounding,8 decimal pandas rounding,exact,value and dtype equality,blocked_by_adapter_gap,implement source-equivalent grouping
+DGP-015,P2,X_KEY,rounded string values joined with ||,exact,string equality per source row,blocked_by_adapter_gap,export X_KEY ledger
+DGP-016,P2,GROUP_ID,pandas factorize sort=False,exact,integer equality per source row,blocked_by_adapter_gap,export GROUP_ID ledger
+DGP-017,P2,group membership,target-specific retained rows inherit global GROUP_ID,exact,set equality by group,blocked_by_adapter_gap,compare row/group map
+DGP-018,P3,outer membership,12 target-specific splits at seed 42+repeat and test_size .22,exact,row and group membership equality,blocked_by_adapter_gap,prebuild shared manifest
+DGP-019,P3,inner membership,24 grouped splits at test_size .20 within each outer-train context,exact,row and group membership equality,blocked_by_adapter_gap,prebuild nested manifest
+DGP-020,P3,leakage check,no GROUP_ID in both train and test within a split,exact,set intersection equals empty,blocked_by_contract_gap,independent fold QA

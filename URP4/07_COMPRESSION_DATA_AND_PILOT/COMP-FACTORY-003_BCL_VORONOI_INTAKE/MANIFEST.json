@@ -1,0 +1,78 @@
+{
+  "run_id": "COMP-FACTORY-003-BCL-VORONOI-20260802-001",
+  "status": "PASS",
+  "started_at_kst": "2026-08-02T02:22:05.513003+09:00",
+  "completed_at_kst": "2026-08-02T02:23:31.063059+09:00",
+  "runtime": {
+    "sys_executable": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+    "python": "3.12.12"
+  },
+  "contract": {
+    "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\factories\\COMP-FACTORY-001\\config\\compression_groups_v0_2.json",
+    "sha256": "76A2F394DB848FF77B9ACAAAC468ABDD915F93D9F62F395CA6F92AAF22CE22A1"
+  },
+  "counts": {
+    "performance_rows": 228,
+    "structural_rows_relevant": 170,
+    "eligible_exact_joins": 167,
+    "target_count": 16,
+    "feature_registry_count": 45,
+    "crosswalk_status": {
+      "eligible_exact_model_label_join": 167,
+      "y_only_missing_structural_factors": 61,
+      "x_only_missing_performance": 3
+    }
+  },
+  "outputs": [
+    {
+      "file": "cell_lineage.csv",
+      "bytes": 312486,
+      "sha256": "6B550AF68CE49CFF93A0577CFAFC432F8712A655420903E796C199443FDA859E"
+    },
+    {
+      "file": "feature_registry.csv",
+      "bytes": 6385,
+      "sha256": "B3AC03BF757DDFC04B35F5A6BA2731252854230AA8FA6BEFDDE41EDDA433B7ED"
+    },
+    {
+      "file": "performance_y_wide_all.csv",
+      "bytes": 86002,
+      "sha256": "899DA5E0D5E9EAF554E307B162AA6F759FBA94B1238CA0421CB710612DAB6170"
+    },
+    {
+      "file": "producer_QA.csv",
+      "bytes": 483,
+      "sha256": "225E8ED899C42F68FE57B794FA5A8C66E7DF5584E84EE4401C6A4964023F7FD3"
+    },
+    {
+      "file": "REPORT.md",
+      "bytes": 1339,
+      "sha256": "588BCCEED6331F3607DC6AA777A80F70579CD26AB19ECD6A55802F48D20472C1"
+    },
+    {
+      "file": "row_registry.csv",
+      "bytes": 17047,
+      "sha256": "A44386BA00CEA6481C26D9F0C24C1C09AB1C1D117D25DADC21E9A17C0DD325E3"
+    },
+    {
+      "file": "source_audit.csv",
+      "bytes": 1751,
+      "sha256": "7349BFAE2B3425210A7041399CD0BD949BFD0398FE761E07B48519ED44E36776"
+    },
+    {
+      "file": "structural_x_wide_relevant.csv",
+      "bytes": 119073,
+      "sha256": "5E9DE85327EADA07D39BB14E745756D2142278D233526F90F6CB60AC2EAAA3C7"
+    },
+    {
+      "file": "target_registry.csv",
+      "bytes": 1510,
+      "sha256": "C50929341006CAAF9074E9C171D2B02A8578C51A07B4C4E907EF49B7925C5A12"
+    },
+    {
+      "file": "xy_eligible_exact_join.csv",
+      "bytes": 183088,
+      "sha256": "5AEA0E498685CFAF1926059E00B880C5A220E5E16D368D8B37987D5F66F0187E"
+    }
+  ]
+}

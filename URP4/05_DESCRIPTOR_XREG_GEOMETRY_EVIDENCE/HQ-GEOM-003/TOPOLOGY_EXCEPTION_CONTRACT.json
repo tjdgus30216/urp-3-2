@@ -1,0 +1,114 @@
+{
+  "work_id": "HQ-GEOM-003_GENERATED_LATTICE_TPMS_TOPOLOGY_EXCEPTION_CONTRACT_NO_Y",
+  "run_id": "HQ-GEOM-003-20260728-001",
+  "runtime": "KMK312 Python 3.12.12",
+  "execution_class": "read_only_preregistration_no_geometry_write",
+  "inputs": [
+    {
+      "source_key": "LAT",
+      "model_id": "HQ-GEOM-001-LATTICE-A",
+      "family": "Lattice Type A",
+      "source_path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\URP4-1_DELIVERABLE\\outputs\\smoke_full_descriptor\\HQ-66fa90d8b968_20260728_144604_055706\\geometry\\HQ-SMOKE-GEN-LATTICE.stl",
+      "source_sha256": "001410b8c1038bb08d325a08670b2e57c739f51a25ded2a945d38402e781ea51",
+      "triangle_count": 253184,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 6798,
+      "orientation_conflict_edge_count": 0,
+      "normal_winding_consistent": true,
+      "is_watertight_after_weld": false,
+      "connected_component_count": 8392,
+      "topology_clean": false,
+      "current_hq_v0_3_admission": "rejected_fail_closed",
+      "evidence_status": "confirmed_nonclean_source"
+    },
+    {
+      "source_key": "TPM",
+      "model_id": "HQ-GEOM-001-TPMS-GYROID",
+      "family": "TPMS multiwall gyroid",
+      "source_path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\URP4-1_DELIVERABLE\\outputs\\smoke_full_descriptor\\HQ-d1b31e3c2fef_20260728_145124_570029\\geometry\\TPMS_multiwall_gyroid_A-B_000000.stl",
+      "source_sha256": "e79da43fc348eb9fb98460e94da0995cbbd0755203f3ec19a8c9c5ab056f6ed5",
+      "triangle_count": 168584,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 103,
+      "orientation_conflict_edge_count": 73,
+      "normal_winding_consistent": true,
+      "is_watertight_after_weld": true,
+      "connected_component_count": 1,
+      "topology_clean": false,
+      "current_hq_v0_3_admission": "rejected_fail_closed",
+      "evidence_status": "confirmed_nonclean_source"
+    }
+  ],
+  "policy_options": [
+    {
+      "policy_id": "G3-P0-HOLD",
+      "treatment": "hold_nonclean_sources",
+      "status": "confirmed_current_policy",
+      "source_mutation": "none",
+      "hq_v0_3_admission": "no",
+      "recommendation": "active until laboratory policy is chosen",
+      "minimum_evidence_before_execution": "none; prevents unregistered calculation",
+      "risk": "no Lattice/TPMS execution"
+    },
+    {
+      "policy_id": "G3-P1-REGENERATE",
+      "treatment": "regenerate_from_parametric_generator",
+      "status": "likely_preferred_if_generator_can_emit_clean_mesh",
+      "source_mutation": "original preserved; new generator output is a new asset",
+      "hq_v0_3_admission": "only after clean preflight + new source hash",
+      "recommendation": "preferred because mesh semantics remain in the generator",
+      "minimum_evidence_before_execution": "locked generator/config, clean preflight, source-to-new identity record, selected-slice regression",
+      "risk": "requires generator access and may alter intended geometry"
+    },
+    {
+      "policy_id": "G3-P2-REPAIR",
+      "treatment": "validated_repair_to_separate_derivative",
+      "status": "unresolved",
+      "source_mutation": "original preserved; repair derivative only",
+      "hq_v0_3_admission": "only after separate repair contract",
+      "recommendation": "not permitted now",
+      "minimum_evidence_before_execution": "named repair algorithm/settings, hash lineage, repair delta/topology report, selected-slice and descriptor non-regression",
+      "risk": "repair can change geometry and descriptor values"
+    },
+    {
+      "policy_id": "G3-P3-EXCEPTION",
+      "treatment": "conditional_existing_nonclean_exception",
+      "status": "rejected_as_automatic_policy",
+      "source_mutation": "none",
+      "hq_v0_3_admission": "no unless separately approved and validated",
+      "recommendation": "do not use as a shortcut",
+      "minimum_evidence_before_execution": "explicit laboratory approval plus source-specific selected-slice/trace criteria",
+      "risk": "non-clean topology may create unstable or source-dependent slice behavior"
+    },
+    {
+      "policy_id": "G3-P4-EXCLUDE",
+      "treatment": "exclude_from_current_generated_milestone",
+      "status": "unresolved_fallback",
+      "source_mutation": "none",
+      "hq_v0_3_admission": "no",
+      "recommendation": "fallback if no trustworthy repair/regeneration policy is available",
+      "minimum_evidence_before_execution": "document scope exclusion",
+      "risk": "reduced family coverage"
+    }
+  ],
+  "frozen_prohibitions": [
+    "normalization",
+    "mesh_repair",
+    "slicing",
+    "rasterization",
+    "descriptor_extraction",
+    "y",
+    "x_y",
+    "feature_selection",
+    "training",
+    "prediction",
+    "inverse_design",
+    "all58",
+    "HQ_v0_1_mutation",
+    "NB_CURRENT_mutation",
+    "LEGACY_PY_mutation",
+    "Excel_mutation"
+  ],
+  "pending_lab_decision": "Choose one of G3-P1 / G3-P2 / G3-P4; G3-P3 cannot be selected without a separate explicit laboratory exception.",
+  "status": "preregistered_pending_lab_policy"
+}

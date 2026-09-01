@@ -1,0 +1,18 @@
+{
+  "work_id": "NB-INTEGRATE-001_IMPORT_ROUTE_CONTROLLER_VERSIONED_DEVELOPMENT_NO_Y",
+  "run_id": "NB-INTEGRATE-001-20260729-001",
+  "status": "passed",
+  "qa": "13/13",
+  "runtime": {
+    "sys_executable": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+    "python_version": "3.12.12",
+    "environment_path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312",
+    "implementation": "CPython",
+    "command": [
+      "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+      "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\scripts\\NB_INTEGRATE_001_controller_smoke.py"
+    ]
+  },
+  "protected_assets": "31/31",
+  "scope": "independent controller/fixture/notebook/hash regression only; no slicing/descriptor/y/model execution"
+}

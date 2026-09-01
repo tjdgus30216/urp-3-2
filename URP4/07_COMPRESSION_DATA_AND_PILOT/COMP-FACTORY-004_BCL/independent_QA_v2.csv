@@ -1,0 +1,11 @@
+﻿check_id,check,passed,observed
+IQA-01,producer status PASS,True,PASS
+IQA-02,producer QA all passed,True,10/10
+IQA-03,prediction census,True,8768
+IQA-04,predictions finite,True,0
+IQA-05,unique model-target-method OOF records,True,0
+IQA-06,outer groups disjoint,True,disjoint
+IQA-07,fold-local feature ceiling,True,8
+IQA-08,no promotions,True,['not_promoted']
+IQA-09,pooled metrics independently reproduced,True,2.55351295663786e-15
+IQA-10,producer output manifest matches,True,all

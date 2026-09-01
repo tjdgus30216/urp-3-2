@@ -1,0 +1,18 @@
+{
+  "work_id": "PRM-103",
+  "title": "XREG_V0_4_BC_BATCH_CONSOLIDATION_AND_BLOCK_POLICY_NO_Y",
+  "purpose": "Append exactly the independently verified PRM-102 B/C cohort to immutable XREG-v0.3, preserving all 29 candidates and recording two internal redundancy blocks without selecting a representative.",
+  "expected": {"prior_candidates": 114, "new_candidates": 29, "total_candidates": 143, "models": 58, "prior_values": 6612, "new_values": 1682, "total_values": 8294, "prior_blocks": 94, "new_blocks": 27, "total_blocks": 121, "prior_edges": 25, "new_edges": 2, "total_edges": 27, "inherited_missing": 2, "new_missing": 0},
+  "inputs": [
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM101_xreg_v0_3_candidate_bank.csv","sha256":"a1662a1737dcd8c0ff1e34c0eb00e4b9c69fc179e4b33f35ac4c7ffba1e3b823"},
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM101_xreg_v0_3_values_long.csv","sha256":"104e4599c17421381227f93e2d98051b26c27bbb031c1bc7500666267ff6183d"},
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM101_unified_redundancy_edge_registry.csv","sha256":"a2c6b4a5e1a2ad1c8687e1b64d17274687b8a1be8f4e49dede1dc1291a27fb8e"},
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM101_unified_redundancy_block_registry.csv","sha256":"bdfafa024db4d43f321ac8945107ef059036489657978f3d65bcb5cbd4ba812c"},
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM102_BC_raw_table_candidate_registry.csv","sha256":"dc744a3f729235363e3e7a038bd8f4cdc03cf0090ce3759c1cdfe67469ba0879"},
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM102_BC_raw_table_values_long.csv","sha256":"ea64371c2a15c220b5ef08285bb4c455fb38ea9958ed4c211d3c9c9f83ac34bf"},
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM102_BC_internal_redundancy.csv","sha256":"266ea2d458c236c98771696f9abf175b5cd8a6a8b71a6d2d269248071a5391f8"},
+    {"path":"experiments/lab_001_xy_connection_20260626/factories/PRM-102/reports/PRM102_independent_QA_summary.json","sha256":"09db13df575d7ce041d4c08daa4abcd2b1438986a644a9f66045c458b45a4541"}
+  ],
+  "locks":{"performance_y_read":0,"x_y_analysis":0,"model_fit":0,"feature_selection":0,"feature_promotion":0,"new_masks_or_slicing":0,"NB_CURRENT_mutation":0,"LEGACY_PY_mutation":0,"original_Excel_mutation":0},
+  "block_policy":"retain all 29 candidates; U103-BLK-095/096 are future block-aware comparisons only; no representative selected"
+}

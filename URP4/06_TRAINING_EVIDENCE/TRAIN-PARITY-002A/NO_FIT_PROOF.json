@@ -1,0 +1,120 @@
+{
+  "execution_status": "no_fit_no_prediction",
+  "branch_fixture_calls": 10,
+  "completed_fit_calls": 0,
+  "completed_predict_calls": 0,
+  "guard_test_attempted_fit_calls": 1,
+  "guard_test_attempted_predict_calls": 1,
+  "guard_tests": [
+    {
+      "action": "fit",
+      "blocked": true
+    },
+    {
+      "action": "predict",
+      "blocked": true
+    }
+  ],
+  "prediction_rows": 0,
+  "metric_rows": 0,
+  "fitted_model_artifacts": 0,
+  "benchmark_artifacts": 0,
+  "source_static_fit_predict_sites": [
+    {
+      "cell_index": 6,
+      "line": 157,
+      "call": "fit"
+    },
+    {
+      "cell_index": 6,
+      "line": 191,
+      "call": "fit"
+    },
+    {
+      "cell_index": 6,
+      "line": 353,
+      "call": "fit"
+    },
+    {
+      "cell_index": 6,
+      "line": 161,
+      "call": "predict"
+    },
+    {
+      "cell_index": 6,
+      "line": 258,
+      "call": "predict"
+    },
+    {
+      "cell_index": 7,
+      "line": 38,
+      "call": "fit"
+    },
+    {
+      "cell_index": 7,
+      "line": 296,
+      "call": "fit"
+    },
+    {
+      "cell_index": 7,
+      "line": 426,
+      "call": "fit"
+    },
+    {
+      "cell_index": 7,
+      "line": 240,
+      "call": "fit"
+    },
+    {
+      "cell_index": 7,
+      "line": 278,
+      "call": "fit"
+    },
+    {
+      "cell_index": 7,
+      "line": 39,
+      "call": "predict"
+    },
+    {
+      "cell_index": 7,
+      "line": 297,
+      "call": "predict"
+    },
+    {
+      "cell_index": 7,
+      "line": 491,
+      "call": "predict"
+    },
+    {
+      "cell_index": 7,
+      "line": 286,
+      "call": "predict"
+    },
+    {
+      "cell_index": 7,
+      "line": 666,
+      "call": "predict"
+    },
+    {
+      "cell_index": 9,
+      "line": 79,
+      "call": "predict"
+    },
+    {
+      "cell_index": 9,
+      "line": 84,
+      "call": "predict"
+    },
+    {
+      "cell_index": 9,
+      "line": 95,
+      "call": "predict"
+    },
+    {
+      "cell_index": 9,
+      "line": 92,
+      "call": "predict"
+    }
+  ],
+  "note": "Branch fixture calls stopped at NO_FIT permit before source numerical entry. Guard attempts were blocked before sklearn estimator logic."
+}

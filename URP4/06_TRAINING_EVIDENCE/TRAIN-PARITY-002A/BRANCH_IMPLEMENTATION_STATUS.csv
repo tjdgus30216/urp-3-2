@@ -1,0 +1,11 @@
+﻿branch_ordinal,branch_id,adapter_symbol,status,source_function,source_condition,dependency_count,missing_dependency_count,fixture_qa_passed,fixture_qa_total,fit_executed,predict_executed
+1,baseline_stability,SourceExactBranch[baseline_stability],exact_port_complete_no_fit,evaluate_method_train_test,"method_name == ""baseline_stability""",2,0,11,11,0,0
+2,stability_lasso_ridge,SourceExactBranch[stability_lasso_ridge],exact_port_complete_no_fit,evaluate_method_train_test,"method_name == ""stability_lasso_ridge""",3,0,11,11,0,0
+3,spca_ridge,SourceExactBranch[spca_ridge],exact_port_complete_no_fit,evaluate_method_train_test,"method_name in (""spca_ridge"",""spca_huber"",""spca_pls"")",3,0,11,11,0,0
+4,spca_huber,SourceExactBranch[spca_huber],exact_port_complete_no_fit,evaluate_method_train_test,"method_name in (""spca_ridge"",""spca_huber"",""spca_pls"")",3,0,11,11,0,0
+5,block_pca_ridge,SourceExactBranch[block_pca_ridge],exact_port_complete_no_fit,evaluate_method_train_test,"method_name == ""block_pca_ridge""",3,0,11,11,0,0
+6,bagged_subspace_ridge,SourceExactBranch[bagged_subspace_ridge],exact_port_complete_no_fit,evaluate_method_train_test,"method_name == ""bagged_subspace_ridge""",2,0,11,11,0,0
+7,minimal_class_average,SourceExactBranch[minimal_class_average],exact_port_complete_no_fit,evaluate_method_train_test,"method_name == ""minimal_class_average""",2,0,11,11,0,0
+8,multitask_screen_ridge,SourceExactBranch[multitask_screen_ridge],exact_port_complete_no_fit,evaluate_method_train_test,"method_name in (""multitask_screen_ridge"",""multitask_screen_pls"")",2,0,11,11,0,0
+9,multitask_screen_pls,SourceExactBranch[multitask_screen_pls],exact_port_complete_no_fit,evaluate_method_train_test,"method_name in (""multitask_screen_ridge"",""multitask_screen_pls"")",2,0,11,11,0,0
+10,spca_pls,SourceExactBranch[spca_pls],exact_port_complete_no_fit,evaluate_method_train_test,"method_name in (""spca_ridge"",""spca_huber"",""spca_pls"")",3,0,11,11,0,0

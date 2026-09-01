@@ -1,0 +1,6 @@
+conflict_id,older_side_chat_proposal,latest_official_state,resolution,state
+HQ-C001,Prefer STP and silently convert STL to STEP when needed,Use original STP only when it exists as strict reference; imported STL uses oriented non-zero winding,No automatic STL-to-STEP fallback; explicit source-type route,rejected
+HQ-C002,Treat NB-DEV v0.3 or v0.4 as latest imported route,NB-DEV v0.5 and geometry_io v0.4 are latest,Use v0.5 logic/module; retain older versions as history,superseded
+HQ-C003,Run feature selection and Training immediately from HQ,New y/crosswalk/modeling authorization is absent,Expose interface/schema/method registry but default OFF and fail closed,rejected
+HQ-C004,Assume all modules and orchestration are production complete,Modules exist with confirmed/partial scopes; old orchestrator is contract-validation only,Reuse qualified engines and add a new minimal HQ layer; conditional features stay disabled,partial
+

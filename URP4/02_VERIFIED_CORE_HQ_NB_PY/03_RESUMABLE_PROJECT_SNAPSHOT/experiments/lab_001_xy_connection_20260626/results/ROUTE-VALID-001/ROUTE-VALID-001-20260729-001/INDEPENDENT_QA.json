@@ -1,0 +1,33 @@
+{
+  "run_id": "ROUTE-VALID-001-20260729-001",
+  "status": "passed",
+  "checks": {
+    "eligibility_exact_count_58": true,
+    "eligibility_counts_24_9_25": true,
+    "no_missing_or_hash_mismatch": true,
+    "c1_pair_confirmed": true,
+    "c1_registered_step_hash": true,
+    "c1_registered_stl_hash": true,
+    "route_ab_metrics_recomputed": true,
+    "route_ac_metrics_recomputed": true,
+    "route_ab_same_source_label": true,
+    "route_c_hash_is_paired_stl": true,
+    "route_c_output_hash": true,
+    "no_overreach_scope_stop": true,
+    "protected_file_hashes_unchanged": true
+  },
+  "recomputed_metrics": {
+    "C1-A-B": {
+      "mask_iou": 1.0,
+      "symmetric_difference_pixels": 0,
+      "area_relative_delta": 0.0
+    },
+    "C1-A-C": {
+      "mask_iou": 1.0,
+      "symmetric_difference_pixels": 0,
+      "area_relative_delta": 0.0
+    }
+  },
+  "scope": "read-only QA; it does not calculate a new slice, descriptor, y, or model.",
+  "qa_table": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\reports\\tables\\ROUTE-VALID-001-20260729-001_independent_qa.csv"
+}

@@ -1,0 +1,47 @@
+{
+  "work_id": "ROUTE-VALID-004_ROUTE_POLICY_DECISION_AND_NB_INTEGRATION_GATE_NO_Y",
+  "run_id": "ROUTE-VALID-004-20260729-001",
+  "created_at_utc": "2026-07-29T05:27:28+00:00",
+  "runtime": "policy-only/no geometry or descriptor calculation",
+  "predecessors": {
+    "route_valid_001": {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\ROUTE-VALID-001\\ROUTE-VALID-001-20260729-001\\INDEPENDENT_QA.json",
+      "sha256": "ee41193c5bae1852c15b00e41fd2aa2d1b8b66f7f03630522f09733464f730d6"
+    },
+    "route_valid_002": {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\ROUTE-VALID-002\\ROUTE-VALID-002-20260729-001\\INDEPENDENT_QA.json",
+      "sha256": "698ab6c2d874d20cd8b90f95fff756e4c0c7da464d4d6077ae6495659ea8faab"
+    },
+    "route_valid_003": {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\ROUTE-VALID-003\\ROUTE-VALID-003-20260729-002\\INDEPENDENT_QA.json",
+      "sha256": "1fcaedfd18c8166787807757ebc5cd5c9aabe752e7f79a3e0601338927e2873a"
+    },
+    "route_valid_003a_quarantine": {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\ROUTE-VALID-003A\\ROUTE-VALID-003A-20260729-003\\QUARANTINE_NOTE.md",
+      "sha256": "4d092528ffa7100e61c411035ad2e025f89a7f6d26369907aaf2d0877a4c8ce1"
+    }
+  },
+  "predecessor_requirements": "ROUTE-VALID-001..003 independent QA passed; 003A has quarantine-only status",
+  "prohibitions": [
+    "new slicing",
+    "mesh or source edit",
+    "descriptor calculation",
+    "Excel or y access",
+    "feature selection",
+    "model fit",
+    "NB-ORIG/NB-CURRENT/LEGACY-PY edit"
+  ],
+  "decisions": {
+    "versioned_development_integration": "conditional_yes",
+    "scientific_production_qualification": "no",
+    "route_valid_003a_as_prerequisite": "no"
+  },
+  "strict_backlog": "STRICT-F1-001_EXACT_A_LONG_RUN_AND_DECLARED_DEFLECTION_SENSITIVITY_NO_Y",
+  "outputs": {
+    "source_policy": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\reports\\tables\\ROUTE-VALID-004-20260729-001_source_type_route_policy.csv",
+    "evidence": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\reports\\tables\\ROUTE-VALID-004-20260729-001_family_model_evidence_matrix.csv",
+    "gate": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\reports\\tables\\ROUTE-VALID-004-20260729-001_nb_integration_gate.csv",
+    "fallback": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\reports\\tables\\ROUTE-VALID-004-20260729-001_fail_closed_fallback.csv",
+    "judgments": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\reports\\tables\\ROUTE-VALID-004-20260729-001_policy_judgment_register.csv"
+  }
+}

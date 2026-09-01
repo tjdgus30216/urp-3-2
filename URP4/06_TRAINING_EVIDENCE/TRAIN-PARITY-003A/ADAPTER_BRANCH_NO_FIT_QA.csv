@@ -1,0 +1,11 @@
+﻿branch_id,status,observed
+baseline_stability,PASS,NO_FIT_PERMIT: branch baseline_stability numerical entry blocked
+stability_lasso_ridge,PASS,NO_FIT_PERMIT: branch stability_lasso_ridge numerical entry blocked
+spca_ridge,PASS,NO_FIT_PERMIT: branch spca_ridge numerical entry blocked
+spca_huber,PASS,NO_FIT_PERMIT: branch spca_huber numerical entry blocked
+block_pca_ridge,PASS,NO_FIT_PERMIT: branch block_pca_ridge numerical entry blocked
+bagged_subspace_ridge,PASS,NO_FIT_PERMIT: branch bagged_subspace_ridge numerical entry blocked
+minimal_class_average,PASS,NO_FIT_PERMIT: branch minimal_class_average numerical entry blocked
+multitask_screen_ridge,PASS,NO_FIT_PERMIT: branch multitask_screen_ridge numerical entry blocked
+multitask_screen_pls,PASS,NO_FIT_PERMIT: branch multitask_screen_pls numerical entry blocked
+spca_pls,PASS,NO_FIT_PERMIT: branch spca_pls numerical entry blocked

@@ -1,0 +1,7 @@
+﻿manifest_id,path,scope,revision
+SOURCE_CUTOFF_MANIFEST,01_PROJECT_MAP_AND_LEDGER/SOURCE_CUTOFF_MANIFEST.json,preserved immutable v1.2 source cutoff,v1.2-r1 historical
+PACKAGE_VIEW_MANIFEST,01_PROJECT_MAP_AND_LEDGER/PACKAGE_VIEW_MANIFEST.json,current v1.3 project-map files,v1.4-r2
+HANDOFF_CUTOFF_MANIFEST,01_PROJECT_MAP_AND_LEDGER/HANDOFF_CUTOFF_MANIFEST.json,compatibility alias of current package-view manifest,v1.4-r2
+PACKAGE_CONTENT_SHA256,10_MANIFEST_SHA256_AND_QA/PACKAGE_CONTENT_SHA256.csv,package files except itself,v1.4-r2
+PACKAGE_MEMBER_MANIFEST,10_MANIFEST_SHA256_AND_QA/PACKAGE_MEMBER_MANIFEST.csv,all ordinary members excluding the two manifest files,v1.4-r2
+INDEPENDENT_CONTENT_QA,10_MANIFEST_SHA256_AND_QA/INDEPENDENT_CONTENT_QA.json,pre-archive content/parse/hash/resume QA,v1.4-r2

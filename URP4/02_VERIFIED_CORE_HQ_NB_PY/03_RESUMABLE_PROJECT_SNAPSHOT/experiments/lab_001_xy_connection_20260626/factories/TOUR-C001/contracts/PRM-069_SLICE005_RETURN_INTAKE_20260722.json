@@ -1,0 +1,27 @@
+{
+  "preregistration_id": "PRM-069",
+  "run_id": "PRM069-SLICE005-RETURN-INTAKE-001",
+  "created_at_kst": "2026-07-22T01:10:26+09:00",
+  "status": "technical_intake_passed_with_nonbinding_size_metadata_mismatch_scientific_review_pending",
+  "source_zip": "G:\\내 드라이브\\labfactory\\returned_results\\R09_SLICE005_LABPC_RESULTS_Legion5_2026-07-22T010629_941+0900.zip",
+  "source_manifest": "G:\\내 드라이브\\labfactory\\returned_results\\R09_SLICE005_LABPC_RESULTS_Legion5_2026-07-22T010629_941+0900.manifest.csv",
+  "source_zip_bytes": 65200796,
+  "manifest_recorded_zip_bytes": 65162902,
+  "manifest_size_delta_bytes": 37894,
+  "manifest_size_field_status": "nonbinding_mismatch; exact SHA-256 and ZIP CRC passed",
+  "source_zip_sha256": "5f68795816fe20151796ac50cbe3f8accf609fa252879c0922105b2b55b26e42",
+  "technical_completion": "32/32 new cells + 8/8 frozen baselines",
+  "matrix": "40 cells x 9 scalars = 360 rows",
+  "table_hashes": "160/160",
+  "producer_QA": "24/24",
+  "archive_readback_QA": "12/12",
+  "raw_descriptor_files_modified": 0,
+  "performance_y_read": 0,
+  "model_fit": 0,
+  "scientific_convergence_decision": "pending",
+  "next_tasks": [
+    "SLICE005-CONVERGENCE-CONTROL-REVIEW",
+    "NB-DEV-STL-IMPORT-BRANCH",
+    "FS4-P1-RUN-BOUNDED-4METHOD"
+  ]
+}

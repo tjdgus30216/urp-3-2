@@ -1,0 +1,11 @@
+﻿check_id,check,observed,expected,status
+SRP-001,protected source SHA,11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2,11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2,PASS
+SRP-002,workbook SHA,4a6ec7d03d92fa25851998689768d9db9f63227f00e778a528d758b368851dce,4a6ec7d03d92fa25851998689768d9db9f63227f00e778a528d758b368851dce,PASS
+SRP-003,fold SHA,3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6,3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6,PASS
+SRP-004,source definition symbols compiled directly,56,56,PASS
+SRP-005,source branch lineage,10,10,PASS
+SRP-006,protected evaluator callable,True,True,PASS
+SRP-007,protected evaluator signature,"(method_name, output_name, X_train_sel, y_train_sel, g_train_sel, selected_train_df, X_test_group, y_test_group, ranked_features, random_state=42)",source signature available,PASS
+SRP-008,explicit dynamic-state binding,True,True,PASS
+SRP-009,HI target/fold binding,"{""excel_col"": ""HI"", ""fold_manifest_sha256"": ""3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6"", ""fold_rows"": 3745, ""group_id_membership_hash"": ""ee775c22a801ba65850fea3f8309c6fcc67c560a218df4961d494dd90ff1a9f8"", ""nan_mask_hash"": ""64cfb823d51880daf89e860338fe00f2a8e80e10f7b2c312510e8fc05fbdf3b9"", ""outer_repeat"": 0, ""target_id"": ""TRAIN2NF::HI"", ""value_hash"": ""c85b2f69cecc0c934ed796d21d28db1f9889435625051ca450453d16a526e735""}",TRAIN2NF::HI repeat 0,PASS
+SRP-010,NO_FIT blocks protected evaluator entry,NO_FIT_PERMIT: protected source evaluator entry blocked,NO_FIT_PERMIT,PASS

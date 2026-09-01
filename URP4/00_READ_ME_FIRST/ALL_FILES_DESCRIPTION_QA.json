@@ -1,0 +1,14 @@
+{
+  "qa_id": "DOCTOR-HANDOFF-V1.4-ALL-FILES-DESCRIPTION-QA",
+  "package_root": "URP4/",
+  "actual_file_count": 1147,
+  "described_file_count": 1147,
+  "unique_described_path_count": 1147,
+  "missing_descriptions": [],
+  "described_but_missing_files": [],
+  "duplicate_description_paths": [],
+  "all_files_have_nonempty_description": true,
+  "tree_contains_every_relative_path_terminal": true,
+  "verdict": "PASS",
+  "note": "SHA-256 and byte-level integrity are separately authoritative in 10_MANIFEST_SHA256_AND_QA."
+}

@@ -1,0 +1,133 @@
+{
+  "qa_status": "FAIL",
+  "passed": 16,
+  "total": 18,
+  "checks": [
+    {
+      "check_id": "QA-001",
+      "passed": true,
+      "observed": "11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2",
+      "expected": "11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2",
+      "note": ""
+    },
+    {
+      "check_id": "QA-002",
+      "passed": true,
+      "observed": "4a6ec7d03d92fa25851998689768d9db9f63227f00e778a528d758b368851dce",
+      "expected": "4a6ec7d03d92fa25851998689768d9db9f63227f00e778a528d758b368851dce",
+      "note": ""
+    },
+    {
+      "check_id": "QA-003",
+      "passed": true,
+      "observed": "REPLAY_PASSED",
+      "expected": "REPLAY_PASSED",
+      "note": ""
+    },
+    {
+      "check_id": "QA-004",
+      "passed": true,
+      "observed": "11",
+      "expected": "11",
+      "note": ""
+    },
+    {
+      "check_id": "QA-005",
+      "passed": true,
+      "observed": "11",
+      "expected": "11",
+      "note": ""
+    },
+    {
+      "check_id": "QA-006",
+      "passed": true,
+      "observed": "True",
+      "expected": "True",
+      "note": "All scientific/helper/training cells after the config cell must be byte-identical."
+    },
+    {
+      "check_id": "QA-007",
+      "passed": true,
+      "observed": "True",
+      "expected": "True",
+      "note": "Only declared path, tag, and output routing differences are normalized."
+    },
+    {
+      "check_id": "QA-008",
+      "passed": true,
+      "observed": "[]",
+      "expected": "[]",
+      "note": ""
+    },
+    {
+      "check_id": "QA-009",
+      "passed": true,
+      "observed": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+      "expected": "project-local canonical KMK312",
+      "note": ""
+    },
+    {
+      "check_id": "QA-010",
+      "passed": true,
+      "observed": "{'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'OPENBLAS_NUM_THREADS': '1', 'NUMEXPR_NUM_THREADS': '1', 'VECLIB_MAXIMUM_THREADS': '1', 'BLIS_NUM_THREADS': '1', 'CUDA_VISIBLE_DEVICES': '-1', 'JOBLIB_MULTIPROCESSING': '0'}",
+      "expected": "all core thread limits == 1",
+      "note": ""
+    },
+    {
+      "check_id": "QA-011",
+      "passed": true,
+      "observed": "-1",
+      "expected": "-1",
+      "note": ""
+    },
+    {
+      "check_id": "QA-012",
+      "passed": true,
+      "observed": "16",
+      "expected": "16",
+      "note": ""
+    },
+    {
+      "check_id": "QA-013",
+      "passed": true,
+      "observed": "[169]",
+      "expected": "[169]",
+      "note": ""
+    },
+    {
+      "check_id": "QA-014",
+      "passed": true,
+      "observed": "16",
+      "expected": "16",
+      "note": ""
+    },
+    {
+      "check_id": "QA-015",
+      "passed": false,
+      "observed": "13",
+      "expected": "16",
+      "note": ""
+    },
+    {
+      "check_id": "QA-016",
+      "passed": true,
+      "observed": "[]",
+      "expected": "max absolute error <= 1e-12",
+      "note": ""
+    },
+    {
+      "check_id": "QA-017",
+      "passed": true,
+      "observed": "[]",
+      "expected": "[]",
+      "note": ""
+    },
+    {
+      "check_id": "QA-018",
+      "passed": false,
+      "observed": "{'before_slices': 272, 'after_slices': 0, 'before_overlays': 271, 'after_overlays': 0, 'after_stderr_bytes': 283}",
+      "expected": "nondecreasing progress and zero stderr bytes",
+      "note": ""
+    }
+  ]
+}

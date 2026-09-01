@@ -1,0 +1,996 @@
+{
+  "contract_id": "TOUR-C001-T4R-SLICE-004_ALL58_SOURCE_MATCHED_EXACT_EXTRACTION",
+  "run_id": "TOUR-C001-T4R-SLICE-004",
+  "created_at_kst": "2026-07-20T11:57:14+09:00",
+  "status": "frozen_before_all58_execution",
+  "execution_code": {
+    "path": "experiments/lab_001_xy_connection_20260626/scripts/TOUR_C001_T4R_SLICE_004_all58_source_matched_exact_extraction.py",
+    "sha256": "f2a6e8ab6d6ecd499fa1a470328154c95ee098d6664de6309fc9278c3a9966cc"
+  },
+  "pre_execution_metadata_addendum": {
+    "added_at_kst": "2026-07-20T11:59:00+09:00",
+    "reason": "Freeze the finalized two-worker launcher and resume implementation before any of the 51 new geometry slicing runs.",
+    "scientific_fields_changed": false,
+    "new_geometry_runs_before_addendum": 0
+  },
+  "parent_evidence": [
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/reports/tables/R09-20260715_final_canonical_geometry_registry.csv",
+      "sha256": "49eb903a5eb63a6f017aaf2cf8af891d77d227de375d890a9b4ba889562a3314"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/reports/tables/CINT-02_legacy_source_adapter_registry_20260718.csv",
+      "sha256": "702abc17234ad8053939d300f4ce86ce2c1671e81c92917707889bdbdc72b232"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/reports/tables/CINT-02_golden_panel_input_manifest_20260718.csv",
+      "sha256": "6f0bde49ca6971ac91905b7152500e7a57346838eae94ad81921ac86716a860a"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/factories/CINT-02/outputs/CINT-02_panel_replay_actual.json",
+      "sha256": "4906cab7d192278ec81ddec96bc2a01ff3bcc00a6321fea3a42d42a3f8e897f2"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/scripts/TOUR_C001_T4R_SLICE_001_t8_t9_legacy_detail_convergence.py",
+      "sha256": "51fad660f74ada2113d2eb9ca5a72d818718a82a238c802ab6d564f639cec203"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/scripts/TOUR_C001_T4R_SLICE_003A_matched_source_five_model_audit.py",
+      "sha256": "8fbb3a879cf5b97b17d5e5e43df99e5925ed733b914d761af11468f90c2ba67b"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/factories/TOUR-C001/contracts/TOUR-C001_T4R_SLICE_003A_MATCHED_SOURCE_FIVE_MODEL_PREREGISTRATION_20260720.json",
+      "sha256": "2e11b14b94fa51e0a42a41dbd905d934b566c8a2250a31a42a13977b8c064743"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/results/R09-20260720-TOUR-C001_T4R_SLICE_003A_MATCHED_SOURCE_FIVE_MODEL_CONTROL_TOWER_REVIEW_20260720.md",
+      "sha256": "03884335606ee1fd29a426fbd8906dbe4ffedeb655d5e9858cdf985531a2d99f"
+    }
+  ],
+  "runtime": {
+    "environment": "KMK312",
+    "python_version": "3.12.12",
+    "max_workers_legion5": 2
+  },
+  "fixed_configuration": {
+    "config_id": "P1000_S801",
+    "physical_size_mm": [
+      40.0,
+      40.0,
+      40.0
+    ],
+    "slice_axis": "z",
+    "pixel_resolution": [
+      1000,
+      1000
+    ],
+    "slice_count": 801,
+    "slice_spacing_mm": 0.05,
+    "slice_mode": "endpoint",
+    "threshold_rule": "BGR exact red/blue/purple; gray 76/29/105",
+    "connected_component_rule": "8-connectivity; direct LEGACY-PY authority behavior; min2 retained as trace only",
+    "base_config_payload": {
+      "pixel_resolution": 1000,
+      "slice_count": 801,
+      "slice_spacing_mm": 0.05,
+      "role": "canonical_N40_source_matched_rebuild"
+    }
+  },
+  "legacy_authorities": [
+    {
+      "legacy_alias": "LEGACY-PY-RESULT",
+      "source_path": "outputs/URP4-1/2._Parameter_result_0727.py",
+      "source_sha256": "cdaea5ef1262ca0ea79a7b8ce16a15f435037e779e2688bdecbe80400b3d5c47",
+      "adapter_mode": "safe_import_main_guard_numpy_cupy_shim",
+      "selected_functions": "massorientation_curvature;thickness",
+      "selected_line_spans": "massorientation_curvature:55-155;thickness:157-181"
+    },
+    {
+      "legacy_alias": "LEGACY-PY-ANGLE-ALL",
+      "source_path": "outputs/URP4-1/3._parameter_angle_all_0727.py",
+      "source_sha256": "8a64d05839a606df15055d7c9d84565aa889b5e0c63b57b7f27e19ad76f92ceb",
+      "adapter_mode": "safe_import_main_guard_numpy_cupy_shim",
+      "selected_functions": "process_file;weighted_avg_std;process_all",
+      "selected_line_spans": "process_file:72-152;weighted_avg_std:154-157;process_all:159-168"
+    }
+  ],
+  "fixed_geometry": [
+    {
+      "model_id": "B1",
+      "family": "Basic cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/B1__a3de2c1921__N40.stl",
+      "sha256": "60a841495d7247426ab1496d7c391a5105bdc26d9cd09a5b39fbd84e1a109d4e",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "B2",
+      "family": "Basic cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/B2__f691e0ffbd__N40.stl",
+      "sha256": "683a69172eab29e3705e51e0c8b1795a3845c87f1efeec4afe1041398c68b827",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "B3",
+      "family": "Basic cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/B3__a272cdb922__N40.stl",
+      "sha256": "beb368e9c9945669cc202046802bd24ec15e70b61cd472ce061e2e482ba70afc",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "B4",
+      "family": "Basic cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/B4__388389ea80__N40.stl",
+      "sha256": "11f2a525df3fc20d5edfccc25da481c6354fa7b1685a058aedbf9fc31a431bbd",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "B5",
+      "family": "Basic cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/B5__771679e2b4__N40.stl",
+      "sha256": "05733dbc3b18346665c998dad50d833f12e6fef66b76e917b326607aee4ec9de",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C1",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C1__7755dda7d0__N40.stl",
+      "sha256": "d798f7b032de8eccfd771037e849b201c7604b833fc0ed8ce07e316529cc5729",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C2",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C2__de69021e73__N40.stl",
+      "sha256": "c1a446e7bbe52ae33cee5c8104d1d269e1694346264cb8535b467064ba0037f8",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C3",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C3__a6156c5a3a__N40.stl",
+      "sha256": "570d4c085232f2ed5bdb1b2e3c7e8758028a616014ca912abff34c3fdeea78b7",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C4",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C4__24a7d3407e__N40.stl",
+      "sha256": "db59768f4bd323b082c1a8beaf5ba2d586f5f4465df73fcf5f8246dc0be804b4",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C5",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C5__1cbefbd50d__N40.stl",
+      "sha256": "f64cc9fce0895dbd51fab7b8440e6f86ded1357b2469148913d81133fbfab782",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C6",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C6__eb102e3215__N40.stl",
+      "sha256": "cc7733d04d0768e2b9672eb7ec11fcada1fa82a7a07ea3908cfb6e3fe542396a",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C7",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C7__62bc876a52__N40.stl",
+      "sha256": "71a06b73220eeb3a3f7a37357bd58bc7a55720510f64efc2c55f1909d7977c73",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C8",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C8__02972931e4__N40.stl",
+      "sha256": "645a18d038aeb4bb438ca739dcf3652c8f75884c38b6925a9e217b02221cb704",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C9",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C9__770d277e46__N40.stl",
+      "sha256": "c02490be858b98a7b3fc85144336ae20afd752448823016374f3802eb20c356d",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C10",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C10__ee80581153__N40.stl",
+      "sha256": "70fc80f1e23c1abbcbf22fc1b12596bfaeb22f877f7aea1ab65645500e4b28fb",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C11",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C11__0a28cb3476__N40.stl",
+      "sha256": "0297148f3db83176c4d30463421fdb40e7d6f5c0721542607bc872fce2c0f569",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C12",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C12__56051a9e31__N40.stl",
+      "sha256": "6285e123df6e706ad0d4e11c1b7d5cc0db03c9f250c4f36800900a8e5d925d02",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C13",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C13__07278a36b6__N40.stl",
+      "sha256": "229561d604b14c3675dcd25f81d0b8143bfe88a785538766503f4804e62bf7d5",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "C14",
+      "family": "Cubic truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/C14__ea0e6ea135__N40.stl",
+      "sha256": "a5eabd80e61b6b29c46025816ea74bc42458446ff5784e48e74004b1021a6a01",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L1",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L1__412f5bec5e__N40.stl",
+      "sha256": "7189d16e6f812608f31cb7bf54f604caaf438272cbb31a45c153b8a2e8b0730a",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L2",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L2__166eeca808__N40.stl",
+      "sha256": "28b204eecb2c9531ec25f3e46e2c4079c86316ac835d65451d331bc570f1ff5b",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L3",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L3__300f5c79b0__N40.stl",
+      "sha256": "9511b2bd9b764a1b9eb781e9e959e24e401cc97d7ea0d483a668a080d7e843b6",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L4",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L4__1449e02db6__N40.stl",
+      "sha256": "debdcc0f461e56337ba40994fba14664a055c04a1656add37c37c688413f0fbd",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L5",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L5__9d65421a9c__N40.stl",
+      "sha256": "3909fc38c5f5cdec16a975d948b970971e77338ce8c6980123abc15111159707",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L6",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L6__d2c9f86f51__N40.stl",
+      "sha256": "6916be594091897bca5d0ad6cb4daab302fb726756f5df65fb5ff56f61aebc15",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L7",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L7__052431157f__N40.stl",
+      "sha256": "e73fd54a9d435fb2eaa3171a7610d581cc6552fb5ac2ad64a19876ac849a5226",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L8",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L8__b591fa0cdb__N40.stl",
+      "sha256": "6a3b77d2bf1debbd8afbd9e6f53680b37796c3f013422f86d89b155cab2b3e6e",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L9",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L9__d636879861__N40.stl",
+      "sha256": "996f470ec12773d8f5c62df25025ee6f8532604d2b24dd29f7290db427650379",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L10",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L10__dcfe270c3c__N40.stl",
+      "sha256": "c195423c50da74420061deb2626bdb4994e539b5c82ac11e115ee92925c4e17e",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L11",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L11__5e26abbea4__N40.stl",
+      "sha256": "a0c4d106ac9bac5f874e70c46576e60904168de9a8f20c180ece7b1587f70f28",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L12",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L12__584d1c2915__N40.stl",
+      "sha256": "003c1e30e1599ee31eeed758b1af9dca49a6f08be8552ff57406c9c19a47bfd8",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L13",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L13__88a45536d4__N40.stl",
+      "sha256": "8b69cc9eff53e212f87e638b625686d540fda6392e5d62631d964654a7464b57",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L14",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L14__2a403d3eb3__N40.stl",
+      "sha256": "0703240422ec467db81cef04d39e729aa74bb07aaf950c27e50d009492f32e14",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L15",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L15__1c28dd767b__N40.stl",
+      "sha256": "dbf0cc185576bdd0b0be83f20e1913ef6bed9a7ba1c497583d0a5166e661fb86",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L16",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L16__582f9f4d90__N40.stl",
+      "sha256": "9074880a1734fd1f40e104c97ca881f047cec04437dcf8f6b42c813a83bae7a9",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L17",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L17__778b489c6e__N40.stl",
+      "sha256": "8cab20eace5ac8ee375a0ceb266bdacb4e68364492b527c0d755dd3cba377683",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L18",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L18__dd363d0532__N40.stl",
+      "sha256": "91eb7ef89b100b5aa952adbfb1b74cff8e6b598fbd69ef4a8ddbe85a47e7bc41",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L19",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L19__215af67ce5__N40.stl",
+      "sha256": "fa628316f9cddf5bc5391a77b45645449772d2c66ce01a440cfd885c51183b8d",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "L20",
+      "family": "Truss lattice",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/L20__99889d5620__N40.stl",
+      "sha256": "a839c61ffaf888164a19080a38cbc7a512a50915b5efd7b25e86cdf2877e2079",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "F1",
+      "family": "Foam",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/F1__0dff3c1b13__N40.stl",
+      "sha256": "d76883bc10af4f4b3817ccbe90b2863f97c9b843f30c5214cde81d2f76fdb0f8",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "F2",
+      "family": "Foam",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/F2__69a3599146__N40.stl",
+      "sha256": "bd471508c7d2073419cbf2c37f16d0d0a07690a5b4a660c5179230cf4ad285f4",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T1",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T1__3e9ba887ed__N40.stl",
+      "sha256": "cc158c6485dcdabace8d5fde7d1c2f00e59e29cca05c8a6a73b8f72b21c07575",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T2",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T2__2d98001d9b__N40.stl",
+      "sha256": "d2a53a6eac1301f92968a0d9f7a1b14db431d7df28535c5d839ee882e64bb7b8",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T3",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T3__b0b53ba801__N40.stl",
+      "sha256": "1ff05c526b2d6ab7da4174b47fb74189ed07c05d4756091ebae010b226d350b6",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T4",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T4__9810c2168b__N40.stl",
+      "sha256": "ed7966aec1a7449f1c835752b236533d4449fb1b65a6a4f81c22f1d50b6f4073",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T5",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T5__482eeeebc7__N40.stl",
+      "sha256": "f2ab623ffa3a315950cb3056e48fea74a8018ac7878ae154788fa3f467233cec",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T6",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T6__19b4584ca2__N40.stl",
+      "sha256": "d366e78f213ad901dc3d7933d21da6cd432fc949fb29d0a32bd3ccddd71d110c",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T7",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T7__6d1859ac16__N40.stl",
+      "sha256": "c2810fb91245b5743a7ee446c026f86040fcb07bb88c780458b3e6ed31650024",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T8",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T8__9db42618a6__N40.stl",
+      "sha256": "24d0c1b1f1e190fcea3da70ec421968fc7cf58d8dccf367c34e8263db5677933",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T9",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T9__f466dfe3fd__N40.stl",
+      "sha256": "76bc0f0bd05dbe549c0fcfd5321a46b9d99ce71631faa4346a0ad2db27c9b429",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T10",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T10__3bc304f68e__N40.stl",
+      "sha256": "5a0b95d6eb7b20347c81c8298ae5d6ed97c880a6c224f0c736bbeb6396352b4f",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T11",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T11__9acc469db4__N40.stl",
+      "sha256": "823c0feca0c04b37901fa1010b48a0381084dbad90a9c8aa12a60260a2917304",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T12",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T12__ad850cdee4__N40.stl",
+      "sha256": "c0c8cdc67e23fbec446062cb9ffd6bd0d3110c3bc1e60236352bb73161e95d6b",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T13",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T13__f4134e2c9a__N40.stl",
+      "sha256": "071d525cd29ba2a59596b3d37f5ff424d5fadacfb90b1f4c30c4384c9c3c70c0",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T14",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T14__a16daff0f5__N40.stl",
+      "sha256": "f0039a962d359381e0b293e713b1dc569f7a90b8a3035a5bd7373248f24929ee",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T15",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T15__1b0f45ebfe__N40.stl",
+      "sha256": "c2f4689dfc3821c966cbef28bf2dc7dc2c7779c16dd4c55bd085f35045c1a422",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T16",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T16__efeebab0cb__N40.stl",
+      "sha256": "32d7f2f50786406eb540fc803cf1e6056e591c1b240b805ef0be8b9db65349f1",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    },
+    {
+      "model_id": "T17",
+      "family": "TPMS",
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/T17__e780f23c2d__N40.stl",
+      "sha256": "336c088b08a2dbb3e72d53f15f8e18da5f747cd5b8ba8e6f3866078fc536f9b6",
+      "physical_size_mm": [
+        40.0,
+        40.0,
+        40.0
+      ],
+      "geometry_gate": "pass"
+    }
+  ],
+  "fixed_shards": [
+    {
+      "shard_id": "SHARD-01-B",
+      "model_ids": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5"
+      ]
+    },
+    {
+      "shard_id": "SHARD-02-C01-C07",
+      "model_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ]
+    },
+    {
+      "shard_id": "SHARD-03-C08-C14",
+      "model_ids": [
+        "C8",
+        "C9",
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14"
+      ]
+    },
+    {
+      "shard_id": "SHARD-04-L01-L07",
+      "model_ids": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7"
+      ]
+    },
+    {
+      "shard_id": "SHARD-05-L08-L14",
+      "model_ids": [
+        "L8",
+        "L9",
+        "L10",
+        "L11",
+        "L12",
+        "L13",
+        "L14"
+      ]
+    },
+    {
+      "shard_id": "SHARD-06-L15-L20",
+      "model_ids": [
+        "L15",
+        "L16",
+        "L17",
+        "L18",
+        "L19",
+        "L20"
+      ]
+    },
+    {
+      "shard_id": "SHARD-07-F-T01-T04",
+      "model_ids": [
+        "F1",
+        "F2",
+        "T1",
+        "T2",
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "shard_id": "SHARD-08-T05-T11",
+      "model_ids": [
+        "T5",
+        "T6",
+        "T7",
+        "T8",
+        "T9",
+        "T10",
+        "T11"
+      ]
+    },
+    {
+      "shard_id": "SHARD-09-T12-T17",
+      "model_ids": [
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ]
+    }
+  ],
+  "reuse_policy": {
+    "SLICE003A": {
+      "models": [
+        "B3",
+        "C1",
+        "L1",
+        "F1",
+        "F2"
+      ],
+      "required": [
+        "geometry_path",
+        "geometry_sha256",
+        "config_sha256",
+        "candidate_values_sha256",
+        "all_supporting_tables"
+      ]
+    },
+    "CINT02": {
+      "models": [
+        "T8",
+        "T9"
+      ],
+      "required": [
+        "geometry_path",
+        "geometry_sha256",
+        "explicit_config_fields",
+        "combine_aggregate_sha256",
+        "direct_payload",
+        "candidate_reconstruction_match"
+      ]
+    },
+    "mismatch_action": "quarantine_only_that_model_then_recompute"
+  },
+  "output_contract_per_model": [
+    "complete.json",
+    "geometry path/hash",
+    "config hash",
+    "801 slice rows",
+    "800 overlay rows",
+    "component population table",
+    "direct LEGACY-PY payload",
+    "40 mapped candidates",
+    "four rescue signals",
+    "six audit PNGs",
+    "transient deletion ledger",
+    "candidate output hash"
+  ],
+  "fixed_rescue_signals": [
+    {
+      "signal_id": "SIG-A",
+      "candidate_id": "LPA::angle::GLOBAL_WEIGHTED::stdev",
+      "raw_candidate_ids": [
+        "LPA::angle::GLOBAL_WEIGHTED::stdev"
+      ]
+    },
+    {
+      "signal_id": "SIG-B",
+      "candidate_id": "LPR::angle::IP::stdev",
+      "raw_candidate_ids": [
+        "LPR::angle::IP::stdev"
+      ]
+    },
+    {
+      "signal_id": "SIG-C",
+      "candidate_id": "LPR::angle::LAYER_MEAN::stdev",
+      "raw_candidate_ids": [
+        "LPR::angle::LIP::stdev",
+        "LPR::angle::LTP::stdev"
+      ]
+    },
+    {
+      "signal_id": "SIG-D",
+      "candidate_id": "LPR::curvature::LTP::stdev",
+      "raw_candidate_ids": [
+        "LPR::curvature::LTP::stdev"
+      ]
+    }
+  ],
+  "scientific_boundaries": {
+    "performance_y_access": 0,
+    "predictive_fits": 0,
+    "feature_promotions": 0,
+    "formula_canon_claims": 0,
+    "active_roster_changes": 0,
+    "T5_entry": 0,
+    "inverse_design_claims": 0
+  },
+  "protected_assets": [
+    "source Excel",
+    "LEGACY-PY",
+    "NB-ORIG",
+    "NB-CURRENT",
+    "Training/generator originals",
+    "Master Ledger v0.2",
+    "Tournament HQ"
+  ]
+}

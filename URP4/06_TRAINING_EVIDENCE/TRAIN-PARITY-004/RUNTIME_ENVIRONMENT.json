@@ -1,0 +1,48 @@
+{
+  "sys_executable": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+  "python_version": "3.12.12 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 20:05:38) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "environment_path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs",
+  "environment_variables": {
+    "PYTHONHASHSEED": "42",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "CUDA_VISIBLE_DEVICES": "-1"
+  },
+  "packages": {
+    "numpy": "2.4.1",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.8.0",
+    "openpyxl": "3.1.5",
+    "joblib": "1.5.3",
+    "xgboost": "3.2.0",
+    "psutil": "7.2.2"
+  },
+  "environment_config_hash": "68cbbdfd6403aa085956c04e81845f2095bf4dd1c4f2300e6bec748a84736f37",
+  "runner_processes": [
+    {
+      "runner": "source",
+      "command": [
+        "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+        "-B",
+        "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\scripts\\TRAIN_PARITY_004_worker.py",
+        "--mode",
+        "source",
+        "--output",
+        "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\source_reference"
+      ],
+      "pid": 31240,
+      "started_at_kst": "2026-08-01T12:55:23+09:00",
+      "completed_at_kst": "2026-08-01T12:55:58+09:00",
+      "elapsed_seconds": 35.534797100001015,
+      "peak_memory_bytes": 237666304,
+      "returncode": 3228369023,
+      "timed_out": false,
+      "stdout": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\logs\\source.stdout.log",
+      "stderr": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\logs\\source.stderr.log"
+    }
+  ],
+  "elapsed_seconds": 35.80535919999238
+}

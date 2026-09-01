@@ -1,0 +1,367 @@
+{
+  "run_id": "TRAIN-PARITY-002-20260801-001",
+  "adapter_version": "TRAIN-2ND-NEWFEATURE-EXACT-ADAPTER-v0.1",
+  "execution_status": "no_fit_no_prediction",
+  "implementation_state": "partial_branch_coverage",
+  "source_sha256": "11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2",
+  "workbook_sha256": "4a6ec7d03d92fa25851998689768d9db9f63227f00e778a528d758b368851dce",
+  "tolerance_revision": "TRAIN-PARITY-TOL-v0.1",
+  "dataset": {
+    "execution_status": "no_fit_no_prediction",
+    "contract": {
+      "sheet": "총정리",
+      "header_main_row": 2,
+      "header_sub_rows": [
+        3,
+        4,
+        5
+      ],
+      "data_row_start": 7,
+      "data_row_end": 204,
+      "x_start": "I",
+      "x_end": "FU",
+      "y_start": "FV",
+      "y_end": "HL",
+      "target_columns": [
+        "FW",
+        "FX",
+        "FZ",
+        "GA",
+        "GC",
+        "GG",
+        "GJ",
+        "GZ",
+        "HA",
+        "HB",
+        "HC",
+        "HD",
+        "HE",
+        "HG",
+        "HI",
+        "HK"
+      ],
+      "expected_rows": 198,
+      "expected_x_features": 169,
+      "expected_targets": 16
+    },
+    "rows": 198,
+    "x_features": 169,
+    "targets": 16,
+    "groups": 133,
+    "row_ledger": "ROW_IDENTITY_LEDGER.csv",
+    "column_ledger": "COLUMN_IDENTITY_LEDGER.csv",
+    "target_ledger": "TARGET_SAMPLE_LEDGER.csv"
+  },
+  "fold_manifest": {
+    "execution_status": "no_fit_no_prediction",
+    "manifest_version": "TRAIN2NF-FOLDS-v0.1",
+    "path": "SHARED_FOLD_MANIFEST.csv",
+    "sha256": "3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6",
+    "rows": 338028,
+    "targets": 16,
+    "outer_repeats": 12,
+    "inner_splits_per_outer": 24,
+    "membership_level": "row_and_group"
+  },
+  "method_branch_specs": 10,
+  "numerically_executable_method_branches": 0,
+  "source_function_symbols": 56,
+  "unordered_traversal_findings": [
+    {
+      "cell_index": 2,
+      "line_number": 99,
+      "source": "return {str(k): _to_jsonable(v) for k, v in obj.to_dict().items()}"
+    },
+    {
+      "cell_index": 2,
+      "line_number": 102,
+      "source": "return [{str(k): _to_jsonable(v) for k, v in row.items()} for row in obj.to_dict(orient=\"records\")]"
+    },
+    {
+      "cell_index": 2,
+      "line_number": 104,
+      "source": "return {str(k): _to_jsonable(v) for k, v in obj.items()}"
+    },
+    {
+      "cell_index": 5,
+      "line_number": 7,
+      "source": "for output_name, bundle in DATA_BY_OUTPUT.items():"
+    },
+    {
+      "cell_index": 6,
+      "line_number": 150,
+      "source": "wrapped_params = params if transformer is None else {f\"regressor__{k}\": v for k, v in params.items()}"
+    },
+    {
+      "cell_index": 7,
+      "line_number": 173,
+      "source": "unassigned = set(cols)"
+    },
+    {
+      "cell_index": 7,
+      "line_number": 176,
+      "source": "c = next(iter(unassigned))"
+    },
+    {
+      "cell_index": 7,
+      "line_number": 314,
+      "source": "for fam, outs in families.items():"
+    },
+    {
+      "cell_index": 7,
+      "line_number": 368,
+      "source": "tr_groups = set(selected_train_df[\"GROUP_ID\"].astype(str).unique())"
+    },
+    {
+      "cell_index": 7,
+      "line_number": 680,
+      "source": "feats = sorted(set(sum([e[\"feats\"] for e in ests], [])))"
+    },
+    {
+      "cell_index": 8,
+      "line_number": 10,
+      "source": "for output_name, bundle in DATA_BY_OUTPUT.items():"
+    },
+    {
+      "cell_index": 9,
+      "line_number": 9,
+      "source": "for output_name, bundle in DATA_BY_OUTPUT.items():"
+    }
+  ],
+  "implementation_files": [
+    {
+      "path": "implementation\\__init__.py",
+      "sha256": "48f1bda94852b568bb84c2cfc6d3412fb8679c89026ae82f3158136b6e288515"
+    },
+    {
+      "path": "implementation\\contracts.py",
+      "sha256": "5875f7e9d3a977a59efa6b11ae6ff6b28e62b61274d08cc33cf5ce7486565603"
+    },
+    {
+      "path": "implementation\\extractor.py",
+      "sha256": "08f48eaab48ecd5c89dca69636be077e67ea253f0c9682c6fac6a1aaae17257b"
+    },
+    {
+      "path": "implementation\\folds.py",
+      "sha256": "c5d4179284e9e2de061157feedfca27ddf2a19b50632e927f928fc528e66e56f"
+    },
+    {
+      "path": "implementation\\guards.py",
+      "sha256": "d4bceeaf13fcffa126feb937aa593c07415a29a1db628087df0adf331d6dbfc2"
+    },
+    {
+      "path": "implementation\\hashing.py",
+      "sha256": "609c102a5b320c021590e9e786dc146aa44671a7c6fca618b390c11b738a9e81"
+    },
+    {
+      "path": "implementation\\ledgers.py",
+      "sha256": "a341dd63223c65cc704d339a5fb7eccee5c13becf18c7a9b57a3f4eb45fd264c"
+    },
+    {
+      "path": "implementation\\observability.py",
+      "sha256": "2bb322b6eeb0c6c7f35e455d522a2729afcd438a0ae25e00eed8abb1a1781ce8"
+    },
+    {
+      "path": "implementation\\source_ast.py",
+      "sha256": "a1f8a55eaa4756bd6c7615d48f50042eb1ba3b853b976c58fc4cbcd4f37dfb58"
+    },
+    {
+      "path": "implementation\\stage_graph.py",
+      "sha256": "870e8ae182df55b1595e21454968a3e76917f4ba68088dfc13d604e330379210"
+    }
+  ],
+  "prediction_ledger": {
+    "path": "PREDICTION_LEDGER_EMPTY.csv",
+    "rows": 0,
+    "columns": [
+      "execution_status",
+      "target_id",
+      "outer_repeat",
+      "fold_id",
+      "row_id",
+      "group_id",
+      "y_true",
+      "y_pred",
+      "method_id",
+      "estimator_id",
+      "transform_id",
+      "feature_set_hash",
+      "fold_manifest_hash",
+      "source_hash",
+      "adapter_version",
+      "config_hash"
+    ],
+    "execution_status": "no_fit_no_prediction"
+  },
+  "metric_ledger": {
+    "path": "METRIC_LEDGER_EMPTY.csv",
+    "rows": 0,
+    "columns": [
+      "execution_status",
+      "target_id",
+      "repeat",
+      "fold_id",
+      "metric_name",
+      "metric_value",
+      "prediction_ledger_hash",
+      "aggregation_level",
+      "sample_count"
+    ],
+    "execution_status": "no_fit_no_prediction"
+  },
+  "negative_qa": {
+    "passed": 13,
+    "total": 13
+  },
+  "no_fit_proof": {
+    "execution_status": "no_fit_no_prediction",
+    "attempted_fit_calls": 1,
+    "attempted_predict_calls": 1,
+    "completed_fit_calls": 0,
+    "completed_predict_calls": 0,
+    "prediction_rows": 0,
+    "metric_rows": 0,
+    "benchmark_artifacts": 0,
+    "fitted_estimator_artifacts": 0,
+    "static_fit_predict_sites": [
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 6,
+        "line": 157,
+        "call": "fit"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 6,
+        "line": 191,
+        "call": "fit"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 6,
+        "line": 353,
+        "call": "fit"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 6,
+        "line": 161,
+        "call": "predict"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 6,
+        "line": 258,
+        "call": "predict"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 7,
+        "line": 38,
+        "call": "fit"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 7,
+        "line": 296,
+        "call": "fit"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 7,
+        "line": 426,
+        "call": "fit"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 7,
+        "line": 240,
+        "call": "fit"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 7,
+        "line": 278,
+        "call": "fit"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 7,
+        "line": 39,
+        "call": "predict"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 7,
+        "line": 297,
+        "call": "predict"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 7,
+        "line": 491,
+        "call": "predict"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 7,
+        "line": 286,
+        "call": "predict"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 7,
+        "line": 666,
+        "call": "predict"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 9,
+        "line": 79,
+        "call": "predict"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 9,
+        "line": 84,
+        "call": "predict"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 9,
+        "line": 95,
+        "call": "predict"
+      },
+      {
+        "scope": "source_notebook",
+        "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+        "cell": 9,
+        "line": 92,
+        "call": "predict"
+      }
+    ],
+    "note": "Two attempted guard-test calls were blocked before estimator logic; completed calls remain zero."
+  },
+  "protected_assets": {
+    "passed": 13,
+    "total": 13
+  }
+}

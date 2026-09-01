@@ -1,0 +1,227 @@
+{
+  "qa_id": "SUBMIT-CLOSE-001-INDEPENDENT-CONTENT-QA",
+  "overall_status": "FAIL",
+  "passed": 17,
+  "total": 18,
+  "checks": [
+    {
+      "check_id": "QA-001",
+      "description": "required directories",
+      "status": "PASS",
+      "observed": [
+        "00_READ_ME_FIRST",
+        "01_PROJECT_MAP_AND_LEDGER",
+        "02_VERIFIED_CORE_HQ_NB_PY",
+        "03_CONFIG_RUNTIME_AND_COMMANDS",
+        "04_REFERENCE_INPUTS",
+        "05_DESCRIPTOR_XREG_GEOMETRY_EVIDENCE",
+        "06_TRAINING_EVIDENCE",
+        "07_COMPRESSION_DATA_AND_PILOT",
+        "08_OPTIONAL_UI_DEMO",
+        "09_LIMITATIONS_AND_RESUME",
+        "10_MANIFEST_SHA256_AND_QA"
+      ],
+      "expected": [
+        "00_READ_ME_FIRST",
+        "01_PROJECT_MAP_AND_LEDGER",
+        "02_VERIFIED_CORE_HQ_NB_PY",
+        "03_CONFIG_RUNTIME_AND_COMMANDS",
+        "04_REFERENCE_INPUTS",
+        "05_DESCRIPTOR_XREG_GEOMETRY_EVIDENCE",
+        "06_TRAINING_EVIDENCE",
+        "07_COMPRESSION_DATA_AND_PILOT",
+        "08_OPTIONAL_UI_DEMO",
+        "09_LIMITATIONS_AND_RESUME",
+        "10_MANIFEST_SHA256_AND_QA"
+      ]
+    },
+    {
+      "check_id": "QA-002",
+      "description": "schema cutoff/version",
+      "status": "PASS",
+      "observed": [
+        "HANDOFF-CUTOFF-20260801-001",
+        "1.1"
+      ],
+      "expected": [
+        "HANDOFF-CUTOFF-20260801-001",
+        "1.1"
+      ]
+    },
+    {
+      "check_id": "QA-003",
+      "description": "C1 terminal state",
+      "status": "PASS",
+      "observed": {
+        "status": "completed_with_evidence",
+        "slices": 801,
+        "overlays": 800,
+        "scalars": 40,
+        "qa": "9/9 PASS"
+      },
+      "expected": "completed/801/800/40"
+    },
+    {
+      "check_id": "QA-004",
+      "description": "Training blocker state",
+      "status": "PASS",
+      "observed": {
+        "status": "closed_for_submission_as_blocked_with_evidence",
+        "source_audit": "9/9",
+        "source_replay": "1/9",
+        "outer_cv_targets": "16/16",
+        "final_refits": "13/16",
+        "exact_no_fit_branches": "10/10",
+        "target_crosswalk": "16/16",
+        "holds": [
+          "GC",
+          "HE",
+          "HK"
+        ],
+        "sentinel": "HI / outer repeat 0",
+        "numerical_parity": "BLOCKED_BY_SOURCE_RUNTIME"
+      },
+      "expected": "closed_for_submission_as_blocked_with_evidence"
+    },
+    {
+      "check_id": "QA-005",
+      "description": "AI Lattice technical pilot state",
+      "status": "PASS",
+      "observed": {
+        "status": "technical_pilot_completed_with_scientific_caution",
+        "exact_join": 149,
+        "x_only_missing_target": "AI092",
+        "finite_targets": 16,
+        "descriptor_columns": 45,
+        "oof_predictions": 9536,
+        "qa": "36/36 PASS",
+        "method_01_deviation": "Ridge surrogate; BayesianRidge source recipe not executed due native crash"
+      },
+      "expected": "149/9536/36-of-36"
+    },
+    {
+      "check_id": "QA-006",
+      "description": "no stale C1/Training status",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check_id": "QA-007",
+      "description": "JSON/IPYNB parse",
+      "status": "FAIL",
+      "observed": [
+        "04_REFERENCE_INPUTS\\geometry_drive_asset_pointer_only\\R09_reference_model_manifest.json:JSONDecodeError"
+      ],
+      "expected": []
+    },
+    {
+      "check_id": "QA-008",
+      "description": "CSV parse",
+      "status": "PASS",
+      "observed": {
+        "parsed": 124,
+        "errors": []
+      },
+      "expected": "zero errors"
+    },
+    {
+      "check_id": "QA-009",
+      "description": "XLSX open",
+      "status": "PASS",
+      "observed": {
+        "opened": 11,
+        "errors": []
+      },
+      "expected": "zero errors"
+    },
+    {
+      "check_id": "QA-010",
+      "description": "current HTML local links",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check_id": "QA-011",
+      "description": "cache/quarantine exclusion",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check_id": "QA-012",
+      "description": "copied-source hash equality",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check_id": "QA-013",
+      "description": "C1 independent evidence replay",
+      "status": "PASS",
+      "observed": {
+        "run_id": true,
+        "completed_counts": true,
+        "source_step_sha256": true,
+        "slice_manifest_801": true,
+        "overlay_manifest_800": true,
+        "direct_scalar_40": true,
+        "nine_anchor_pngs": true,
+        "bulk_png_evicted": true,
+        "all_scalar_finite": true
+      },
+      "expected": "9/9"
+    },
+    {
+      "check_id": "QA-014",
+      "description": "Training blocker QA",
+      "status": "PASS",
+      "observed": [
+        "PASS",
+        21,
+        21
+      ],
+      "expected": [
+        "PASS",
+        21,
+        21
+      ]
+    },
+    {
+      "check_id": "QA-015",
+      "description": "Compression pilot QA",
+      "status": "PASS",
+      "observed": [
+        "passed",
+        36
+      ],
+      "expected": [
+        "passed",
+        36
+      ]
+    },
+    {
+      "check_id": "QA-016",
+      "description": "bulk raw geometry excluded",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check_id": "QA-017",
+      "description": "verified v1.0 core included exactly once",
+      "status": "PASS",
+      "observed": 1,
+      "expected": 1
+    },
+    {
+      "check_id": "QA-018",
+      "description": "no duplicate large files",
+      "status": "PASS",
+      "observed": {},
+      "expected": {}
+    }
+  ],
+  "scope": "read-only staging/package-content QA; no research calculation"
+}

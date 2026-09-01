@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": {
+    "registry_complete": true,
+    "all_candidates_three_vf": true,
+    "failures_visible": true,
+    "policy_outputs_separate": true
+  }
+}

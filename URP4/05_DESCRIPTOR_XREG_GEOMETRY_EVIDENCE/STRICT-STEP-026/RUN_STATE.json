@@ -1,0 +1,10 @@
+{
+  "run_id": "STRICT-STEP-026-20260731-001",
+  "status": "completed",
+  "completed_slices": 801,
+  "completed_overlays": 800,
+  "direct_scalar_rows": 40,
+  "bulk_pngs_evicted": 1601,
+  "anchor_pngs_retained": 9,
+  "elapsed_seconds": 79316.86
+}

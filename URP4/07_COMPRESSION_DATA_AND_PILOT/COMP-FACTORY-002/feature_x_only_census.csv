@@ -1,0 +1,43 @@
+﻿feature_id,feature_name_raw,feature_role,finite_count,missing_count,unique_count,std,median,iqr,mad,x_only_status
+AIX004,Actual VF,physical_condition_candidate,149,0,149,0.1228951470000643,0.450141839005546,0.2993988893979371,0.1497483358549388,eligible
+AIX005,Node 개수,structural_descriptor_unselected,149,0,32,266.79086966493145,2091.0,425.0,200.0,eligible
+AIX006,Strut 개수,structural_descriptor_unselected,149,0,102,926.5277995527136,8600.0,1400.0,700.0,eligible
+AIX007,Global: Strut No. at Nodes-AVG,structural_descriptor_unselected,149,0,140,0.2778483007426648,8.191653786707883,0.4026468568574817,0.19609106512536556,eligible
+AIX008,Global: Strut No. at Nodes-STDEV,structural_descriptor_unselected,149,0,149,0.47501657385714147,5.112310424014366,0.754372202961954,0.37272793343092836,eligible
+AIX009,Node: Strut count - AVG,structural_descriptor_unselected,149,0,140,0.2778483007426648,8.191653786707883,0.4026468568574817,0.19609106512536556,eligible
+AIX010,Node: Strut count - STDEV,structural_descriptor_unselected,149,0,149,0.47501657385714147,5.112310424014366,0.754372202961954,0.37272793343092836,eligible
+AIX011,Global: Length - AVG,structural_descriptor_unselected,149,0,149,0.15107409265731145,3.320590332899978,0.23504306534436337,0.11771336788008924,eligible
+AIX012,Global: Length - STDEV,structural_descriptor_unselected,149,0,149,0.12769007975867547,1.315527728976371,0.195303357503384,0.10130723955785004,eligible
+AIX013,Global: Angle-Z (weighted with length)-AVG,structural_descriptor_unselected,149,0,149,2.0122793185735106,31.9035953888101,2.991711198756523,1.5247955024992699,eligible
+AIX014,Global: Angle-Z (weighted with length)-STDEV,structural_descriptor_unselected,149,0,149,2.079679285710278,22.69070884333925,2.8977054575442693,1.3712916646241595,eligible
+AIX015,Node: Length - AVG,structural_descriptor_unselected,149,0,149,0.15922504867885273,3.074973782043236,0.2233434228824649,0.11852283938528174,eligible
+AIX016,Node: Length - STDEV,structural_descriptor_unselected,149,0,149,0.08849623405878705,0.649850884054082,0.12955604652126762,0.06475319468382379,eligible
+AIX017,Node: Angle-Z (weighted with length)-AVG,structural_descriptor_unselected,149,0,149,2.183383518753638,32.11872783437916,3.1917491161285625,1.6331023578406842,eligible
+AIX018,Node: Angle-Z (weighted with length)-STDEV,structural_descriptor_unselected,149,0,149,1.490266323157916,7.639396661115465,2.044462927912315,1.0452724982299255,eligible
+AIX019,Global: l/d AVG,structural_descriptor_unselected,149,0,149,0.6876639553803375,4.51728509534809,1.3694717334788162,0.6017015880620775,eligible
+AIX020,Global: l/d STDEV,structural_descriptor_unselected,149,0,149,0.3472321292465438,1.806438754737959,0.5233980115134971,0.25323001767765185,eligible
+AIX021,Node: l/d AVG,structural_descriptor_unselected,149,0,149,0.6355003852466204,4.176336596513065,1.2034503562204213,0.5550602301012635,eligible
+AIX022,Node: l/d STDEV,structural_descriptor_unselected,149,0,149,0.18940697322107783,0.8998711598973923,0.24385028683921783,0.12896493846046564,eligible
+AIX023,Global: Angle-X (weighted with length)-AVG,structural_descriptor_unselected,149,0,149,2.0854741099571292,31.6874257045062,2.6682911671857887,1.334307245860451,eligible
+AIX024,Global: Angle-X (weighted with length)-STDEV,structural_descriptor_unselected,149,0,149,2.032932816034252,22.57761971361784,3.23064542059387,1.6157210316785218,eligible
+AIX025,Node: Angle-X (weighted with length)-AVG,structural_descriptor_unselected,149,0,149,2.101613816089593,31.9825591462686,2.817034317690897,1.4242812047786373,eligible
+AIX026,Node: Angle-X (weighted with length)-STDEV,structural_descriptor_unselected,149,0,149,1.6111981137515619,7.53771206626682,2.2005480406384192,1.0894121596453257,eligible
+AIX027,Global: Angle-Y (weighted with length)-AVG,structural_descriptor_unselected,149,0,149,2.3202151496634693,31.91873852594868,3.3174404802830075,1.6476073593989895,eligible
+AIX028,Global: Angle-Y (weighted with length)-STDEV,structural_descriptor_unselected,149,0,149,2.036884250354564,22.54607457700031,2.6314329094661915,1.3117319446092708,eligible
+AIX029,Node: Angle-Y (weighted with length)-AVG,structural_descriptor_unselected,149,0,149,2.2212412340230774,32.27682531237588,3.2714158647621474,1.6614469010352764,eligible
+AIX030,Node: Angle-Y (weighted with length)-STDEV,structural_descriptor_unselected,149,0,149,1.584679077759919,7.52642142093438,2.1819181429922967,1.089852525669249,eligible
+AIX031,connected_components,structural_descriptor_unselected,149,0,1,0.0,1.0,0.0,0.0,excluded_zero_variance
+AIX032,maxwell_index_M_3D,structural_descriptor_unselected,149,0,57,246.94803923912875,2328.0,375.0,180.0,eligible
+AIX033,total_strut_length_mm,structural_descriptor_unselected,149,0,149,2060.769262305345,28674.84465611542,3099.3189517298015,1558.7714968578803,eligible
+AIX034,mean_radius_mm,structural_descriptor_unselected,149,0,149,0.05246422693328909,0.3715605889364441,0.107127922700541,0.051713137794054564,eligible
+AIX035,std_radius_mm,structural_descriptor_unselected,149,0,1,0.0,0.0,0.0,0.0,excluded_zero_variance
+AIX036,mean_diameter_mm,structural_descriptor_unselected,149,0,149,0.10492845386657818,0.7431211778728882,0.214255845401082,0.10342627558810913,eligible
+AIX037,surface_area_mm2,structural_descriptor_unselected,149,0,149,9499.880841287837,65351.22507356613,18940.41299723962,9622.861785679292,eligible
+AIX038,surface_to_solid_volume_1_per_mm,structural_descriptor_unselected,149,0,149,0.8302510337859926,5.382702201341656,1.6755660889040005,0.6692646024600535,eligible
+AIX039,solid_volume_mm3_approx,structural_descriptor_unselected,149,0,149,3318.168969001736,12153.82965314974,8083.770013744306,4043.205068083351,eligible
+AIX040,bbox_x_mm,structural_descriptor_unselected,149,0,1,0.0,30.0,0.0,0.0,excluded_zero_variance
+AIX041,bbox_y_mm,structural_descriptor_unselected,149,0,1,0.0,30.0,0.0,0.0,excluded_zero_variance
+AIX042,bbox_z_mm,structural_descriptor_unselected,149,0,1,0.0,30.0,0.0,0.0,excluded_zero_variance
+AIX043,mass_center_x_mm,structural_descriptor_unselected,149,0,149,0.15104069744286802,-0.0045812991671962,0.2013836960329608,0.10689163354500081,eligible
+AIX044,mass_center_y_mm,structural_descriptor_unselected,149,0,149,0.14390626178142468,-0.0068375019369147,0.225689146367333,0.1151514204872391,eligible
+AIX045,mass_center_z_mm,structural_descriptor_unselected,149,0,149,0.1619506616442152,-0.0072282613532283,0.22245694809845018,0.1120718733857856,eligible

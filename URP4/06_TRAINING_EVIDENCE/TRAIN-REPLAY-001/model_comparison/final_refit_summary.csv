@@ -1,0 +1,14 @@
+﻿output_name,status,reason,best_y_strategy,final_method_name,final_model_name,target_transform,final_chosen_topk,n_groups_full,n_final_features,final_train_r2,final_train_rmse,final_train_mae
+Modulus,ok,,singleton_raw,block_pca_ridge,Ridge,yeo_johnson,11,56,12,0.6620509165640467,2045.4593461521893,1649.5844607151287
+Com. Strength,ok,,singleton_raw,baseline_stability,Huber_Regressor,raw,4,56,3,0.15852592408114752,68.85071268146613,41.30505830402821
+APS,ok,,singleton_raw,spca_pls,PLS,yeo_johnson,12,56,8,0.39647932362262217,92.6688125429856,70.79407978802784
+AS,ok,,singleton_raw,baseline_stability,Bayesian_Ridge,raw,4,56,2,0.39005134234706607,90.38337384769787,70.55078198859542
+Densif. strength,ok,,singleton_raw,baseline_stability,Ridge,yeo_johnson,2,56,3,0.3851063919715815,189.99773715130084,142.413966912242
+Total energy,ok,,singleton_raw,block_pca_ridge,Ridge,yeo_johnson,11,56,9,0.6438739080424188,38.33086587018804,30.989537382709006
+Thermal characteristics | Thermal conductivity | W/m.K,ok,,singleton_raw,baseline_stability,Ridge,yeo_johnson,4,65,3,0.3107401236550771,1.0541062954149618,0.5542825640571408
+Thermal characteristics | h | W/m.K,ok,,singleton_raw,baseline_stability,Kernel_Ridge_RBF,yeo_johnson,3,25,3,0.7865170552624752,0.6068059576801286,0.4700671913839814
+Thermal characteristics | Heating rate | °C/s,ok,,singleton_raw,baseline_stability,Ridge,raw,3,65,6,0.4773498665912511,0.0016530093651416142,0.0012941779094488475
+Thermal characteristics | Cooling rate | °C/s,ok,,singleton_raw,baseline_stability,Ridge,yeo_johnson,6,65,6,0.5216014149923461,0.15544993358977968,0.1203854831907455
+Thermal characteristics | Heating Temp | °C/s,ok,,singleton_raw,block_pca_ridge,Ridge,raw,8,65,10,0.4735005874677196,7.959399481955793,6.394834671045606
+Vibrational response | FRF (g/N) | 300-3000 Hz | AVG,ok,,robust_trimmed_median,minimal_class_average,MinimalClassAverage,mixed,6,128,6,0.9898584220642843,0.00907547570176289,0.004521269561222524
+Vibrational response | FRF (g/N) | 3000-6500 Hz | AVG,ok,,robust_trimmed_median,baseline_stability,Kernel_Ridge_RBF,yeo_johnson,4,128,4,0.983961059440188,0.024759005421847814,0.01578683634492018

@@ -1,0 +1,8 @@
+﻿qa_id,check,expected,observed,status
+DEX-001,source_sha,11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2,11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2,PASS
+DEX-002,workbook_sha,4a6ec7d03d92fa25851998689768d9db9f63227f00e778a528d758b368851dce,4a6ec7d03d92fa25851998689768d9db9f63227f00e778a528d758b368851dce,PASS
+DEX-003,row_count,198,198,PASS
+DEX-004,x_feature_count,169,169,PASS
+DEX-005,target_count,16,16,PASS
+DEX-006,target_policy,13_primary_3_hold,13_primary_3_hold,PASS
+DEX-007,same_x_group_contract,round8||factorize_sort_false,round8||factorize_sort_false,PASS

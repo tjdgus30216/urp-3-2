@@ -1,0 +1,9 @@
+﻿stage,check,source_hash,adapter_hash,comparison_rows,max_abs_error,status
+P0,source-only partial evidence; adapter not started,2586d51dccfccfa92a18a199383164608c3d529067175a7f7848b2296e083601,,0,,NOT_ADJUDICATED_SOURCE_RUNTIME_BLOCK
+P1,source-only partial evidence; adapter not started,8f70e14a366f933a14d9b58068d277917cb845399015f342573a3bc7fc4fa450,,0,,NOT_ADJUDICATED_SOURCE_RUNTIME_BLOCK
+P2,source-only partial evidence; adapter not started,378555d396c59bd48fb1b6aeaf4b6e8b35dd6c4306266ee69e16a0eaccd144de,,0,,NOT_ADJUDICATED_SOURCE_RUNTIME_BLOCK
+P3,source-only partial evidence; adapter not started,4e90d2e53acc37840b19c80cb3c8d58897e5f24370dfc900a049cf596bd0b709,,0,,NOT_ADJUDICATED_SOURCE_RUNTIME_BLOCK
+P4,source-only partial evidence; adapter not started,58e09a7cc7d3aea970a6c9e9511d163ee21357831c4e637caa053032194384ba,,0,,NOT_ADJUDICATED_SOURCE_RUNTIME_BLOCK
+P5,not reached,,,0,,NOT_REACHED
+P6,not reached,,,0,,NOT_REACHED
+P7,not reached,,,0,,NOT_REACHED

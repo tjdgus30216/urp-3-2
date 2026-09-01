@@ -1,0 +1,11 @@
+﻿check_id,check,passed,observed
+Q01,source hashes match,True,6/6
+Q02,BCL performance blocks 198,True,198
+Q03,Voronoi performance rows 30,True,30
+Q04,relevant structural rows 170,True,170
+Q05,exact label joins BCL 137,True,137
+Q06,exact ID joins Voronoi 30,True,30
+Q07,16 target registry rows,True,16
+Q08,all eligible joined target values finite,True,0
+Q09,"crosswalk is explicit, not row-order-only",True,model_key exact
+Q10,no feature promoted,True,unselected/excluded

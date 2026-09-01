@@ -1,0 +1,18 @@
+target_id,target_name_raw,test_domain,target_unit,objective_direction,finite_count,missing_count,status,source_sheet,notes
+COMP-Y-MODULUS,Modulus,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-COMP-STRENGTH,Com. Strength,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-COMP-STRAIN,Com. strain,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-APS,APS,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-AS,AS,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-YIELD-STRENGTH,Yield strength,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-YIELD-STRAIN,Yield strain,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-LCC,LCC,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-EAS,EAS,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-DENSIF-STRENGTH,Densif. strength,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-DENSIFI-STRAIN,Densifi. strain,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-EAE,EAE,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-SE,SE,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-TOTAL-ENERGY,Total energy,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-SEA,SEA,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-MAX-PLATEAU-STRESS,Max. Plateau stress,compression,unresolved,unresolved,149,0,available_unselected,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.
+COMP-Y-POST-UCS-PEAK,"UCS 이후의 피크값(UCS 제외), 파단일 경우 APS 값으로 설정",compression,unresolved,unresolved,0,149,hold_all_missing,Raw data,Raw spelling preserved; unit and objective require source-method confirmation.

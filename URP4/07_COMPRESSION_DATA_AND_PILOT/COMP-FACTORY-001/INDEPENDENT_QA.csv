@@ -1,0 +1,23 @@
+﻿check_id,check,passed,observed
+IQ01,manifest status passed,True,passed
+IQ-HASH-REPORT.md,output hash REPORT.md,True,0A74819B3DC792948DBB9A887A42B17CB2AF42B5010F632F9AA6B1D5784DE6C4
+IQ-HASH-ai_lattice_x_wide.csv,output hash ai_lattice_x_wide.csv,True,ECDA9BC045419EAA197DBC577605E686F69BC54729220D93AB52481889006AD5
+IQ-HASH-ai_lattice_xy_all150_trace.csv,output hash ai_lattice_xy_all150_trace.csv,True,D4B60483B8F98AFB53463F48B413ADF347198A6C1196F1C7428615FFC01AF0C9
+IQ-HASH-ai_lattice_xy_eligible149.csv,output hash ai_lattice_xy_eligible149.csv,True,CFE004962657D1C6209049856954F0883C1C753CE396C86B77155D51B6006E06
+IQ-HASH-ai_lattice_y_long.csv,output hash ai_lattice_y_long.csv,True,BD51FADF119A16FA618DFE0D4ED1A6F0CECDEC3B4680ECC56E76B4503702E1E6
+IQ-HASH-ai_lattice_y_wide.csv,output hash ai_lattice_y_wide.csv,True,9B418010EC1C3D8651A6538ECFF8555CA6C0E77EE11569C0DD3A3E10DA8D2441
+IQ-HASH-excluded_non_model_rows.csv,output hash excluded_non_model_rows.csv,True,DD605CE7E35CA52924965ABFC4E54920EC3927EA885FD82918D59FCA78829CA2
+IQ-HASH-feature_registry.csv,output hash feature_registry.csv,True,60F196B603F7F4FF70E13CF23B19B42280E0775412E2E1789CAD1C3ADBFBB022
+IQ-HASH-producer_QA.csv,output hash producer_QA.csv,True,8A0ADE335C5256C4B92FB7FD6F3E15C44AE53D80F7CBDC3A16F4511F949F49E9
+IQ-HASH-row_registry.csv,output hash row_registry.csv,True,ACB0525BF067B800DD4D45D3B93928FAAAADAD9E7187D552B023804C12213523
+IQ-HASH-source_audit.csv,output hash source_audit.csv,True,C215F4F7499088C12F3FE93512B17D4499AB19F95A7673B1CFD5EE559704DE66
+IQ-HASH-target_registry.csv,output hash target_registry.csv,True,5A0EE38AB1DB3C33413ABC5A087ED918296D33DFF4B58EF265B3280720EBE437
+IQ02,x has 150 unique rows,True,150/150
+IQ03,y has 149 exact unique rows,True,149/149
+IQ04,trace has 150 unique rows,True,150/150
+IQ05,expected trace model ID set,True,AI001..AI150
+IQ06,eligible has 149 exact joins,True,149
+IQ06B,AI092 is the only x-only row,True,AI092
+IQ07,no feature selected,True,0
+IQ08,target registry present,True,17
+IQ09,authorization remains false,True,"{""feature_selection"": false, ""inverse_design"": false, ""model_fitting"": false, ""prediction"": false}"

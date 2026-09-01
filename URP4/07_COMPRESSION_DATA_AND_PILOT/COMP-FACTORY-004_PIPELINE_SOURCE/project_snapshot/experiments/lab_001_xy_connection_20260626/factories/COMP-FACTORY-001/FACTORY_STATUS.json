@@ -1,0 +1,54 @@
+{
+  "factory_id": "COMP-FACTORY-001",
+  "updated_at_kst": "2026-08-02T02:29:43+09:00",
+  "scope": "compression data intake, normalization, exact x-y join and QA",
+  "groups": {
+    "ai_lattice": {
+      "status": "intake_passed_modeling_pilot_passed_with_scientific_caution",
+      "intake_run_id": "COMP-FACTORY-001-AI-LATTICE-20260731-142459",
+      "modeling_pilot_run_id": "COMP-FACTORY-002-AI-LATTICE-PILOT-20260731-144749",
+      "performance_rows": 149,
+      "structural_rows": 150,
+      "eligible_join_rows": 149,
+      "x_only_missing_target_model_ids": [
+        "AI092"
+      ],
+      "finite_target_candidates": 16,
+      "hold_target_candidates": 1,
+      "feature_columns": 45,
+      "intake_independent_qa": "22/22 PASS",
+      "modeling_pilot_independent_qa": "36/36 PASS",
+      "modeling_pilot_boundary": "pooled signal is strongly affected by the three source-workbook blocks; no feature or method promoted"
+    },
+    "bcl": {
+      "status": "intake_passed_modeling_pilot_passed_with_warnings_no_promotion",
+      "raw_intake": "experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260802",
+      "intake_run_id": "COMP-FACTORY-003-BCL-VORONOI-20260802-001",
+      "modeling_pilot_run_id": "COMP-FACTORY-004-BCL-FS4-20260802-001",
+      "performance_rows": 198,
+      "eligible_join_rows": 137,
+      "y_only_missing_structural_factors": 61,
+      "x_only_missing_performance": 3,
+      "finite_target_candidates": 16,
+      "eligible_feature_columns": 38,
+      "intake_independent_qa": "15/15 PASS",
+      "modeling_pilot_independent_qa": "10/10 PASS_WITH_WARNINGS",
+      "modeling_pilot_boundary": "leave-one-B/C/L-family-out screening; LCC numerical instability and runtime convergence warnings retained; no feature or method promoted"
+    },
+    "voronoi": {
+      "status": "intake_passed_modeling_pilot_passed_with_warnings_no_promotion",
+      "raw_intake": "experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260802/04_voronoi",
+      "intake_run_id": "COMP-FACTORY-003-BCL-VORONOI-20260802-001",
+      "modeling_pilot_run_id": "COMP-FACTORY-004-VORONOI-FS4-20260802-001",
+      "performance_rows": 30,
+      "eligible_join_rows": 30,
+      "finite_target_candidates": 16,
+      "eligible_feature_columns": 41,
+      "intake_independent_qa": "15/15 PASS",
+      "modeling_pilot_independent_qa": "10/10 PASS_WITH_WARNINGS",
+      "modeling_pilot_boundary": "leave-one-VF-group-out screening on 30 rows; held-group instability and runtime convergence warnings retained; no feature or method promoted"
+    }
+  },
+  "modeling_status": "technical_grouped_pilots_complete_no_feature_or_method_promotion",
+  "source_workbooks_modified": false
+}

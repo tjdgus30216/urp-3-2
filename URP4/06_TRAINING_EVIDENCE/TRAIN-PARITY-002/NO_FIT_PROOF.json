@@ -1,0 +1,147 @@
+{
+  "execution_status": "no_fit_no_prediction",
+  "attempted_fit_calls": 1,
+  "attempted_predict_calls": 1,
+  "completed_fit_calls": 0,
+  "completed_predict_calls": 0,
+  "prediction_rows": 0,
+  "metric_rows": 0,
+  "benchmark_artifacts": 0,
+  "fitted_estimator_artifacts": 0,
+  "static_fit_predict_sites": [
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 6,
+      "line": 157,
+      "call": "fit"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 6,
+      "line": 191,
+      "call": "fit"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 6,
+      "line": 353,
+      "call": "fit"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 6,
+      "line": 161,
+      "call": "predict"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 6,
+      "line": 258,
+      "call": "predict"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 7,
+      "line": 38,
+      "call": "fit"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 7,
+      "line": 296,
+      "call": "fit"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 7,
+      "line": 426,
+      "call": "fit"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 7,
+      "line": 240,
+      "call": "fit"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 7,
+      "line": 278,
+      "call": "fit"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 7,
+      "line": 39,
+      "call": "predict"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 7,
+      "line": 297,
+      "call": "predict"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 7,
+      "line": 491,
+      "call": "predict"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 7,
+      "line": 286,
+      "call": "predict"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 7,
+      "line": 666,
+      "call": "predict"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 9,
+      "line": 79,
+      "call": "predict"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 9,
+      "line": 84,
+      "call": "predict"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 9,
+      "line": 95,
+      "call": "predict"
+    },
+    {
+      "scope": "source_notebook",
+      "file": "Training_260419-2nd method - New feature - Good. vibration.ipynb",
+      "cell": 9,
+      "line": 92,
+      "call": "predict"
+    }
+  ],
+  "note": "Two attempted guard-test calls were blocked before estimator logic; completed calls remain zero."
+}

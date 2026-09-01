@@ -1,0 +1,65 @@
+{
+  "contract_id": "IMSTL-008-F1-FULL-P1000-Z801-NONREGRESSION-v0.1",
+  "task_id": "IMSTL-008_F1_FULL_P1000_Z801_AND_FAMILY_NONREGRESSION_NO_Y",
+  "run_id": "IMSTL-008-20260728-001",
+  "settings_address": "IDX-URP4-1-GEOM-IMPORTED-STL / CFG-IMSTL008-F1-P1000-Z801-HQREADBACK-NONREG r1",
+  "runtime": "KMK312 / Python 3.12.12",
+  "source": {
+    "model_id": "F1",
+    "family": "F",
+    "path": "experiments/lab_001_xy_connection_20260626/data/processed/n40_all58_20260715/stl/F1__0dff3c1b13__N40.stl",
+    "sha256": "d76883bc10af4f4b3817ccbe90b2863f97c9b843f30c5214cde81d2f76fdb0f8",
+    "physical_size_mm": 40.0
+  },
+  "approved_upstream": {
+    "IMSTL-006": "IMSTL-006-20260728-002",
+    "IMSTL-007": "IMSTL-007-20260728-002",
+    "IMSTL-007_decision": "screening_pass_benign_discretization",
+    "HQ": "URP4-HQ-v0.1",
+    "descriptor_backend": "BACKEND-R09-RESLICE-003-SAVED-PNG-READBACK-v0.1"
+  },
+  "execution": {
+    "route": "IMP-STL-ORIENTED-NONZERO-SCREENING-L28",
+    "axis": "z",
+    "pixel_resolution": 1000,
+    "slice_count": 801,
+    "slice_spacing_mm": 0.05,
+    "connectivity": 8,
+    "min_component_pixels": 2,
+    "threshold_rule": "binary_nonzero_png_readback",
+    "image_policy": "STREAMING_TEMP_PNG",
+    "expected_png_created": 1601,
+    "expected_png_remaining": 0,
+    "selected_review_indices": [0, 1, 100, 200, 400, 600, 700, 799, 800]
+  },
+  "producer_gates": [
+    "HQ status passed",
+    "descriptor status passed",
+    "801 slice rows and 800 overlay rows",
+    "nine RUN-139 scalar rows",
+    "zero PNG readback mismatch",
+    "1601 temporary PNG created and deleted",
+    "four primitive tables and manifests present",
+    "source hash exact",
+    "no y, feature selection, training or model fitting"
+  ],
+  "independent_gates": [
+    "recalculate all nine scalar values directly from primitive CSV tables",
+    "F1 selected P1000/P00 masks reproduce IMSTL-007 exactly",
+    "B3/C1/L1/T1/T8/T9 selected P1000 masks and 801-row traces remain exact",
+    "HQ v0.1 and protected asset hashes remain unchanged",
+    "all58 remains unexecuted"
+  ],
+  "claim_boundary": "F1 full imported-STL technical extraction and sampled-family non-regression only. Not exact STP parity, all-F/all58 generalization, canonical descriptor promotion, y utility, Training readiness or inverse design.",
+  "forbidden": [
+    "y access",
+    "x-y analysis",
+    "feature selection or promotion",
+    "model fitting",
+    "all58 expansion",
+    "NB-CURRENT edit",
+    "LEGACY-PY edit",
+    "original Excel edit",
+    "inverse-design claim"
+  ]
+}

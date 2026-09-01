@@ -1,0 +1,38 @@
+source_path,sheet,excel_row,raw_first_cell,reason
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx,Raw data,52,51.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx,Raw data,53,52.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx,Raw data,54,53.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx,Raw data,55,54.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx,Raw data,56,55.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx,Raw data,57,56.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx,Raw data,58,57.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx,Raw data,59,58.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx,Raw data,60,59.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx,Raw data,61,60.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx,Raw data,62,,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx,Raw data,63,,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,43,42.csv,invalid noncanonical row at the expected AI092 position; contains spreadsheet errors and is not silently remapped
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,52,51.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,53,52.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,54,53.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,55,54.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,56,55.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,57,56.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,58,57.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,59,58.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,60,59.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,61,60.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,62,,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx,Raw data,63,,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx,Raw data,52,51.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx,Raw data,53,52.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx,Raw data,54,53.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx,Raw data,55,54.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx,Raw data,56,55.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx,Raw data,57,56.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx,Raw data,58,57.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx,Raw data,59,58.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx,Raw data,60,59.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx,Raw data,61,60.csv,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx,Raw data,62,,non_model_summary_or_blank_row
+experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx,Raw data,63,,non_model_summary_or_blank_row

@@ -1,0 +1,11 @@
+﻿requirement_id,requirement,status,evidence,notes
+REQ-001,Immutable v1.0 preserved,PASS,experiments/lab_001_xy_connection_20260626/results/HANDOFF-SYNC-001/HANDOFF-CUTOFF-20260731-001,v1.1 uses a new folder.
+REQ-002,C1 stale running state removed from v1.1,PASS,experiments/lab_001_xy_connection_20260626/results/STRICT-STEP-026/STRICT-STEP-026-20260731-001/RUN_STATE.json,status=completed
+REQ-003,C1 independent QA,PASS,experiments/lab_001_xy_connection_20260626/results/STRICT-STEP-026/STRICT-STEP-026-20260731-001/INDEPENDENT_QA.json,9/9; exactly once per POSTRUN report
+REQ-004,Training source audit,PASS,experiments/lab_001_xy_connection_20260626/results/TRAIN-AUDIT-001/TRAIN-AUDIT-001-20260731-001/REPORT.md,9/9 audit
+REQ-005,Training blocker honesty,PASS,experiments/lab_001_xy_connection_20260626/results/TRAIN-PARITY-004/TRAIN-PARITY-004-20260801-001/REPORT.md,BLOCKED_BY_SOURCE_RUNTIME
+REQ-006,AI Lattice intake and pilot evidence,PASS,experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-002/COMP-FACTORY-002-AI-LATTICE-PILOT-20260731-144749/INDEPENDENT_QA_SUMMARY.json,36/36
+REQ-007,B/C/L and Voronoi input status based on disk,PASS,experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/FILE_MANIFEST.csv,raw merged workbooks present; summaries absent
+REQ-008,No new research calculation,PASS,SUBMIT-CLOSE-001-20260801-001,Packaging only
+REQ-009,Protected assets remain read-only,PASS,10_MANIFEST_SHA256_AND_QA/PROTECTED_ASSET_SNAPSHOT.csv,hash snapshot and copied-source equality
+REQ-010,Final ZIP CRC/hash test,PENDING_FINALIZE,adjacent INDEPENDENT_PACKAGE_QA.json,evaluated after archive creation

@@ -1,0 +1,93 @@
+{
+  "preregistration_id": "PRM-070",
+  "run_id": "PRM070-SLICE005-CONVERGENCE-CONTROL-001",
+  "created_at_kst": "2026-07-22T01:20:00+09:00",
+  "status": "frozen_before_delta_calculation",
+  "purpose": "Y-blind pixel-resolution and slice-spacing convergence review over the frozen eight-model SLICE-005 panel",
+  "execution_authorized": true,
+  "performance_y_access": false,
+  "inputs": {
+    "return_zip": {
+      "path": "G:\\내 드라이브\\labfactory\\returned_results\\R09_SLICE005_LABPC_RESULTS_Legion5_2026-07-22T010629_941+0900.zip",
+      "sha256": "5f68795816fe20151796ac50cbe3f8accf609fa252879c0922105b2b55b26e42"
+    },
+    "aggregate_matrix": {
+      "path": "C:\\Users\\chuck\\URP4-1_FACTORY\\R09_SLICE005_20260721\\results\\reports\\all40_descriptor_scalar_matrix.csv",
+      "sha256": "4ca3ea4c2e3d06de44bd0ff9370620458eab24c37567bd5bbc7de671a391e69d",
+      "rows": 360,
+      "cells": 40,
+      "scalars_per_cell": 9
+    },
+    "job_matrix": {
+      "path": "C:\\Users\\chuck\\URP4-1_FACTORY\\R09_SLICE005_20260721\\config\\pending_32_job_matrix.csv",
+      "sha256": "9905685109c79c89453d54349d619d2c92489115a9ab7c3b74759f4c1dac8000",
+      "rows": 32
+    }
+  },
+  "panel": {
+    "models": ["B3", "C1", "F1", "F2", "L1", "L7", "T8", "T9"],
+    "identity_risk": {
+      "confirmed": ["B3", "C1", "L1", "L7"],
+      "likely": ["F1", "F2", "T8", "T9"]
+    },
+    "special_diagnostics": ["L7 historical outlier", "F1/F2 source risk", "T8/T9 near-collision and ordering"]
+  },
+  "reference_config": "CFG-P1000-S0801",
+  "pixel_axis": {
+    "coarse": "CFG-P0500-S0801",
+    "reference": "CFG-P1000-S0801",
+    "fine": "CFG-P2000-S0801"
+  },
+  "slice_axis": {
+    "coarse": "CFG-P1000-S0401",
+    "reference": "CFG-P1000-S0801",
+    "fine": "CFG-P1000-S1601"
+  },
+  "metrics": {
+    "symmetric_relative_difference_percent": "200*abs(a-b)/(abs(a)+abs(b)); zero-zero -> 0",
+    "refinement_trend": "fine_to_reference_srd <= coarse_to_reference_srd + 0.25 percentage points",
+    "panel_rank": "Spearman rank correlation of eight model values against reference",
+    "top_quartile": "top two of eight models, overlap fraction against reference",
+    "runtime": "actual seconds and output bytes by configuration; descriptive only"
+  },
+  "thresholds": {
+    "model_descriptor_strict_srd_percent": 5.0,
+    "model_descriptor_usable_srd_percent": 10.0,
+    "trend_tolerance_percentage_points": 0.25,
+    "descriptor_axis_strict_median_percent": 5.0,
+    "descriptor_axis_strict_q90_percent": 10.0,
+    "descriptor_axis_strict_min_models": 6,
+    "descriptor_axis_usable_median_percent": 10.0,
+    "descriptor_axis_usable_q90_percent": 15.0,
+    "descriptor_axis_usable_min_models": 6,
+    "panel_spearman_min": 0.9,
+    "top_quartile_overlap_min": 0.8,
+    "model_alert_srd_percent": 15.0
+  },
+  "states": {
+    "strict_converged": "fine SRD <=5% and refinement trend passes",
+    "usable_sensitivity": "fine SRD <=10% and refinement trend passes",
+    "nonmonotonic": "fine SRD <=10% but refinement trend fails",
+    "unconverged": "fine SRD >10%",
+    "descriptor_axis_strict": "median<=5%, q90<=10%, >=6 strict models, Spearman>=0.90, top2 overlap>=0.80",
+    "descriptor_axis_usable": "median<=10%, q90<=15%, >=6 strict+usable models, Spearman>=0.90, top2 overlap>=0.80",
+    "descriptor_axis_unresolved": "otherwise"
+  },
+  "decision_policy": {
+    "descriptor_reference_retained": "both pixel and slice axes are strict or usable",
+    "descriptor_reference_hold": "either axis is unresolved or nonmonotonic evidence blocks convergence",
+    "global_reference_policy": "Do not force one universal canonical setting if descriptor families differ",
+    "family_claim": "Eight-model panel evidence only; do not claim within-family generalization from one or two members"
+  },
+  "locks": {
+    "performance_y_read": 0,
+    "model_fit": 0,
+    "prediction": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "formula_change": 0,
+    "threshold_backfit": 0,
+    "source_change": 0,
+    "raw_result_change": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "asset_id": "URP4-1-GEOMETRY-REFERENCE-20260701-67FILES",
+  "created_at": "2026-08-02T00:56:42+09:00",
+  "status": "PASS",
+  "archive_name": "URP4-1_GEOMETRY_REFERENCE_20260701_67FILES.zip",
+  "archive_sha256": "a60dab69cbdc51aa6a7fc15f9de40cd62e949d85ef436ca8079212b5f0e4a754",
+  "archive_size_bytes": 356323835,
+  "archive_member_count": 67,
+  "geometry_uncompressed_bytes": 1411469295,
+  "geometry_counts": {
+    "STL": 34,
+    "STP": 33
+  },
+  "source_manifest_name": "GEOMETRY_SOURCE_MANIFEST_67FILES.csv",
+  "source_manifest_sha256": "26a9aa9b8b30ca3ab38f0e9e7b1562cfd1c34ce2b497d1125e540a2d4891151b",
+  "checks": {
+    "source_manifest_67_pass": true,
+    "archive_crc": true,
+    "archive_members_67": true,
+    "archive_kind_counts": true,
+    "uncompressed_bytes": true
+  },
+  "original_geometry_bytes_modified": false
+}

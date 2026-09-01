@@ -1,0 +1,223 @@
+{
+  "alias": "TRAIN-2ND-NEWFEATURE",
+  "source_notebook": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\professor_training_20260709\\Training_260419-2nd method - New feature - Good. vibration.ipynb",
+  "source_sha256": "11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2",
+  "input": {
+    "role": "training_input",
+    "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\professor_training_20260709\\Total data_260503.xlsx",
+    "sha256": "4a6ec7d03d92fa25851998689768d9db9f63227f00e778a528d758b368851dce",
+    "sheet_name": "총정리",
+    "worksheet_max_row": 222,
+    "worksheet_max_column": 234,
+    "header_main_row": 2,
+    "header_sub_rows": "3|4|5",
+    "data_row_start": 7,
+    "data_row_end": 204,
+    "input_excel_range": "I7:FU204",
+    "output_excel_range": "FV7:HL204",
+    "selected_output_columns": "FW|FX|FZ|GA|GC|GG|GJ|GZ|HA|HB|HC|HD|HE|HG|HI|HK",
+    "raw_input_rows": 198,
+    "raw_input_columns": 169,
+    "raw_selected_output_rows": 198,
+    "raw_selected_output_columns": 16,
+    "numeric_feature_count": 169,
+    "target_count": 16,
+    "target_sample_count_min": 25,
+    "target_sample_count_max": 193,
+    "target_group_count_min": 25,
+    "target_group_count_max": 128
+  },
+  "targets": [
+    {
+      "output_name": "Vibrational response | FRF (g/N) | 300-8000 Hz | AVG",
+      "n_rows": 193,
+      "n_groups": 128,
+      "n_features": 169
+    },
+    {
+      "output_name": "Vibrational response | FRF (g/N) | 300-3000 Hz | AVG",
+      "n_rows": 193,
+      "n_groups": 128,
+      "n_features": 169
+    },
+    {
+      "output_name": "Vibrational response | FRF (g/N) | 3000-6500 Hz | AVG",
+      "n_rows": 193,
+      "n_groups": 128,
+      "n_features": 169
+    },
+    {
+      "output_name": "Vibrational response | FRF (g/N) | 6500-8000 Hz | AVG",
+      "n_rows": 193,
+      "n_groups": 128,
+      "n_features": 169
+    },
+    {
+      "output_name": "Thermal characteristics | Thermal conductivity | W/m.K",
+      "n_rows": 65,
+      "n_groups": 65,
+      "n_features": 169
+    },
+    {
+      "output_name": "Thermal characteristics | Heating rate | °C/s",
+      "n_rows": 65,
+      "n_groups": 65,
+      "n_features": 169
+    },
+    {
+      "output_name": "Thermal characteristics | Cooling rate | °C/s",
+      "n_rows": 65,
+      "n_groups": 65,
+      "n_features": 169
+    },
+    {
+      "output_name": "Thermal characteristics | Heating Temp | °C/s",
+      "n_rows": 65,
+      "n_groups": 65,
+      "n_features": 169
+    },
+    {
+      "output_name": "Modulus",
+      "n_rows": 56,
+      "n_groups": 56,
+      "n_features": 169
+    },
+    {
+      "output_name": "Com. Strength",
+      "n_rows": 56,
+      "n_groups": 56,
+      "n_features": 169
+    },
+    {
+      "output_name": "APS",
+      "n_rows": 56,
+      "n_groups": 56,
+      "n_features": 169
+    },
+    {
+      "output_name": "AS",
+      "n_rows": 56,
+      "n_groups": 56,
+      "n_features": 169
+    },
+    {
+      "output_name": "Yield strength",
+      "n_rows": 56,
+      "n_groups": 56,
+      "n_features": 169
+    },
+    {
+      "output_name": "Densif. strength",
+      "n_rows": 56,
+      "n_groups": 56,
+      "n_features": 169
+    },
+    {
+      "output_name": "Total energy",
+      "n_rows": 56,
+      "n_groups": 56,
+      "n_features": 169
+    },
+    {
+      "output_name": "Thermal characteristics | h | W/m.K",
+      "n_rows": 25,
+      "n_groups": 25,
+      "n_features": 169
+    }
+  ],
+  "feature_contract": {
+    "source_range": "I:FU, rows 7:204",
+    "numeric_conversion": "pandas.to_numeric(errors='coerce')",
+    "all_missing_columns_removed": true,
+    "numeric_feature_count": 169,
+    "same_x_group_key": "round(8 decimals) then row-string concatenation",
+    "group_identifier": "GROUP_ID"
+  },
+  "missing_value_contract": {
+    "feature_conversion": "non-numeric becomes NaN",
+    "target_rows": "drop rows missing the current target",
+    "model_pipeline": "SimpleImputer(strategy='median') where defined by original helper"
+  },
+  "split_contract": {
+    "outer": "GroupShuffleSplit",
+    "outer_repeats": 12,
+    "outer_test_size": 0.22,
+    "outer_random_state_base": 42,
+    "inner": "GroupShuffleSplit supplied to GridSearchCV/RandomizedSearchCV",
+    "inner_splits": 24,
+    "inner_test_size": 0.2,
+    "search_n_jobs": 1,
+    "leakage_boundary": "same-X GROUP_ID"
+  },
+  "feature_selection_contract": {
+    "rough_prefilter": "groupwise prefilter plus correlation pruning",
+    "rough_topk_by_family": {
+      "mechanical_energy": 16,
+      "thermal": 20,
+      "vibrational": 22
+    },
+    "final_topk_by_family": {
+      "mechanical_energy": [
+        2,
+        3,
+        4
+      ],
+      "thermal": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "vibrational": [
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "corr_prune_threshold": 0.85,
+    "ranking_weights": {
+      "spearman": 0.3,
+      "pearson": 0.15,
+      "mutual_info": 0.15,
+      "elastic_net": 0.4
+    },
+    "engineered_features_enabled": true
+  },
+  "estimator_contract": {
+    "candidate_models": [
+      "Bayesian_Ridge",
+      "Ridge",
+      "ElasticNet_CV",
+      "Huber_Regressor",
+      "PLS_Regression",
+      "PCR_Ridge",
+      "Kernel_Ridge_RBF",
+      "SVR_RBF"
+    ],
+    "method_selection": "per target and outer-fold, using original method candidates",
+    "target_transforms": [
+      "raw",
+      "yeo_johnson"
+    ],
+    "final_refit": "selected method refit on full selected/grouped data"
+  },
+  "metric_contract": {
+    "outer_metrics": [
+      "R2",
+      "RMSE",
+      "MAE"
+    ],
+    "selection_objective": "mean R2 - stability/complexity penalties + support bonus",
+    "prediction_exported_by_original": false,
+    "fold_metric_exported_by_original": true
+  },
+  "compatibility_delta": [
+    "input path redirected to hash-matched project-local copy",
+    "output path redirected to isolated run directory through a Windows junction",
+    "RUN_TAG fixed to run_id",
+    "kernelspec redirected to canonical project-local KMK312",
+    "thread counts fixed at one and GPU hidden"
+  ],
+  "scientific_setting_changes": []
+}

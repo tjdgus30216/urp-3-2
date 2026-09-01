@@ -1,0 +1,35 @@
+{
+  "permit_id": "TRAIN-PARITY-004-SENTINEL-PERMIT-v0.1",
+  "status": "READY_AWAITING_EXPLICIT_EXECUTION_APPROVAL",
+  "approval_required": true,
+  "target_id": "TRAIN2NF::HI",
+  "display_name": "Vibrational response | FRF (g/N) | 3000-6500 Hz | AVG",
+  "outer_repeat": 0,
+  "stages": [
+    "P0",
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7"
+  ],
+  "prohibited_stages": [
+    "P8"
+  ],
+  "source_sha256": "11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2",
+  "workbook_sha256": "4a6ec7d03d92fa25851998689768d9db9f63227f00e778a528d758b368851dce",
+  "target_policy_hash": "216cdd04c52becf105e5c5b5e7036d180291bef483a6cce5b8ca53c9a1123539",
+  "adapter_version": "TRAIN-2ND-NEWFEATURE-EXACT-ADAPTER-v0.1.1",
+  "adapter_contract_sha256": "efd4d7819dfa78be77be7b34b9437646eb6014983df868a51f07647ab69a9bbb",
+  "fold_manifest_sha256": "3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6",
+  "tolerance_revision": "TRAIN-PARITY-TOL-v0.1",
+  "source_runner_entrypoint": "source_reference_runner.IsolatedSourceReferenceRunner",
+  "adapter_runner_entrypoint": "adapter_v0_1_1.implementation.branches.SourceExactBranch.__call__",
+  "timeout_minutes": 90,
+  "execution_order": "sequential source -> adapter",
+  "checkpoint": "branch/fold atomic",
+  "no_overwrite_resume": "validate all hashes; never overwrite passed branch",
+  "execution_performed_in_003a": false
+}

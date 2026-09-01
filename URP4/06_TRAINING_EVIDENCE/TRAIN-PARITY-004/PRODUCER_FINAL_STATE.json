@@ -1,0 +1,8 @@
+{
+  "run_id": "TRAIN-PARITY-004-20260801-001",
+  "decision": "BLOCKED_BY_SOURCE_RUNTIME",
+  "first_mismatch": null,
+  "max_abs_error": 0.0,
+  "producer_elapsed_seconds": 35.85012370000186,
+  "independent_qa_pending": true
+}

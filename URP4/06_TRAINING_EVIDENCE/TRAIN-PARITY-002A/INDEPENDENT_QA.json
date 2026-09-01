@@ -1,0 +1,162 @@
+{
+  "run_id": "TRAIN-PARITY-002A-20260801-001",
+  "execution_status": "no_fit_no_prediction",
+  "qa_passed": 18,
+  "qa_total": 18,
+  "overall_status": "PASS",
+  "overall_state": "ready_for_controlled_execution_preregistration",
+  "controlled_execution_preregistration_entry": true,
+  "checks": [
+    {
+      "check_id": "IQA-001",
+      "status": "PASS",
+      "observed": "11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2",
+      "expected": "11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2"
+    },
+    {
+      "check_id": "IQA-002",
+      "status": "PASS",
+      "observed": "3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6",
+      "expected": "3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6"
+    },
+    {
+      "check_id": "IQA-003",
+      "status": "PASS",
+      "observed": 10,
+      "expected": 10
+    },
+    {
+      "check_id": "IQA-004",
+      "status": "PASS",
+      "observed": [
+        10,
+        10
+      ],
+      "expected": [
+        10,
+        10
+      ]
+    },
+    {
+      "check_id": "IQA-005",
+      "status": "PASS",
+      "observed": {
+        "exact_port_complete_no_fit": 10
+      },
+      "expected": {
+        "exact_port_complete_no_fit": 10
+      }
+    },
+    {
+      "check_id": "IQA-006",
+      "status": "PASS",
+      "observed": [
+        10,
+        7
+      ],
+      "expected": [
+        10,
+        ">=7"
+      ]
+    },
+    {
+      "check_id": "IQA-007",
+      "status": "PASS",
+      "observed": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "expected": "all false"
+    },
+    {
+      "check_id": "IQA-008",
+      "status": "PASS",
+      "observed": 10,
+      "expected": 10
+    },
+    {
+      "check_id": "IQA-009",
+      "status": "PASS",
+      "observed": "110/110",
+      "expected": "110/110"
+    },
+    {
+      "check_id": "IQA-010",
+      "status": "PASS",
+      "observed": [
+        16,
+        3
+      ],
+      "expected": [
+        16,
+        3
+      ]
+    },
+    {
+      "check_id": "IQA-011",
+      "status": "PASS",
+      "observed": "3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6",
+      "expected": "3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6"
+    },
+    {
+      "check_id": "IQA-012",
+      "status": "PASS",
+      "observed": "TRAIN-PARITY-TOL-v0.1",
+      "expected": "TRAIN-PARITY-TOL-v0.1"
+    },
+    {
+      "check_id": "IQA-013",
+      "status": "PASS",
+      "observed": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check_id": "IQA-014",
+      "status": "PASS",
+      "observed": "16/16",
+      "expected": "16/16"
+    },
+    {
+      "check_id": "IQA-015",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check_id": "IQA-016",
+      "status": "PASS",
+      "observed": "ready_for_controlled_execution_preregistration",
+      "expected": "ready_for_controlled_execution_preregistration"
+    },
+    {
+      "check_id": "IQA-017",
+      "status": "PASS",
+      "observed": 10,
+      "expected": 10
+    },
+    {
+      "check_id": "IQA-018",
+      "status": "PASS",
+      "observed": [],
+      "expected": []
+    }
+  ]
+}

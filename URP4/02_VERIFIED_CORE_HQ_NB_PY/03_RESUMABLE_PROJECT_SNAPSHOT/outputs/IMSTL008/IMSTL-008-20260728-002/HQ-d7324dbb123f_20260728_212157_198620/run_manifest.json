@@ -1,0 +1,16 @@
+{
+  "run_id": "HQ-d7324dbb123f",
+  "experiment_name": "IMSTL-008_F1_FULL_P1000_Z801_AND_FAMILY_NONREGRESSION_NO_Y",
+  "config_sha256": "d7324dbb123ff8dade346f0aaf9c529af6706b2eee12273b100c13b911b595c8",
+  "route_id": "IMP-STL-ORIENTED-NONZERO-SCREENING-L28",
+  "runtime_alias": "KMK312",
+  "started_at_local": "20260728_212157_198620",
+  "execution_scope": {
+    "generate": false,
+    "import": true,
+    "descriptor": true,
+    "batch": false,
+    "feature_selection": false,
+    "training": false
+  }
+}

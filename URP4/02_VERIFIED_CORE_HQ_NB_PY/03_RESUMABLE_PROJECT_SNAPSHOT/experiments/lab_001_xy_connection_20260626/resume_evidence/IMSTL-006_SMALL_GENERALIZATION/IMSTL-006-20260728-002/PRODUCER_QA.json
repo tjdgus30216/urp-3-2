@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "decision": {
+    "task_id": "IMSTL-006_SMALL_IMPORTED_STL_GENERALIZATION_AND_DESCRIPTOR_CONCLUSION",
+    "run_id": "IMSTL-006-20260728-002",
+    "completed_at_utc": "2026-07-28T03:21:59.314426+00:00",
+    "selected_gate_passed_models": [
+      "B3",
+      "C1",
+      "L1",
+      "T1",
+      "T8",
+      "T9"
+    ],
+    "selected_gate_failed_models": [
+      "F1"
+    ],
+    "models_completed_full": 6,
+    "families_completed_full": [
+      "B",
+      "C",
+      "L",
+      "T"
+    ],
+    "all_primary_trace_complete": true,
+    "all_finite_gates_pass": true,
+    "all_pair_gates_pass": true,
+    "catastrophic_numeric_flags": 0,
+    "selected_gate_min_resolution_iou": 0.9490451918732313,
+    "selected_gate_max_area_difference": 0.03151618398637138,
+    "exact_duplicate_pair_count": 0,
+    "t8_t9": {
+      "left_model": "T8",
+      "right_model": "T9",
+      "left_family": "T",
+      "right_family": "T",
+      "feature_count": 15,
+      "exact_duplicate": false,
+      "standardized_euclidean_distance": 0.45840841678751354,
+      "is_T8_T9": true
+    },
+    "operational_generalization": "partial_pass",
+    "physical_parity": "unresolved_without_paired_STP",
+    "feature_promotion": "none",
+    "y_access": false,
+    "all58_executed": false,
+    "protected_before": {
+      "nb_current": "29131ce5f3d8d59cf6a7211d963a23f85c14f950ea335bbd237b52a7ff76980f",
+      "notebook": "02982c5b5c36843bb14807351a457ea1135a17c2f13bc95fd618e496536be109"
+    },
+    "protected_after": {
+      "nb_current": "29131ce5f3d8d59cf6a7211d963a23f85c14f950ea335bbd237b52a7ff76980f",
+      "notebook": "02982c5b5c36843bb14807351a457ea1135a17c2f13bc95fd618e496536be109"
+    },
+    "protected_unchanged": true
+  }
+}

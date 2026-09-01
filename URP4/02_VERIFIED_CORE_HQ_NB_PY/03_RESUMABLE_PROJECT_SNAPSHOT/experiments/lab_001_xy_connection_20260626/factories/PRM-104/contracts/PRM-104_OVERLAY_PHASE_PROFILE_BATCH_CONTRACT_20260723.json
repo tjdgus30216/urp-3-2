@@ -1,0 +1,51 @@
+{
+  "work_id": "PRM-104",
+  "title": "OVERLAY_PHASE_PROFILE_BATCH_NO_Y",
+  "purpose": "Generate one B/C-grade batch of overlay colour-phase profile candidates from the already hash-verified SLICE-004 overlay_pixel_readback tables. No mask, image, mesh, slice or performance-y access is permitted.",
+  "source_contract": {
+    "raw_artifact": "SLICE-004 P1000_S801 overlay_pixel_readback.csv",
+    "raw_models": 58,
+    "pairs_per_model": 800,
+    "raw_file_count": 58,
+    "raw_file_hashes_must_match_frozen_manifest": true
+  },
+  "expected": {
+    "models": 58,
+    "new_candidates": 28,
+    "grade_B_candidates": 25,
+    "grade_C_candidates": 3,
+    "values": 1624,
+    "crossbank_relations": 4004,
+    "internal_relations": 378,
+    "diagnostic_pair_values": 56
+  },
+  "candidate_schema": {
+    "RAW-X036": "25 direct scalar statistics from red, blue, purple and union pixel-count profiles across 800 overlay pairs",
+    "RAW-X037": "3 normalised mean colour-phase fractions from the same non-zero-union overlay-pair population",
+    "statistics": ["mean", "population_std", "q10", "q50", "q90", "iqr", "mad"],
+    "normalization": "red_pixel_count/union_pixel_count, blue_pixel_count/union_pixel_count, purple_pixel_count/union_pixel_count; denominator must be positive and is never imputed"
+  },
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/TOUR-C001/analysis_factory/reports/TOUR-C001-T4R-SLICE-004_output_manifest.csv", "sha256": "53f0b5292020ee8b5274f42dbb1af7b4501fe26703fec6ed298d6a83f712903c"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM103_xreg_v0_4_values_long.csv", "sha256": "91b8cecd59491a4262f7750ed48160f1973ede810ff7b2594e5e40f4aae8aa7e"}
+  ],
+  "relation_policy": {
+    "scope": "full58_x_only",
+    "exact_duplicate": "np.allclose rtol=1e-10 atol=1e-12",
+    "proportional_duplicate": "normalised L2 residual <= 1e-6",
+    "high_redundancy": "absolute Pearson >= 0.98 and absolute Spearman >= 0.98"
+  },
+  "locks": {
+    "performance_y_read": 0,
+    "x_y_analysis": 0,
+    "model_fit": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "new_masks_or_slicing": 0,
+    "NB_CURRENT_mutation": 0,
+    "LEGACY_PY_mutation": 0,
+    "original_Excel_mutation": 0
+  },
+  "status": "preregistered_pending_execution",
+  "next_step_if_pass": "PRM-105 XREG-v0.5 consolidation and block audit only; no active-roster change"
+}

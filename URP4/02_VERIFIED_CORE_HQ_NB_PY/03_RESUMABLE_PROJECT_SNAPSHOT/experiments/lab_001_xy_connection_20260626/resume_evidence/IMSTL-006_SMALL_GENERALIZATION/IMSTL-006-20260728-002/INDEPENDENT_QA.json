@@ -1,0 +1,33 @@
+{
+  "selected_replay_rows": 63,
+  "selected_replay_expected_rows": 63,
+  "all_source_hashes_exact": true,
+  "all_p1000_hashes_exact": true,
+  "all_p500_hashes_exact": true,
+  "max_iou_abs_error": 1.1102230246251565e-16,
+  "max_area_difference_abs_error": 9.578926193909432e-17,
+  "passed_models": [
+    "B3",
+    "C1",
+    "L1",
+    "T1",
+    "T8",
+    "T9"
+  ],
+  "failed_models": [
+    "F1"
+  ],
+  "full_trace_model_count": 6,
+  "all_full_traces_exact_801": true,
+  "all_full_trace_indices_exact": true,
+  "all_full_trace_hashes_exact": true,
+  "all_full_trace_area_finite": true,
+  "all_selected_masks_retained": true,
+  "failed_models_excluded_from_full": true,
+  "descriptor_model_count": 6,
+  "descriptor_average_fields": 15,
+  "no_y_column": true,
+  "all58_not_executed": true,
+  "protected_notebooks_unchanged": true,
+  "status": "passed"
+}

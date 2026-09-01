@@ -1,0 +1,35 @@
+{
+  "run_id": "TRAIN-PARITY-004-20260801-001",
+  "decision": "BLOCKED_BY_SOURCE_RUNTIME",
+  "no_overwrite": true,
+  "automatic_retry": false,
+  "safe_resume_status": "NOT_AUTHORIZED_REQUIRES_NEW_PREREGISTERED_DIAGNOSTIC",
+  "completed_branch_checkpoints": [],
+  "partial_source_pre_fit_artifacts": [
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\source_reference\\stage_P0_dataset.json",
+      "sha256": "2586d51dccfccfa92a18a199383164608c3d529067175a7f7848b2296e083601",
+      "status": "completed_before_native_crash"
+    },
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\source_reference\\stage_P1_split.json",
+      "sha256": "8f70e14a366f933a14d9b58068d277917cb845399015f342573a3bc7fc4fa450",
+      "status": "completed_before_native_crash"
+    },
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\source_reference\\stage_P2_preprocessing.json",
+      "sha256": "378555d396c59bd48fb1b6aeaf4b6e8b35dd6c4306266ee69e16a0eaccd144de",
+      "status": "completed_before_native_crash"
+    },
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\source_reference\\stage_P3_features.json",
+      "sha256": "4e90d2e53acc37840b19c80cb3c8d58897e5f24370dfc900a049cf596bd0b709",
+      "status": "completed_before_native_crash"
+    },
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\source_reference\\stage_P4_contract_pre_fit.json",
+      "sha256": "58e09a7cc7d3aea970a6c9e9511d163ee21357831c4e637caa053032194384ba",
+      "status": "completed_before_native_crash"
+    }
+  ]
+}

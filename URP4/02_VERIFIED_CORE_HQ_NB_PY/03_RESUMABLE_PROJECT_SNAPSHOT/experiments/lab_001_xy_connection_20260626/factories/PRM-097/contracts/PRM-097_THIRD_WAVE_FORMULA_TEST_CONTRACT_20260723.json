@@ -1,0 +1,84 @@
+{
+  "work_id": "PRM-097",
+  "title": "THIRD_WAVE_FORMULA_AND_SYNTHETIC_TRUTH_PREREGISTRATION_NO_EXECUTION",
+  "created_at_kst": "2026-07-23T02:00:00+09:00",
+  "status": "formula_and_test_contracts_frozen_no_execution",
+  "candidate_groups": [
+    "LIT-X006",
+    "LIT-X008",
+    "LIT-X019",
+    "LIT-X024",
+    "LIT-X028",
+    "LIT-X031"
+  ],
+  "output_schema_rows": 72,
+  "formula_contracts": 17,
+  "synthetic_fixtures": 22,
+  "representative_panel_cells": 36,
+  "resolution_parameter_rows": 24,
+  "inputs": [
+    {
+      "name": "PRM096_requirements",
+      "path": "experiments\\lab_001_xy_connection_20260626\\reports\\tables\\PRM096_third_wave_preregistration_requirements.csv",
+      "sha256": "3e9ff920c59ae95126f68d5efa8c171308e58959d56f7f19f9a85901b4430cb0"
+    },
+    {
+      "name": "PRM096_routing",
+      "path": "experiments\\lab_001_xy_connection_20260626\\reports\\tables\\PRM096_third_wave_candidate_routing.csv",
+      "sha256": "ac2b2cc4f2966bb306a731298e2316008ea8696837cce819f2fcb6864c16fcd8"
+    },
+    {
+      "name": "PRM096_bank",
+      "path": "experiments\\lab_001_xy_connection_20260626\\reports\\tables\\PRM096_enriched_xreg_v0_2_candidate_bank.csv",
+      "sha256": "d8e5efc3b0377499520ed12e390ec813d01cefb15cab8dc07730cd44be911ef1"
+    },
+    {
+      "name": "PRM096_gates",
+      "path": "experiments\\lab_001_xy_connection_20260626\\reports\\tables\\PRM096_later_nested_gate_preservation.csv",
+      "sha256": "aaa4ba439ea9a8351ea38062b658c97112ba15667c9650785a485692f5ed891b"
+    },
+    {
+      "name": "literature_candidates",
+      "path": "experiments\\lab_001_xy_connection_20260626\\reports\\tables\\PRM076_combined_literature_candidate_registry.csv",
+      "sha256": "2ff12ea7f69635862d4f0d8229b17166cc138fc26cf2e7dca2df4c0b57c0bfe5"
+    },
+    {
+      "name": "literature_sources",
+      "path": "experiments\\lab_001_xy_connection_20260626\\reports\\tables\\PRM076_combined_literature_source_registry.csv",
+      "sha256": "f26adbe55b1d6b53778836bbade000feda91ee578d1c669bdc26cd658458bc66"
+    },
+    {
+      "name": "uniform_gates",
+      "path": "experiments\\lab_001_xy_connection_20260626\\reports\\tables\\PRM076_uniform_qualification_gate.csv",
+      "sha256": "9c36ac5a6d054cbe6830cbe8c401706bb4c59265c7fcee458b63c9fe79132369"
+    },
+    {
+      "name": "prior_fixtures",
+      "path": "experiments\\lab_001_xy_connection_20260626\\reports\\tables\\PRM076_synthetic_truth_fixture_spec.csv",
+      "sha256": "f5178c5e841fe028db4e2c719370b589ef8531f2bc71b1149d05a5c79b77dd2c"
+    },
+    {
+      "name": "prior_resolution",
+      "path": "experiments\\lab_001_xy_connection_20260626\\reports\\tables\\PRM076_resolution_panel_spec.csv",
+      "sha256": "cfc7fa232b9620238c84c08d89fb5aba28593ff29b10455c9aafcd4d33cd7eb2"
+    },
+    {
+      "name": "existing_roster",
+      "path": "experiments\\lab_001_xy_connection_20260626\\reports\\tables\\PRM081_full58_output_roster.csv",
+      "sha256": "3e500df0c7fffb7bcd367b0fdbc31e3e2af86b0926f1ae8a1082627eea415b68"
+    }
+  ],
+  "locks": {
+    "candidate_calculation": 0,
+    "full58_execution": 0,
+    "performance_y_read": 0,
+    "model_fit": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "new_mask_or_slicing": 0,
+    "NB_CURRENT_mutation": 0,
+    "LEGACY_PY_mutation": 0,
+    "original_Excel_mutation": 0
+  },
+  "next_work": "PRM-098_BOUNDED_THIRD_WAVE_SYNTHETIC_TRUTH_COST_CANARY_AND_REPRESENTATIVE_PANEL"
+}

@@ -1,0 +1,20 @@
+{
+  "sys_executable": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+  "python_version": "3.12.12 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 20:05:38) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.4.1",
+    "pandas": "2.3.3",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "openpyxl": "3.1.5",
+    "trimesh": "4.12.2",
+    "cv2": "4.11.0",
+    "matplotlib": "3.10.8",
+    "networkx": "3.6.1"
+  },
+  "captured_at": "2026-08-01T13:31:33+09:00",
+  "canonical_environment_path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312",
+  "command": "\"C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe\" -c <runtime probe>",
+  "environment_config_hash": "c0949e408ad16434aeeb961d240702065c4d325ae8c9b6c43886f982e24b1579"
+}

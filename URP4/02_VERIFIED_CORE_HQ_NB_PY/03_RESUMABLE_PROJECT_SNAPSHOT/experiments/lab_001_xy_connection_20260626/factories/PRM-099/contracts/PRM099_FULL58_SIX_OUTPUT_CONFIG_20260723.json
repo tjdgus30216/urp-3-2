@@ -1,0 +1,379 @@
+{
+  "work_id": "PRM-099",
+  "title": "THIRD_WAVE_SIX_OUTPUT_FULL58_V128_CONFIG",
+  "resolution_id": "V128",
+  "pitch_mm": 0.3125,
+  "expected_models": 58,
+  "expected_values": 348,
+  "output_roster": [
+    "LIT-X019::solid_void_chord_q50_geomean_ratio",
+    "LIT-X019::solid_void_chord_x_q50_ratio",
+    "LIT-X019::solid_void_chord_y_q50_ratio",
+    "LIT-X019::solid_void_chord_z_q50_ratio",
+    "LIT-X024::ect_abs_auc_direction_mean_per_mm3",
+    "LIT-X024::ect_total_variation_direction_mean_per_mm3"
+  ],
+  "cells": [
+    {
+      "model_id": "B1",
+      "model_family": "B",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/B1/V128_mask.npz",
+      "mask_sha256": "29f817743b4e5baec8f4f767ce895e0720b29644ff43e41827cf4e25a2ddf3bf"
+    },
+    {
+      "model_id": "B2",
+      "model_family": "B",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/B2/V128_mask.npz",
+      "mask_sha256": "f7b13dc834ca906640d000988b58e11eac18c6222fb07622099f2a0783c49bfa"
+    },
+    {
+      "model_id": "B3",
+      "model_family": "B",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/B3/V128_mask.npz",
+      "mask_sha256": "a51377b76a541ddef87770915b4096b1f596afe8dd60e874c75ad0cc11727a01"
+    },
+    {
+      "model_id": "B4",
+      "model_family": "B",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/B4/V128_mask.npz",
+      "mask_sha256": "0c0afc6e6c97c6380a397e31d73a9a0196a5ebc75e9b3b9e72ab9c8e840e973e"
+    },
+    {
+      "model_id": "B5",
+      "model_family": "B",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/B5/V128_mask.npz",
+      "mask_sha256": "10df0605284c3f53c8119305afc6fd5231000180915e9bab76aa881d39c7c4b0"
+    },
+    {
+      "model_id": "C1",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C1/V128_mask.npz",
+      "mask_sha256": "3ff5e6b231718505822ff6ced418cc0715500ddd1d723e732ff4bfaa1c3e94f7"
+    },
+    {
+      "model_id": "C10",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C10/V128_mask.npz",
+      "mask_sha256": "7b14f15baf8d02d111fe503108a0a80130a9f1dda62bb641e5a6200b52dd8dac"
+    },
+    {
+      "model_id": "C11",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C11/V128_mask.npz",
+      "mask_sha256": "08e212df12cd8ead19fdc344d91ba30c24b558f8f329a0e7a6063e8836f773d0"
+    },
+    {
+      "model_id": "C12",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C12/V128_mask.npz",
+      "mask_sha256": "5edc75e5d45dce145c573cac04a2598f915815c2dd26a5376d2edb8830d76811"
+    },
+    {
+      "model_id": "C13",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C13/V128_mask.npz",
+      "mask_sha256": "7c6315915c6db9788df63be1e24ba1da388d2465192e7f42cefc239c81ff1f6b"
+    },
+    {
+      "model_id": "C14",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C14/V128_mask.npz",
+      "mask_sha256": "28388e1043bd14fce1c5553249955f115044858afdcc503f064f7c9f1b6dedb1"
+    },
+    {
+      "model_id": "C2",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C2/V128_mask.npz",
+      "mask_sha256": "b9ae497d9c1c42275af1d2f13f0794ddd1cf611b4817a0398052335c431443d2"
+    },
+    {
+      "model_id": "C3",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C3/V128_mask.npz",
+      "mask_sha256": "63e3dbd816833fca8e4c61c4a53f29e233dfd1e09e698f8caa08a9f556bf778a"
+    },
+    {
+      "model_id": "C4",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C4/V128_mask.npz",
+      "mask_sha256": "94df2e7e0127d518488c9735e1e3ae26f68250a13bfe9b9bb23f7fdc305a1896"
+    },
+    {
+      "model_id": "C5",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C5/V128_mask.npz",
+      "mask_sha256": "d937c13be2a9cb391f359b87b815993ca9bde0f293b66c43255d83bfb7be9a29"
+    },
+    {
+      "model_id": "C6",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C6/V128_mask.npz",
+      "mask_sha256": "5b08d78d867870bd1f8936386cb5c7c60b447c9c58ca570d567c0bf3277a79fd"
+    },
+    {
+      "model_id": "C7",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C7/V128_mask.npz",
+      "mask_sha256": "383669d89a5f38d39ab2e3fc6348826062a2e4ca2d3821d8a6d5aee059c0b581"
+    },
+    {
+      "model_id": "C8",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C8/V128_mask.npz",
+      "mask_sha256": "f19fdc517a2618519e0bc1c2fc8819de79de7a4b4a2ffae23625dfd9e1750218"
+    },
+    {
+      "model_id": "C9",
+      "model_family": "C",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/C9/V128_mask.npz",
+      "mask_sha256": "ae735a509676f6ee928f4ecb188427a9800bf624de04ee4499689bf6c2554956"
+    },
+    {
+      "model_id": "F1",
+      "model_family": "F",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/F1/V128_mask.npz",
+      "mask_sha256": "5e3884d34c801fce2cbd064457191693f188ad429e7c990c424c1d701888ed94"
+    },
+    {
+      "model_id": "F2",
+      "model_family": "F",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/F2/V128_mask.npz",
+      "mask_sha256": "d6d89009a71f1f0f6c78196e1ae2a93ddc1959a3a03cef746788990a0cbd5f24"
+    },
+    {
+      "model_id": "L1",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L1/V128_mask.npz",
+      "mask_sha256": "e7b562a23c8316818b625609a1878fffc956412aa7594d55d9fdfc75be43c490"
+    },
+    {
+      "model_id": "L10",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L10/V128_mask.npz",
+      "mask_sha256": "043107ee173f51c26cc83b8a2f9785c7faea902d26362e9d2bf813eeeba59fa5"
+    },
+    {
+      "model_id": "L11",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L11/V128_mask.npz",
+      "mask_sha256": "e1a31a22e21f61fef2d40b16e3ab89af272c18bd379adebd003f3e277fdb8aa2"
+    },
+    {
+      "model_id": "L12",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L12/V128_mask.npz",
+      "mask_sha256": "de0206de5a8404c6bc4c7d8f53c9cfa882b226ef55e3f8f781968d9fcf2bb76b"
+    },
+    {
+      "model_id": "L13",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L13/V128_mask.npz",
+      "mask_sha256": "d943e473d19e29f4a3d857a7e7043da8f93d38aac07a93a4d1ccd3a54fa60ff5"
+    },
+    {
+      "model_id": "L14",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L14/V128_mask.npz",
+      "mask_sha256": "f52b83e852889020dd5c922d7be28e2031ebad17baf7313e9d48f6cfa7772972"
+    },
+    {
+      "model_id": "L15",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L15/V128_mask.npz",
+      "mask_sha256": "4d62a5c9b3da855068681d2af7833d59a6cb676d5613236723ea7e06ba7c1799"
+    },
+    {
+      "model_id": "L16",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L16/V128_mask.npz",
+      "mask_sha256": "ebdb9730463be643e401c3a9f4e62c594f9bf0baf61ba44fa96e02494e8eef72"
+    },
+    {
+      "model_id": "L17",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L17/V128_mask.npz",
+      "mask_sha256": "39eebe276bd079b08875fe7742563752b76b62c9f78e9f12b7640facd85f5dd1"
+    },
+    {
+      "model_id": "L18",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L18/V128_mask.npz",
+      "mask_sha256": "82a8351c9e771e0baf45bf695280bb0c7072893b5e802ac7a52367f2bf84ee23"
+    },
+    {
+      "model_id": "L19",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L19/V128_mask.npz",
+      "mask_sha256": "1099ff8e258d9a12670769379704de65fc2acab5bdfed35c9dafb6404c502941"
+    },
+    {
+      "model_id": "L2",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L2/V128_mask.npz",
+      "mask_sha256": "db61eec0ea08ec7808010c5db0163e7fe56a6e80bb1c5c8fdcfd0760a558639f"
+    },
+    {
+      "model_id": "L20",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L20/V128_mask.npz",
+      "mask_sha256": "9d71bcf0caff6a0fd3f813e631bd96c6c050c7a64ce1befc81b0e013a2c1f2be"
+    },
+    {
+      "model_id": "L3",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L3/V128_mask.npz",
+      "mask_sha256": "8889d880cb9a88593eb08321a1abfa72abca93b51d8fc0c87bcbe01197c34787"
+    },
+    {
+      "model_id": "L4",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L4/V128_mask.npz",
+      "mask_sha256": "a04c79bbc571d05106aa50473d42d3a4a2ebde3be2a7cc5dd3cd4391f3947205"
+    },
+    {
+      "model_id": "L5",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L5/V128_mask.npz",
+      "mask_sha256": "431a8b90254bdfb074bc84ac658fae3fce03b203f65e8a2fc5088ccbd62de437"
+    },
+    {
+      "model_id": "L6",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L6/V128_mask.npz",
+      "mask_sha256": "a54f453ba00b86dfd01a53c23aaad059561c4a9b19304c0bf77826c3f60efdec"
+    },
+    {
+      "model_id": "L7",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L7/V128_mask.npz",
+      "mask_sha256": "7334ccc6c6e2310eaaa489af0cbf5cfd00357fec9bce3b50f23da04fb65f3b64"
+    },
+    {
+      "model_id": "L8",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L8/V128_mask.npz",
+      "mask_sha256": "d94329ee5b42c1d3cfdb5ded86f2dd67bf68dc4be343341f7c461c3d857eef4c"
+    },
+    {
+      "model_id": "L9",
+      "model_family": "L",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/L9/V128_mask.npz",
+      "mask_sha256": "56bc35d698b687b35dc916e104efc158a7ca2148379c3dc446466a68809fa3f4"
+    },
+    {
+      "model_id": "T1",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T1/V128_mask.npz",
+      "mask_sha256": "ff4839ccd4db7abcf3863c17ebdbbc7571f8b62605d23374a2fa6d8aaaea764d"
+    },
+    {
+      "model_id": "T10",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T10/V128_mask.npz",
+      "mask_sha256": "98bfb6e7d61bafcfc9a3fd65e6ec4bbc034d385e353945e2e7b4adb5861d3093"
+    },
+    {
+      "model_id": "T11",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T11/V128_mask.npz",
+      "mask_sha256": "eadbfb6f2a370090f6301e562fdb4d38496ebe928c5b57c247b651be83b69fc6"
+    },
+    {
+      "model_id": "T12",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T12/V128_mask.npz",
+      "mask_sha256": "a189b050b1a7b6d12658e7e556d94a311c8c42197c111686146e1215f04056e7"
+    },
+    {
+      "model_id": "T13",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T13/V128_mask.npz",
+      "mask_sha256": "7ab08f180db1975fbef57a83cd428b232b2636e28fa2bae4cd1e6df77592b23c"
+    },
+    {
+      "model_id": "T14",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T14/V128_mask.npz",
+      "mask_sha256": "8b163558cb7457604dd47a6bba69b5a504cc8757e1bdf20dde5b481adebe271f"
+    },
+    {
+      "model_id": "T15",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T15/V128_mask.npz",
+      "mask_sha256": "19871ac1efaf576a8b9c0e8ec56aae15b89172c634f97a30740fc155f81ca5b8"
+    },
+    {
+      "model_id": "T16",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T16/V128_mask.npz",
+      "mask_sha256": "cf25ea5d0d01b2f20a765fcc7b75cafcb76e7db3d28975b9a753bdae14932ee7"
+    },
+    {
+      "model_id": "T17",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T17/V128_mask.npz",
+      "mask_sha256": "c380663ab559624c24c60e2c86b3ec267eb0e9c6048a56f8966a3131956b08da"
+    },
+    {
+      "model_id": "T2",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T2/V128_mask.npz",
+      "mask_sha256": "e50718f862a13b94b05b0f97758d28e5e12a1c9c24b07a9471ceaaa8725e6266"
+    },
+    {
+      "model_id": "T3",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T3/V128_mask.npz",
+      "mask_sha256": "0c281ccf4b49194f14b83a6c9245b62b7f3cac5623f128dca4935b16f85e62ab"
+    },
+    {
+      "model_id": "T4",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T4/V128_mask.npz",
+      "mask_sha256": "da2e84b25000b31d9c51bdbba8a37e9ddb5f4ce8b88f954c541b9cd188cc276f"
+    },
+    {
+      "model_id": "T5",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T5/V128_mask.npz",
+      "mask_sha256": "ee21699d9612b505c5a56a594d844bdfd0fffe32c103bebfb0d13becf9b1a41f"
+    },
+    {
+      "model_id": "T6",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T6/V128_mask.npz",
+      "mask_sha256": "0751482c199794e528adb6564c834f3f08f86572f7e88d70809cb933de4b4d70"
+    },
+    {
+      "model_id": "T7",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T7/V128_mask.npz",
+      "mask_sha256": "7d5c494b66ec7cfd60f85f4780cc7068f8b8e47a6baf7c625aae58483db1a8cb"
+    },
+    {
+      "model_id": "T8",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T8/V128_mask.npz",
+      "mask_sha256": "189fd3507f619862fd33f4a4318cbf59e724c3874ac98340d8e4e3dd49471727"
+    },
+    {
+      "model_id": "T9",
+      "model_family": "T",
+      "mask_path": "experiments/lab_001_xy_connection_20260626/factories/PRM-082/intermediate/T9/V128_mask.npz",
+      "mask_sha256": "afe4eae5172dfd3cc48527ee85a8dc4c61b5f09d0218bad3122652b1dc96299e"
+    }
+  ],
+  "scope_hash": "a6d6bd574b8cae231282c56605a4b670234eca578c651cc7b7d4b4689386bbc1",
+  "xreg_parent_table_path": "experiments\\lab_001_xy_connection_20260626\\reports\\tables\\PRM096_xreg_v0_2_values_long.csv",
+  "xreg_parent_table_sha256": "28b7aa16287c90e824d1232603273583365644adc9b21d60436c7d362b16e305",
+  "resource_stop": {
+    "single_cell_wall_seconds_max": 30.0,
+    "process_rss_gib_max": 1.0,
+    "serial_workers": 1,
+    "partial_merge": false
+  },
+  "routes": {
+    "LIT-X019": "derive existing X001/X016 q50 V128 parents",
+    "LIT-X024": "compute ECT from existing V128 mask and retain full curve artifact"
+  }
+}

@@ -1,0 +1,6 @@
+method_id,method_family,source_aliases,availability,execution_in_hq_v0_1,scope_note
+TRAIN-METHOD-01,method_family_1,TRAIN-1ST-LEGACY;TRAIN-1ST-NEWFEATURE,source_verified,locked_off,Weighted/engineered linear candidates; not ordinal rank 1
+TRAIN-METHOD-02,method_family_2,TRAIN-2ND-LEGACY;TRAIN-2ND-NEWFEATURE,source_verified,locked_off,Stability/block/bagging candidates; vibration filename is only a hint
+TRAIN-METHOD-03,method_family_3,TRAIN-3RD-LEGACY;TRAIN-3RD-NEWFEATURE,source_verified,locked_off,Direct/residual/nonlinear candidates; heat filename is only a hint
+TRAIN-METHOD-04,method_family_4_ensemble,TRAIN-4TH-ENSEMBLE,source_verified,locked_off,Feature-aware partial branch and OOF merge interface
+TRAIN-METHOD-05,method_family_5_alltogether,TRAIN-5TH-ALLTOGETHER;TRAIN-5TH-FIXED,source_verified,locked_off,Output-wise coordinator; FIXED is not universally canonical

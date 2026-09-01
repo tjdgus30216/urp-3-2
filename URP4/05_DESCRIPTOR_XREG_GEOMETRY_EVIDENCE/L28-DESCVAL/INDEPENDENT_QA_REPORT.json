@@ -1,0 +1,15 @@
+{
+  "task": "L28-DESCRIPTOR-VALIDATION-INDEPENDENT-INVARIANT-QA",
+  "status": "passed",
+  "checks": {
+    "phase1_pass": true,
+    "phase2_3_pass": true,
+    "vf_rows": true,
+    "manifest_hashes_present": true,
+    "no_y": true,
+    "no_source_mutation": true
+  },
+  "candidate_count": 11,
+  "profile_row_count": 26418,
+  "quality_row_count": 2403
+}

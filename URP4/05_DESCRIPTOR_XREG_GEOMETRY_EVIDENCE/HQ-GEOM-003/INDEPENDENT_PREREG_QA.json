@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "two_hash_locked_sources": true,
+    "two_nonclean_sources_confirmed": true,
+    "automatic_exception_rejected": true,
+    "protected_assets_31_of_31": true,
+    "no_geometry_or_descriptor_execution": true,
+    "status": "passed"
+  }
+}

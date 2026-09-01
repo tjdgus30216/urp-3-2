@@ -1,0 +1,24 @@
+{
+  "run_id": "TRAIN-REPLAY-001-20260731-001",
+  "status": "REPLAY_PASSED",
+  "started_at": "2026-07-31T16:01:01+09:00",
+  "completed_at": "2026-08-01T08:31:47+09:00",
+  "completed_code_cells": 11,
+  "total_code_cells": 11,
+  "failure": null,
+  "c1_before": {
+    "running": true,
+    "command": "\"C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe\" C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\scripts\\STRICT_STEP_026_c1_direct_legacy_py_xonly.py ",
+    "cpu_seconds": 22720.984375,
+    "working_set_bytes": 277929984,
+    "slice_count": 272,
+    "overlay_count": 271,
+    "stderr_bytes": 0
+  },
+  "c1_after": {
+    "running": false,
+    "slice_count": 0,
+    "overlay_count": 0,
+    "stderr_bytes": 283
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "producer_passed": true,
+    "slice_rows_801": true,
+    "overlay_rows_800": true,
+    "slice_components_nonempty": true,
+    "overlay_components_nonempty": true,
+    "primitive_numeric_finite": true,
+    "scalar_replay_9_of_9": true,
+    "scalar_max_abs_error": 7.105427357601002e-15,
+    "f1_selected_replay_9_of_9": true,
+    "prior_family_selected_replay_54_of_54": true,
+    "prior_family_trace_and_descriptor_pass": true,
+    "upstream_trees_exact": true,
+    "protected_assets_31_of_31": true,
+    "no_y_columns": true,
+    "all58_not_executed": true,
+    "status": "passed"
+  },
+  "upstream_exact": {
+    "i006_run_tree": true,
+    "i006_result_tree": true,
+    "i007_run_tree": true,
+    "i007_result_tree": true
+  }
+}

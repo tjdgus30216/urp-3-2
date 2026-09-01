@@ -1,0 +1,9 @@
+condition,action,status,rationale
+source hash missing/mismatch,stop before slice,fail_closed,cannot claim source identity
+source type/identity absent or conflict,stop before route dispatch,fail_closed,route eligibility is source-dependent
+paired_likely requested as confirmed,downgrade to sensitivity or stop,fail_closed,avoid false source-accuracy claim
+STL-only requested for STEP comparison,stop; use STL-only validation lane,fail_closed,no original STEP reference
+T17 orientation not crosswalked,stop,fail_closed,orientation can change slice result
+F1 z400 warning reaches production flag,stop production release; preserve development artifact only,fail_closed,attribution unresolved
+route B cited as independent imported STL,stop report/claim,fail_closed,B is tessellation of the same STEP
+mesh repair/hole fill/proxy STEP silently requested,stop and require a new strict contract,fail_closed,would alter source/route meaning

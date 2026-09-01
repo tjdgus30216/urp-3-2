@@ -1,0 +1,19 @@
+{
+  "work_id": "PRM-113",
+  "title": "XREG_V0_9_WEIGHTED_QUANTILE_LOCATION_CONSOLIDATION_NO_Y",
+  "purpose": "Append exactly the independently verified PRM-112 weighted axial-quantile cohort to immutable XREG-v0.8 and encode its one internal high-redundancy relation without selecting a representative.",
+  "expected": {"prior_candidates": 241, "new_candidates": 24, "total_candidates": 265, "models": 58, "prior_values": 13978, "new_values": 1392, "total_values": 15370, "finite_values": 15368, "inherited_missing": 2, "new_missing": 0, "prior_blocks": 193, "new_components": 23, "total_blocks": 216, "prior_edges": 59, "new_edges": 1, "total_edges": 60},
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM111_xreg_v0_8_candidate_bank.csv", "sha256": "947ceba858982a26cffe55efab17175f384d23d57ba4205b5a21b2891330d023"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM111_xreg_v0_8_values_long.csv", "sha256": "abcdac89fa55d8283076c7a0c22d4b0ab5be205273b83ee1cdd552102b616fe3"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM111_unified_redundancy_edge_registry.csv", "sha256": "970b8982867990777df65dfb06eb2999211eaeab46a7cdf4a3836f1f1bd83568"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM111_unified_redundancy_block_registry.csv", "sha256": "1c34604d9afda246f1da32aee8d485aa0e55fa383021a0af8966a0ce8ab9ab0d"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM112_axial_weighted_quantile_location_candidate_registry.csv", "sha256": "d7cd2a6d0ca14db1cf4682c90a6cb8c82c5c0f9b2e947fe5b6fd31a182423c8b"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM112_axial_weighted_quantile_location_values_long.csv", "sha256": "88587dc4fcb772416e948b758b9a6bd3741f0e6868e6a146c31882edd453ee1e"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM112_axial_weighted_quantile_location_internal_redundancy.csv", "sha256": "3c56ce2529b0aff8996c3e09ae589d4712e3186782369c41c4d3d13378a8d00f"},
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/PRM-112/reports/PRM112_independent_QA_summary.json", "sha256": "79cbe19692e51a6570195e49a101f89507e580b4ebee5f76924bda0d6bad4fc4"}
+  ],
+  "block_policy": "Append-only graph closure of 59 predecessor edges plus one frozen PRM112 internal high-redundancy relation. Preserve every predecessor block ID. Assign deterministic U113 IDs to 23 new-only components. No removal, winner, selection, or promotion.",
+  "locks": {"performance_y_read": 0, "x_y_analysis": 0, "model_fit": 0, "feature_selection": 0, "feature_promotion": 0, "new_masks_or_slicing": 0, "NB_CURRENT_mutation": 0, "LEGACY_PY_mutation": 0, "original_Excel_mutation": 0},
+  "status": "preregistered_pending_execution"
+}

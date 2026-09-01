@@ -1,0 +1,141 @@
+{
+  "contract_id": "TOUR-C001-T4R-SLICE-001-v0.1",
+  "cycle_id": "TOUR-C001",
+  "stage_id": "T4R-SLICE",
+  "run_id": "TOUR-C001-T4R-SLICE-001",
+  "status": "frozen_before_new_configuration_execution",
+  "created_at_kst": "2026-07-20T10:25:21+09:00",
+  "runtime": {
+    "environment": "KMK312",
+    "python": "3.12.12",
+    "execution_requirement": "tools/envs/KMK312/python.exe only",
+    "predictive_model_fit": false
+  },
+  "purpose": "Determine whether detailed, lineage-labelled LEGACY-PY image descriptors distinguish T8 and T9 robustly across bounded pixel/slice resolutions after the frozen nine-scalar XRV1 summary collided.",
+  "known_before_new_execution": {
+    "baseline_config": "P1000_S801",
+    "baseline_source": "CINT-02 exact direct replay",
+    "baseline_result_known": true,
+    "interpretation": "The baseline is prior evidence, not a blinded observation. All convergence gates below are frozen before calculating the three new configurations.",
+    "known_baseline_signal": [
+      "LEGACY-PY-RESULT curvature IP stdev",
+      "LEGACY-PY-RESULT curvature LIP avg",
+      "LEGACY-PY-RESULT curvature LTP stdev",
+      "LEGACY-PY-RESULT angle IP/LIP/LTP stdev",
+      "LEGACY-PY-ANGLE-ALL curvature avg/stdev",
+      "LEGACY-PY-ANGLE-ALL angle stdev"
+    ]
+  },
+  "parent_evidence": [
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/factories/CINT-02/outputs/CINT-02_panel_replay_actual.json",
+      "sha256": "4906cab7d192278ec81ddec96bc2a01ff3bcc00a6321fea3a42d42a3f8e897f2"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/reports/tables/R09-20260715_final_canonical_geometry_registry.csv",
+      "sha256": "49eb903a5eb63a6f017aaf2cf8af891d77d227de375d890a9b4ba889562a3314"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/scripts/R09_ppt_slice_setting_reproduction_probe.py",
+      "sha256": "407a5f7fc38c739d4436d454e64eac5f0ad6517b31d17798e97fcdfef27266d7"
+    },
+    {
+      "path": "urp4/legacy_reference/v0_1/adapters.py",
+      "sha256": "1ca9b01efd72e9a0772cce1a53562b88bf4b87e6c5b6fc1890a5872a94c0e32f"
+    }
+  ],
+  "fixed_models": [
+    {
+      "model_id": "T8",
+      "model_name": "Diamond A",
+      "geometry_sha256": "24d0c1b1f1e190fcea3da70ec421968fc7cf58d8dccf367c34e8263db5677933"
+    },
+    {
+      "model_id": "T9",
+      "model_name": "Diamond B",
+      "geometry_sha256": "76bc0f0bd05dbe549c0fcfd5321a46b9d99ce71631faa4346a0ad2db27c9b429"
+    }
+  ],
+  "fixed_image_contract": {
+    "physical_size_mm": 40.0,
+    "axis": "z",
+    "slice_mode": "endpoint",
+    "color_contract_bgr": {
+      "background": [0, 0, 0],
+      "red_lower_only": [0, 0, 255],
+      "blue_upper_only": [255, 0, 0],
+      "purple_overlap": [255, 0, 255]
+    },
+    "grayscale_contract": [0, 29, 76, 105],
+    "component_backend": "OpenCV connectedComponentsWithStats; exact immutable LEGACY-PY behavior",
+    "mask_rule": "saved PNG readback before descriptor calculation",
+    "artifact_rule": "retain first/middle/last audit images; freeze tables/results/hashes; delete remaining transient PNGs with ledger"
+  },
+  "configuration_matrix": [
+    {
+      "config_id": "P1000_S801",
+      "pixel_resolution": 1000,
+      "slice_count": 801,
+      "slice_spacing_mm": 0.05,
+      "role": "known frozen CINT-02 baseline; reuse only"
+    },
+    {
+      "config_id": "P500_S801",
+      "pixel_resolution": 500,
+      "slice_count": 801,
+      "slice_spacing_mm": 0.05,
+      "role": "new pixel-resolution perturbation"
+    },
+    {
+      "config_id": "P1000_S401",
+      "pixel_resolution": 1000,
+      "slice_count": 401,
+      "slice_spacing_mm": 0.10,
+      "role": "new slice-spacing perturbation"
+    },
+    {
+      "config_id": "P500_S401",
+      "pixel_resolution": 500,
+      "slice_count": 401,
+      "slice_spacing_mm": 0.10,
+      "role": "new combined perturbation"
+    }
+  ],
+  "candidate_scope": {
+    "LEGACY-PY-RESULT": "24 slice values plus 6 thickness values; IP/LIP/LTP populations remain explicit",
+    "LEGACY-PY-ANGLE-ALL": "10 global weighted summary values; never merged silently with LEGACY-PY-RESULT",
+    "status_before_run": "sensitivity rescue candidates; no XRV1 formula promotion"
+  },
+  "pair_metric": "symmetric relative difference = 2*abs(T8-T9)/(abs(T8)+abs(T9)+1e-12)",
+  "pre_registered_classification": {
+    "robustly_distinguishing": "symmetric relative difference >= 0.01 in all four configs, T8-T9 sign identical in all four, and max(relative difference)/min(relative difference) <= 2.0",
+    "strongly_distinguishing": "robustly_distinguishing plus relative difference >= 0.02 in at least three of four configs",
+    "resolution_sensitive": "baseline relative difference >= 0.01 but robustly_distinguishing gate fails",
+    "weak_or_no_rescue": "baseline relative difference < 0.01 and robustly_distinguishing gate fails",
+    "zero_pair_exception": "if both values are zero in any config, that config is non-distinguishing; if one is zero and one nonzero, relative difference is 2.0"
+  },
+  "decision_boundary": {
+    "allowed": [
+      "identify traceable detailed descriptor candidates for later leakage-safe feature evaluation",
+      "authorize a separate axis rescue only if z-axis convergence fails",
+      "retain resolution-sensitive candidates as diagnostics"
+    ],
+    "not_allowed": [
+      "promote F009-F012 or any candidate to canonical formula",
+      "fit GM or any y model",
+      "use GM magnitude to rank candidates",
+      "change NB-CURRENT or LEGACY-PY",
+      "change active roster or begin T5",
+      "claim inverse-design success"
+    ]
+  },
+  "protected_assets": [
+    "original Excel workbooks",
+    "LEGACY-PY",
+    "NB-ORIG",
+    "NB-CURRENT",
+    "Training and generator notebooks",
+    "Master Ledger v0.2",
+    "Tournament Factory HQ site"
+  ]
+}

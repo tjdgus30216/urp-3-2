@@ -1,0 +1,6 @@
+﻿left_target_id,right_target_id,exact_equal,pearson,spearman,relationship_status,promotion_status
+COMP-Y-APS,COMP-Y-AS,False,0.9972837075311919,0.9968692182115,high_redundancy_review,not_promoted
+COMP-Y-APS,COMP-Y-MAX-PLATEAU-STRESS,True,1.0,1.0,exact_duplicate,not_promoted
+COMP-Y-AS,COMP-Y-MAX-PLATEAU-STRESS,False,0.997283707531192,0.9968692182115,high_redundancy_review,not_promoted
+COMP-Y-EAS,COMP-Y-DENSIFI-STRAIN,False,0.9984658619486043,0.9972682749863959,high_redundancy_review,not_promoted
+COMP-Y-EAE,COMP-Y-SE,False,0.9988169820229394,0.9984074006892799,high_redundancy_review,not_promoted

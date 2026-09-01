@@ -1,0 +1,42 @@
+﻿feature_id,feature_name_raw,finite_count,missing_count,unique_count,variance,iqr,status
+SFX004,Actual VF,30,0,30,0.125148008429286,0.7289834330330457,unselected_candidate
+SFX005,Node 개수,30,0,30,2496380.0888888896,1875.0,unselected_candidate
+SFX006,Strut 개수,30,0,30,9923137.765555557,3743.75,unselected_candidate
+SFX007,Global: Strut No. at Nodes-AVG,30,0,30,0.017343460790649395,0.22712581092154416,unselected_candidate
+SFX008,Global: Strut No. at Nodes-STDEV,30,0,30,0.020161647403707357,0.19301375035548962,unselected_candidate
+SFX009,Node: Strut count - AVG,30,0,30,0.017343460790649395,0.22712581092154416,unselected_candidate
+SFX010,Node: Strut count - STDEV,30,0,30,0.020161647403707357,0.19301375035548962,unselected_candidate
+SFX011,Global: Length - AVG,30,0,30,0.7939592399270763,1.3067138414556512,unselected_candidate
+SFX012,Global: Length - STDEV,30,0,30,0.4642720351627586,0.8907505182825,unselected_candidate
+SFX013,Global: Angle-Z (weighted with length)-AVG,30,0,30,0.34880073627503455,0.7315758219170547,unselected_candidate
+SFX014,Global: Angle-Z (weighted with length)-STDEV,30,0,30,5.690230760365753,4.268203154217982,unselected_candidate
+SFX015,Node: Length - AVG,30,0,30,0.7670228501537306,1.3213138247060416,unselected_candidate
+SFX016,Node: Length - STDEV,30,0,30,0.1470035846634982,0.6301849200132273,unselected_candidate
+SFX017,Node: Angle-Z (weighted with length)-AVG,30,0,30,0.27100656461659833,0.7474365997482764,unselected_candidate
+SFX018,Node: Angle-Z (weighted with length)-STDEV,30,0,30,7.356923143736452,3.664392560565709,unselected_candidate
+SFX019,Global: l/d AVG,30,0,30,0.061470173363005656,0.5216427070527065,unselected_candidate
+SFX020,Global: l/d STDEV,30,0,30,0.054125618433322295,0.31768837473775435,unselected_candidate
+SFX021,Node: l/d AVG,30,0,30,0.06192122143212935,0.5082794202447283,unselected_candidate
+SFX022,Node: l/d STDEV,30,0,30,0.015028447513784137,0.1748471025726066,unselected_candidate
+SFX023,Global: Angle-X (weighted with length)-AVG,30,0,30,0.40511994871250506,0.8018713420634249,unselected_candidate
+SFX024,Global: Angle-X (weighted with length)-STDEV,30,0,30,6.398590139181693,4.139736133812271,unselected_candidate
+SFX025,Node: Angle-X (weighted with length)-AVG,30,0,30,0.44051758655076484,0.9146875323557708,unselected_candidate
+SFX026,Node: Angle-X (weighted with length)-STDEV,30,0,30,7.4638011453694215,3.711147754397624,unselected_candidate
+SFX027,Global: Angle-Y (weighted with length)-AVG,30,0,30,0.3378598330504145,0.9787004649660318,unselected_candidate
+SFX028,Global: Angle-Y (weighted with length)-STDEV,30,0,30,7.242274381334676,4.4652276933049535,unselected_candidate
+SFX029,Node: Angle-Y (weighted with length)-AVG,30,0,30,0.1694675281459107,0.7390967510368469,unselected_candidate
+SFX030,Node: Angle-Y (weighted with length)-STDEV,30,0,30,6.141887346147836,3.886180533120603,unselected_candidate
+SFX031,connected_components,30,0,2,0.0322222222222222,0.0,unselected_candidate
+SFX032,maxwell_index_M_3D,30,0,29,2528361.432222222,1876.75,unselected_candidate
+SFX033,total_strut_length_mm,30,0,30,18788878.182045974,5851.415240543155,unselected_candidate
+SFX034,mean_radius_mm,30,0,29,0.17572139292473954,0.5121875001350416,unselected_candidate
+SFX036,mean_diameter_mm,30,0,29,0.7028855716989582,1.0243750002700835,unselected_candidate
+SFX037,surface_area_mm2,30,0,30,231223661.53085405,21650.104569882467,unselected_candidate
+SFX038,surface_to_solid_volume_1_per_mm,30,0,29,0.6207799224636068,0.9387698575894954,unselected_candidate
+SFX039,solid_volume_mm3_approx,30,0,30,45664554.58890999,13547.386571704847,unselected_candidate
+SFX040,bbox_x_mm,30,0,11,0.6869888888888886,1.0,unselected_candidate
+SFX041,bbox_y_mm,30,0,10,0.6812888888888886,1.0,unselected_candidate
+SFX042,bbox_z_mm,30,0,10,0.6812888888888886,1.0,unselected_candidate
+SFX043,mass_center_x_mm,30,0,30,0.054202022026797,0.18456721030385137,unselected_candidate
+SFX044,mass_center_y_mm,30,0,30,0.03102149942109745,0.14671520431960094,unselected_candidate
+SFX045,mass_center_z_mm,30,0,30,0.03428781098011758,0.2601134824677902,unselected_candidate

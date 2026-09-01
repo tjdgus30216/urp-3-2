@@ -1,0 +1,14 @@
+﻿qa_id,mutation,expected_failure,observed_failure,status
+NEG-001,wrong source SHA,SOURCE_SHA_MISMATCH,ValueError: SOURCE_SHA_MISMATCH: expected=0000000000000000000000000000000000000000000000000000000000000000 actual=11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2,PASS
+NEG-002,wrong workbook,WORKBOOK_SHA_MISMATCH,ValueError: WORKBOOK_SHA_MISMATCH: expected=4a6ec7d03d92fa25851998689768d9db9f63227f00e778a528d758b368851dce actual=11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2,PASS
+NEG-003,wrong sheet,SHEET_MISMATCH,ValueError: SHEET_MISMATCH: 'NOT_A_SHEET' not found,PASS
+NEG-004,header order change,COLUMN_ORDER_MISMATCH,ValueError: X_COLUMN_ORDER_MISMATCH,PASS
+NEG-005,row-count change,ROW_COUNT_MISMATCH,ValueError: ROW_COUNT_MISMATCH: X=197 Y=197,PASS
+NEG-006,X/Y column mismatch,Y_SHAPE_MISMATCH,"ValueError: Y_SHAPE_MISMATCH: (198, 15)",PASS
+NEG-007,missing group/fold manifest,FOLD_MANIFEST_MISSING,FileNotFoundError: FOLD_MANIFEST_MISSING,PASS
+NEG-008,fold manifest hash mismatch,FOLD_MANIFEST_HASH_MISMATCH,ValueError: FOLD_MANIFEST_HASH_MISMATCH: expected=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff actual=3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6,PASS
+NEG-009,target policy mismatch,TARGET_POLICY_MISMATCH,ValueError: TARGET_POLICY_MISMATCH: expected 13 primary and 3 hold,PASS
+NEG-010,held target P8 request,FINAL_REFIT_HOLD,PermissionError: FINAL_REFIT_HOLD: TRAIN2NF::HE,PASS
+NEG-011,seed/PYTHONHASHSEED mismatch,RUNTIME_CONTRACT_MISMATCH,"RuntimeError: RUNTIME_CONTRACT_MISMATCH: {'PYTHONHASHSEED': ('41', '42')}",PASS
+NEG-012A,estimator fit attempt,NO_FIT_GUARD,NoFitViolation: NO_FIT_GUARD: estimator.fit() prohibited in TRAIN-PARITY-002,PASS
+NEG-012B,estimator predict attempt,NO_FIT_GUARD,NoFitViolation: NO_FIT_GUARD: estimator.predict() prohibited in TRAIN-PARITY-002,PASS

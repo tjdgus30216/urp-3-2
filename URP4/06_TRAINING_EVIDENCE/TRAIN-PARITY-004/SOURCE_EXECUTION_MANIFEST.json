@@ -1,0 +1,56 @@
+{
+  "runner_id": "source",
+  "status": "native_runtime_crash",
+  "target_id": "TRAIN2NF::HI",
+  "outer_repeat": 0,
+  "stages_completed_as_source_only_pre_fit": [
+    "P0",
+    "P1",
+    "P2",
+    "P3",
+    "P4_contract_pre_fit"
+  ],
+  "numerical_branch_checkpoint_count": 0,
+  "fit_calls": "unknown_native_crash_before_ledger_flush",
+  "predict_calls": "unknown_native_crash_before_ledger_flush",
+  "prediction_rows": 0,
+  "metric_rows": 0,
+  "returncode_decimal": 3228369023,
+  "returncode_hex": "0xC06D007F",
+  "windows_event": {
+    "application_error_id": 1000,
+    "wer_id": 1001,
+    "fault_module": "KERNELBASE.dll",
+    "report_id": "97697565-82f8-418c-86b9-1850ed80589c"
+  },
+  "P8_executed": false,
+  "partial_artifacts": [
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\source_reference\\stage_P0_dataset.json",
+      "sha256": "2586d51dccfccfa92a18a199383164608c3d529067175a7f7848b2296e083601",
+      "status": "completed_before_native_crash"
+    },
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\source_reference\\stage_P1_split.json",
+      "sha256": "8f70e14a366f933a14d9b58068d277917cb845399015f342573a3bc7fc4fa450",
+      "status": "completed_before_native_crash"
+    },
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\source_reference\\stage_P2_preprocessing.json",
+      "sha256": "378555d396c59bd48fb1b6aeaf4b6e8b35dd6c4306266ee69e16a0eaccd144de",
+      "status": "completed_before_native_crash"
+    },
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\source_reference\\stage_P3_features.json",
+      "sha256": "4e90d2e53acc37840b19c80cb3c8d58897e5f24370dfc900a049cf596bd0b709",
+      "status": "completed_before_native_crash"
+    },
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\TRAIN-PARITY-004\\TRAIN-PARITY-004-20260801-001\\source_reference\\stage_P4_contract_pre_fit.json",
+      "sha256": "58e09a7cc7d3aea970a6c9e9511d163ee21357831c4e637caa053032194384ba",
+      "status": "completed_before_native_crash"
+    }
+  ],
+  "stderr_bytes": 0,
+  "interpretation": "source process terminated natively after pre-fit artifacts and before first branch checkpoint; no automatic retry or compatibility patch"
+}

@@ -1,0 +1,118 @@
+{
+  "work_id": "ROUTE-VALID-003_F1_STEP_REFERENCE_PIXEL_PHASE_AND_RESOLUTION_STRESS_TEST_NO_Y",
+  "run_id": "ROUTE-VALID-003-20260729-002",
+  "settings_address": "IDX-URP4-1-GEOM-ROUTES / CFG-ROUTEVALID003-F1-COMMON-N40-Z9-P500-750-1000-1500-PHASE4 r1",
+  "runtime": "KMK312 / Python 3.12.12",
+  "model_id": "F1",
+  "family": "F",
+  "routes": {
+    "A": "original STEP direct B-rep",
+    "B": "controlled tessellation from same original STEP",
+    "C": "reused frozen separately stored paired imported STL masks"
+  },
+  "analysis_domain_mm": [
+    40.0,
+    40.0,
+    40.0
+  ],
+  "axis": "z",
+  "slice_count": 801,
+  "selected_slice_indices": [
+    0,
+    1,
+    100,
+    200,
+    400,
+    600,
+    700,
+    799,
+    800
+  ],
+  "selected_z_mm": {
+    "0": 5e-324,
+    "1": 0.05,
+    "100": 5.0,
+    "200": 10.0,
+    "400": 20.0,
+    "600": 30.0,
+    "700": 35.0,
+    "799": 39.95,
+    "800": 39.99999999999999
+  },
+  "resolutions_px": [
+    500,
+    750,
+    1000,
+    1500
+  ],
+  "phases_pixel": {
+    "P00": [
+      0.0,
+      0.0
+    ],
+    "P50X": [
+      0.5,
+      0.0
+    ],
+    "P50Y": [
+      0.0,
+      0.5
+    ],
+    "P50XY": [
+      0.5,
+      0.5
+    ]
+  },
+  "pixel_center_convention": "same as IMSTL-007; phase is physical geometry/segment translation before unchanged raster",
+  "raster_bounds_xy_mm": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      40.0,
+      40.0
+    ]
+  ],
+  "common_transform": {
+    "transform_id": "F1-RAW-STL-BBOX-AXISWISE-N40-COMMON-r1",
+    "type": "axis-wise_affine",
+    "basis": "paired raw imported STL bbox after confirmed STEP/STL coordinate-frame audit",
+    "scale_xyz": [
+      1.3061979020444376,
+      1.3226574797513104,
+      1.3267388374200666
+    ],
+    "translation_xyz_mm": [
+      23.379168089475233,
+      25.36111608306822,
+      15.571177716755589
+    ],
+    "identity_audit_max_residual_mm": 7.575667169135158e-07,
+    "identity_audit_tolerance_mm": 0.0001,
+    "applied_to": [
+      "Route A",
+      "Route B"
+    ],
+    "Route_C_status": "already N40 derivative from same raw STL transform",
+    "forbidden": [
+      "ICP",
+      "rotation",
+      "route-specific bbox fit",
+      "independent alignment"
+    ]
+  },
+  "route_c_reuse": {
+    "run_id": "IMSTL-007-20260728-002",
+    "mask_count": 144,
+    "mask_recompute": false,
+    "source_sha256": "d76883bc10af4f4b3817ccbe90b2863f97c9b843f30c5214cde81d2f76fdb0f8"
+  },
+  "scope_locks": [
+    "no F1 full STEP Z801",
+    "no IMSTL-007 Route C recompute",
+    "no IMSTL-008 recompute",
+    "no other model",
+    "no descriptor/excel/y/training/NB work"
+  ]
+}

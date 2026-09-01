@@ -1,0 +1,17 @@
+tolerance_id,revision,gate,comparison_item,comparison_type,atol,rtol,unit,rationale,failure_state,next_check
+TOL-001,TRAIN-PARITY-TOL-v0.1,P0,string/header text,exact,0,0,text,Same normalized source contract must yield identical text,blocked_by_contract_gap,inspect normalization and encoding
+TOL-002,TRAIN-PARITY-TOL-v0.1,P1,row and column order,exact,0,0,index,Order affects grouping and selection,blocked_by_contract_gap,compare ordered ledgers
+TOL-003,TRAIN-PARITY-TOL-v0.1,P1,NaN mask,exact,0,0,boolean,Missingness changes usable samples and imputation,blocked_by_contract_gap,compare boolean matrices
+TOL-004,TRAIN-PARITY-TOL-v0.1,P1,numerical dataset values,exact,0,0,source units,Same workbook and extraction must preserve values exactly,blocked_by_contract_gap,check dtype/coercion/extractor
+TOL-005,TRAIN-PARITY-TOL-v0.1,P2,X_KEY GROUP_ID membership,exact,0,0,identity,Group drift invalidates every later gate,blocked_by_contract_gap,check rounding/string/factorize
+TOL-006,TRAIN-PARITY-TOL-v0.1,P3,fold row/group membership,exact,0,0,identity,Parity requires identical observations per fold,blocked_by_contract_gap,check shared manifest consumption
+TOL-007,TRAIN-PARITY-TOL-v0.1,P4,feature candidate and selected sets,exact,0,0,feature ID,Different features imply different model,blocked_by_adapter_gap,inspect source-stage trace
+TOL-008,TRAIN-PARITY-TOL-v0.1,P4,feature rank order,exact,0,0,rank,Tie-breaking must be deterministic,blocked_by_adapter_gap,inspect scores and stable tie-break
+TOL-009,TRAIN-PARITY-TOL-v0.1,P4,feature scores,numerical,1e-12,1e-10,score,Frozen environment should differ only at floating roundoff,blocked_by_adapter_gap,inspect numerical kernels
+TOL-010,TRAIN-PARITY-TOL-v0.1,P5,method estimator transform hyperparameters,exact,0,0,canonical JSON,Recipe identity is categorical,blocked_by_adapter_gap,compare canonicalized config
+TOL-011,TRAIN-PARITY-TOL-v0.1,P6,row-level predictions,numerical,1e-10,1e-8,target unit,Allows negligible floating-linear-algebra drift but not model drift,blocked_by_adapter_gap,compare per-row residual and locate stage
+TOL-012,TRAIN-PARITY-TOL-v0.1,P7,R2,numerical,1e-10,1e-8,dimensionless,Derived from same y and prediction ledger,blocked_by_adapter_gap,recompute independently from P6 ledger
+TOL-013,TRAIN-PARITY-TOL-v0.1,P7,RMSE and MAE,numerical,1e-10,1e-8,target unit,Derived from same y and prediction ledger,blocked_by_adapter_gap,recompute independently from P6 ledger
+TOL-014,TRAIN-PARITY-TOL-v0.1,P8,final-refit predictions eligible13,numerical,1e-10,1e-8,target unit,Same deterministic full-data fit should agree within numerical roundoff,blocked_by_adapter_gap,inspect refit method and fitted state
+TOL-015,TRAIN-PARITY-TOL-v0.1,P0-P8,deterministic repeated run predictions,numerical,1e-12,1e-10,target unit,Same code environment manifest and seeds should be tighter than cross-implementation parity,blocked_by_contract_gap,audit seed/thread/unordered traversal
+TOL-016,TRAIN-PARITY-TOL-v0.1,P0-P8,revision rule,exact,0,0,policy,"Once any parity result exists v0.1 is immutable; changes require v0.2 and cannot retroactively relabel prior failure",blocked_by_contract_gap,open new preregistration revision before rerun

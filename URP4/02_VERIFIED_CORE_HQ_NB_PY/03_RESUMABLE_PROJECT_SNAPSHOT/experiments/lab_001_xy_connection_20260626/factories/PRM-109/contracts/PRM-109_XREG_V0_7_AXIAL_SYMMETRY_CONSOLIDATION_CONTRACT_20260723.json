@@ -1,0 +1,47 @@
+{
+  "work_id": "PRM-109",
+  "title": "XREG_V0_7_AXIAL_DISTRIBUTION_SYMMETRY_CONSOLIDATION_NO_Y",
+  "purpose": "Append exactly the independently verified PRM-108 axial-distribution/reflection-symmetry cohort to immutable XREG-v0.6 and encode its one internal high-redundancy relation without selecting a representative.",
+  "expected": {
+    "prior_candidates": 193,
+    "new_candidates": 24,
+    "total_candidates": 217,
+    "models": 58,
+    "prior_values": 11194,
+    "new_values": 1392,
+    "total_values": 12586,
+    "finite_values": 12584,
+    "inherited_missing": 2,
+    "new_missing": 0,
+    "prior_blocks": 152,
+    "new_components": 23,
+    "total_blocks": 175,
+    "prior_edges": 48,
+    "new_edges": 1,
+    "total_edges": 49
+  },
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM107_xreg_v0_6_candidate_bank.csv", "sha256": "1b8b2ecfa63039dc3b1ce8c63ee7a9f9965ed72aa0786e55310ca82bd2ae20d6"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM107_xreg_v0_6_values_long.csv", "sha256": "bbdd0ec024407970a6e63f45fcc50bddf7847b16c99cecfdff197ff20e8bb991"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM107_unified_redundancy_edge_registry.csv", "sha256": "20eeaed79c30868e521705549e4dfa99e2e147440a8281c7e1fc34c419680c18"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM107_unified_redundancy_block_registry.csv", "sha256": "73801aa393bfdff7ea213277cfe67ab791e7920e5f1cca555481fa7ac6d2c854"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM108_axial_distribution_symmetry_candidate_registry.csv", "sha256": "37e8814930c057c0107d2fd1eb3c2d471d18ae1623c63c69609306154b1cde47"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM108_axial_distribution_symmetry_values_long.csv", "sha256": "7bcf3f828f375cd29e4e44781f314f647bed5d3552aa2f94b8372eca3c3b480c"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM108_axial_distribution_symmetry_vs_XREG_v0_6_redundancy.csv", "sha256": "8f9329de2b9afe14462d35b302fb1c76ed8114076ffd59288ffc9ce32cc320bc"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM108_axial_distribution_symmetry_internal_redundancy.csv", "sha256": "318f0332f598819e3427ce7d6f3067aea8dbec3928af05aed3ba9b5a402a536f"},
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/PRM-108/reports/PRM108_independent_QA_summary.json", "sha256": "79cbe19692e51a6570195e49a101f89507e580b4ebee5f76924bda0d6bad4fc4"}
+  ],
+  "block_policy": "Preserve every XREG-v0.6 block ID because PRM-108 has no qualifying crossbank relation. Add 23 deterministic U109 blocks for 22 singleton candidates and one two-member internal high-redundancy component. No removal, winner, selection or promotion.",
+  "locks": {
+    "performance_y_read": 0,
+    "x_y_analysis": 0,
+    "model_fit": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "new_masks_or_slicing": 0,
+    "NB_CURRENT_mutation": 0,
+    "LEGACY_PY_mutation": 0,
+    "original_Excel_mutation": 0
+  },
+  "status": "preregistered_pending_execution"
+}

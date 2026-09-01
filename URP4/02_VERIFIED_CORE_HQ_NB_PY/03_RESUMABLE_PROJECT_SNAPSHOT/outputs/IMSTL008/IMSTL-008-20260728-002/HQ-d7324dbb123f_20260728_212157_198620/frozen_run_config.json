@@ -1,0 +1,120 @@
+{
+  "hq_version": "URP4-HQ-v0.1",
+  "run_id": "HQ-d7324dbb123f",
+  "route_id": "IMP-STL-ORIENTED-NONZERO-SCREENING-L28",
+  "root": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\URP4-1_DELIVERABLE",
+  "user_inputs": {
+    "workflow": {
+      "import_geometry": true,
+      "generate_geometry": false,
+      "extract_descriptors": true,
+      "feature_selection": false,
+      "training": false,
+      "run_batch": false
+    },
+    "paths": {
+      "input_geometry": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\processed\\n40_all58_20260715\\stl\\F1__0dff3c1b13__N40.stl",
+      "input_directory": "",
+      "output_root": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\outputs\\IMSTL008\\IMSTL-008-20260728-002",
+      "experiment_name": "IMSTL-008_F1_FULL_P1000_Z801_AND_FAMILY_NONREGRESSION_NO_Y",
+      "target_y": ""
+    },
+    "geometry": {
+      "model_id": "F1",
+      "source_type": "imported_stl",
+      "geometry_revision": "N40-20260715-d76883bc10af",
+      "expected_size_mm": 40.0,
+      "normalize_imported_stl": true
+    },
+    "import_control": {
+      "prefer_original_stp": true,
+      "allow_imported_stl": true,
+      "reject_topology_risk": false
+    },
+    "generator": {
+      "family": "lattice_type_a",
+      "random_seed": 42,
+      "target_vf": 0.3,
+      "requested_format": "stl"
+    },
+    "lattice": {
+      "total_length_mm": 40.0,
+      "cell_definition_mode": "cells_per_axis",
+      "cells_per_axis": 5,
+      "cell_size_mm": null
+    },
+    "tpms": {
+      "registry_index": 0,
+      "grid_n": 40
+    },
+    "voxel": {
+      "registry_index": 0,
+      "grid_n": 40,
+      "rows_per_mode": 1
+    },
+    "slicing": {
+      "axis": "z",
+      "physical_size_mm": 40.0,
+      "definition_mode": "derive_count_from_spacing",
+      "slice_count": null,
+      "slice_spacing_mm": 0.05,
+      "pixel_resolution": 1000,
+      "connectivity": 8,
+      "min_component_pixels": 2,
+      "threshold_rule": "binary_nonzero_png_readback"
+    },
+    "descriptor": {
+      "point_enabled": false,
+      "surface_enabled": false,
+      "slice_enabled": true,
+      "lattice_enabled": false,
+      "candidate_enabled": false
+    },
+    "artifacts": {
+      "image_policy": "STREAMING_TEMP_PNG",
+      "overwrite": false,
+      "export_component_tables": true,
+      "visual_review_export": false
+    },
+    "training": {
+      "method_ids": [
+        "TRAIN-METHOD-01",
+        "TRAIN-METHOD-02",
+        "TRAIN-METHOD-03",
+        "TRAIN-METHOD-04",
+        "TRAIN-METHOD-05"
+      ],
+      "grouped_split_required": true
+    }
+  },
+  "derived": {
+    "slice_count": 801,
+    "slice_spacing_mm": 0.05,
+    "pixel_size_mm": 0.04,
+    "area_per_pixel_mm2": 0.0016,
+    "lattice_cells_per_axis": 5,
+    "lattice_cell_size_mm": 8.0
+  },
+  "locked": {
+    "runtime_alias": "KMK312",
+    "descriptor_backend_id": "BACKEND-R09-RESLICE-003-SAVED-PNG-READBACK-v0.1",
+    "descriptor_profile": "P1000-Z801-DZ0.05-CC8M2-N40",
+    "formula_ids": [
+      "XRV1-F001",
+      "XRV1-F002",
+      "XRV1-F003",
+      "XRV1-F004",
+      "XRV1-F005",
+      "XRV1-F006",
+      "XRV1-F007",
+      "XRV1-F008"
+    ],
+    "imported_stl_algorithm_revision": "ORIENTED_NONZERO_RAW/IMSTL-004/r1",
+    "imported_stl_route_id": "IMP-STL-ORIENTED-NONZERO-SCREENING-L28",
+    "stl_to_step_default_fallback": false,
+    "training_execution": "fail_closed_off",
+    "batch_execution": "fail_closed_off",
+    "supported_descriptor_scope": "slice_only"
+  },
+  "config_sha256": "d7324dbb123ff8dade346f0aaf9c529af6706b2eee12273b100c13b911b595c8"
+}

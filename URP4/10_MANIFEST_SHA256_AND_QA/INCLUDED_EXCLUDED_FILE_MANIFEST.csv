@@ -1,0 +1,13 @@
+﻿scope,group,reason,location
+included,HQ/engine,canonical technical execution entry and modules,02_VERIFIED_CORE_HQ_NB_PY/00_RUNNABLE_HQ_AND_ENGINE
+included,Direct STEP C1,accepted 801/800/40 calculation and QA reproduction chain,02_VERIFIED_CORE_HQ_NB_PY/03_RESUMABLE_PROJECT_SNAPSHOT + 05_DESCRIPTOR_XREG_GEOMETRY_EVIDENCE/STRICT-STEP-026
+included,Imported STL/route,development validation and continuation,03_RESUMABLE_PROJECT_SNAPSHOT/experiments/.../scripts and results
+included,XREG-v2.7,542-candidate no-y registry and extension inputs,05_DESCRIPTOR_XREG_GEOMETRY_EVIDENCE/XREG-v2.7 + RAW_SLICE_TABLES_XREG_V2_7.zip
+included,Training,"9-source audit, adapter and blocked parity evidence",06_TRAINING_EVIDENCE + 01_EXPERIMENTAL_TRAINING_ADAPTER
+included,Compression pilots,actual B/C/L/Voronoi/AI Lattice pipeline and bounded results,07_COMPRESSION_DATA_AND_PILOT
+included,Representative geometry,small local resume fixtures,03_RESUMABLE_PROJECT_SNAPSHOT/experiments/.../data
+excluded_external,Full 67-file geometry,avoid 1.41GB duplicate; use Drive archive and SHA,external Drive asset
+excluded_external,11 large compression workbooks,avoid ~1.35GB duplicate; source manifest and Drive folder retained,external Drive asset
+excluded,bulk transient PNG,reconstructable and storage-heavy; anchor evidence retained,not packaged
+excluded,cache/pyc/checkpoint,not research source or evidence,not packaged
+excluded,superseded/failed bulk outputs,avoid ambiguous current state; failure evidence kept only where scientifically relevant,not packaged

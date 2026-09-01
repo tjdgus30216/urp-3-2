@@ -1,0 +1,10 @@
+{
+  "run_id": "TRAIN-PARITY-003-20260801-001",
+  "completed_at_kst": "2026-08-01T12:17:30+09:00",
+  "decision": "NO_GO_WITH_BLOCKER",
+  "fit_calls": 0,
+  "predict_calls": 0,
+  "prediction_rows": 0,
+  "metric_rows": 0,
+  "required_independent_qa_pending": true
+}

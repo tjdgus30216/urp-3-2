@@ -1,0 +1,80 @@
+{
+  "run_id": "COMP-FACTORY-002-AI-LATTICE-PILOT-20260731-144749",
+  "contract_id": "COMP-FACTORY-002-AI-LATTICE-PILOT-v0.1",
+  "status": "passed",
+  "started_at_kst": "2026-07-31T14:47:51.490651+09:00",
+  "completed_at_kst": "2026-07-31T14:47:56.787833+09:00",
+  "runtime_seconds": 5.291856400002871,
+  "runtime": {
+    "sys_executable": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+    "python_version": "3.12.12",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "omp_num_threads": "1",
+    "mkl_num_threads": "1"
+  },
+  "counts": {
+    "rows": 149,
+    "targets": 16,
+    "eligible_features": 37,
+    "outer_folds": 3,
+    "methods": 4,
+    "predictions": 9536
+  },
+  "input_hashes": [
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-001/COMP-FACTORY-001-AI-LATTICE-20260731-142459/ai_lattice_xy_eligible149.csv",
+      "expected_sha256": "CFE004962657D1C6209049856954F0883C1C753CE396C86B77155D51B6006E06",
+      "actual_sha256": "CFE004962657D1C6209049856954F0883C1C753CE396C86B77155D51B6006E06",
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-001/COMP-FACTORY-001-AI-LATTICE-20260731-142459/feature_registry.csv",
+      "expected_sha256": "60F196B603F7F4FF70E13CF23B19B42280E0775412E2E1789CAD1C3ADBFBB022",
+      "actual_sha256": "60F196B603F7F4FF70E13CF23B19B42280E0775412E2E1789CAD1C3ADBFBB022",
+      "status": "PASS"
+    },
+    {
+      "path": "experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-001/COMP-FACTORY-001-AI-LATTICE-20260731-142459/target_registry.csv",
+      "expected_sha256": "5A0EE38AB1DB3C33413ABC5A087ED918296D33DFF4B58EF265B3280720EBE437",
+      "actual_sha256": "5A0EE38AB1DB3C33413ABC5A087ED918296D33DFF4B58EF265B3280720EBE437",
+      "status": "PASS"
+    }
+  ],
+  "output_hashes": {
+    "feature_redundancy_edges.csv": "AE6C0F7227F1BE49FC6B7109E1EB267413B0F1CD63F27EEE2CA05CB77F5F795E",
+    "feature_selection_frequency.csv": "F29D04978287D0CF42E362C1AC5027EA695454C02FDBBA7FCC673F51E4E62134",
+    "feature_x_only_census.csv": "E1E2E8F6D80E2FDFB12832B795353E4612B512F16E57F0B4DA2CF2E03B1DCF5A",
+    "figures/f1_yx.png": "CE71DBA9C226DE9646994BCF1B2000A76AA5A58831A17F082C1B58B8DB175986",
+    "figures/f2_r2.png": "B94166CAD0280C206202E4BAD6DA714A9267910044CC8D2BCB1A36EB3251EA57",
+    "figures/f3_block.png": "3DBE9E4628780493DCF4216BA7106F839ACFB22D5643BE359967B1B32D29346D",
+    "fold_local_feature_selection.csv": "093E9AC022B8509AC1C20B2ACBEC325FBB3ECEBC4968B739DBD106E5090B40BB",
+    "method_execution_details.csv": "9FF4E89FD552970463C59DFCB29B7BFE92B5B72D0D1414FC8DD7F4D5D33B905F",
+    "metrics.csv": "45AD3D95050EAFC0467613FAF68F46F236788ADCAFAB588B7E1E1671B6582389",
+    "nearest_neighbor_collision_audit.csv": "E6EFBCE50B9818C49F8C1B7A72838296594835A927645E5543A4F3533E5A397B",
+    "oof_predictions.csv": "95C03A6548A7F2A38FA647ADBEC244730AB8D301B3035BD7B2050CEC3AB8062F",
+    "outer_fold_registry.csv": "06F5C1CECD5891FE51675BB729062AA166D3C8B1DB082883FD8D370A131CA00A",
+    "producer_QA.csv": "D6887CF317D7463188D49DE70EF587CFA240C3E98C87115D6CF9FDD24B883805",
+    "REPORT.md": "3E172B200E3E87936B476635AF10726F933EAC665C9EC1F7184686ACFB906623",
+    "source_hash_audit.csv": "7C5002943B38086D2D130C1A3C119C1530BD5E06F8D07731F91E2050D454C615",
+    "target_screening_summary.csv": "0CC53FA52ADA10109B93F4AC25464E94FBDE6048A05ECDCCAA59B4A862A896F9",
+    "target_y_census.csv": "DE738B9A91C6927B82B3FC503989334DE2E47F3CA295D821115D74C8AA9CDE10",
+    "target_y_redundancy_edges.csv": "DF17243F9C7D6D3DE1488B309751BB1B6E50D5B78D75DAADD4C8FE7E9FC62DD4",
+    "target_y_source_block_summary.csv": "B9F53E8238D26FDACE60163D47FE5E68838EFFE8C1D65D1728ED748A6FC2A5C7"
+  },
+  "claim_boundary": {
+    "allowed": [
+      "technical predictive pilot",
+      "source-block OOF metrics",
+      "fold-local feature-selection frequency",
+      "target and feature prioritization for follow-up"
+    ],
+    "prohibited": [
+      "final feature promotion",
+      "physical optimum",
+      "production prediction",
+      "inverse design success",
+      "generalization to B/C/L or Voronoi",
+      "proof of leakage-free generator-lineage evaluation"
+    ]
+  }
+}

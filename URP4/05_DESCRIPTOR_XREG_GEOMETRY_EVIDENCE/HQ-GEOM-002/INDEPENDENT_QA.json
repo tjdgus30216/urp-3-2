@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "producer_passed": true,
+    "contract_fixtures_6_of_6": true,
+    "voxel_reference_parity_6_of_6": true,
+    "source_hash_unchanged": true,
+    "protected_assets_31_of_31": true,
+    "no_y_or_modeling": true,
+    "status": "passed"
+  }
+}

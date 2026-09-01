@@ -1,0 +1,201 @@
+﻿target_id,feature_id,feature_name_raw,selected_outer_fold_count,outer_fold_count,selection_frequency,promotion_status
+COMP-Y-MODULUS,AIX004,Actual VF,3,3,1.0,not_promoted
+COMP-Y-MODULUS,AIX019,Global: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-MODULUS,AIX020,Global: l/d STDEV,3,3,1.0,not_promoted
+COMP-Y-MODULUS,AIX021,Node: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-MODULUS,AIX034,mean_radius_mm,3,3,1.0,not_promoted
+COMP-Y-MODULUS,AIX037,surface_area_mm2,3,3,1.0,not_promoted
+COMP-Y-MODULUS,AIX038,surface_to_solid_volume_1_per_mm,3,3,1.0,not_promoted
+COMP-Y-MODULUS,AIX022,Node: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-MODULUS,AIX014,Global: Angle-Z (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRENGTH,AIX004,Actual VF,3,3,1.0,not_promoted
+COMP-Y-COMP-STRENGTH,AIX019,Global: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-COMP-STRENGTH,AIX020,Global: l/d STDEV,3,3,1.0,not_promoted
+COMP-Y-COMP-STRENGTH,AIX021,Node: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-COMP-STRENGTH,AIX034,mean_radius_mm,3,3,1.0,not_promoted
+COMP-Y-COMP-STRENGTH,AIX037,surface_area_mm2,3,3,1.0,not_promoted
+COMP-Y-COMP-STRENGTH,AIX038,surface_to_solid_volume_1_per_mm,3,3,1.0,not_promoted
+COMP-Y-COMP-STRENGTH,AIX022,Node: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-COMP-STRENGTH,AIX014,Global: Angle-Z (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX014,Global: Angle-Z (weighted with length)-STDEV,3,3,1.0,not_promoted
+COMP-Y-COMP-STRAIN,AIX018,Node: Angle-Z (weighted with length)-STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-COMP-STRAIN,AIX028,Global: Angle-Y (weighted with length)-STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-COMP-STRAIN,AIX034,mean_radius_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-COMP-STRAIN,AIX038,surface_to_solid_volume_1_per_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-COMP-STRAIN,AIX004,Actual VF,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX005,Node 개수,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX006,Strut 개수,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX007,Global: Strut No. at Nodes-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX011,Global: Length - AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX016,Node: Length - STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX019,Global: l/d AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX021,Node: l/d AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX023,Global: Angle-X (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX024,Global: Angle-X (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX026,Node: Angle-X (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX033,total_strut_length_mm,1,3,0.3333333333333333,not_promoted
+COMP-Y-COMP-STRAIN,AIX037,surface_area_mm2,1,3,0.3333333333333333,not_promoted
+COMP-Y-APS,AIX004,Actual VF,3,3,1.0,not_promoted
+COMP-Y-APS,AIX019,Global: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-APS,AIX020,Global: l/d STDEV,3,3,1.0,not_promoted
+COMP-Y-APS,AIX021,Node: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-APS,AIX022,Node: l/d STDEV,3,3,1.0,not_promoted
+COMP-Y-APS,AIX034,mean_radius_mm,3,3,1.0,not_promoted
+COMP-Y-APS,AIX037,surface_area_mm2,3,3,1.0,not_promoted
+COMP-Y-APS,AIX038,surface_to_solid_volume_1_per_mm,3,3,1.0,not_promoted
+COMP-Y-AS,AIX004,Actual VF,3,3,1.0,not_promoted
+COMP-Y-AS,AIX019,Global: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-AS,AIX020,Global: l/d STDEV,3,3,1.0,not_promoted
+COMP-Y-AS,AIX021,Node: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-AS,AIX022,Node: l/d STDEV,3,3,1.0,not_promoted
+COMP-Y-AS,AIX034,mean_radius_mm,3,3,1.0,not_promoted
+COMP-Y-AS,AIX037,surface_area_mm2,3,3,1.0,not_promoted
+COMP-Y-AS,AIX038,surface_to_solid_volume_1_per_mm,3,3,1.0,not_promoted
+COMP-Y-YIELD-STRENGTH,AIX004,Actual VF,3,3,1.0,not_promoted
+COMP-Y-YIELD-STRENGTH,AIX019,Global: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-YIELD-STRENGTH,AIX020,Global: l/d STDEV,3,3,1.0,not_promoted
+COMP-Y-YIELD-STRENGTH,AIX021,Node: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-YIELD-STRENGTH,AIX022,Node: l/d STDEV,3,3,1.0,not_promoted
+COMP-Y-YIELD-STRENGTH,AIX034,mean_radius_mm,3,3,1.0,not_promoted
+COMP-Y-YIELD-STRENGTH,AIX037,surface_area_mm2,3,3,1.0,not_promoted
+COMP-Y-YIELD-STRENGTH,AIX038,surface_to_solid_volume_1_per_mm,3,3,1.0,not_promoted
+COMP-Y-YIELD-STRAIN,AIX004,Actual VF,2,3,0.6666666666666666,not_promoted
+COMP-Y-YIELD-STRAIN,AIX019,Global: l/d AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-YIELD-STRAIN,AIX020,Global: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-YIELD-STRAIN,AIX021,Node: l/d AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-YIELD-STRAIN,AIX022,Node: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-YIELD-STRAIN,AIX034,mean_radius_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-YIELD-STRAIN,AIX037,surface_area_mm2,2,3,0.6666666666666666,not_promoted
+COMP-Y-YIELD-STRAIN,AIX038,surface_to_solid_volume_1_per_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-YIELD-STRAIN,AIX013,Global: Angle-Z (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-YIELD-STRAIN,AIX014,Global: Angle-Z (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-YIELD-STRAIN,AIX017,Node: Angle-Z (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-YIELD-STRAIN,AIX026,Node: Angle-X (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-YIELD-STRAIN,AIX027,Global: Angle-Y (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-YIELD-STRAIN,AIX029,Node: Angle-Y (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-YIELD-STRAIN,AIX033,total_strut_length_mm,1,3,0.3333333333333333,not_promoted
+COMP-Y-YIELD-STRAIN,AIX045,mass_center_z_mm,1,3,0.3333333333333333,not_promoted
+COMP-Y-LCC,AIX004,Actual VF,2,3,0.6666666666666666,not_promoted
+COMP-Y-LCC,AIX014,Global: Angle-Z (weighted with length)-STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-LCC,AIX019,Global: l/d AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-LCC,AIX020,Global: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-LCC,AIX021,Node: l/d AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-LCC,AIX034,mean_radius_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-LCC,AIX037,surface_area_mm2,2,3,0.6666666666666666,not_promoted
+COMP-Y-LCC,AIX038,surface_to_solid_volume_1_per_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-LCC,AIX007,Global: Strut No. at Nodes-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-LCC,AIX008,Global: Strut No. at Nodes-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-LCC,AIX013,Global: Angle-Z (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-LCC,AIX017,Node: Angle-Z (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-LCC,AIX026,Node: Angle-X (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-LCC,AIX029,Node: Angle-Y (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-LCC,AIX043,mass_center_x_mm,1,3,0.3333333333333333,not_promoted
+COMP-Y-LCC,AIX044,mass_center_y_mm,1,3,0.3333333333333333,not_promoted
+COMP-Y-EAS,AIX004,Actual VF,3,3,1.0,not_promoted
+COMP-Y-EAS,AIX037,surface_area_mm2,3,3,1.0,not_promoted
+COMP-Y-EAS,AIX019,Global: l/d AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-EAS,AIX020,Global: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-EAS,AIX021,Node: l/d AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-EAS,AIX034,mean_radius_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-EAS,AIX038,surface_to_solid_volume_1_per_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-EAS,AIX005,Node 개수,1,3,0.3333333333333333,not_promoted
+COMP-Y-EAS,AIX017,Node: Angle-Z (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-EAS,AIX018,Node: Angle-Z (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-EAS,AIX022,Node: l/d STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-EAS,AIX025,Node: Angle-X (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-EAS,AIX029,Node: Angle-Y (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-EAS,AIX030,Node: Angle-Y (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-EAS,AIX043,mass_center_x_mm,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX023,Global: Angle-X (weighted with length)-AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX026,Node: Angle-X (weighted with length)-STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX034,mean_radius_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX037,surface_area_mm2,2,3,0.6666666666666666,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX038,surface_to_solid_volume_1_per_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX004,Actual VF,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX006,Strut 개수,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX018,Node: Angle-Z (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX019,Global: l/d AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX020,Global: l/d STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX021,Node: l/d AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX022,Node: l/d STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX025,Node: Angle-X (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX028,Global: Angle-Y (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX029,Node: Angle-Y (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX030,Node: Angle-Y (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX033,total_strut_length_mm,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX043,mass_center_x_mm,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIF-STRENGTH,AIX045,mass_center_z_mm,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX004,Actual VF,3,3,1.0,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX037,surface_area_mm2,3,3,1.0,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX019,Global: l/d AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX020,Global: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX021,Node: l/d AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX029,Node: Angle-Y (weighted with length)-AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX034,mean_radius_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX038,surface_to_solid_volume_1_per_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX005,Node 개수,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX018,Node: Angle-Z (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX022,Node: l/d STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX025,Node: Angle-X (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX030,Node: Angle-Y (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-DENSIFI-STRAIN,AIX043,mass_center_x_mm,1,3,0.3333333333333333,not_promoted
+COMP-Y-EAE,AIX004,Actual VF,3,3,1.0,not_promoted
+COMP-Y-EAE,AIX021,Node: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-EAE,AIX034,mean_radius_mm,3,3,1.0,not_promoted
+COMP-Y-EAE,AIX038,surface_to_solid_volume_1_per_mm,3,3,1.0,not_promoted
+COMP-Y-EAE,AIX014,Global: Angle-Z (weighted with length)-STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-EAE,AIX019,Global: l/d AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-EAE,AIX020,Global: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-EAE,AIX037,surface_area_mm2,2,3,0.6666666666666666,not_promoted
+COMP-Y-EAE,AIX018,Node: Angle-Z (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-EAE,AIX022,Node: l/d STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-EAE,AIX024,Global: Angle-X (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-EAE,AIX028,Global: Angle-Y (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-SE,AIX004,Actual VF,3,3,1.0,not_promoted
+COMP-Y-SE,AIX021,Node: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-SE,AIX034,mean_radius_mm,3,3,1.0,not_promoted
+COMP-Y-SE,AIX038,surface_to_solid_volume_1_per_mm,3,3,1.0,not_promoted
+COMP-Y-SE,AIX014,Global: Angle-Z (weighted with length)-STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-SE,AIX019,Global: l/d AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-SE,AIX020,Global: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-SE,AIX037,surface_area_mm2,2,3,0.6666666666666666,not_promoted
+COMP-Y-SE,AIX018,Node: Angle-Z (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-SE,AIX022,Node: l/d STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-SE,AIX024,Global: Angle-X (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-SE,AIX028,Global: Angle-Y (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX004,Actual VF,2,3,0.6666666666666666,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX019,Global: l/d AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX020,Global: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX021,Node: l/d AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX022,Node: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX029,Node: Angle-Y (weighted with length)-AVG,2,3,0.6666666666666666,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX034,mean_radius_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX037,surface_area_mm2,2,3,0.6666666666666666,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX013,Global: Angle-Z (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX017,Node: Angle-Z (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX023,Global: Angle-X (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX025,Node: Angle-X (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX026,Node: Angle-X (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX027,Global: Angle-Y (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX038,surface_to_solid_volume_1_per_mm,1,3,0.3333333333333333,not_promoted
+COMP-Y-TOTAL-ENERGY,AIX045,mass_center_z_mm,1,3,0.3333333333333333,not_promoted
+COMP-Y-SEA,AIX004,Actual VF,3,3,1.0,not_promoted
+COMP-Y-SEA,AIX019,Global: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-SEA,AIX021,Node: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-SEA,AIX037,surface_area_mm2,3,3,1.0,not_promoted
+COMP-Y-SEA,AIX020,Global: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-SEA,AIX022,Node: l/d STDEV,2,3,0.6666666666666666,not_promoted
+COMP-Y-SEA,AIX034,mean_radius_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-SEA,AIX038,surface_to_solid_volume_1_per_mm,2,3,0.6666666666666666,not_promoted
+COMP-Y-SEA,AIX007,Global: Strut No. at Nodes-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-SEA,AIX014,Global: Angle-Z (weighted with length)-STDEV,1,3,0.3333333333333333,not_promoted
+COMP-Y-SEA,AIX027,Global: Angle-Y (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-SEA,AIX029,Node: Angle-Y (weighted with length)-AVG,1,3,0.3333333333333333,not_promoted
+COMP-Y-MAX-PLATEAU-STRESS,AIX004,Actual VF,3,3,1.0,not_promoted
+COMP-Y-MAX-PLATEAU-STRESS,AIX019,Global: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-MAX-PLATEAU-STRESS,AIX020,Global: l/d STDEV,3,3,1.0,not_promoted
+COMP-Y-MAX-PLATEAU-STRESS,AIX021,Node: l/d AVG,3,3,1.0,not_promoted
+COMP-Y-MAX-PLATEAU-STRESS,AIX022,Node: l/d STDEV,3,3,1.0,not_promoted
+COMP-Y-MAX-PLATEAU-STRESS,AIX034,mean_radius_mm,3,3,1.0,not_promoted
+COMP-Y-MAX-PLATEAU-STRESS,AIX037,surface_area_mm2,3,3,1.0,not_promoted
+COMP-Y-MAX-PLATEAU-STRESS,AIX038,surface_to_solid_volume_1_per_mm,3,3,1.0,not_promoted

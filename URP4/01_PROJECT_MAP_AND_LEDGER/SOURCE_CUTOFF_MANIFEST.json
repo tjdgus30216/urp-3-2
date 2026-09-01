@@ -1,0 +1,134 @@
+{
+  "scope": "preserved v1.2 source cutoff used as the immutable base; not the current v1.3 package view",
+  "cutoff_id": "HANDOFF-CUTOFF-20260802-001",
+  "schema_version": "1.2",
+  "package_revision": "v1.2-r1",
+  "created_at": "2026-08-02T03:03:07+09:00",
+  "current_indices": {
+    "run": "RUN-366",
+    "decision": "DEC-370",
+    "global_change": "CHG-355",
+    "lab_change": "LAB-CHG-321",
+    "blackbox": "R09-BB-1324"
+  },
+  "files": [
+    {
+      "path": "CLAIM_AND_LIMITATION_LEDGER.csv",
+      "sha256": "44f605d7626848ce23e0f97b64df088e5acc9c3d359a63338435796fc5c5ee39",
+      "size_bytes": 3326
+    },
+    {
+      "path": "CONTEXT_AND_DECISION_LINEAGE.md",
+      "sha256": "7d76752876cfdebd98ad5cb3e095557403f0f21fbdad8a5707986aca2e9ffab9",
+      "size_bytes": 5800
+    },
+    {
+      "path": "CONTEXT_LINEAGE_REGISTER.csv",
+      "sha256": "a3108a33968583322564291001f9f33e6eefb8708b05d68a45f8a464af4b7154",
+      "size_bytes": 10648
+    },
+    {
+      "path": "EVIDENCE_INDEX.csv",
+      "sha256": "7fd1469d23cb213b9ef25a0e1559d480266293f960b3810477fd5bd4b50149ff",
+      "size_bytes": 719689
+    },
+    {
+      "path": "FILE_ALIAS_AND_PATH_INDEX.csv",
+      "sha256": "303f1b56e8c328317d7d80ec42ce913d584528fb00b01a06f1b3258ed43ce447",
+      "size_bytes": 35413
+    },
+    {
+      "path": "FINAL_SUBMISSION_REPORT.md",
+      "sha256": "2a6155ce6442f09caccc9dfc9e06d67f836b778c6c231c15e09d783f14b85680",
+      "size_bytes": 1385
+    },
+    {
+      "path": "HQ_CELL_IMPLEMENTATION_MAP.csv",
+      "sha256": "b4510b67a2edb9c6e7f7678282015eb74768febbb40b0cf3570181e8643c8be6",
+      "size_bytes": 6383
+    },
+    {
+      "path": "HQ_NOTEBOOK_CELL_TREE.csv",
+      "sha256": "5fcf7e0bec3e99e1463c0ca7e29e869a271c7f7d000eb928f3a3ebcc429e1e71",
+      "size_bytes": 281304
+    },
+    {
+      "path": "MANIFEST_SCOPE_AND_REVISION_MAP.csv",
+      "sha256": "9cbfed91038600623633d6b492d6cc3d7767559c7c81510a955ca23d64a41507",
+      "size_bytes": 4772
+    },
+    {
+      "path": "MERGE_PACKET.md",
+      "sha256": "02f9449e3e3856664926cac6307d034f60a46ec205aad67fb4b5c81bc19ded1a",
+      "size_bytes": 532
+    },
+    {
+      "path": "OPEN_GATES.csv",
+      "sha256": "dbc916e38fd98479ba3017d45b54fcb83664a6098da7caac935dba12318b4449",
+      "size_bytes": 3852
+    },
+    {
+      "path": "OPEN_ISSUES_AND_NEXT_GATES.md",
+      "sha256": "5ceb61554c70b2ac248473094b9b6382616f2e1f8aef17d7fd33607eb9d41449",
+      "size_bytes": 274
+    },
+    {
+      "path": "PROJECT_SCHEMA.json",
+      "sha256": "6dc6fa429763543316f73ec627077a557ab2ae45d47b33586b0c9f66577fdc44",
+      "size_bytes": 2339203
+    },
+    {
+      "path": "PYTHON_MODULE_AUDIT.csv",
+      "sha256": "6a125053dd5aac26bd1e5fbd8b69530939b5d1b18637a4d6505499a1f519d9cb",
+      "size_bytes": 495932
+    },
+    {
+      "path": "RECONCILIATION_DISCREPANCIES.csv",
+      "sha256": "d61d6c65b372918bff945fd58a2a7a63f802d69be611b28aa2eb0a1535e36770",
+      "size_bytes": 9416
+    },
+    {
+      "path": "REPRODUCTION_AND_RESUME_GUIDE.md",
+      "sha256": "5fad60c0c2aa760df5548203332c13a657cf252f2fa562e3ae7b0dade1c8e842",
+      "size_bytes": 1082
+    },
+    {
+      "path": "SUBMISSION_REQUIREMENTS_CHECKLIST.csv",
+      "sha256": "8b9b5056f178502880d21ac8119fd6e55c39529e7506f1c8ac5f09286523c461",
+      "size_bytes": 2415
+    },
+    {
+      "path": "URP4_1_HQ_21CELL_RAW_FLOW.svg",
+      "sha256": "668e507e50592cb7e36fe8f3417e2a57bb73f742cd3a903bc9880f6df7f9c488",
+      "size_bytes": 136274
+    },
+    {
+      "path": "URP4_1_HQ_PROJECT_MAP.html",
+      "sha256": "b8df8b2a31999e9ea09e3b8d8f6e04f3b318ed1368d2612db78ccc34e4a60845",
+      "size_bytes": 3722
+    },
+    {
+      "path": "URP4_1_HQ_PROJECT_MAP.md",
+      "sha256": "76b46045d4816e06197545b88a2f587e295916741303476d0479b0cd14828b4c",
+      "size_bytes": 2048
+    },
+    {
+      "path": "URP4_1_HQ_PROJECT_MAP.svg",
+      "sha256": "b2e97366ea50272d1a106e6c8f602648b845c5e2ecae90914050b127e2324b23",
+      "size_bytes": 3978
+    },
+    {
+      "path": "URP4_1_MASTER_HANDOFF_LEDGER.xlsx",
+      "sha256": "8b7f5f2c0f360809df9401a5b042df7e107886b786096962ae1b5eee3c46d9e4",
+      "size_bytes": 262224
+    },
+    {
+      "path": "WORK_PACKAGE_LEDGER.csv",
+      "sha256": "6bf1a61f6a4ae98db9ee8eeb10c3ed5bf1f46e37e557acaab66816f89952008f",
+      "size_bytes": 572334
+    }
+  ],
+  "manifest_id": "SOURCE_CUTOFF_MANIFEST-preserved-v1.2-r1",
+  "source_cutoff": "HANDOFF-CUTOFF-20260801-001",
+  "scope_note": "Historical hashes refer to the v1.2 source view. Current v1.3 files are registered by PACKAGE_VIEW/HANDOFF_CUTOFF manifests."
+}

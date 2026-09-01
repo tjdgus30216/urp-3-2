@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": {
+    "png_2403": true,
+    "slice_801_each": true,
+    "overlay_800_each": true,
+    "identity_trace_complete": true,
+    "source_status_passed": true
+  }
+}

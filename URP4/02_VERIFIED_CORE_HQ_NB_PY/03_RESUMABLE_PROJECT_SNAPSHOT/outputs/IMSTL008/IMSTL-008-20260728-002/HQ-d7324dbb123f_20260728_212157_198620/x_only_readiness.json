@@ -1,0 +1,7 @@
+{
+  "status": "ready_for_separate_x_only_QA",
+  "descriptor_rows": 9,
+  "feature_selection_performed": false,
+  "y_accessed": false,
+  "note": "This is an interface/readiness result, not feature promotion."
+}

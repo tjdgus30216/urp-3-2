@@ -1,0 +1,135 @@
+{
+  "qa_id": "SUBMIT-CLOSE-001-v1.3-content-QA",
+  "release": "URP4-1_DOCTOR_HANDOFF_20260802_v1_4_r2",
+  "cutoff": "HANDOFF-CUTOFF-20260802-002",
+  "schema": "1.3",
+  "runtime": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+  "python_version": "3.12.12 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 20:05:38) [MSC v.1929 64 bit (AMD64)]",
+  "status": "PASS",
+  "checks": {
+    "all_json_csv_ipynb_py_xlsx_nested_zip_parse": true,
+    "algorithm_index_161_hashes": true,
+    "raw_table_archive_469_hashes": true,
+    "protected_assets_unchanged": true,
+    "master_ledger_13_sheets": true,
+    "master_ledger_current_strings": true,
+    "html_internal_links": true,
+    "front_current_state": true,
+    "notebook_roles_and_main_mirror": true,
+    "no_cache_artifacts": true
+  },
+  "parsing": {
+    "counts": {
+      "csv": 246,
+      "json": 180,
+      "xlsx": 19,
+      "py": 427,
+      "ipynb": 19,
+      "nested_zip": 2
+    },
+    "failures": {},
+    "xlsx_sheet_counts": {
+      "URP4/01_PROJECT_MAP_AND_LEDGER/URP4_1_MASTER_HANDOFF_LEDGER.xlsx": 13,
+      "URP4/02_VERIFIED_CORE_HQ_NB_PY/02_PROTECTED_REFERENCES_READ_ONLY/PROFESSOR_TRAINING/Total data_260503.xlsx": 2,
+      "URP4/02_VERIFIED_CORE_HQ_NB_PY/03_RESUMABLE_PROJECT_SNAPSHOT/outputs/IMSTL008/IMSTL-008-20260728-002/HQ-d7324dbb123f_20260728_212157_198620/descriptor_result.xlsx": 1,
+      "URP4/02_VERIFIED_CORE_HQ_NB_PY/03_RESUMABLE_PROJECT_SNAPSHOT/outputs/URP4-1/압축+열+진동+구조인자_260212.xlsx": 2,
+      "URP4/04_REFERENCE_INPUTS/alias_registry/URP4-1_file_alias_registry_20260709_UPDATED.xlsx": 6,
+      "URP4/04_REFERENCE_INPUTS/doctor_compression_data_20260731/01_structural_factors/Structural_Factors_All.xlsx": 2,
+      "URP4/04_REFERENCE_INPUTS/doctor_compression_data_20260731/02_reference_strut_sources/AI lattice_1-150_30 mm_merge.xlsx": 151,
+      "URP4/04_REFERENCE_INPUTS/doctor_compression_data_20260731/02_reference_strut_sources/B, C, L model_30 mm_merge.xlsx": 141,
+      "URP4/04_REFERENCE_INPUTS/doctor_compression_data_20260731/02_reference_strut_sources/Voronoi_30 mm_merge.xlsx": 31,
+      "URP4/04_REFERENCE_INPUTS/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx": 2,
+      "URP4/04_REFERENCE_INPUTS/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx": 2,
+      "URP4/04_REFERENCE_INPUTS/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx": 2,
+      "URP4/04_REFERENCE_INPUTS/doctor_compression_data_20260802/small_reference_summaries/Compression_VF30_Summary.xlsx": 2,
+      "URP4/04_REFERENCE_INPUTS/doctor_compression_data_20260802/small_reference_summaries/Compression_VF45_Summary.xlsx": 2,
+      "URP4/04_REFERENCE_INPUTS/doctor_compression_data_20260802/small_reference_summaries/Compression_VF60_Summary.xlsx": 2,
+      "URP4/04_REFERENCE_INPUTS/doctor_compression_data_20260802/small_reference_summaries/Voronoi_Summary.xlsx": 2,
+      "URP4/04_REFERENCE_INPUTS/legacy_reference/압축+열+진동+구조인자_260212.xlsx": 2,
+      "URP4/07_COMPRESSION_DATA_AND_PILOT/COMP-FACTORY-004_PIPELINE_SOURCE/project_snapshot/experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/01_structural_factors/Structural_Factors_All.xlsx": 2,
+      "URP4/SOURCE_CUTOFF_SNAPSHOT/URP4_1_MASTER_HANDOFF_LEDGER.xlsx": 12
+    }
+  },
+  "algorithms": {
+    "algorithm_rows": 161,
+    "algorithm_bad": [],
+    "raw_rows": 469,
+    "raw_bad": [],
+    "raw_crc_bad": null
+  },
+  "protected_assets": {
+    "registered": 9,
+    "passed": 9,
+    "failed": []
+  },
+  "master_ledger": {
+    "sheet_count": 13,
+    "sheet_names": [
+      "00_README",
+      "01_PROJECT_PIPELINE",
+      "02_TRACK_STATUS",
+      "03_WORK_PACKAGE_LIFECYCLE",
+      "04_EVIDENCE_FILE_INDEX",
+      "05_OPEN_GATES",
+      "06_PROFESSOR_DECISIONS_NEEDED",
+      "07_FILE_ALIASES",
+      "08_HQ_CELL_MAP",
+      "09_CUTOFF_V1_1_DELTA",
+      "10_CLAIM_LIMITS",
+      "11_REQUIREMENTS",
+      "12_ALGORITHM_PIPELINES"
+    ],
+    "algorithm_sheet_present": true,
+    "required_strings": {
+      "PROJECT_SCHEMA v1.3": true,
+      "HANDOFF-CUTOFF-20260802-002": true,
+      "package v1.4-r2": true,
+      "REQ-013": true
+    }
+  },
+  "html_links": {
+    "local_checked": 22,
+    "local_missing": [],
+    "absolute_provenance_links": 0
+  },
+  "duplicates": {
+    "duplicate_groups_ge_5mb": [],
+    "duplicate_bytes": 0
+  },
+  "stale_state": {
+    "front_files": 10,
+    "bad": []
+  },
+  "notebooks": {
+    "roles": {
+      "main_hq": {
+        "path": "02_VERIFIED_CORE_HQ_NB_PY/00_RUNNABLE_HQ_AND_ENGINE/URP4_1_HQ.ipynb",
+        "exists": true,
+        "sha256": "6ad6761d0274fa6b41eefed0233aee7cc849bf276e626b13342b13e2889dae40"
+      },
+      "resume_hq_mirror": {
+        "path": "02_VERIFIED_CORE_HQ_NB_PY/03_RESUMABLE_PROJECT_SNAPSHOT/URP4_1_HQ.ipynb",
+        "exists": true,
+        "sha256": "6ad6761d0274fa6b41eefed0233aee7cc849bf276e626b13342b13e2889dae40"
+      },
+      "nb_current_reference": {
+        "path": "02_VERIFIED_CORE_HQ_NB_PY/02_PROTECTED_REFERENCES_READ_ONLY/NB-CURRENT/R06V2_integrated_legacy_candidate_v0_2.ipynb",
+        "exists": true,
+        "sha256": "29131ce5f3d8d59cf6a7211d963a23f85c14f950ea335bbd237b52a7ff76980f"
+      },
+      "nb_orig_reference": {
+        "path": "02_VERIFIED_CORE_HQ_NB_PY/02_PROTECTED_REFERENCES_READ_ONLY/NB-ORIG/Model_generator_260506_descriptor_v5_boundary_symmetry_perfboost.ipynb",
+        "exists": true,
+        "sha256": "47aa3889f61d7e4bfbca37b65286e6b7ad81cf185ab4dd86ebdc263af5d8b7b7"
+      },
+      "nb_dev_reference": {
+        "path": "02_VERIFIED_CORE_HQ_NB_PY/02_PROTECTED_REFERENCES_READ_ONLY/NB-DEV/NB_DEV_v0_6_ROUTE_VALID_004_IMPORT_POLICY.ipynb",
+        "exists": true,
+        "sha256": "a817ff8bcd11c7ded001a0066196d1ed41eb6051ffb4dc263acdf4004b162411"
+      }
+    },
+    "all_exist": true,
+    "main_and_resume_mirror_same_sha": true
+  },
+  "cache_artifacts": []
+}

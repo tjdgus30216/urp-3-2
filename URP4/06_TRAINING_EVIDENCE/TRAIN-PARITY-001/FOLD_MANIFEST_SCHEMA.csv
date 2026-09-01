@@ -1,0 +1,28 @@
+field_name,data_type,scope,required,source_rule,parity_rule,notes
+manifest_version,string,manifest,true,immutable semantic version,exact,New revision required for schema change
+manifest_sha256,string,manifest,true,SHA-256 of canonical CSV bytes,exact,Shared by source copy and adapter
+source_sha256,string,manifest,true,frozen notebook SHA,exact,
+input_sha256,string,manifest,true,frozen workbook SHA,exact,
+target_excel_col,string,target,true,one of 16 selected columns,exact,
+target_id,string,target,true,normalized source-scoped target ID,exact,Must not use bare Excel letter alone
+output_name,string,target,true,normalized source header,exact,
+target_sample_count,int,target,true,rows with finite current y,exact,
+target_group_count,int,target,true,unique inherited GROUP_ID,exact,
+outer_repeat_id,int,outer,true,0..11,exact,
+outer_seed,int,outer,true,42 plus outer_repeat_id,exact,
+outer_test_size,float,outer,true,0.22,exact,
+outer_fold_id,string,outer,true,target plus repeat stable ID,exact,Source has one split per repeat
+inner_split_id,int,inner,true,0..23,exact,Scoped within target and outer fold
+inner_seed,int,inner,true,frozen from source random-state path,exact,Must be materialized not inferred later
+inner_test_size,float,inner,true,0.20,exact,
+source_excel_row,int,row,true,7..204,exact,Persistent row identity before reset_index
+target_row_position,int,row,true,0-based target-specific row position,exact,
+group_id,int,row,true,global source GROUP_ID,exact,
+x_key,string,row,true,source X_KEY,exact,May be stored alongside hash for audit
+x_key_sha256,string,row,true,SHA-256 of UTF-8 X_KEY,exact,Compact identity
+split_scope,string,row,true,outer_train|outer_test|inner_train|inner_valid,exact,
+outer_role,string,row,true,train|test,exact,
+inner_role,string,row,false,train|valid|not_applicable,exact,Required for inner rows
+source_consumer_status,string,audit,true,not_consumed|consumed,exact,Future execution record
+adapter_consumer_status,string,audit,true,not_consumed|consumed,exact,Future execution record
+generated_at_kst,string,manifest,true,ISO-8601 with +09:00,informational,Not used for scientific equality

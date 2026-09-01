@@ -1,0 +1,16 @@
+policy_id,setting_bundle,policy,state,enforcement
+HQ-P001,workflow,Exactly one of import_geometry and generate_geometry must be true,confirmed,validate_and_freeze raises before output creation
+HQ-P002,geometry routing,generated_stl uses GEN-STL-NATIVE-CONTROLLED,confirmed,source type and .stl extension validated
+HQ-P003,geometry routing,imported_stl uses IMSTL oriented non-zero winding,likely,route frozen as IMP-STL-ORIENTED-NONZERO-SCREENING-L28
+HQ-P004,geometry routing,original_stp uses strict/reference preflight only,confirmed,descriptor request fails closed
+HQ-P005,fallback,STL-to-STEP is never an automatic fallback,rejected,locked field stl_to_step_default_fallback=false
+HQ-P006,descriptor profile,40 mm P1000 Z801 0.05 mm CC8 min2 only,confirmed,non-approved profile rejected when descriptor extraction is on
+HQ-P007,derived settings,slice count/spacing pixel size/area and lattice cells/size have one declared parent,confirmed,controller derives and hashes dependent values
+HQ-P008,artifact policy,STREAMING_TEMP_PNG creates reads and deletes images,confirmed,full smokes produced/deleted 1601 PNG with mismatch zero
+HQ-P009,artifact policy,KEEP_ALL and imported KEEP_FLAGGED are explicit alternatives,likely,imported adapter retains according to selected policy
+HQ-P010,training,feature selection and training default off and fail closed,confirmed,missing y and all training requests rejected in v0.1
+HQ-P011,outputs,run directories are hash and timestamp addressed and never overwritten,confirmed,engine uses new directory and imported adapter rejects non-empty output
+HQ-P012,source identity,immutable professor/NB sources must match registered SHA-256,confirmed,14/14 deliverable source identities passed
+HQ-P013,batch,batch control is visible but execution remains locked in v0.1,confirmed,run_batch=True is rejected before output creation
+HQ-P014,descriptor scope,only slice descriptor scope is qualified in v0.1,confirmed,point/surface/lattice/candidate flags fail closed
+HQ-P015,manifest,each run writes frozen/run/input/output/status manifests,confirmed,full generated smoke contains every required manifest artifact

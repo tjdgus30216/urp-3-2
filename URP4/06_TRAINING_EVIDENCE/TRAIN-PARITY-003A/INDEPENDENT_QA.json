@@ -1,0 +1,293 @@
+{
+  "run_id": "TRAIN-PARITY-003A-20260801-001",
+  "qa_execution_count": 1,
+  "runner_attempt_count": 2,
+  "prior_attempt_disposition": "aborted_before_QA_artifact_commit_due_to_WindowsPath_JSON_serialization; no QA result or project state committed",
+  "executed_at_kst": "2026-08-01T12:31:32+09:00",
+  "independent_qa_passed": 23,
+  "independent_qa_total": 23,
+  "overall_status": "PASS",
+  "fit_calls": 0,
+  "predict_calls": 0,
+  "prediction_rows": 0,
+  "metric_rows": 0,
+  "checks": [
+    {
+      "qa_id": "IQA-001",
+      "check": "pre-IQA required artifacts",
+      "observed": 13,
+      "expected": 13,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-002",
+      "check": "canonical target IDs and order",
+      "observed": [
+        "TRAIN2NF::FW",
+        "TRAIN2NF::FX",
+        "TRAIN2NF::FZ",
+        "TRAIN2NF::GA",
+        "TRAIN2NF::GC",
+        "TRAIN2NF::GG",
+        "TRAIN2NF::GJ",
+        "TRAIN2NF::GZ",
+        "TRAIN2NF::HA",
+        "TRAIN2NF::HB",
+        "TRAIN2NF::HC",
+        "TRAIN2NF::HD",
+        "TRAIN2NF::HE",
+        "TRAIN2NF::HG",
+        "TRAIN2NF::HI",
+        "TRAIN2NF::HK"
+      ],
+      "expected": [
+        "TRAIN2NF::FW",
+        "TRAIN2NF::FX",
+        "TRAIN2NF::FZ",
+        "TRAIN2NF::GA",
+        "TRAIN2NF::GC",
+        "TRAIN2NF::GG",
+        "TRAIN2NF::GJ",
+        "TRAIN2NF::GZ",
+        "TRAIN2NF::HA",
+        "TRAIN2NF::HB",
+        "TRAIN2NF::HC",
+        "TRAIN2NF::HD",
+        "TRAIN2NF::HE",
+        "TRAIN2NF::HG",
+        "TRAIN2NF::HI",
+        "TRAIN2NF::HK"
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-003",
+      "check": "crosswalk statuses",
+      "observed": 16,
+      "expected": 16,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-004",
+      "check": "raw header tuples retained",
+      "observed": 16,
+      "expected": 16,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-005",
+      "check": "target-policy self hash",
+      "observed": "216cdd04c52becf105e5c5b5e7036d180291bef483a6cce5b8ca53c9a1123539",
+      "expected": "216cdd04c52becf105e5c5b5e7036d180291bef483a6cce5b8ca53c9a1123539",
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-006",
+      "check": "canonical hold IDs",
+      "observed": [
+        "TRAIN2NF::GC",
+        "TRAIN2NF::HE",
+        "TRAIN2NF::HK"
+      ],
+      "expected": [
+        "TRAIN2NF::GC",
+        "TRAIN2NF::HE",
+        "TRAIN2NF::HK"
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-007",
+      "check": "primary/hold counts",
+      "observed": [
+        13,
+        3
+      ],
+      "expected": [
+        13,
+        3
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-008",
+      "check": "header/value/NaN proof",
+      "observed": 16,
+      "expected": 16,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-009",
+      "check": "replay hold provenance IDs",
+      "observed": [
+        "TRAIN2NF::GC",
+        "TRAIN2NF::HE",
+        "TRAIN2NF::HK"
+      ],
+      "expected": [
+        "TRAIN2NF::GC",
+        "TRAIN2NF::HE",
+        "TRAIN2NF::HK"
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-010",
+      "check": "predecessor policy superseded, not erased",
+      "observed": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-011",
+      "check": "frozen fold manifest SHA",
+      "observed": "3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6",
+      "expected": "3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6",
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-012",
+      "check": "16-target fold rebind QA",
+      "observed": 16,
+      "expected": 16,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-013",
+      "check": "numerical branch hashes unchanged",
+      "observed": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-014",
+      "check": "contract-only versioned change",
+      "observed": [
+        true,
+        false
+      ],
+      "expected": [
+        true,
+        false
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-015",
+      "check": "isolated source runner preflight",
+      "observed": 10,
+      "expected": 10,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-016",
+      "check": "target policy negative QA",
+      "observed": 13,
+      "expected": 13,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-017",
+      "check": "ten branch NO_FIT guard",
+      "observed": 10,
+      "expected": 10,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-018",
+      "check": "fit/predict/prediction/metric counts",
+      "observed": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-019",
+      "check": "same target/value/fold consumption",
+      "observed": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-020",
+      "check": "re-adjudication decision",
+      "observed": "GO_FOR_TRAIN_PARITY_004_SENTINEL_EXECUTION",
+      "expected": "GO_FOR_TRAIN_PARITY_004_SENTINEL_EXECUTION",
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-021",
+      "check": "sentinel execution permit shape",
+      "observed": [
+        "READY_AWAITING_EXPLICIT_EXECUTION_APPROVAL",
+        "TRAIN2NF::HI",
+        0,
+        [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        [
+          "P8"
+        ],
+        true,
+        false
+      ],
+      "expected": [
+        "READY_AWAITING_EXPLICIT_EXECUTION_APPROVAL",
+        "TRAIN2NF::HI",
+        0,
+        [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        [
+          "P8"
+        ],
+        true,
+        false
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-022",
+      "check": "protected asset current hashes",
+      "observed": 16,
+      "expected": 16,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-023",
+      "check": "canonical KMK312 runtime",
+      "observed": [
+        "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+        "3.12.12"
+      ],
+      "expected": [
+        "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+        "3.12.12"
+      ],
+      "status": "PASS"
+    }
+  ]
+}

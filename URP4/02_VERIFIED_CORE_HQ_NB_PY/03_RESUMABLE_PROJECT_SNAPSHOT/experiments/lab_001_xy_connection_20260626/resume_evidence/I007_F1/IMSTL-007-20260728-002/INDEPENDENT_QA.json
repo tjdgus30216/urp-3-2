@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "gates": {
+    "source_hash_exact": true,
+    "mask_replay_144": true,
+    "metric_replay_432": true,
+    "producer_decision_consistent": true,
+    "run_manifest": true,
+    "result_manifest": true,
+    "protected_file_assets": true,
+    "no_full801": true
+  },
+  "mask_rows": 144,
+  "metric_rows": 432,
+  "max_metric_error": 1.1102230246251565e-16,
+  "protected_file_assets": "26/26",
+  "run_manifest_rows": 145,
+  "result_manifest_rows": 12
+}

@@ -1,0 +1,10 @@
+﻿warning_id,target_id,method_id,severity,evidence,effect
+NUMERICAL_EXTREME_NEGATIVE_R2,COMP-Y-LCC,FS4-METHOD-01,major_screening_warning,pooled_r2=-2.1068777012840356e+26,target/method is not eligible for interpretation or promotion
+NUMERICAL_EXTREME_NEGATIVE_R2,COMP-Y-LCC,FS4-METHOD-02,major_screening_warning,pooled_r2=-2.710068379464917e+26,target/method is not eligible for interpretation or promotion
+NUMERICAL_EXTREME_NEGATIVE_R2,COMP-Y-LCC,FS4-METHOD-03,major_screening_warning,pooled_r2=-1.0495318890101235e+26,target/method is not eligible for interpretation or promotion
+NUMERICAL_EXTREME_NEGATIVE_R2,COMP-Y-LCC,FS4-METHOD-04,major_screening_warning,pooled_r2=-1.5159747165396549e+26,target/method is not eligible for interpretation or promotion
+HELD_GROUP_INSTABILITY,COMP-Y-COMP-STRENGTH,FS4-METHOD-04,screening_warning,median_fold_r2=-0.1629367429091723;min_fold_r2=-1.1543351102551105,pooled R2 must not be read as stable generalization
+HELD_GROUP_INSTABILITY,COMP-Y-LCC,FS4-METHOD-03,screening_warning,median_fold_r2=-0.3302957989866821;min_fold_r2=-1.843612141871376e+26,pooled R2 must not be read as stable generalization
+HELD_GROUP_INSTABILITY,COMP-Y-DENSIF-STRENGTH,FS4-METHOD-03,screening_warning,median_fold_r2=-0.0718728709965204;min_fold_r2=-1.134598691962477,pooled R2 must not be read as stable generalization
+CONSOLE_WARNING_CLASS,multiple,FS4-METHOD-02/selection,runtime_warning,ConstantInputWarning and Lasso ConvergenceWarning were emitted during the controlled run,technical outputs remain finite; numerical convergence must be reviewed before any method promotion
+PILOT_ONLY,all,all,claim_boundary,grouped technical screening with fold-local selection,"no production prediction, physical optimum, or inverse-design claim"

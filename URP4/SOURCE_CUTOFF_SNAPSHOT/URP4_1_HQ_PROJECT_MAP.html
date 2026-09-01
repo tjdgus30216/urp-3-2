@@ -1,0 +1,16 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>URP4-1 Project Map v1.1</title>
+<style>body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f4f7fb;color:#142033}header{background:#12243a;color:white;padding:28px}main{max-width:1180px;margin:auto;padding:24px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:white;border:1px solid #c9d6e5;border-radius:10px;padding:16px}strong{color:#0b6b4d}table{border-collapse:collapse;width:100%;background:white}th,td{border:1px solid #ccd6e2;padding:8px;text-align:left;vertical-align:top}th{background:#e8eef6}code{background:#eef2f7;padding:2px 5px}a{color:#0759a5}.warn{background:#fff3cd;border-left:5px solid #d49a00;padding:12px}</style></head>
+<body><header><h1>URP4-1 — PROJECT_SCHEMA v1.1</h1><p>HANDOFF-CUTOFF-20260801-001 · 2026-08-01T13:27:44+09:00</p></header><main>
+<section class="warn"><b>읽는 법:</b> execution, QA, scientific, notebook integration, release 상태를 분리했습니다. `completed`는 자동으로 과학 검증 또는 production 통합을 뜻하지 않습니다.</section>
+<h2>현재 제출 상태</h2><div class="grid"><article class="card"><h3>C1 direct STEP</h3><strong>completed_with_evidence</strong><p>801 slices · 800 overlays · 40 scalar x · QA 9/9</p><a href="../05_DESCRIPTOR_XREG_GEOMETRY_EVIDENCE/STRICT-STEP-026/INDEPENDENT_QA.json">evidence</a></article><article class="card"><h3>Training</h3><strong>blocked_with_evidence</strong><p>9/9 source audit · 1/9 replay · sentinel parity blocked by native crash</p><a href="../06_TRAINING_EVIDENCE/TRAIN-PARITY-004/REPORT.md">evidence</a></article><article class="card"><h3>AI Lattice compression</h3><strong>technical_pilot</strong><p>149 exact joins · 16 targets · 9,536 OOF predictions · QA 36/36</p><a href="../07_COMPRESSION_DATA_AND_PILOT/COMP-FACTORY-002/REPORT.md">evidence</a></article><article class="card"><h3>B/C/L + Voronoi</h3><strong>missing_summary_input</strong><p>Raw merged workbooks present; summary/target inputs absent</p><a href="OPEN_GATES.csv">evidence</a></article></div>
+<h2>전체 체인</h2><p><code>theta → geometry → slicing → pixel/component → descriptor x → validation → feature selection → x-y → inverse design</code></p>
+<h2>핵심 파일</h2><table><tr><th>파일</th><th>용도</th></tr>
+<tr><td><a href="PROJECT_SCHEMA.json">PROJECT_SCHEMA.json</a></td><td>machine-readable 상태 원본</td></tr>
+<tr><td><a href="URP4_1_MASTER_HANDOFF_LEDGER.xlsx">Master handoff ledger</a></td><td>사람용 전체 원장</td></tr>
+<tr><td><a href="WORK_PACKAGE_LEDGER.csv">Work packages</a></td><td>실행/QA/과학/통합/release 분리 상태</td></tr>
+<tr><td><a href="EVIDENCE_INDEX.csv">Evidence index</a></td><td>원본 경로·SHA-256</td></tr>
+<tr><td><a href="CLAIM_AND_LIMITATION_LEDGER.csv">Claim ledger</a></td><td>허용/금지 주장</td></tr>
+<tr><td><a href="OPEN_GATES.csv">Open gates</a></td><td>재개 조건과 차단 범위</td></tr>
+<tr><td><a href="URP4_1_HQ_21CELL_RAW_FLOW.svg">21-cell raw flow</a></td><td>HQ 목표 셀 흐름과 raw 입출력·함수 지도</td></tr></table>
+<h2>중요 경계</h2><ul><li>C1은 direct STEP 한 모델의 x-only 근거다.</li><li>Training numerical parity는 성공하지 않았고 native source crash로 차단됐다.</li><li>AI Lattice 결과는 technical pilot이며 feature/method promotion이 아니다.</li><li>검증된 y 기반 inverse design 또는 성능 최적 구조 성공을 주장하지 않는다.</li></ul>
+</main></body></html>

@@ -1,0 +1,13 @@
+{
+  "schema": "URP4-1 portable path map v1.1-r2",
+  "package_root": "<EXTRACTED_PACKAGE_ROOT>",
+  "canonical_python_original": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+  "portable_python_override": "URP4_KMK312_PYTHON",
+  "geometry_root_override": "URP4_GEOMETRY_ROOT",
+  "geometry_expected_relative_layout": [
+    "stl/",
+    "stp/"
+  ],
+  "read_only_verifier": "10_MANIFEST_SHA256_AND_QA/verify_package_read_only.py",
+  "research_execution_authorized": false
+}

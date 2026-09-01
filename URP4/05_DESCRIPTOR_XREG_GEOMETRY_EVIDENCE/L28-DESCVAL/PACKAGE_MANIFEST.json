@@ -1,0 +1,36 @@
+{
+  "run_id": "L28-DESCVAL-PKG-20260727-002",
+  "source_run_id": "SG027-L28TRIAD-P1000-Z801-20260727-002",
+  "created_at_utc": "2026-07-27T03:06:25.710440+00:00",
+  "source_config": "IDX-URP4-1-GEOM-L28-TRIAD / CFG-L28-VF30-VF45-VF60-N40-Z801-H050-P1000-PERSOLID-OR-HALFOPEN-ARCHIVE r1",
+  "source_manifest_sha256": "e6f520783c7dae5aa56af00de98be3a11511f18ad1325856d1d896bf525323b4",
+  "source_packet_sha256": "30cacf26044aa72524b96fb7f3e2cc506196ac4966c7b77faaa640938c14c754",
+  "slice_table_sha256": "57425272baa430fb478640844e1e38b7d9eca502b50cbc0fdb764ec017d953bf",
+  "overlay_table_sha256": "9722fd9a35a2d028254c7b88f144a60fffa803334454edfa5651dc683ab95b2b",
+  "producer_code_sha256": "a4e1dbad9d07d647c8bbd1c0be4e7b51faffded6a7fbf02ee1d260e9281a313e",
+  "legacy_file_hashes": [
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\source\\URP4-1\\1._parameter_rawdata_0726.py",
+      "sha256": "1e52abc000cda8faaf3edbcc834278d4d7669e825683098376dd87e44a88a536"
+    },
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\source\\URP4-1\\2._Parameter_result_0727.py",
+      "sha256": "cdaea5ef1262ca0ea79a7b8ce16a15f435037e779e2688bdecbe80400b3d5c47"
+    },
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\source\\URP4-1\\3._parameter_angle_all_0727.py",
+      "sha256": "8a64d05839a606df15055d7c9d84565aa889b5e0c63b57b7f27e19ad76f92ceb"
+    },
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\source\\URP4-1\\Curvature_Extraction_New.py",
+      "sha256": "373e3763c735e775565ef2d2da4b90f866ff5cfff3c85b5d0150b0b17a90f42a"
+    },
+    {
+      "path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\source\\URP4-1\\Parameter_distribution_New.py",
+      "sha256": "2dfec52592e0195482fc99613a63a3a021b7a427a078efdb79dc836f9296a453"
+    }
+  ],
+  "source_hash_gate": true,
+  "existing_artifact_mutation": false,
+  "y_access": false
+}

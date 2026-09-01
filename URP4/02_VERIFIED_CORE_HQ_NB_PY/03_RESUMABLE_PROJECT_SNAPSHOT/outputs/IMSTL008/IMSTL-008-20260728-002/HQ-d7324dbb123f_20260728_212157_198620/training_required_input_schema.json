@@ -1,0 +1,18 @@
+{
+  "required": [
+    "semantic feature IDs",
+    "official target_y ID",
+    "family/group IDs",
+    "source/crosswalk provenance"
+  ],
+  "split_policy": "grouped/family-aware required",
+  "method_ids": [
+    "TRAIN-METHOD-01",
+    "TRAIN-METHOD-02",
+    "TRAIN-METHOD-03",
+    "TRAIN-METHOD-04",
+    "TRAIN-METHOD-05"
+  ],
+  "grouped_split_required": true,
+  "execution_status": "locked_off_no_y_access"
+}

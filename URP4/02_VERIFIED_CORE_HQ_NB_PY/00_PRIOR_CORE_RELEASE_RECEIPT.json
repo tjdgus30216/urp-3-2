@@ -1,0 +1,6 @@
+{
+  "superseded_embedded_release": "URP4-1_HANDOFF-RELEASE-20260731-002.zip",
+  "superseded_embedded_release_sha256": "77e58b203af10ae9f6161b8ec79442be96357ee9ec4c4580ef3fe2af20ef7502",
+  "replacement": "../00_RUNNABLE_HQ_AND_ENGINE",
+  "reason": "Expose the exact HQ/engine source directly for professor and successor use."
+}

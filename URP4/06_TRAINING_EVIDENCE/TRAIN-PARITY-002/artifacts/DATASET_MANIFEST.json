@@ -1,0 +1,46 @@
+{
+  "execution_status": "no_fit_no_prediction",
+  "contract": {
+    "sheet": "총정리",
+    "header_main_row": 2,
+    "header_sub_rows": [
+      3,
+      4,
+      5
+    ],
+    "data_row_start": 7,
+    "data_row_end": 204,
+    "x_start": "I",
+    "x_end": "FU",
+    "y_start": "FV",
+    "y_end": "HL",
+    "target_columns": [
+      "FW",
+      "FX",
+      "FZ",
+      "GA",
+      "GC",
+      "GG",
+      "GJ",
+      "GZ",
+      "HA",
+      "HB",
+      "HC",
+      "HD",
+      "HE",
+      "HG",
+      "HI",
+      "HK"
+    ],
+    "expected_rows": 198,
+    "expected_x_features": 169,
+    "expected_targets": 16
+  },
+  "rows": 198,
+  "x_features": 169,
+  "targets": 16,
+  "groups": 133,
+  "row_ledger": "ROW_IDENTITY_LEDGER.csv",
+  "column_ledger": "COLUMN_IDENTITY_LEDGER.csv",
+  "target_ledger": "TARGET_SAMPLE_LEDGER.csv"
+}

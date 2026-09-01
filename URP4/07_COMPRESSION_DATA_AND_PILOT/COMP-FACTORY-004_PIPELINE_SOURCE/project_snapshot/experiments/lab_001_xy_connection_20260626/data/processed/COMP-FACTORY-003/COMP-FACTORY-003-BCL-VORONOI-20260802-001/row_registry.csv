@@ -1,0 +1,232 @@
+﻿model_key,structural_model_id,raw_performance_id,source_group,family_group,vf_group,crosswalk_status
+VF30_B1,VF30_B1. SC,B1,bcl,B,30,eligible_exact_model_label_join
+VF30_B2,VF30_B2. SC8,B2,bcl,B,30,eligible_exact_model_label_join
+VF30_B3,VF30_B3. BCC,B3,bcl,B,30,eligible_exact_model_label_join
+VF30_B4,VF30_B4. BCC2,B4,bcl,B,30,eligible_exact_model_label_join
+VF30_B5,VF30_B5. FCC,B5,bcl,B,30,eligible_exact_model_label_join
+VF30_C1,VF30_C1. SC+FCC,C1,bcl,C,30,eligible_exact_model_label_join
+VF30_C10,VF30_C10. SC8+BCC,C10,bcl,C,30,eligible_exact_model_label_join
+VF30_C11,VF30_C11. SC+DGR+BCC,C11,bcl,C,30,eligible_exact_model_label_join
+VF30_C12,VF30_C12. SC2+DGR+BCC,C12,bcl,C,30,eligible_exact_model_label_join
+VF30_C13,VF30_C13. SC8+DGR+BCC2,C13,bcl,C,30,eligible_exact_model_label_join
+VF30_C14,VF30_C14. SC8+FCC+BCC,C14,bcl,C,30,eligible_exact_model_label_join
+VF30_C2,VF30_C2. SC2+FCC,C2,bcl,C,30,eligible_exact_model_label_join
+VF30_C3,VF30_C3. SC8+FCC,C3,bcl,C,30,eligible_exact_model_label_join
+VF30_C4,VF30_C4. SC+DGR,C4,bcl,C,30,eligible_exact_model_label_join
+VF30_C5,VF30_C5. SC+DGR2,C5,bcl,C,30,eligible_exact_model_label_join
+VF30_C6,VF30_C6. SC+OR,C6,bcl,C,30,eligible_exact_model_label_join
+VF30_C7,VF30_C7. SC+FCC+BCC,C7,bcl,C,30,eligible_exact_model_label_join
+VF30_C8,VF30_C8. SC+BCC,C8,bcl,C,30,eligible_exact_model_label_join
+VF30_C9,VF30_C9. SC2+BCC,C9,bcl,C,30,eligible_exact_model_label_join
+VF30_F1,,F1,bcl,F,30,y_only_missing_structural_factors
+VF30_F2,,F2,bcl,F,30,y_only_missing_structural_factors
+VF30_L1,VF30_L1. Octahedron,L1,bcl,L,30,eligible_exact_model_label_join
+VF30_L10,VF30_L10. Lattice Auxetic,L10,bcl,L,30,eligible_exact_model_label_join
+VF30_L11,VF30_L11. FBCCz,L11,bcl,L,30,eligible_exact_model_label_join
+VF30_L12,VF30_L12. Weaire-Phelean,L12,bcl,L,30,eligible_exact_model_label_join
+VF30_L13,VF30_L13. Diamond,L13,bcl,L,30,eligible_exact_model_label_join
+VF30_L14,VF30_L14. Fluorite,L14,bcl,L,30,eligible_exact_model_label_join
+VF30_L15,VF30_L15. Truncated octahedron,L15,bcl,L,30,eligible_exact_model_label_join
+VF30_L16,VF30_L16. Voronoi,L16,bcl,L,30,eligible_exact_model_label_join
+VF30_L17,VF30_L17. Compact Voronoi,L17,bcl,L,30,eligible_exact_model_label_join
+VF30_L18,,L18,bcl,L,30,y_only_missing_structural_factors
+VF30_L18-2,,L18-2,bcl,L,30,y_only_missing_structural_factors
+VF30_L19,VF30_L19. Aligned Voronoi,L19,bcl,L,30,eligible_exact_model_label_join
+VF30_L2,VF30_L2. Cuboctahedron,L2,bcl,L,30,eligible_exact_model_label_join
+VF30_L20,VF30_L20. Aligned compact Voron,L20,bcl,L,30,eligible_exact_model_label_join
+VF30_L21,VF30_L21. Octet,L21,bcl,L,30,eligible_exact_model_label_join
+VF30_L22,VF30_L22. Kelvin Cell,L22,bcl,L,30,eligible_exact_model_label_join
+VF30_L23,VF30_L23. Isotruss,L23,bcl,L,30,eligible_exact_model_label_join
+VF30_L24,VF30_L24. Re-entrant,L24,bcl,L,30,eligible_exact_model_label_join
+VF30_L25,VF30_L25. Cuboctahedron,L25,bcl,L,30,eligible_exact_model_label_join
+VF30_L26,VF30_L26. Octahedron+Cross,L26,bcl,L,30,eligible_exact_model_label_join
+VF30_L27,VF30_L27. V-Octet,L27,bcl,L,30,eligible_exact_model_label_join
+VF30_L3,VF30_L3. Cubic+Octet,L3,bcl,L,30,eligible_exact_model_label_join
+VF30_L4,VF30_L4. Isotropic,L4,bcl,L,30,eligible_exact_model_label_join
+VF30_L5,VF30_L5. Octet,L5,bcl,L,30,eligible_exact_model_label_join
+VF30_L6,VF30_L6. Snap-fit Modified Octe,L6,bcl,L,30,eligible_exact_model_label_join
+VF30_L7,VF30_L7. 3D Chiral Metamaterial,L7,bcl,L,30,eligible_exact_model_label_join
+VF30_L8,VF30_L8. 3D chiral,L8,bcl,L,30,eligible_exact_model_label_join
+VF30_L9,VF30_L9. Honeycomb Auxetic,L9,bcl,L,30,eligible_exact_model_label_join
+VF30_SC2,VF30_SC2,,bcl,SC,,x_only_missing_performance
+VF30_T1,,T1,bcl,T,30,y_only_missing_structural_factors
+VF30_T10,,T10,bcl,T,30,y_only_missing_structural_factors
+VF30_T11,,T11,bcl,T,30,y_only_missing_structural_factors
+VF30_T12,,T12,bcl,T,30,y_only_missing_structural_factors
+VF30_T13,,T13,bcl,T,30,y_only_missing_structural_factors
+VF30_T14,,T14,bcl,T,30,y_only_missing_structural_factors
+VF30_T15,,T15,bcl,T,30,y_only_missing_structural_factors
+VF30_T16,,T16,bcl,T,30,y_only_missing_structural_factors
+VF30_T17,,T17,bcl,T,30,y_only_missing_structural_factors
+VF30_T2,,T2,bcl,T,30,y_only_missing_structural_factors
+VF30_T3,,T3,bcl,T,30,y_only_missing_structural_factors
+VF30_T4,,T4,bcl,T,30,y_only_missing_structural_factors
+VF30_T5,,T5,bcl,T,30,y_only_missing_structural_factors
+VF30_T6,,T6,bcl,T,30,y_only_missing_structural_factors
+VF30_T7,,T7,bcl,T,30,y_only_missing_structural_factors
+VF30_T8,,T8,bcl,T,30,y_only_missing_structural_factors
+VF30_T9,,T9,bcl,T,30,y_only_missing_structural_factors
+VF30_VF30_C100_R,VF30_VF30_C100_R,CP_VF30_C100R.csv,voronoi,VORONOI,30,eligible_exact_model_label_join
+VF30_VF30_C100_U,VF30_VF30_C100_U,CP_VF30_C100U.csv,voronoi,VORONOI,30,eligible_exact_model_label_join
+VF30_VF30_C200_R,VF30_VF30_C200_R,CP_VF30_C200R.csv,voronoi,VORONOI,30,eligible_exact_model_label_join
+VF30_VF30_C200_U,VF30_VF30_C200_U,CP_VF30_C200U.csv,voronoi,VORONOI,30,eligible_exact_model_label_join
+VF30_VF30_C400_R,VF30_VF30_C400_R,CP_VF30_C400R.csv,voronoi,VORONOI,30,eligible_exact_model_label_join
+VF30_VF30_C400_U,VF30_VF30_C400_U,CP_VF30_C400U.csv,voronoi,VORONOI,30,eligible_exact_model_label_join
+VF30_VF30_C50_R,VF30_VF30_C50_R,CP_VF30_C50R.csv,voronoi,VORONOI,30,eligible_exact_model_label_join
+VF30_VF30_C50_U,VF30_VF30_C50_U,CP_VF30_C50U.csv,voronoi,VORONOI,30,eligible_exact_model_label_join
+VF30_VF30_C800_R,VF30_VF30_C800_R,CP_VF30_C800R.csv,voronoi,VORONOI,30,eligible_exact_model_label_join
+VF30_VF30_C800_U,VF30_VF30_C800_U,CP_VF30_C800U.csv,voronoi,VORONOI,30,eligible_exact_model_label_join
+VF45_B1,VF45_B1. SC,B1,bcl,B,45,eligible_exact_model_label_join
+VF45_B2,VF45_B2. SC8,B2,bcl,B,45,eligible_exact_model_label_join
+VF45_B3,VF45_B3. BCC,B3,bcl,B,45,eligible_exact_model_label_join
+VF45_B4,VF45_B4. BCC2,B4,bcl,B,45,eligible_exact_model_label_join
+VF45_B5,VF45_B5. FCC,B5,bcl,B,45,eligible_exact_model_label_join
+VF45_C1,VF45_C1. SC+FCC,C1,bcl,C,45,eligible_exact_model_label_join
+VF45_C10,VF45_C10. SC8+BCC,C10,bcl,C,45,eligible_exact_model_label_join
+VF45_C11,VF45_C11. SC+DGR+BCC,C11,bcl,C,45,eligible_exact_model_label_join
+VF45_C12,VF45_C12. SC2+DGR+BCC,C12,bcl,C,45,eligible_exact_model_label_join
+VF45_C13,VF45_C13. SC8+DGR+BCC2,C13,bcl,C,45,eligible_exact_model_label_join
+VF45_C14,VF45_C14. SC8+FCC+BCC,C14,bcl,C,45,eligible_exact_model_label_join
+VF45_C2,VF45_C2. SC2+FCC,C2,bcl,C,45,eligible_exact_model_label_join
+VF45_C3,VF45_C3. SC8+FCC,C3,bcl,C,45,eligible_exact_model_label_join
+VF45_C4,VF45_C4. SC+DGR,C4,bcl,C,45,eligible_exact_model_label_join
+VF45_C5,VF45_C5. SC+DGR2,C5,bcl,C,45,eligible_exact_model_label_join
+VF45_C6,VF45_C6. SC+OR,C6,bcl,C,45,eligible_exact_model_label_join
+VF45_C7,VF45_C7. SC+FCC+BCC,C7,bcl,C,45,eligible_exact_model_label_join
+VF45_C8,VF45_C8. SC+BCC,C8,bcl,C,45,eligible_exact_model_label_join
+VF45_C9,VF45_C9. SC2+BCC,C9,bcl,C,45,eligible_exact_model_label_join
+VF45_F1,,F1,bcl,F,45,y_only_missing_structural_factors
+VF45_F2,,F2,bcl,F,45,y_only_missing_structural_factors
+VF45_L1,VF45_L1. Octahedron,L1,bcl,L,45,eligible_exact_model_label_join
+VF45_L10,VF45_L10. Lattice Auxetic,L10,bcl,L,45,eligible_exact_model_label_join
+VF45_L11,VF45_L11. FBCCz,L11,bcl,L,45,eligible_exact_model_label_join
+VF45_L12,VF45_L12. Weaire-Phelean,L12,bcl,L,45,eligible_exact_model_label_join
+VF45_L13,VF45_L13. Diamond,L13,bcl,L,45,eligible_exact_model_label_join
+VF45_L14,VF45_L14. Fluorite,L14,bcl,L,45,eligible_exact_model_label_join
+VF45_L15,VF45_L15. Truncated octahedron,L15,bcl,L,45,eligible_exact_model_label_join
+VF45_L16,VF45_L16. Voronoi,L16,bcl,L,45,eligible_exact_model_label_join
+VF45_L17,VF45_L17. Compact Voronoi,L17,bcl,L,45,eligible_exact_model_label_join
+VF45_L18,VF45_L18. Radial-RTC (C),L18,bcl,L,45,eligible_exact_model_label_join
+VF45_L18-2,VF45_L18-2. Radial-RTE (E),L18-2,bcl,L,45,eligible_exact_model_label_join
+VF45_L19,VF45_L19. Aligned Voronoi,L19,bcl,L,45,eligible_exact_model_label_join
+VF45_L2,VF45_L2. Cuboctahedron,L2,bcl,L,45,eligible_exact_model_label_join
+VF45_L20,VF45_L20. Aligned compact Voron,L20,bcl,L,45,eligible_exact_model_label_join
+VF45_L21,VF45_L21. Octet,L21,bcl,L,45,eligible_exact_model_label_join
+VF45_L22,VF45_L22. Kelvin Cell,L22,bcl,L,45,eligible_exact_model_label_join
+VF45_L23,VF45_L23. Isotruss,L23,bcl,L,45,eligible_exact_model_label_join
+VF45_L24,VF45_L24. Re-entrant,L24,bcl,L,45,eligible_exact_model_label_join
+VF45_L25,VF45_L25. Cuboctahedron,L25,bcl,L,45,eligible_exact_model_label_join
+VF45_L26,VF45_L26. Octahedron+Cross,L26,bcl,L,45,eligible_exact_model_label_join
+VF45_L27,VF45_L27. V-Octet,L27,bcl,L,45,eligible_exact_model_label_join
+VF45_L3,VF45_L3. Cubic+Octet,L3,bcl,L,45,eligible_exact_model_label_join
+VF45_L4,VF45_L4. Isotropic,L4,bcl,L,45,eligible_exact_model_label_join
+VF45_L5,VF45_L5. Octet,L5,bcl,L,45,eligible_exact_model_label_join
+VF45_L6,VF45_L6. Snap-fit Modified Octe,L6,bcl,L,45,eligible_exact_model_label_join
+VF45_L7,VF45_L7. 3D Chiral Metamaterial,L7,bcl,L,45,eligible_exact_model_label_join
+VF45_L8,VF45_L8. 3D chiral,L8,bcl,L,45,eligible_exact_model_label_join
+VF45_L9,VF45_L9. Honeycomb Auxetic,L9,bcl,L,45,eligible_exact_model_label_join
+VF45_SC2,VF45_SC2,,bcl,SC,,x_only_missing_performance
+VF45_T1,,T1,bcl,T,45,y_only_missing_structural_factors
+VF45_T10,,T10,bcl,T,45,y_only_missing_structural_factors
+VF45_T11,,T11,bcl,T,45,y_only_missing_structural_factors
+VF45_T12,,T12,bcl,T,45,y_only_missing_structural_factors
+VF45_T13,,T13,bcl,T,45,y_only_missing_structural_factors
+VF45_T14,,T14,bcl,T,45,y_only_missing_structural_factors
+VF45_T15,,T15,bcl,T,45,y_only_missing_structural_factors
+VF45_T16,,T16,bcl,T,45,y_only_missing_structural_factors
+VF45_T17,,T17,bcl,T,45,y_only_missing_structural_factors
+VF45_T2,,T2,bcl,T,45,y_only_missing_structural_factors
+VF45_T3,,T3,bcl,T,45,y_only_missing_structural_factors
+VF45_T4,,T4,bcl,T,45,y_only_missing_structural_factors
+VF45_T5,,T5,bcl,T,45,y_only_missing_structural_factors
+VF45_T6,,T6,bcl,T,45,y_only_missing_structural_factors
+VF45_T7,,T7,bcl,T,45,y_only_missing_structural_factors
+VF45_T8,,T8,bcl,T,45,y_only_missing_structural_factors
+VF45_T9,,T9,bcl,T,45,y_only_missing_structural_factors
+VF45_VF45_C100_R,VF45_VF45_C100_R,CP_VF45_C100R.csv,voronoi,VORONOI,45,eligible_exact_model_label_join
+VF45_VF45_C100_U,VF45_VF45_C100_U,CP_VF45_C100U.csv,voronoi,VORONOI,45,eligible_exact_model_label_join
+VF45_VF45_C200_R,VF45_VF45_C200_R,CP_VF45_C200R.csv,voronoi,VORONOI,45,eligible_exact_model_label_join
+VF45_VF45_C200_U,VF45_VF45_C200_U,CP_VF45_C200U.csv,voronoi,VORONOI,45,eligible_exact_model_label_join
+VF45_VF45_C400_R,VF45_VF45_C400_R,CP_VF45_C400R.csv,voronoi,VORONOI,45,eligible_exact_model_label_join
+VF45_VF45_C400_U,VF45_VF45_C400_U,CP_VF45_C400U.csv,voronoi,VORONOI,45,eligible_exact_model_label_join
+VF45_VF45_C50_R,VF45_VF45_C50_R,CP_VF45_C50R.csv,voronoi,VORONOI,45,eligible_exact_model_label_join
+VF45_VF45_C50_U,VF45_VF45_C50_U,CP_VF45_C50U.csv,voronoi,VORONOI,45,eligible_exact_model_label_join
+VF45_VF45_C800_R,VF45_VF45_C800_R,CP_VF45_C800R.csv,voronoi,VORONOI,45,eligible_exact_model_label_join
+VF45_VF45_C800_U,VF45_VF45_C800_U,CP_VF45_C800U.csv,voronoi,VORONOI,45,eligible_exact_model_label_join
+VF60_B1,VF60_B1. SC,B1,bcl,B,60,eligible_exact_model_label_join
+VF60_B2,VF60_B2. SC8,B2,bcl,B,60,eligible_exact_model_label_join
+VF60_B3,VF60_B3. BCC,B3,bcl,B,60,eligible_exact_model_label_join
+VF60_B4,VF60_B4. BCC2,B4,bcl,B,60,eligible_exact_model_label_join
+VF60_B5,VF60_B5. FCC,B5,bcl,B,60,eligible_exact_model_label_join
+VF60_C1,VF60_C1. SC+FCC,C1,bcl,C,60,eligible_exact_model_label_join
+VF60_C10,VF60_C10. SC8+BCC,C10,bcl,C,60,eligible_exact_model_label_join
+VF60_C11,VF60_C11. SC+DGR+BCC,C11,bcl,C,60,eligible_exact_model_label_join
+VF60_C12,VF60_C12. SC2+DGR+BCC,C12,bcl,C,60,eligible_exact_model_label_join
+VF60_C13,VF60_C13. SC8+DGR+BCC2,C13,bcl,C,60,eligible_exact_model_label_join
+VF60_C14,VF60_C14. SC8+FCC+BCC,C14,bcl,C,60,eligible_exact_model_label_join
+VF60_C2,VF60_C2. SC2+FCC,C2,bcl,C,60,eligible_exact_model_label_join
+VF60_C3,VF60_C3. SC8+FCC,C3,bcl,C,60,eligible_exact_model_label_join
+VF60_C4,VF60_C4. SC+DGR,C4,bcl,C,60,eligible_exact_model_label_join
+VF60_C5,VF60_C5. SC+DGR2,C5,bcl,C,60,eligible_exact_model_label_join
+VF60_C6,VF60_C6. SC+OR,C6,bcl,C,60,eligible_exact_model_label_join
+VF60_C7,VF60_C7. SC+FCC+BCC,C7,bcl,C,60,eligible_exact_model_label_join
+VF60_C8,VF60_C8. SC+BCC,C8,bcl,C,60,eligible_exact_model_label_join
+VF60_C9,VF60_C9. SC2+BCC,C9,bcl,C,60,eligible_exact_model_label_join
+VF60_F1,,F1,bcl,F,60,y_only_missing_structural_factors
+VF60_F2,,F2,bcl,F,60,y_only_missing_structural_factors
+VF60_L1,VF60_L1. Octahedron,L1,bcl,L,60,eligible_exact_model_label_join
+VF60_L10,VF60_L10. Lattice Auxetic,L10,bcl,L,60,eligible_exact_model_label_join
+VF60_L11,VF60_L11. FBCCz,L11,bcl,L,60,eligible_exact_model_label_join
+VF60_L12,VF60_L12. Weaire-Phelean,L12,bcl,L,60,eligible_exact_model_label_join
+VF60_L13,VF60_L13. Diamond,L13,bcl,L,60,eligible_exact_model_label_join
+VF60_L14,VF60_L14. Fluorite,L14,bcl,L,60,eligible_exact_model_label_join
+VF60_L15,VF60_L15. Truncated octahedron,L15,bcl,L,60,eligible_exact_model_label_join
+VF60_L16,VF60_L16. Voronoi,L16,bcl,L,60,eligible_exact_model_label_join
+VF60_L17,VF60_L17. Compact Voronoi,L17,bcl,L,60,eligible_exact_model_label_join
+VF60_L18,,L18,bcl,L,60,y_only_missing_structural_factors
+VF60_L18-2,,L18-2,bcl,L,60,y_only_missing_structural_factors
+VF60_L19,VF60_L19. Aligned Voronoi,L19,bcl,L,60,eligible_exact_model_label_join
+VF60_L2,VF60_L2. Cuboctahedron,L2,bcl,L,60,eligible_exact_model_label_join
+VF60_L20,VF60_L20. Aligned compact Voron,L20,bcl,L,60,eligible_exact_model_label_join
+VF60_L21,VF60_L21. Octet,L21,bcl,L,60,eligible_exact_model_label_join
+VF60_L22,VF60_L22. Kelvin Cell,L22,bcl,L,60,eligible_exact_model_label_join
+VF60_L23,VF60_L23. Isotruss,L23,bcl,L,60,eligible_exact_model_label_join
+VF60_L24,VF60_L24. Re-entrant,L24,bcl,L,60,eligible_exact_model_label_join
+VF60_L25,VF60_L25. Cuboctahedron,L25,bcl,L,60,eligible_exact_model_label_join
+VF60_L26,VF60_L26. Octahedron+Cross,L26,bcl,L,60,eligible_exact_model_label_join
+VF60_L27,VF60_L27. V-Octet,L27,bcl,L,60,eligible_exact_model_label_join
+VF60_L3,VF60_L3. Cubic+Octet,L3,bcl,L,60,eligible_exact_model_label_join
+VF60_L4,VF60_L4. Isotropic,L4,bcl,L,60,eligible_exact_model_label_join
+VF60_L5,VF60_L5. Octet,L5,bcl,L,60,eligible_exact_model_label_join
+VF60_L6,VF60_L6. Snap-fit Modified Octe,L6,bcl,L,60,eligible_exact_model_label_join
+VF60_L7,VF60_L7. 3D Chiral Metamaterial,L7,bcl,L,60,eligible_exact_model_label_join
+VF60_L8,VF60_L8. 3D chiral,L8,bcl,L,60,eligible_exact_model_label_join
+VF60_L9,VF60_L9. Honeycomb Auxetic,L9,bcl,L,60,eligible_exact_model_label_join
+VF60_SC2,VF60_SC2,,bcl,SC,,x_only_missing_performance
+VF60_T1,,T1,bcl,T,60,y_only_missing_structural_factors
+VF60_T10,,T10,bcl,T,60,y_only_missing_structural_factors
+VF60_T11,,T11,bcl,T,60,y_only_missing_structural_factors
+VF60_T12,,T12,bcl,T,60,y_only_missing_structural_factors
+VF60_T13,,T13,bcl,T,60,y_only_missing_structural_factors
+VF60_T14,,T14,bcl,T,60,y_only_missing_structural_factors
+VF60_T15,,T15,bcl,T,60,y_only_missing_structural_factors
+VF60_T16,,T16,bcl,T,60,y_only_missing_structural_factors
+VF60_T17,,T17,bcl,T,60,y_only_missing_structural_factors
+VF60_T2,,T2,bcl,T,60,y_only_missing_structural_factors
+VF60_T3,,T3,bcl,T,60,y_only_missing_structural_factors
+VF60_T4,,T4,bcl,T,60,y_only_missing_structural_factors
+VF60_T5,,T5,bcl,T,60,y_only_missing_structural_factors
+VF60_T6,,T6,bcl,T,60,y_only_missing_structural_factors
+VF60_T7,,T7,bcl,T,60,y_only_missing_structural_factors
+VF60_T8,,T8,bcl,T,60,y_only_missing_structural_factors
+VF60_T9,,T9,bcl,T,60,y_only_missing_structural_factors
+VF60_VF60_C100_R,VF60_VF60_C100_R,CP_VF60_C100R.csv,voronoi,VORONOI,60,eligible_exact_model_label_join
+VF60_VF60_C100_U,VF60_VF60_C100_U,CP_VF60_C100U.csv,voronoi,VORONOI,60,eligible_exact_model_label_join
+VF60_VF60_C200_R,VF60_VF60_C200_R,CP_VF60_C200R.csv,voronoi,VORONOI,60,eligible_exact_model_label_join
+VF60_VF60_C200_U,VF60_VF60_C200_U,CP_VF60_C200U.csv,voronoi,VORONOI,60,eligible_exact_model_label_join
+VF60_VF60_C400_R,VF60_VF60_C400_R,CP_VF60_C400R.csv,voronoi,VORONOI,60,eligible_exact_model_label_join
+VF60_VF60_C400_U,VF60_VF60_C400_U,CP_VF60_C400U.csv,voronoi,VORONOI,60,eligible_exact_model_label_join
+VF60_VF60_C50_R,VF60_VF60_C50_R,CP_VF60_C50R.csv,voronoi,VORONOI,60,eligible_exact_model_label_join
+VF60_VF60_C50_U,VF60_VF60_C50_U,CP_VF60_C50U.csv,voronoi,VORONOI,60,eligible_exact_model_label_join
+VF60_VF60_C800_R,VF60_VF60_C800_R,CP_VF60_C800R.csv,voronoi,VORONOI,60,eligible_exact_model_label_join
+VF60_VF60_C800_U,VF60_VF60_C800_U,CP_VF60_C800U.csv,voronoi,VORONOI,60,eligible_exact_model_label_join

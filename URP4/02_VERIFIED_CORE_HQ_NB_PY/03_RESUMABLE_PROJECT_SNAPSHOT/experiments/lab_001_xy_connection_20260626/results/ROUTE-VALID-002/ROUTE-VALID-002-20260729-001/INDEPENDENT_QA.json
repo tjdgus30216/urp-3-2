@@ -1,0 +1,23 @@
+{
+  "work_id": "ROUTE-VALID-002_B1_L7_CONFIRMED_PAIR_CROSS_FAMILY_SELECTED_SLICE_VALIDATION_NO_Y",
+  "run_id": "ROUTE-VALID-002-20260729-001",
+  "status": "passed",
+  "checks": {
+    "contract_exactly_B1_L7": true,
+    "all_pair_source_hashes_replay": true,
+    "measurement_row_count_12": true,
+    "image_registry_exact_expected_12": true,
+    "image_hash_shape_replay": true,
+    "metric_replay_exact": true,
+    "all_reported_A_B_A_C_values_exact": true,
+    "route_ab_scope_is_same_source_only": true,
+    "route_ac_scope_is_confirmed_pair": true,
+    "B1_adapter_is_explicit_and_bounded": true,
+    "L7_uses_frozen_square_grid_without_adapter": true,
+    "no_unapproved_model_images": true,
+    "scope_stop_preserved": true,
+    "protected_file_hashes_unchanged": true
+  },
+  "scope": "read-only image/hash/metric replay; no new slice, descriptor, y, or model calculation.",
+  "qa_table": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\reports\\tables\\ROUTE-VALID-002-20260729-001_independent_qa.csv"
+}

@@ -1,0 +1,18 @@
+{
+  "work_id": "PRM-115",
+  "title": "XREG_V1_0_COMPONENT_INEQUALITY_CONSOLIDATION_NO_Y",
+  "purpose": "Append exactly the independently verified PRM-114 component inequality/concentration cohort to immutable XREG-v0.9. No new redundancy relation exists under the frozen x-only rule.",
+  "expected": {"prior_candidates": 265, "new_candidates": 12, "total_candidates": 277, "models": 58, "prior_values": 15370, "new_values": 696, "total_values": 16066, "finite_values": 16064, "inherited_missing": 2, "new_missing": 0, "prior_blocks": 216, "new_components": 12, "total_blocks": 228, "prior_edges": 60, "new_edges": 0, "total_edges": 60},
+  "inputs": [
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM113_xreg_v0_9_candidate_bank.csv","sha256":"484152893dcae5d0c43616df6da61b5d68166fafd2bb52b798ca4cb94af38e0d"},
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM113_xreg_v0_9_values_long.csv","sha256":"f4b11f47acc2deb023aff39349b01913973cbd430f71cbc403b9843ac19239af"},
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM113_unified_redundancy_edge_registry.csv","sha256":"53ac96b978f668a38a8ec6004b869230b9733b2d31827aebe3afc70d4fe39cbe"},
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM113_unified_redundancy_block_registry.csv","sha256":"ece1429ecd23f7ee1133bac349ff7d4d5e782bce28e126ea48919898128169b9"},
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM114_overlay_component_inequality_concentration_candidate_registry.csv","sha256":"2fa9d29798253d03e6ef48025ee3d5a802f1cea892906d6613db4e3e57557d6e"},
+    {"path":"experiments/lab_001_xy_connection_20260626/reports/tables/PRM114_overlay_component_inequality_concentration_values_long.csv","sha256":"acd67eed52fa0d1f3e629ac9c8ddf4488463deb85dc232e24aebf62e6a3e36a1"},
+    {"path":"experiments/lab_001_xy_connection_20260626/factories/PRM-114/reports/PRM114_independent_QA_summary.json","sha256":"c3c3a6613085877a5680b96c670cf69badc9a03258c285fcbcb743270e6a3d13"}
+  ],
+  "block_policy": "Append-only: preserve every predecessor graph edge and block ID. Create twelve deterministic singleton U115 blocks. No removal, representative, selection or promotion.",
+  "locks":{"performance_y_read":0,"x_y_analysis":0,"model_fit":0,"feature_selection":0,"feature_promotion":0,"new_masks_or_slicing":0,"NB_CURRENT_mutation":0,"LEGACY_PY_mutation":0,"original_Excel_mutation":0},
+  "status":"preregistered_pending_execution"
+}

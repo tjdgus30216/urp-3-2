@@ -1,0 +1,11 @@
+{
+  "qa_id": "SUBMIT-CLOSE-001-v1.2-r1-INDEPENDENT-PACKAGE-QA",
+  "overall_status": "PASS",
+  "passed": 12,
+  "total": 12,
+  "archive": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\SUBMIT-CLOSE-001\\URP4-1_PROFESSOR_HANDOFF_20260802_v1_2_r1.zip",
+  "archive_sha256": "d74597ca9361e5b528afda7b0d050a71e03cbec86d80b585b8feb2991e30a045",
+  "archive_bytes": 63851614,
+  "member_count": 522,
+  "scope": "sealed archive and short-path extracted smoke; no research calculation"
+}

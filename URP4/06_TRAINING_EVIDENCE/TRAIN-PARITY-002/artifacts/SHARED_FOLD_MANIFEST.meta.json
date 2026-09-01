@@ -1,0 +1,11 @@
+{
+  "execution_status": "no_fit_no_prediction",
+  "manifest_version": "TRAIN2NF-FOLDS-v0.1",
+  "path": "SHARED_FOLD_MANIFEST.csv",
+  "sha256": "3b18913ef68b6487b273a113ab3b3c0569d3246444f17003f68c0e01af1e89a6",
+  "rows": 338028,
+  "targets": 16,
+  "outer_repeats": 12,
+  "inner_splits_per_outer": 24,
+  "membership_level": "row_and_group"
+}

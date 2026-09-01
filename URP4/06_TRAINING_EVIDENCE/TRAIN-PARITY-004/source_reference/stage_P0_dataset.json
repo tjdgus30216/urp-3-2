@@ -1,0 +1,16 @@
+{
+  "target_id": "TRAIN2NF::HI",
+  "excel_col": "HI",
+  "output_name": "Vibrational response | FRF (g/N) | 3000-6500 Hz | AVG",
+  "source_rows": 198,
+  "target_samples": 193,
+  "x_shape": [
+    198,
+    169
+  ],
+  "x_order_hash": "f91b9aa938c706abcae621a59c99d365746214a12b9114a0f23a2e41812a19ab",
+  "y_value_hash": "c85b2f69cecc0c934ed796d21d28db1f9889435625051ca450453d16a526e735",
+  "y_nan_mask_hash": "64cfb823d51880daf89e860338fe00f2a8e80e10f7b2c312510e8fc05fbdf3b9",
+  "row_order_hash": "7974600b8f5ff5c120208730e189501a3e0139c20259dbdb09b96082b695c560",
+  "group_count": 128
+}

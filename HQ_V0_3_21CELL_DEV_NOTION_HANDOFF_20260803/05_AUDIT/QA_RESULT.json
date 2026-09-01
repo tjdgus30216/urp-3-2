@@ -1,0 +1,21 @@
+{
+  "work_id": "HQ-INTEGRATE-003",
+  "date_kst": "2026-08-03",
+  "runtime": "tools/envs/KMK312/python.exe",
+  "python": "3.12.12",
+  "status": "passed_development_integration_only",
+  "tests": {
+    "py_compile": "PASS",
+    "frozen_replay_vs_v01_scalar_max_abs_error": 0.0,
+    "artifact_full_vs_streaming_scalar_max_abs_error": 0.0,
+    "artifact_full_vs_streaming_primitive_tables": "PASS exact equality",
+    "strict_v01_regression_scalar_max_abs_error": 0.0,
+    "strict_v01_regression_elapsed_seconds": 515.6,
+    "exploratory_image_pixel_component": "PASS labelled experimental",
+    "original_step_stp_direct_descriptor": "BLOCKED fail-closed",
+    "xreg_hq_api": "BLOCKED fail-closed",
+    "y_training_forward_inverse": "BLOCKED fail-closed"
+  },
+  "test_artifact_policy": "outputs/hq_v03_smoke is isolated development smoke output; not submission/scientific evidence"
+}
+

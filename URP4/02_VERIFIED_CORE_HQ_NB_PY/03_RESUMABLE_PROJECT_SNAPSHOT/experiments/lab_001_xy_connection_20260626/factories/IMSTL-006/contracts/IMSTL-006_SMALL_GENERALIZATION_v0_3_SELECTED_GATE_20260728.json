@@ -1,0 +1,43 @@
+{
+  "contract_id": "IMSTL-006-SMALL-GENERALIZATION-v0.3-selected-gate",
+  "task_id": "IMSTL-006_SMALL_IMPORTED_STL_GENERALIZATION_AND_DESCRIPTOR_CONCLUSION",
+  "run_id": "IMSTL-006-20260728-002",
+  "settings_address": "IDX-URP4-1-GEOM-IMPORTED-STL / CFG-IMSTL006-SELECTED-GATE-THEN-P1000-Z801 r1",
+  "supersedes": "IMSTL-006-SMALL-GENERALIZATION-v0.2",
+  "change_authority": "Chuck steering before replacement run execution",
+  "runtime": "KMK312",
+  "panel_frozen_before_results": [
+    {"model_id": "B3", "family": "B", "role": "basic lattice representative", "sha256": "beb368e9c9945669cc202046802bd24ec15e70b61cd472ce061e2e482ba70afc"},
+    {"model_id": "C1", "family": "C", "role": "combined cubic lattice representative", "sha256": "d798f7b032de8eccfd771037e849b201c7604b833fc0ed8ce07e316529cc5729"},
+    {"model_id": "L1", "family": "L", "role": "truss lattice representative", "sha256": "7189d16e6f812608f31cb7bf54f604caaf438272cbb31a45c153b8a2e8b0730a"},
+    {"model_id": "F1", "family": "F", "role": "foam coverage stress", "sha256": "d76883bc10af4f4b3817ccbe90b2863f97c9b843f30c5214cde81d2f76fdb0f8"},
+    {"model_id": "T1", "family": "T", "role": "TPMS representative", "sha256": "cc158c6485dcdabace8d5fde7d1c2f00e59e29cca05c8a6a73b8f72b21c07575"},
+    {"model_id": "T8", "family": "T", "role": "known descriptor near-collision member A", "sha256": "24d0c1b1f1e190fcea3da70ec421968fc7cf58d8dccf367c34e8263db5677933"},
+    {"model_id": "T9", "family": "T", "role": "known descriptor near-collision member B", "sha256": "76bc0f0bd05dbe549c0fcfd5321a46b9d99ce71631faa4346a0ad2db27c9b429"}
+  ],
+  "phase_1_selected_gate": {
+    "indices": [0, 1, 100, 200, 400, 600, 700, 799, 800],
+    "interior_gate_indices": [1, 100, 200, 400, 600, 700, 799],
+    "resolutions": [1000, 500],
+    "required": [
+      "source hash exact",
+      "40 mm isotropic extent",
+      "all selected masks finite and generated without exception",
+      "each interior P1000 mask area fraction > 1e-6 and < 0.999999",
+      "nearest-neighbor-upsampled P500 versus P1000 IoU >= 0.95 for every interior selected slice",
+      "P500 versus P1000 relative area difference <= 0.05 for every interior selected slice"
+    ],
+    "boundary_indices": "diagnostic only",
+    "failure_action": "do not run full extraction for the failed model"
+  },
+  "phase_2_full_for_passed_only": {
+    "pixels": 1000,
+    "slice_count": 801,
+    "spacing_mm": 0.05,
+    "mask_retention": "selected diagnostic masks only; all other masks transient",
+    "full_trace": true,
+    "operational_gate": "801 trace rows, at least 760 valid adjacent pairs, >=90% finite average descriptor fields"
+  },
+  "claim_boundary": "Operational and numerical generalization only. Physical correctness and exact STP parity remain unresolved without paired STP.",
+  "forbidden": ["all58", "y access", "model training", "feature promotion", "NB-CURRENT edit", "LEGACY-PY edit", "source mutation", "inverse design"]
+}

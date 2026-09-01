@@ -1,0 +1,101 @@
+{
+  "run_id": "COMP-FACTORY-004-VORONOI-FS4-20260802-001",
+  "cohort": "voronoi",
+  "status": "PASS",
+  "started_at_kst": "2026-08-02T02:26:42.851632+09:00",
+  "completed_at_kst": "2026-08-02T02:26:51.163438+09:00",
+  "runtime": {
+    "sys_executable": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+    "python": "3.12.12",
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "counts": {
+    "rows": 30,
+    "outer_groups": [
+      "VF30",
+      "VF45",
+      "VF60"
+    ],
+    "features": 41,
+    "targets": 16,
+    "methods": 4,
+    "oof_predictions": 1920
+  },
+  "outputs": [
+    {
+      "file": "best_target_y_vs_oof_prediction.png",
+      "bytes": 88763,
+      "sha256": "28060FF2BCA3F1F83A434B68EA4488621D81C804DB68BEEC63B4BD7FBCEA31C7"
+    },
+    {
+      "file": "feature_redundancy_edges.csv",
+      "bytes": 345,
+      "sha256": "86400F6B5621447A1B41FA9DA797145685DA2CFCD6DA82873F0B19F23B7CBB60"
+    },
+    {
+      "file": "feature_selection_frequency.csv",
+      "bytes": 17543,
+      "sha256": "DCE8E1145E4E27D795F4F71AB727E49846C8E1CACA796885E6865F3AA22A184A"
+    },
+    {
+      "file": "feature_x_only_census.csv",
+      "bytes": 4144,
+      "sha256": "67263A92C9FAC698297B45734A8CE7FDCAD2513114270749DE8FFE9539B62039"
+    },
+    {
+      "file": "fold_local_feature_selection.csv",
+      "bytes": 62666,
+      "sha256": "8C2AFC2BC33AD4E88DDC065B70AF67FAC47FBE442E0E2D0A49C82D28A8CB3A5D"
+    },
+    {
+      "file": "method_execution_details.csv",
+      "bytes": 55889,
+      "sha256": "A03AB6E64AFD867F4C1C1C5FC17C79EFF3D399921ABC5EC2E8CBDF6F80B15B3D"
+    },
+    {
+      "file": "metrics.csv",
+      "bytes": 68197,
+      "sha256": "8025FC35E66D39B920EA57A729F9273F5F50E75A336223E8130079C4C393E5AF"
+    },
+    {
+      "file": "oof_predictions.csv",
+      "bytes": 261208,
+      "sha256": "9D6D5521376B11A4CEA65CA0DE60695C9D48F6FBB813AFD7259B10E7DFC62FC6"
+    },
+    {
+      "file": "outer_fold_registry.csv",
+      "bytes": 5750,
+      "sha256": "3DD8DD1C1DE03E41364F6C6F120B751C3359ABDC8B25BD401D1AF8ADA7C8C808"
+    },
+    {
+      "file": "producer_QA.csv",
+      "bytes": 439,
+      "sha256": "2FA03164B1D04F4AA9139E1A5189A308B9B5586D395C88ADF10B54994FD6DD3C"
+    },
+    {
+      "file": "REPORT.md",
+      "bytes": 3916,
+      "sha256": "160F484F89BF93967DAF1C2A200F10CD168A608C9295F4C7F05F8E1112C87781"
+    },
+    {
+      "file": "source_hash_audit.csv",
+      "bytes": 863,
+      "sha256": "FAEF6F9E35A5F341FCEB721F7ED368E92468D14CE2A68C7778BA1EB3DA1C8615"
+    },
+    {
+      "file": "target_screening_pooled_r2.png",
+      "bytes": 79934,
+      "sha256": "A4AE035976648D2D50ECA7F5126322D497B7232816DA6D75D019A30C8B44874C"
+    },
+    {
+      "file": "target_screening_summary.csv",
+      "bytes": 3713,
+      "sha256": "29CA4D7C03DBDB8085B4BE77A413CDDFA724B3D2812C9A35149A2E843035BFD6"
+    }
+  ]
+}

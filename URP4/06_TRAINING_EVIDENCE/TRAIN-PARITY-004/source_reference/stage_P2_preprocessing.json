@@ -1,0 +1,21 @@
+{
+  "X_train_shape": [
+    99,
+    169
+  ],
+  "X_test_shape": [
+    29,
+    169
+  ],
+  "y_train_shape": [
+    99
+  ],
+  "y_test_shape": [
+    29
+  ],
+  "train_nan_mask_hash": "46598e296b39e1139a3ff6b604513aa7f10868eca8122fffa402c43170794e83",
+  "test_nan_mask_hash": "f885a2d62f3604030ae81c538937923b47b9fd41f5c92b6f9a00307ec6c7d917",
+  "train_median_hash": "e5a4894f6a5fb9ca1949a3b4171ef0e56a4e3a372b5f39034c970d73f7e9916e",
+  "train_mean_hash": "00afbe7dd861b971aeb92181e675fa5be162527ebbf5c1e975bacc76d2e5877d",
+  "train_std_hash": "987ca391888899a775e9880269f25a39544a952c03e962e4b3336fb9bea43178"
+}

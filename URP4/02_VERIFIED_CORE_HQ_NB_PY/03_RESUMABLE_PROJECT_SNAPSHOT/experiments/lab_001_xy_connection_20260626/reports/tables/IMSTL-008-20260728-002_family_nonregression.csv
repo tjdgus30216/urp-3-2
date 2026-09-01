@@ -1,0 +1,7 @@
+﻿model_id,family,source_hash_exact,trace_rows,trace_indices_exact,trace_finite,descriptor_row_count,descriptor_finite
+B3,B,True,801,True,True,1,True
+C1,C,True,801,True,True,1,True
+L1,L,True,801,True,True,1,True
+T1,T,True,801,True,True,1,True
+T8,T,True,801,True,True,1,True
+T9,T,True,801,True,True,1,True

@@ -1,0 +1,101 @@
+{
+  "methods_reached": [
+    "baseline_stability",
+    "stability_lasso_ridge",
+    "spca_ridge",
+    "spca_huber",
+    "block_pca_ridge",
+    "bagged_subspace_ridge",
+    "minimal_class_average",
+    "multitask_screen_ridge",
+    "multitask_screen_pls"
+  ],
+  "method_lineage": {
+    "baseline_stability": {
+      "source_cell_index": 7,
+      "source_function": "evaluate_method_train_test",
+      "condition": "method_name == \"baseline_stability\"",
+      "branch_ast_hash": "27cfdcee4a865115acadad625b4aa583d3fd454f2b2a4412187ed07b9754d3b2",
+      "branch_text_hash": "b8d972fe8afad1f732cece2c58f0658078f3f1658d6064c9520e4410bd3369b5",
+      "source_lineno": 475,
+      "source_end_lineno": 506
+    },
+    "stability_lasso_ridge": {
+      "source_cell_index": 7,
+      "source_function": "evaluate_method_train_test",
+      "condition": "method_name == \"stability_lasso_ridge\"",
+      "branch_ast_hash": "d3ac858042b3d30ff27911d1e5375b184bdfae67c51df9ce9ce86c11b06b4494",
+      "branch_text_hash": "72ae9cf58084a45deec4e2f632f49b5e9b918d82591c2284c3e07f8300f30408",
+      "source_lineno": 508,
+      "source_end_lineno": 527
+    },
+    "spca_ridge": {
+      "source_cell_index": 7,
+      "source_function": "evaluate_method_train_test",
+      "condition": "method_name in (\"spca_ridge\",\"spca_huber\",\"spca_pls\")",
+      "branch_ast_hash": "a0e0013091f8dde8f2b7ef704f12cbb3e22cc88581cef887ed32484d69e55ffb",
+      "branch_text_hash": "26cd5566e8d413e4b05ef4a01000c421a66e9025c30a1818902ddd2b179b73e4",
+      "source_lineno": 529,
+      "source_end_lineno": 557
+    },
+    "spca_huber": {
+      "source_cell_index": 7,
+      "source_function": "evaluate_method_train_test",
+      "condition": "method_name in (\"spca_ridge\",\"spca_huber\",\"spca_pls\")",
+      "branch_ast_hash": "a0e0013091f8dde8f2b7ef704f12cbb3e22cc88581cef887ed32484d69e55ffb",
+      "branch_text_hash": "26cd5566e8d413e4b05ef4a01000c421a66e9025c30a1818902ddd2b179b73e4",
+      "source_lineno": 529,
+      "source_end_lineno": 557
+    },
+    "block_pca_ridge": {
+      "source_cell_index": 7,
+      "source_function": "evaluate_method_train_test",
+      "condition": "method_name == \"block_pca_ridge\"",
+      "branch_ast_hash": "8cb88a527572bbf8e5098f6fb9e3b224300385bb4472c65f1823a218cebb81a3",
+      "branch_text_hash": "1ad0c5c873553df24306f1007d254548e2c00b416f50783274a96debc1d806e2",
+      "source_lineno": 559,
+      "source_end_lineno": 584
+    },
+    "bagged_subspace_ridge": {
+      "source_cell_index": 7,
+      "source_function": "evaluate_method_train_test",
+      "condition": "method_name == \"bagged_subspace_ridge\"",
+      "branch_ast_hash": "13f91dbadb7df19d10571d437058523989d9ea81bdfff275aa6dbe91c82617e6",
+      "branch_text_hash": "2ea7259169a177197e42fe2b53607b05f278814b376fd0bfa419c7aad9bae12d",
+      "source_lineno": 586,
+      "source_end_lineno": 605
+    },
+    "minimal_class_average": {
+      "source_cell_index": 7,
+      "source_function": "evaluate_method_train_test",
+      "condition": "method_name == \"minimal_class_average\"",
+      "branch_ast_hash": "d6da54ddfc2558f397d890b33d409c1b4cbc01f8d88f4f71fda74b0b45e0abab",
+      "branch_text_hash": "520afe20e37fc462f32c69ed594d8a881c321757f0b49aecf44b9880dec87b35",
+      "source_lineno": 635,
+      "source_end_lineno": 683
+    },
+    "multitask_screen_ridge": {
+      "source_cell_index": 7,
+      "source_function": "evaluate_method_train_test",
+      "condition": "method_name in (\"multitask_screen_ridge\",\"multitask_screen_pls\")",
+      "branch_ast_hash": "e87a38c89b4d3b1d735f7827f86a5c162df52b0601f150bf363ced15f3abcb19",
+      "branch_text_hash": "7ec84eedbfbdaf1c9e71af33c19f0951916cd019adac8225e34a3dd16ffc9730",
+      "source_lineno": 607,
+      "source_end_lineno": 633
+    },
+    "multitask_screen_pls": {
+      "source_cell_index": 7,
+      "source_function": "evaluate_method_train_test",
+      "condition": "method_name in (\"multitask_screen_ridge\",\"multitask_screen_pls\")",
+      "branch_ast_hash": "e87a38c89b4d3b1d735f7827f86a5c162df52b0601f150bf363ced15f3abcb19",
+      "branch_text_hash": "7ec84eedbfbdaf1c9e71af33c19f0951916cd019adac8225e34a3dd16ffc9730",
+      "source_lineno": 607,
+      "source_end_lineno": 633
+    }
+  },
+  "evaluator_signature": "(method_name, output_name, X_train_sel, y_train_sel, g_train_sel, selected_train_df, X_test_group, y_test_group, ranked_features, random_state=42)",
+  "random_state": 42,
+  "target_id": "TRAIN2NF::HI",
+  "outer_repeat": 0,
+  "P8_prohibited": true
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "qa": "8/8",
+  "checks": {
+    "kernel_is_kmk312": true,
+    "four_semantic_cells": true,
+    "code_syntax": true,
+    "preflight_default_off": true,
+    "no_slice_executor": true,
+    "no_y_or_training": true,
+    "f1_warning_is_documented": true,
+    "no_code_cell_has_execution_output": true
+  },
+  "runtime": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe"
+}

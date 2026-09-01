@@ -1,0 +1,41 @@
+{
+  "task_id": "IMSTL-008_F1_FULL_P1000_Z801_AND_FAMILY_NONREGRESSION_NO_Y",
+  "run_id": "IMSTL-008-20260728-002",
+  "settings_address": "IDX-URP4-1-GEOM-IMPORTED-STL / CFG-IMSTL008-F1-P1000-Z801-HQREADBACK-NONREG r2",
+  "status": "passed",
+  "decision": "confirmed_f1_full_technical_extraction_and_sampled_family_nonregression",
+  "producer": {
+    "slice_rows": 801,
+    "overlay_rows": 800,
+    "slice_component_rows": 39506,
+    "overlay_component_rows": 38187,
+    "descriptor_rows": 9,
+    "png_created": 1601,
+    "png_deleted": 1601,
+    "readback_mismatch_sum": 0,
+    "remaining_png": 0
+  },
+  "independent_qa": {
+    "scalar_replay": "9/9",
+    "scalar_max_abs_error": 7.105427357601002e-15,
+    "f1_selected_mask_replay": "9/9",
+    "prior_family_selected_mask_replay": "54/54",
+    "protected_assets": "31/31",
+    "upstream_trees_exact": true
+  },
+  "state_labels": {
+    "F1_full_imported_STL_technical_execution": "confirmed",
+    "RUN139_F001_F006": "confirmed",
+    "RUN139_F007_F008": "likely",
+    "exact_original_STP_parity": "unresolved",
+    "whole_F_family_or_all58_generalization": "unresolved",
+    "canonical_descriptor_or_performance_utility": "unresolved",
+    "route_corruption_or_family_regression": "rejected"
+  },
+  "forbidden_actions_observed": [],
+  "all58_executed": false,
+  "y_accessed": false,
+  "feature_selection_performed": false,
+  "model_fitting_performed": false,
+  "next_work": "HQ-GEOM-001_GENERATED_FAMILY_40MM_NORMALIZATION_IMPLEMENTATION_AND_REGRESSION_NO_Y"
+}

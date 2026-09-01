@@ -1,0 +1,40 @@
+{
+  "run_id": "TRAIN-PARITY-003A-20260801-001",
+  "replaces_decision_only_for_future_gate": "TRAIN-PARITY-003 NO_GO_WITH_BLOCKER",
+  "predecessor_no_go_preserved_as_historical_safety_decision": true,
+  "repair_status": "PASS",
+  "source_and_adapter_same_target_value_fold": true,
+  "sentinel": {
+    "target_id": "TRAIN2NF::HI",
+    "display_name": "Vibrational response | FRF (g/N) | 3000-6500 Hz | AVG",
+    "outer_repeat": 0
+  },
+  "permitted_stages": [
+    "P0",
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7"
+  ],
+  "prohibited_stages": [
+    "P8"
+  ],
+  "runtime": {
+    "sys_executable": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+    "python": "3.12.12",
+    "threads": 1,
+    "gpu": "disabled",
+    "PYTHONHASHSEED": "42"
+  },
+  "fit_predict_metric_counts": {
+    "fit": 0,
+    "predict": 0,
+    "prediction_rows": 0,
+    "metric_rows": 0
+  },
+  "decision": "GO_FOR_TRAIN_PARITY_004_SENTINEL_EXECUTION",
+  "blocker": null
+}

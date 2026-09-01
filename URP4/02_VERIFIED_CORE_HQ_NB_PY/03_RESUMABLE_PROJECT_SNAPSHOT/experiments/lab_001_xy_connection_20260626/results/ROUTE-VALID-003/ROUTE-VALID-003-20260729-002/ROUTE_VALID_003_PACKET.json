@@ -1,0 +1,17 @@
+{
+  "work_id": "ROUTE-VALID-003_F1_STEP_REFERENCE_PIXEL_PHASE_AND_RESOLUTION_STRESS_TEST_NO_Y",
+  "run_id": "ROUTE-VALID-003-20260729-002",
+  "status": "completed_independent_QA_passed",
+  "recommendation": "repeat_preregistered_F1_targeted_cases",
+  "source_status": "confirmed",
+  "route_AB_status": "likely",
+  "route_AC_status": "unresolved",
+  "new_route_A_masks": 144,
+  "new_route_B_masks": 144,
+  "reused_route_C_masks": 144,
+  "independent_QA": "passed",
+  "protected_assets_unchanged": true,
+  "quarantined_partial_run": "ROUTE-VALID-003-20260729-001",
+  "strict_scope_locks_preserved": true,
+  "next_scope": "F1 z400 targeted replay only; no policy/NB decision"
+}

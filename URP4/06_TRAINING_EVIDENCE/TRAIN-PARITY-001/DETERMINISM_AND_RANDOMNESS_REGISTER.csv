@@ -1,0 +1,17 @@
+determinism_id,source,accepted_replay_state,future_contract,status,risk_if_uncontrolled,verification
+DET-001,PYTHONHASHSEED,not explicitly fixed,Set `PYTHONHASHSEED=42` before process start for source copy and exact adapter,required,Set traversal can change BlockPCA blocks and Yield method,record environment before imports
+DET-002,Python random,not used explicitly in inspected source,Set `random.seed(42)` in instrumented launcher without source mutation,required_future,Future helper additions could drift,record seed ledger
+DET-003,NumPy global RNG,source functions pass random states but global seed not globally asserted,Set `numpy.random.seed(42)` and record per-stage seeds,required,Unseeded path could drift,replay seed trace
+DET-004,outer GroupShuffleSplit,seed rule 42+repeat,Prebuild and hash exact 12-repeat target-specific manifest,required,Membership drift invalidates P3+,compare row/group membership
+DET-005,inner GroupShuffleSplit,source receives stage random_state and 24 splits,Prebuild nested membership or inject a shared splitter with recorded seeds,required,Search scores and winners drift,compare nested manifest
+DET-006,mutual_info_regression,random_state passed,Preserve exact stage seed and package version,required,Feature ranking drift,compare score ledger
+DET-007,ElasticNetCV/random search,random_state generally passed,Preserve exact seed and hyperparameter candidate order,required,Rank/model choice drift,compare candidate score ledger
+DET-008,build_corr_blocks,`unassigned=set(cols); next(iter(unassigned))`,Keep source bytes protected; fixed hash seed plus traversal trace in isolated execution; exact adapter must reproduce recorded order,required,Yield method/refit can change,export block assignment ledger
+DET-009,dict/list ordering,Python 3.12 insertion ordering but derived sets exist,Audit every unordered traversal and canonicalize only under a new declared implementation contract,required,Feature/method tie drift,static source audit plus trace
+DET-010,suppressed exceptions,source catches multiple exceptions and may continue,Log exception class/message/stage without changing return behavior,required,Silent missing candidates/refits,exception ledger completeness
+DET-011,silent None returns,evaluate_method_train_test can return None without reason,Instrument return gates in isolated copy and exact adapter,required,Three held refits cannot be attributed,return-path ledger
+DET-012,numerical threads,accepted replay fixed OMP/MKL/OpenBLAS/NUMEXPR=1,Use same one-thread settings in both processes,required,Floating and scheduling drift,runtime manifest
+DET-013,GPU,accepted replay set CUDA_VISIBLE_DEVICES=-1,Keep GPU disabled,required,Backend drift,runtime manifest
+DET-014,package/runtime,KMK312 Python 3.12.12 env hash d9a2d201...,Require same sys.executable package lock and environment hash,required,Estimator behavior drift,environment hash replay
+DET-015,historical stored output,unknown original environment/hash seed,Sensitivity only; never an exact ground truth,confirmed,False mismatch attribution,label every comparison historical_sensitivity
+DET-016,accepted clean replay,scientific settings unchanged but PYTHONHASHSEED not frozen,Primary current execution reference; not proof of deterministic repeatability,confirmed_with_limit,Replay can be faithful yet method selection can drift,retain outputs and hashes

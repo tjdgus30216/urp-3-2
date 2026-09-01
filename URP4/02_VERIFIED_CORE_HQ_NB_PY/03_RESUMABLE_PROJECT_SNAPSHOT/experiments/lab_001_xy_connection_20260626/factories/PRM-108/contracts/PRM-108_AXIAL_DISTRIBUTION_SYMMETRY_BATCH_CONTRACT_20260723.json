@@ -1,0 +1,56 @@
+{
+  "work_id": "PRM-108",
+  "title": "AXIAL_DISTRIBUTION_AND_REFLECTION_SYMMETRY_BC_BATCH_NO_Y",
+  "purpose": "Generate 24 axial-location, axial-spread and reflection-asymmetry candidates from already hash-verified SLICE-004 slice/overlay pixel profiles without creating any image, mask, mesh or slice.",
+  "source_contract": {
+    "raw_artifacts": ["slice_pixel_readback.csv", "overlay_pixel_readback.csv"],
+    "models": 58,
+    "slice_rows_per_model": 801,
+    "overlay_rows_per_model": 800,
+    "raw_file_count": 116,
+    "all_weight_sums_must_be_positive": true
+  },
+  "expected": {
+    "models": 58,
+    "new_candidates": 24,
+    "grade_B_candidates": 12,
+    "grade_C_candidates": 12,
+    "values": 1392,
+    "crossbank_relations": 4632,
+    "internal_relations": 276,
+    "diagnostic_pair_values": 48
+  },
+  "candidate_schema": {
+    "RAW-X041": "normalized axial weighted centroid/spread for slice material-area and component-count profiles",
+    "RAW-X042": "normalized axial weighted centroid/spread for red/blue/purple/union overlay count profiles",
+    "RAW-X043": "normalized axial weighted centroid/spread for red/blue/purple phase-fraction profiles",
+    "RAW-X044": "normalized reflection asymmetry for two slice and four overlay count profiles",
+    "position_grid": "uniform normalized coordinates from 0 to 1 inclusive over the frozen ordered rows",
+    "reflection_formula": "mean(abs(profile - reversed(profile))) / mean(abs(profile)); fail if denominator is not positive"
+  },
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/TOUR-C001/analysis_factory/reports/TOUR-C001-T4R-SLICE-004_output_manifest.csv", "sha256": "53f0b5292020ee8b5274f42dbb1af7b4501fe26703fec6ed298d6a83f712903c"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM107_xreg_v0_6_values_long.csv", "sha256": "bbdd0ec024407970a6e63f45fcc50bddf7847b16c99cecfdff197ff20e8bb991"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM107_xreg_v0_6_candidate_bank.csv", "sha256": "1b8b2ecfa63039dc3b1ce8c63ee7a9f9965ed72aa0786e55310ca82bd2ae20d6"},
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/PRM-107/reports/PRM107_independent_QA_summary.json", "sha256": "3ffa22587da154ee8d2ecd2fdcd9df6164a4ded5b9a5626442607b560752a322"}
+  ],
+  "relation_policy": {
+    "scope": "full58_x_only",
+    "exact_duplicate": "np.allclose rtol=1e-10 atol=1e-12",
+    "proportional_duplicate": "normalised L2 residual <= 1e-6",
+    "high_redundancy": "absolute Pearson >= 0.98 and absolute Spearman >= 0.98"
+  },
+  "locks": {
+    "performance_y_read": 0,
+    "x_y_analysis": 0,
+    "model_fit": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "new_masks_or_slicing": 0,
+    "NB_CURRENT_mutation": 0,
+    "LEGACY_PY_mutation": 0,
+    "original_Excel_mutation": 0
+  },
+  "status": "preregistered_pending_execution",
+  "next_step_if_pass": "PRM-109 XREG-v0.7 consolidation/block audit only"
+}

@@ -1,0 +1,30 @@
+{
+  "qa_id": "INDEPENDENT-PACKAGE-QA-v1.1-r2",
+  "timestamp": "2026-08-02T00:55:47+09:00",
+  "status": "PASS",
+  "archive": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\SUBMIT-CLOSE-001\\URP4-1_PROFESSOR_HANDOFF_20260801_v1_1_r2.zip",
+  "sha256": "103297efab3a04c089a4d806d0f2eede22cf5cbe7930710dc03e22a9827ca7ce",
+  "size_bytes": 62341052,
+  "member_count": 426,
+  "root": [
+    "URP4-1_PROFESSOR_HANDOFF_20260801_v1_1_r2"
+  ],
+  "checks": {
+    "crc_testzip": true,
+    "single_root": true,
+    "member_count_matches_staging": true,
+    "duplicate_members_absent": true,
+    "zip_sha_recorded": true
+  },
+  "bad_crc_member": null,
+  "duplicate_members": [],
+  "payload_manifest_preseal": {
+    "status": "PASS",
+    "tracked": 425,
+    "failures": [],
+    "self_exclusion": [
+      "10_MANIFEST_SHA256_AND_QA/PACKAGE_CONTENT_SHA256.csv"
+    ]
+  },
+  "research_calculation": false
+}

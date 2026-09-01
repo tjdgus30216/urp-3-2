@@ -1,0 +1,141 @@
+{
+  "run_id": "COMP-FACTORY-001-AI-LATTICE-20260731-142459",
+  "status": "passed",
+  "contract_id": "COMP-FACTORY-001-SOURCE-GROUPS-v0.1",
+  "group": "ai_lattice",
+  "created_at": "2026-07-31T05:25:03.466Z",
+  "runtime": {
+    "executable": "C:\\Users\\chuck\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+    "node_version": "v24.14.0"
+  },
+  "source_audit": [
+    {
+      "source_asset_alias": "COMP-Y-AILATTICE-001-150",
+      "source_path": "experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(1-50)_summary (1).xlsx",
+      "source_sha256": "1A93F6067223AF6F30513E49FF4492D4ABBCCB44D74096196C5E72E39ABAF03D",
+      "performance_sheet": "Raw data",
+      "excluded_sheet": "Summary",
+      "used_rows": 63,
+      "used_columns": 21,
+      "accepted_model_rows": 50,
+      "excluded_non_model_rows": 12,
+      "status": "pass"
+    },
+    {
+      "source_asset_alias": "COMP-Y-AILATTICE-001-150",
+      "source_path": "experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(51-100)_summary.xlsx",
+      "source_sha256": "A7E4BA1A8BF00043AE0CF1D8B1115752D9166FCACBC32BEA456A56240A290674",
+      "performance_sheet": "Raw data",
+      "excluded_sheet": "Summary",
+      "used_rows": 63,
+      "used_columns": 21,
+      "accepted_model_rows": 49,
+      "excluded_non_model_rows": 13,
+      "status": "pass"
+    },
+    {
+      "source_asset_alias": "COMP-Y-AILATTICE-001-150",
+      "source_path": "experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/03_ai_lattice_summaries/Ai-Lattice_(101-150)_summary.xlsx",
+      "source_sha256": "EFC66A5505C1553B1F8C02935FA1F444EC6C8B5D1DA8EA22C562DF02D9766D3D",
+      "performance_sheet": "Raw data",
+      "excluded_sheet": "Summary",
+      "used_rows": 63,
+      "used_columns": 21,
+      "accepted_model_rows": 50,
+      "excluded_non_model_rows": 12,
+      "status": "pass"
+    },
+    {
+      "source_asset_alias": "COMP-X-STRUCTURAL-320",
+      "source_path": "experiments/lab_001_xy_connection_20260626/data/raw/doctor_compression_data_20260731/01_structural_factors/Structural_Factors_All.xlsx",
+      "source_sha256": "088255B6D35461B4ABCE0D11F160043169B8824DCE1B62D33D0D543548F9CDA1",
+      "performance_sheet": "Summary",
+      "excluded_sheet": "Processing_Log",
+      "used_rows": 321,
+      "used_columns": 46,
+      "accepted_model_rows": 150,
+      "excluded_non_model_rows": 170,
+      "status": "pass"
+    }
+  ],
+  "counts": {
+    "performance_rows": 149,
+    "structural_rows": 150,
+    "trace_rows": 150,
+    "eligible_joined_rows": 149,
+    "missing_target_model_ids": [
+      "AI092"
+    ],
+    "targets": 17,
+    "structural_columns": 45,
+    "excluded_non_model_rows": 37
+  },
+  "authorization": {
+    "feature_selection": false,
+    "model_fitting": false,
+    "prediction": false,
+    "inverse_design": false
+  },
+  "outputs": [
+    {
+      "file": "REPORT.md",
+      "bytes": 699,
+      "sha256": "0A74819B3DC792948DBB9A887A42B17CB2AF42B5010F632F9AA6B1D5784DE6C4"
+    },
+    {
+      "file": "ai_lattice_x_wide.csv",
+      "bytes": 106835,
+      "sha256": "ECDA9BC045419EAA197DBC577605E686F69BC54729220D93AB52481889006AD5"
+    },
+    {
+      "file": "ai_lattice_xy_all150_trace.csv",
+      "bytes": 159255,
+      "sha256": "D4B60483B8F98AFB53463F48B413ADF347198A6C1196F1C7428615FFC01AF0C9"
+    },
+    {
+      "file": "ai_lattice_xy_eligible149.csv",
+      "bytes": 158515,
+      "sha256": "CFE004962657D1C6209049856954F0883C1C753CE396C86B77155D51B6006E06"
+    },
+    {
+      "file": "ai_lattice_y_long.csv",
+      "bytes": 1129243,
+      "sha256": "BD51FADF119A16FA618DFE0D4ED1A6F0CECDEC3B4680ECC56E76B4503702E1E6"
+    },
+    {
+      "file": "ai_lattice_y_wide.csv",
+      "bytes": 78350,
+      "sha256": "9B418010EC1C3D8651A6538ECFF8555CA6C0E77EE11569C0DD3A3E10DA8D2441"
+    },
+    {
+      "file": "excluded_non_model_rows.csv",
+      "bytes": 7275,
+      "sha256": "DD605CE7E35CA52924965ABFC4E54920EC3927EA885FD82918D59FCA78829CA2"
+    },
+    {
+      "file": "feature_registry.csv",
+      "bytes": 5387,
+      "sha256": "60F196B603F7F4FF70E13CF23B19B42280E0775412E2E1789CAD1C3ADBFBB022"
+    },
+    {
+      "file": "producer_QA.csv",
+      "bytes": 702,
+      "sha256": "8A0ADE335C5256C4B92FB7FD6F3E15C44AE53D80F7CBDC3A16F4511F949F49E9"
+    },
+    {
+      "file": "row_registry.csv",
+      "bytes": 45422,
+      "sha256": "ACB0525BF067B800DD4D45D3B93928FAAAADAD9E7187D552B023804C12213523"
+    },
+    {
+      "file": "source_audit.csv",
+      "bytes": 1223,
+      "sha256": "C215F4F7499088C12F3FE93512B17D4499AB19F95A7673B1CFD5EE559704DE66"
+    },
+    {
+      "file": "target_registry.csv",
+      "bytes": 3185,
+      "sha256": "5A0EE38AB1DB3C33413ABC5A087ED918296D33DFF4B58EF265B3280720EBE437"
+    }
+  ]
+}

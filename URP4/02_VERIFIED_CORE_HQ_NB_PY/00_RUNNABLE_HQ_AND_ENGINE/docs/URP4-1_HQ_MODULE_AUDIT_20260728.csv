@@ -1,0 +1,13 @@
+module_id,component,deliverable_path,reused_authority,current_status,enabled_in_hq_v0_1,qualification,main_limit
+HQ-M01,Canonical contracts,URP4-1_DELIVERABLE/urp4/contracts/v0_1,CINT-01,confirmed,yes,24/24 prior contract tests and source copy identity,Schema version remains v0.1
+HQ-M02,RUN-139 descriptor service,URP4-1_DELIVERABLE/urp4/descriptor_service/v0_1,CINT-03 and RUN-139,confirmed,yes,58-model 522-row regression plus HQ full smokes,Only approved P1000/Z801 profile and nine scalar rows
+HQ-M03,Lattice Type A generator,URP4-1_DELIVERABLE/urp4/generators/lattice_typeab/v0_1,CINT-04,likely,yes,Source-exact fixed-seed replay and HQ generation smoke,Production mesh/printability policy not asserted
+HQ-M04,Lattice Type B generator,URP4-1_DELIVERABLE/urp4/generators/lattice_typeab/v0_1,CINT-04,unresolved,no,Code path exists but fails closed without identity-locked Variables.xlsx,Required workbook is unavailable
+HQ-M05,TPMS Multiwall generator,URP4-1_DELIVERABLE/urp4/generators/tpms_multiwall/v0_1,CINT-05,likely,yes,98 registry replay and HQ generation smoke,Production VF/thickness/open-cell/printability policy unresolved
+HQ-M06,Voxel generator,URP4-1_DELIVERABLE/urp4/generators/voxel/v0_1,CINT-06,likely,yes,300 registry replay and HQ generation smoke,Production grid/VF/printability policy unresolved
+HQ-M07,Generated-STL native route,URP4-1_DELIVERABLE/urp4/descriptor_service/v0_1,RUN-139 and NB-CURRENT,confirmed,yes,Controlled generated fixture completed P1000/Z801 with zero readback mismatch,KEEP_FLAGGED maps conservatively to streaming in v0.1
+HQ-M08,Imported-STL winding route,URP4-1_DELIVERABLE/urp4/geometry_io/v0_4,IMSTL-003 through IMSTL-006,likely,yes,L28 full repeated exact and sampled B/C/L/T operation,Not strict STP equivalent; F family and all58 unresolved
+HQ-M09,Original-STP reference route,URP4-1_DELIVERABLE/urp4/geometry_io/v0_3,STRICT-GEOM and IMSTL,confirmed,conditional,Direct B-rep preflight and route identity,Direct STP-to-descriptor adapter is not qualified in HQ v0.1
+HQ-M10,Training method registry,URP4-1_DELIVERABLE/urp4/training/v0_1,CINT-08,likely,no,14/14 source identities and five method-family interfaces,No official y/dataset gate; fit and feature selection locked
+HQ-M11,HQ controller/engine,URP4-1_DELIVERABLE/urp4/hq/v0_1,HQ-FINAL-001,confirmed,yes,Single edit cell plus 9/9 fast and 6/6 integration gates,Not a claim of model training or inverse design
+

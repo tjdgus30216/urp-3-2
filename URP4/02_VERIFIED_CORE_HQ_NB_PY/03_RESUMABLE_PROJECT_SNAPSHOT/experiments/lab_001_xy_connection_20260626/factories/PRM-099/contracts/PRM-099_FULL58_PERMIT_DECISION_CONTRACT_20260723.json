@@ -1,0 +1,38 @@
+{
+  "work_id": "PRM-099",
+  "title": "THIRD_WAVE_FULL58_PERMIT_DECISION_CONTRACT",
+  "created_at_kst": "2026-07-23T09:31:54.415558+09:00",
+  "execution_authorized_by_contract": false,
+  "runner_sha256": "6f17380625f4b202214753ffdfca4d6147751f8bdb105c556e67790ee8b058f5",
+  "config_sha256": "d73514fcdc2308aff520a7de8d057872606ed7c333c746cf36dae53e333a1d25",
+  "formula_library_sha256": "1f2c900ee8d9e5a96cc838c9b2cbb884133ffb3cbd6e83108b23197be77b3827",
+  "scope_hash": "a6d6bd574b8cae231282c56605a4b670234eca578c651cc7b7d4b4689386bbc1",
+  "output_roster": [
+    "LIT-X019::solid_void_chord_q50_geomean_ratio",
+    "LIT-X019::solid_void_chord_x_q50_ratio",
+    "LIT-X019::solid_void_chord_y_q50_ratio",
+    "LIT-X019::solid_void_chord_z_q50_ratio",
+    "LIT-X024::ect_abs_auc_direction_mean_per_mm3",
+    "LIT-X024::ect_total_variation_direction_mean_per_mm3"
+  ],
+  "allowed_PRM099_actions": [
+    "doctor",
+    "permit_review",
+    "invalid_permit_guard_tests"
+  ],
+  "future_actions_require_permit": [
+    "run-cell",
+    "merge"
+  ],
+  "locks": {
+    "performance_y_read": 0,
+    "model_fit": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "inverse_design_claim": 0,
+    "new_mask": 0,
+    "NB_CURRENT_mutation": 0,
+    "LEGACY_PY_mutation": 0,
+    "original_Excel_mutation": 0
+  }
+}

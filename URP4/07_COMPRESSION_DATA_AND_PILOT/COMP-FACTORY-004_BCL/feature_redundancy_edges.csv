@@ -1,0 +1,5 @@
+﻿left_feature_id,right_feature_id,pearson,block_id,action
+SFX004,SFX039,1.0000000000000002,AIX-BLOCK-001,preserve_nonselecting_redundancy_edge
+SFX007,SFX009,1.0,AIX-BLOCK-004,preserve_nonselecting_redundancy_edge
+SFX008,SFX010,1.0,AIX-BLOCK-005,preserve_nonselecting_redundancy_edge
+SFX034,SFX036,1.0000000000000002,AIX-BLOCK-028,preserve_nonselecting_redundancy_edge

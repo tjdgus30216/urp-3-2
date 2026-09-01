@@ -1,0 +1,11 @@
+﻿check_id,check,passed,observed
+P01,intake independent QA PASS,True,PASS
+P02,cohort row count,True,137
+P03,three outer groups,True,B|C|L
+P04,16 targets,True,16
+P05,eligible feature candidates,True,38
+P06,complete OOF prediction census,True,8768
+P07,finite OOF predictions,True,0
+P08,group-disjoint outer folds,True,disjoint
+P09,fold-local feature ceiling <=8,True,8
+P10,no feature or method promoted,True,not_promoted

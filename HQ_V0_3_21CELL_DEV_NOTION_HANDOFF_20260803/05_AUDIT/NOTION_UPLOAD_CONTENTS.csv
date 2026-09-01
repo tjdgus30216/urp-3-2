@@ -1,0 +1,21 @@
+package_path,role,included,reason_or_dependency
+00_README/NOTION_HANDOFF_README_KO.md,entry guide,yes,read first
+00_README/HQ_V0_3_21CELL_DEV_README_KO.md,developer readme,yes,explains scope and blocked lanes
+01_NOTEBOOK/URP4_1_HQ_v0_3_21CELL_DEV.ipynb,21-cell dev notebook,yes,main visual execution map
+02_ENGINE/urp4/hq/v0_3/stage_runtime.py,v0.3 stage engine,yes,actual new implementation
+02_ENGINE/urp4/hq/v0_1/controller.py,strict control contract,yes,reused actual dependency
+02_ENGINE/urp4/hq/v0_1/engine.py,submitted engine helpers,yes,reused actual dependency
+02_ENGINE/urp4/hq/v0_1/imported_pipeline.py,imported STL route,yes,reused actual dependency
+02_ENGINE/urp4/hq/v0_2/control.py,v0.2 validation guards,yes,reused actual dependency
+02_ENGINE/urp4/hq/v0_2/direct_aggregation.py,exploratory direct scalar math,yes,reused actual dependency
+03_TEST/smoke_hq_v03_21cell.py,KMK312 smoke test,yes,run only in full project workspace
+04_BUILD/build_hq_v03_21cell_dev_notebook.py,notebook generator,yes,regenerates notebook deterministically
+05_AUDIT/REPORT.md,source audit and claim boundary,yes,review before changing code
+05_AUDIT/QA_RESULT.json,validation receipt,yes,development QA only
+external:urp4/contracts/v0_1/canonical.py,hash helper,no,available in full URP4-1 deliverable workspace
+external:urp4/descriptor_service/v0_1,strict extraction/direct descriptors,no,available in full URP4-1 deliverable workspace
+external:urp4/geometry_io/v0_3/source_preflight.py,geometry QA,no,available in full URP4-1 deliverable workspace
+external:urp4/geometry_io/v0_4/imported_winding.py,imported STL image route,no,available in full URP4-1 deliverable workspace
+external:tools/envs/KMK312/python.exe,canonical runtime,no,available in full URP4-1 workspace
+external:outputs/hq_v03_smoke,development test outputs,no,deliberately excluded
+

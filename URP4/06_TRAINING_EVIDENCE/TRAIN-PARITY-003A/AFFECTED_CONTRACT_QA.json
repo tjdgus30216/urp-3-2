@@ -1,0 +1,17 @@
+{
+  "run_id": "TRAIN-PARITY-003A-20260801-001",
+  "qa_scope": "affected contract only",
+  "overall_status": "PASS",
+  "canonical_crosswalk": "16/16",
+  "primary_hold": "13/3",
+  "negative_qa": "13/13",
+  "source_runner_preflight": "10/10",
+  "branch_no_fit": "10/10",
+  "fold_rebind": "16/16",
+  "numerical_hashes_unchanged": true,
+  "fold_hash_unchanged": true,
+  "fit_calls": 0,
+  "predict_calls": 0,
+  "prediction_rows": 0,
+  "metric_rows": 0
+}

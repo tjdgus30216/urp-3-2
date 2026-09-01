@@ -1,0 +1,10 @@
+﻿model_id,formula_id,descriptor,population_id,statistic,unit,value,population_n,state
+F1,XRV1-F001,slice_occupancy_mean,XRV1-P-SLICE-801-Z,mean,dimensionless,0.28825516229712855,801,confirmed
+F1,XRV1-F002,slice_occupancy_std_pop,XRV1-P-SLICE-801-Z,std_pop_ddof0,dimensionless,0.09829414814233522,801,confirmed
+F1,XRV1-F003,component_count_mean,XRV1-P-SLICE-801-Z-CC8M2,mean,count,49.320848938826465,801,confirmed
+F1,XRV1-F004,component_count_std_pop,XRV1-P-SLICE-801-Z-CC8M2,std_pop_ddof0,count,30.825199692917913,801,confirmed
+F1,XRV1-F005,overlay_change_fraction_mean,XRV1-P-OVERLAY-800-Z-VALID-UNION,mean,dimensionless,0.0554537365774859,800,confirmed
+F1,XRV1-F006,overlay_overlap_fraction_mean,XRV1-P-OVERLAY-800-Z-VALID-UNION,mean,dimensionless,0.944546263422514,800,confirmed
+F1,XRV1-F007,thickness_component_sqrt_red_purple_area,XRV1-P-OVERLAY-COMPONENT-POOLED-CC8M2,mean,mm,2.9592604390033115,38187,likely
+F1,XRV1-F007,thickness_component_sqrt_red_purple_area,XRV1-P-OVERLAY-COMPONENT-POOLED-CC8M2,std_pop_ddof0,mm,0.9575777509471218,38187,likely
+F1,XRV1-F008,massori_component_pool_mean,XRV1-P-OVERLAY-COMPONENT-POOLED-UNWEIGHTED-CC8M2,mean,dimensionless,0.9720345419841843,38187,likely

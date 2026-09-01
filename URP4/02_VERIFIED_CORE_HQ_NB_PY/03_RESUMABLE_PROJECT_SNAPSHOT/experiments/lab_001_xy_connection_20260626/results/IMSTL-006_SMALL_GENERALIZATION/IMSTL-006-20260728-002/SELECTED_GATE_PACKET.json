@@ -1,0 +1,106 @@
+{
+  "task_id": "IMSTL-006_SMALL_IMPORTED_STL_GENERALIZATION_AND_DESCRIPTOR_CONCLUSION",
+  "run_id": "IMSTL-006-20260728-002",
+  "settings": "IDX-URP4-1-GEOM-IMPORTED-STL / CFG-IMSTL006-SELECTED-GATE-THEN-P1000-Z801 r1",
+  "completed_at_utc": "2026-07-28T02:57:30.130838+00:00",
+  "contract_path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\factories\\IMSTL-006\\contracts\\IMSTL-006_SMALL_GENERALIZATION_v0_3_SELECTED_GATE_20260728.json",
+  "contract_sha256": "2626ed0a1bcac4d073a8fd1b9e1b026dede8244b1472c01ef0c359c8adc91130",
+  "gate_summaries": [
+    {
+      "model_id": "B3",
+      "family": "B",
+      "selected_slice_count": 9,
+      "interior_slice_count": 7,
+      "min_interior_resolution_iou": 0.9657070279424217,
+      "max_interior_area_difference": 0.006838905775075988,
+      "failed_slice_indices": [],
+      "selected_gate_pass": true
+    },
+    {
+      "model_id": "C1",
+      "family": "C",
+      "selected_slice_count": 9,
+      "interior_slice_count": 7,
+      "min_interior_resolution_iou": 0.9684838160136287,
+      "max_interior_area_difference": 0.03151618398637138,
+      "failed_slice_indices": [],
+      "selected_gate_pass": true
+    },
+    {
+      "model_id": "L1",
+      "family": "L",
+      "selected_slice_count": 9,
+      "interior_slice_count": 7,
+      "min_interior_resolution_iou": 0.9578163771712159,
+      "max_interior_area_difference": 0.021139376567538518,
+      "failed_slice_indices": [],
+      "selected_gate_pass": true
+    },
+    {
+      "model_id": "F1",
+      "family": "F",
+      "selected_slice_count": 9,
+      "interior_slice_count": 7,
+      "min_interior_resolution_iou": 0.9490451918732313,
+      "max_interior_area_difference": 0.010035499726925178,
+      "failed_slice_indices": [
+        200,
+        600
+      ],
+      "selected_gate_pass": false
+    },
+    {
+      "model_id": "T1",
+      "family": "T",
+      "selected_slice_count": 9,
+      "interior_slice_count": 7,
+      "min_interior_resolution_iou": 0.9699485025071148,
+      "max_interior_area_difference": 0.0048075303943690435,
+      "failed_slice_indices": [],
+      "selected_gate_pass": true
+    },
+    {
+      "model_id": "T8",
+      "family": "T",
+      "selected_slice_count": 9,
+      "interior_slice_count": 7,
+      "min_interior_resolution_iou": 0.9760796373982867,
+      "max_interior_area_difference": 0.01070078234608708,
+      "failed_slice_indices": [],
+      "selected_gate_pass": true
+    },
+    {
+      "model_id": "T9",
+      "family": "T",
+      "selected_slice_count": 9,
+      "interior_slice_count": 7,
+      "min_interior_resolution_iou": 0.9755737484901356,
+      "max_interior_area_difference": 0.010333059846133724,
+      "failed_slice_indices": [],
+      "selected_gate_pass": true
+    }
+  ],
+  "passed_models": [
+    "B3",
+    "C1",
+    "L1",
+    "T1",
+    "T8",
+    "T9"
+  ],
+  "failed_models": [
+    "F1"
+  ],
+  "full_extraction_started": true,
+  "full_extraction_started_at_utc": "2026-07-28T02:57:55.962539+00:00",
+  "full_extraction_completed": true,
+  "full_extraction_completed_at_utc": "2026-07-28T03:21:59.314426+00:00",
+  "full_completed_models": [
+    "B3",
+    "C1",
+    "L1",
+    "T1",
+    "T8",
+    "T9"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿check_id,check,passed,observed
+P01,eligible rows 149,True,149
+P02,AI092 excluded,True,False
+P03,three source blocks,True,3
+P04,16 finite targets,True,16
+P05,feature ceiling respected,True,8
+P06,complete predictions,True,9536
+P07,pooled metric rows,True,64
+P08,all predictions finite,True,finite
+P09,no feature promoted,True,not_promoted
+P10,target census 16,True,16
+P11,target redundancy audit produced,True,5
+P12,target block summary 16x3,True,48

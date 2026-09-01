@@ -1,0 +1,18 @@
+contract_id,gate,stage,source_behavior,adapter_required_behavior,current_mapping,current_status,pass_rule
+FMM-001,P4,rough coverage filter,"group-median table; keep nonmissing >=max(6,0.6*n_groups)",identical candidates and order,unsupported,blocked_by_adapter_gap,exact candidate ID/order
+FMM-002,P4,rough ranking,"abs Spearman .30 + abs Pearson .15 + MI .15 + normalized ElasticNet .40",identical scores/ranks under frozen seed,unsupported,blocked_by_adapter_gap,rank exact and score numerical tolerance
+FMM-003,P4,rough correlation prune,source threshold 0.85 and source iteration order,identical survivor sequence,unsupported,blocked_by_adapter_gap,exact survivor set/order
+FMM-004,P4,repeated-y selection,source hard_closest_oof/group-aware behavior,identical selected source rows and candidate ledger,unsupported,blocked_by_adapter_gap,exact row IDs
+FMM-005,P4,feature frequency,24 repeated grouped ElasticNetCV selections,identical frequency and rank,representative 60-bootstrap Lasso differs,blocked_by_adapter_gap,frequency tolerance and exact rank
+FMM-006,P4,final correlation prune,source ranked Spearman prune and keep-k,identical selected base features,unsupported,blocked_by_adapter_gap,exact set/order
+FMM-007,P4,engineered features,signed-log/square/product/conditional ratio with cap18,identical names/formulas/values,unsupported,blocked_by_adapter_gap,exact schema and numerical values
+FMM-008,P5,method candidates,7 common plus domain-specific multitask or SPCA-PLS branches,identical per-target candidate roster,only stability_lasso_ridge proxy,blocked_by_adapter_gap,exact roster/order
+FMM-009,P5,base estimators,8 source estimator families and method-specific estimators,identical estimator class and parameter space,only Ridge final in FS4-P1-B,blocked_by_adapter_gap,canonical JSON equality
+FMM-010,P5,target transforms,raw and Yeo-Johnson,identical transform per evaluated candidate,declared but not executable in method B,blocked_by_adapter_gap,exact transform and fitted parameters
+FMM-011,P5,inner model search,24 grouped splits and source grid/random spaces,consume shared nested manifest and identical spaces,LassoCV cv4 proxy,blocked_by_adapter_gap,exact candidate scores/order
+FMM-012,P5,inner selection objective,best score minus std/topk/complexity penalties,identical objective components,unsupported,blocked_by_adapter_gap,numerical tolerance and exact tie-break
+FMM-013,P5,outer method choice,"mean R2-.12*std +.10*support -.01*topk",identical target-level winner,unsupported,blocked_by_adapter_gap,exact method/model/transform/topk
+FMM-014,P6,predictions,source predictions per target/repeat/test row,export row/group prediction ledger,PRM071 ledger is different contract,blocked_by_adapter_gap,complete one-row-per-test-observation ledger
+FMM-015,P7,metrics,R2/RMSE/MAE per fold and summary,identical formulas and population,representative metrics only,blocked_by_adapter_gap,numerical tolerance
+FMM-016,P8,final refit,source-selected method refit on full selected/grouped dataset,identical 13-target refit and artifacts,stability-Ridge proxy only,blocked_by_adapter_gap,13/13 eligible targets exact contract plus metric tolerance
+FMM-017,P8,held refits,FW/GA/HE remain hold,no pass until TRAIN-REFIT-DIAG-001,unsupported,partial_target_scope_only,no parity claim

@@ -1,0 +1,48 @@
+{
+  "work_id": "PRM-119",
+  "title": "XREG_V1_2_SLICE_COMPONENT_FILTER_SENSITIVITY_CONSOLIDATION_NO_Y",
+  "purpose": "Append the verified PRM-118 slice component-filter-sensitivity cohort to XREG-v1.1 and encode the frozen exact/high crossbank relations without selection.",
+  "expected": {
+    "prior_candidates": 288,
+    "new_candidates": 11,
+    "total_candidates": 299,
+    "prior_values": 16704,
+    "new_values": 638,
+    "total_values": 17342,
+    "finite_values": 17340,
+    "prior_blocks": 235,
+    "changed_or_new_components": 11,
+    "total_blocks": 240,
+    "prior_edges": 65,
+    "new_edges": 11,
+    "total_edges": 76,
+    "merged_predecessor_members": 11
+  },
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM117_xreg_v1_1_candidate_bank.csv", "sha256": "3e9d548dd2a0345756d84a0e880c7aa039d06f67fa8b241cf0e0d9f6fa9c6c80"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM117_xreg_v1_1_values_long.csv", "sha256": "5dfb461643a87dac943b8f8022db27be03fc33c70d25ee5c1171597d6a25fcda"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM117_unified_redundancy_edge_registry.csv", "sha256": "99780fd3e189f5ef4b9994be9585042fbc78806dbce2e52e54f88d31d8958e09"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM117_unified_redundancy_block_registry.csv", "sha256": "03b2710a259e85738e9f948b4560aaa4ceb6d9de4cb9533f977557c4d94acd3b"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM118_slice_component_filter_sensitivity_candidate_registry.csv", "sha256": "9bc22d2867962884b55db5a3b2899bc5ed4d46bfedfeb70b85580f75062b3b52"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM118_slice_component_filter_sensitivity_values_long.csv", "sha256": "87645a3517d734706a60c61a5a6b48b881d92a26d67c20e89dd32d550b50a5ed"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM118_slice_component_filter_sensitivity_vs_XREG_v1_1_redundancy.csv", "sha256": "eb13855692431781d9f7161169129689990bcc72332609a358a2ca990658d1c4"},
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/PRM-118/reports/PRM118_independent_QA_summary.json", "sha256": "82d5a1a4fffd3722e494ce6c0efe0380ca5d844beefad16eef0d1e19350a59e0"}
+  ],
+  "relation_policy": {
+    "scope": "full58_x_only",
+    "include_relations": ["exact_duplicate", "proportional_duplicate", "high_redundancy"],
+    "selection_effect": "none"
+  },
+  "locks": {
+    "performance_y_read": 0,
+    "x_y_analysis": 0,
+    "model_fit": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "new_masks_or_slicing": 0,
+    "NB_CURRENT_mutation": 0,
+    "LEGACY_PY_mutation": 0,
+    "original_Excel_mutation": 0
+  },
+  "status": "preregistered_pending_execution"
+}

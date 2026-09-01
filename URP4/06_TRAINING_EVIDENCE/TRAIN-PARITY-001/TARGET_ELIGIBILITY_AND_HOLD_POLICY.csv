@@ -1,0 +1,17 @@
+target_id,excel_col,output_name,samples,groups,outer_cv_parity,final_refit_parity,status,reason,next_gate
+TP-001,FW,Vibrational response | FRF (g/N) | 300-8000 Hz | AVG,193,128,eligible,hold,final_refit_hold,Historical and replay final refit absent under minimal_class_average,TRAIN-REFIT-DIAG-001
+TP-002,FX,Vibrational response | FRF (g/N) | 300-3000 Hz | AVG,193,128,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate
+TP-003,FZ,Vibrational response | FRF (g/N) | 3000-6500 Hz | AVG,193,128,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate
+TP-004,GA,Vibrational response | FRF (g/N) | 6500-8000 Hz | AVG,193,128,eligible,hold,final_refit_hold,Historical and replay final refit absent under minimal_class_average,TRAIN-REFIT-DIAG-001
+TP-005,GC,Thermal characteristics | Thermal conductivity | W/m.K,65,65,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate
+TP-006,GG,Thermal characteristics | Heating rate | °C/s,65,65,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate
+TP-007,GJ,Thermal characteristics | Cooling rate | °C/s,65,65,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate
+TP-008,GZ,Thermal characteristics | Heating Temp | °C/s,65,65,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate
+TP-009,HA,Modulus,56,56,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate
+TP-010,HB,Com. Strength,56,56,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate
+TP-011,HC,APS,56,56,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate
+TP-012,HD,AS,56,56,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate
+TP-013,HE,Yield strength,56,56,eligible,hold,final_refit_hold,"Historical block_pca_ridge differs from replay minimal_class_average; likely source nondeterminism and silent None",TRAIN-REFIT-DIAG-001
+TP-014,HG,Densif. strength,56,56,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate
+TP-015,HI,Total energy,56,56,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate
+TP-016,HK,Thermal characteristics | h | W/m.K,25,25,eligible,primary,confirmed,Accepted replay final refit exists,TRAIN-PARITY controlled execution after adapter gate

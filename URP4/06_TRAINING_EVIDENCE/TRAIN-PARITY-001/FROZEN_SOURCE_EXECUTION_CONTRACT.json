@@ -1,0 +1,110 @@
+{
+  "contract_id": "TRAIN-PARITY-001-SOURCE-CONTRACT-v0.1",
+  "created_at_kst": "2026-08-01",
+  "execution_performed": false,
+  "source": {
+    "alias": "TRAIN-2ND-NEWFEATURE",
+    "path": "experiments/lab_001_xy_connection_20260626/data/raw/professor_training_20260709/Training_260419-2nd method - New feature - Good. vibration.ipynb",
+    "sha256": "11129a41bd4303d82c599148cd761adb3c858f58da017586e07fb0f06d055ff2",
+    "code_cells": 11
+  },
+  "input": {
+    "path": "experiments/lab_001_xy_connection_20260626/data/raw/professor_training_20260709/Total data_260503.xlsx",
+    "sha256": "4a6ec7d03d92fa25851998689768d9db9f63227f00e778a528d758b368851dce",
+    "sheet": "총정리",
+    "header_main_row": 2,
+    "header_sub_rows": [3, 4, 5],
+    "data_rows": [7, 204],
+    "x_range": "I:FU",
+    "y_range": "FV:HL",
+    "selected_target_columns": ["FW", "FX", "FZ", "GA", "GC", "GG", "GJ", "GZ", "HA", "HB", "HC", "HD", "HE", "HG", "HI", "HK"],
+    "raw_rows": 198,
+    "numeric_x_count": 169,
+    "target_count": 16,
+    "target_sample_count_range": [25, 193],
+    "target_group_count_range": [25, 128],
+    "numeric_coercion": "pandas.to_numeric(errors='coerce')",
+    "all_missing_column_policy": "remove while preserving surviving column order",
+    "target_row_policy": "drop rows missing the current target then reset index",
+    "header_normalization": "source extract_range_df normalized multi-row text; exact normalized text and order required"
+  },
+  "grouping": {
+    "x_round_decimals": 8,
+    "x_key": "X.round(8).astype(str).agg('||'.join, axis=1)",
+    "group_id": "pandas.factorize(X_KEY, sort=False)",
+    "required_comparison": "exact X_KEY, GROUP_ID and member row identity"
+  },
+  "splits": {
+    "outer": {
+      "class": "GroupShuffleSplit",
+      "repeats": 12,
+      "splits_per_repeat": 1,
+      "test_size": 0.22,
+      "seed_rule": "42 + repeat_id",
+      "target_specific": true
+    },
+    "inner": {
+      "class": "GroupShuffleSplit when unique groups >=4; GroupKFold fallback otherwise",
+      "n_splits": 24,
+      "test_size": 0.20,
+      "grouped": true,
+      "search_n_jobs": 1
+    },
+    "future_parity_rule": "prebuild one versioned fold manifest and inject identical membership into isolated source copy and exact adapter"
+  },
+  "feature_pipeline": {
+    "rough_prefilter_topk": {"mechanical_energy": 16, "thermal": 20, "vibrational": 22},
+    "rough_prefilter": "group median, >=max(6,0.6*n_groups) coverage, median fill, absolute Spearman/Pearson, mutual information and ElasticNet score",
+    "ranking_weights": {"spearman": 0.30, "pearson": 0.15, "mutual_info": 0.15, "elastic_net": 0.40},
+    "corr_prune_threshold": 0.85,
+    "final_topk": {"mechanical_energy": [2, 3, 4], "thermal": [2, 3, 4, 6], "vibrational": [2, 3, 4, 6]},
+    "engineered_features": {"enabled": true, "signed_log": true, "square": true, "product": true, "ratio": "mechanical_energy and thermal only", "max_added": 18},
+    "repeated_y": "APPLY_REPEATED_Y_ONLY_IF_NEEDED; hard_closest_oof/group-aware paths are source behavior",
+    "stability_repeats": 24
+  },
+  "method_pipeline": {
+    "base_models": ["Bayesian_Ridge", "Ridge", "ElasticNet_CV", "Huber_Regressor", "PLS_Regression", "PCR_Ridge", "Kernel_Ridge_RBF", "SVR_RBF"],
+    "target_transforms": ["raw", "yeo_johnson"],
+    "method_candidates_common": ["baseline_stability", "stability_lasso_ridge", "spca_ridge", "spca_huber", "block_pca_ridge", "bagged_subspace_ridge", "minimal_class_average"],
+    "method_candidates_thermal_vibration_extra": ["multitask_screen_ridge", "multitask_screen_pls"],
+    "method_candidates_mechanical_extra": ["spca_pls"],
+    "inner_choice_objective": "best_score - 0.10*best_score_std - family_topk_penalty*topk - 0.005*complexity_rank",
+    "outer_final_choice_objective": "mean_outer_r2 - 0.12*std_outer_r2 + 0.10*support_share - 0.01*topk",
+    "metrics": ["R2", "RMSE", "MAE"],
+    "final_refit": "selected method refit on full target-specific selected/grouped data"
+  },
+  "reference_hierarchy": {
+    "primary": "TRAIN-REPLAY-001-20260731-001 accepted clean replay",
+    "future_deterministic": "PYTHONHASHSEED=42; canonical KMK312; fixed seeds; single numerical threads; shared fold manifest; exception and None-return logging",
+    "sensitivity_only": "historical outputs stored in the professor notebook"
+  },
+  "runtime": {
+    "sys_executable": "tools/envs/KMK312/python.exe",
+    "python": "3.12.12 packaged by Anaconda",
+    "environment_hash": "d9a2d20180a68a0d73b64323495af64a04ecf83cd3fbb6bbe02bac922011a10d",
+    "accepted_replay_config_hash": "7d50ea4f4a22e6c489881cd337a5392083ef3d2a73de3e35d5e3c2d9b174a4a4",
+    "thread_limit": 1,
+    "gpu": "disabled"
+  },
+  "adapter": {
+    "recipe": "FS4-P1-B",
+    "class": "GuardedStabilityLassoRidge",
+    "mapping_level": "representative proxy with intentionally altered leakage-safe wrapper",
+    "exact_end_to_end": false,
+    "current_readiness": "blocked_by_adapter_gap"
+  },
+  "parity_gates": [
+    "P0_SOURCE_AND_INPUT_IDENTITY",
+    "P1_DATASET_EXTRACTION_PARITY",
+    "P2_GROUP_IDENTITY_PARITY",
+    "P3_FOLD_MEMBERSHIP_PARITY",
+    "P4_FEATURE_CANDIDATE_PARITY",
+    "P5_METHOD_AND_MODEL_PARITY",
+    "P6_PREDICTION_PARITY",
+    "P7_METRIC_PARITY",
+    "P8_FINAL_REFIT_PARITY"
+  ],
+  "target_scope": {"outer_cv": 16, "final_refit_primary": 13, "final_refit_hold": 3},
+  "tolerance_revision": "TRAIN-PARITY-TOL-v0.1",
+  "fit_authorized": false
+}

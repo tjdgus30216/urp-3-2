@@ -1,0 +1,17 @@
+﻿target_id,target_name_raw,test_domain,status,finite_count,missing_count,objective_direction,unit
+COMP-Y-MODULUS,Modulus,compression,available_unselected,228,0,unresolved,unresolved
+COMP-Y-COMP-STRENGTH,Com. Strength,compression,available_unselected,228,0,unresolved,unresolved
+COMP-Y-COMP-STRAIN,Com. strain,compression,available_unselected,228,0,unresolved,unresolved
+COMP-Y-APS,APS,compression,available_unselected,226,2,unresolved,unresolved
+COMP-Y-AS,AS,compression,available_unselected,226,2,unresolved,unresolved
+COMP-Y-YIELD-STRENGTH,Yield strength,compression,available_unselected,226,2,unresolved,unresolved
+COMP-Y-YIELD-STRAIN,Yield strain,compression,available_unselected,226,2,unresolved,unresolved
+COMP-Y-LCC,LCC,compression,available_unselected,226,2,unresolved,unresolved
+COMP-Y-EAS,EAS,compression,available_unselected,226,2,unresolved,unresolved
+COMP-Y-DENSIF-STRENGTH,Densif. strength,compression,available_unselected,227,1,unresolved,unresolved
+COMP-Y-DENSIFI-STRAIN,Densifi. strain,compression,available_unselected,228,0,unresolved,unresolved
+COMP-Y-EAE,EAE,compression,available_unselected,225,3,unresolved,unresolved
+COMP-Y-SE,SE,compression,available_unselected,225,3,unresolved,unresolved
+COMP-Y-TOTAL-ENERGY,Total energy,compression,available_unselected,226,2,unresolved,unresolved
+COMP-Y-SEA,SEA,compression,available_unselected,226,2,unresolved,unresolved
+COMP-Y-MAX-PLATEAU-STRESS,Max. Plateau stress,compression,available_unselected,226,2,unresolved,unresolved

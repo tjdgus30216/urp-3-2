@@ -1,0 +1,176 @@
+﻿edge_id,left_candidate_id,right_candidate_id,relation,edge_source,metric_note,selection_rule
+U096-EDGE-001,LIT-X001::solid_chord_x_mean_mm,LIT-X001::solid_chord_y_mean_mm,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,0.0
+U096-EDGE-002,LIT-X001::solid_chord_x_population_std_mm,LIT-X001::solid_chord_y_population_std_mm,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,0.0
+U096-EDGE-003,LIT-X002::C2_x_positive_auc_0_20_mm,LIT-X002::C2_y_positive_auc_0_20_mm,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,0.0
+U096-EDGE-004,LIT-X002::S2_x_r10p0_probability,LIT-X002::S2_y_r10p0_probability,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,0.0
+U096-EDGE-005,LIT-X002::S2_x_r20p0_probability,LIT-X002::S2_y_r20p0_probability,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,0.0
+U096-EDGE-006,LIT-X002::S2_x_r2p5_probability,LIT-X002::S2_y_r2p5_probability,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,0.0
+U096-EDGE-007,LIT-X002::S2_x_r5p0_probability,LIT-X002::S2_y_r5p0_probability,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,0.0
+U096-EDGE-008,LIT-X003::L_x_auc_mm,LIT-X003::L_y_auc_mm,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,0.0
+U096-EDGE-009,LIT-X004::chi_solid_26,LIT-X004::chi_solid_26_per_mm3,proportional_duplicate,PRM083_first_wave_internal,interpretable_redundancy,0.0
+U096-EDGE-010,LIT-X004::chi_void_6,LIT-X004::chi_void_6_per_mm3,proportional_duplicate,PRM083_first_wave_internal,interpretable_redundancy,0.0
+U096-EDGE-011,LIT-X009::C2_x_10mm,LIT-X002::S2_x_r10p0_probability,high_redundancy,PRM095_crossbank,pearson=0.999929;spearman=1,0.0
+U096-EDGE-012,LIT-X009::C2_x_10mm,LIT-X002::S2_y_r10p0_probability,high_redundancy,PRM095_crossbank,pearson=0.993982;spearman=0.990649,0.0
+U096-EDGE-013,LIT-X009::C2_x_2p5mm,LIT-X002::S2_x_r2p5_probability,high_redundancy,PRM095_crossbank,pearson=0.998898;spearman=0.999385,0.0
+U096-EDGE-014,LIT-X009::C2_x_2p5mm,LIT-X002::S2_y_r2p5_probability,high_redundancy,PRM095_crossbank,pearson=0.993794;spearman=0.987019,0.0
+U096-EDGE-015,LIT-X009::C2_y_10mm,LIT-X002::S2_x_r10p0_probability,high_redundancy,PRM095_crossbank,pearson=0.993944;spearman=0.990649,0.0
+U096-EDGE-016,LIT-X009::C2_y_10mm,LIT-X002::S2_y_r10p0_probability,high_redundancy,PRM095_crossbank,pearson=0.999929;spearman=1,0.0
+U096-EDGE-017,LIT-X009::C2_y_2p5mm,LIT-X002::S2_x_r2p5_probability,high_redundancy,PRM095_crossbank,pearson=0.993558;spearman=0.987019,0.0
+U096-EDGE-018,LIT-X009::C2_y_2p5mm,LIT-X002::S2_y_r2p5_probability,high_redundancy,PRM095_crossbank,pearson=0.99889;spearman=0.999385,0.0
+U096-EDGE-019,LIT-X009::C2_z_10mm,LIT-X002::S2_z_r10p0_probability,high_redundancy,PRM095_crossbank,pearson=0.999918;spearman=1,0.0
+U096-EDGE-020,LIT-X009::C2_z_2p5mm,LIT-X002::S2_z_r2p5_probability,high_redundancy,PRM095_crossbank,pearson=0.998859;spearman=0.999385,0.0
+U096-EDGE-021,LIT-X016::void_chord_x_mean_mm,LIT-X016::void_chord_y_mean_mm,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,0.0
+U096-EDGE-022,LIT-X016::void_chord_x_population_std_mm,LIT-X016::void_chord_y_population_std_mm,high_redundancy,PRM083_first_wave_internal,interpretable_redundancy,0.0
+U096-EDGE-023,LIT-X017::beta0_count,LIT-X017::beta0_density,proportional_duplicate,PRM092_second_wave_internal,residual=2.1684e-16,0.0
+U101-EDGE-024,LIT-X024::ect_abs_auc_direction_mean_per_mm3,LIT-X004::chi_solid_26,high_redundancy,PRM100_full58_crossbank,"full58 pearson/spearman high; retain provenance, primary block",0.0
+U101-EDGE-025,LIT-X024::ect_abs_auc_direction_mean_per_mm3,LIT-X004::chi_solid_26_per_mm3,high_redundancy,PRM100_full58_crossbank,"full58 pearson/spearman high; retain provenance, primary block",0.0
+U103-EDGE-026,RAW-X034::slice_component_count_mean,RAW-X035::overlay_pair_component_count_mean,high_redundancy,PRM102_BC_internal_full58,slice/overlay component-count mean block; no representative selected,0.0
+U103-EDGE-027,RAW-X034::slice_component_count_q50,RAW-X035::overlay_pair_component_count_q50,high_redundancy,PRM102_BC_internal_full58,slice/overlay component-count q50 block; no representative selected,0.0
+U105-EDGE-028,RAW-X036::overlay_purple_pixel_count_mad,RAW-X034::slice_material_area_mad,high_redundancy,PRM104_overlay_phase_crossbank_full58,Pearson=0.996091; Spearman=0.986910; x-only warning; no representative selected,0.0
+U105-EDGE-029,RAW-X036::overlay_purple_pixel_count_population_std,RAW-X034::slice_material_area_population_std,high_redundancy,PRM104_overlay_phase_crossbank_full58,Pearson=0.999565; Spearman=0.998523; x-only warning; no representative selected,0.0
+U105-EDGE-030,RAW-X036::overlay_purple_pixel_count_q10,RAW-X034::slice_material_area_q10,high_redundancy,PRM104_overlay_phase_crossbank_full58,Pearson=0.997534; Spearman=0.995509; x-only warning; no representative selected,0.0
+U105-EDGE-031,RAW-X036::overlay_purple_pixel_count_q50,RAW-X034::slice_material_area_q50,high_redundancy,PRM104_overlay_phase_crossbank_full58,Pearson=0.996311; Spearman=0.981236; x-only warning; no representative selected,0.0
+U105-EDGE-032,RAW-X036::overlay_purple_pixel_count_q90,RAW-X034::slice_material_area_q90,high_redundancy,PRM104_overlay_phase_crossbank_full58,Pearson=0.996265; Spearman=0.991141; x-only warning; no representative selected,0.0
+U105-EDGE-033,RAW-X036::overlay_union_pixel_count_population_std,RAW-X034::slice_material_area_population_std,high_redundancy,PRM104_overlay_phase_crossbank_full58,Pearson=0.998403; Spearman=0.997170; x-only warning; no representative selected,0.0
+U105-EDGE-034,RAW-X036::overlay_blue_pixel_count_iqr,RAW-X036::overlay_red_pixel_count_iqr,high_redundancy,PRM104_overlay_phase_internal_full58,Pearson=0.999314; Spearman=0.997354; x-only warning; no representative selected,0.0
+U105-EDGE-035,RAW-X036::overlay_blue_pixel_count_mad,RAW-X036::overlay_red_pixel_count_mad,high_redundancy,PRM104_overlay_phase_internal_full58,Pearson=0.999027; Spearman=0.995247; x-only warning; no representative selected,0.0
+U105-EDGE-036,RAW-X036::overlay_blue_pixel_count_mean,RAW-X036::overlay_red_pixel_count_mean,high_redundancy,PRM104_overlay_phase_internal_full58,Pearson=0.997992; Spearman=0.993294; x-only warning; no representative selected,0.0
+U105-EDGE-037,RAW-X036::overlay_blue_pixel_count_q10,RAW-X036::overlay_red_pixel_count_q10,high_redundancy,PRM104_overlay_phase_internal_full58,Pearson=0.999271; Spearman=0.999134; x-only warning; no representative selected,0.0
+U105-EDGE-038,RAW-X036::overlay_blue_pixel_count_q50,RAW-X036::overlay_red_pixel_count_q50,high_redundancy,PRM104_overlay_phase_internal_full58,Pearson=0.999209; Spearman=0.999016; x-only warning; no representative selected,0.0
+U105-EDGE-039,RAW-X036::overlay_blue_pixel_count_q90,RAW-X036::overlay_red_pixel_count_q90,high_redundancy,PRM104_overlay_phase_internal_full58,Pearson=0.999562; Spearman=0.997662; x-only warning; no representative selected,0.0
+U105-EDGE-040,RAW-X036::overlay_purple_pixel_count_population_std,RAW-X036::overlay_union_pixel_count_population_std,high_redundancy,PRM104_overlay_phase_internal_full58,Pearson=0.996626; Spearman=0.995017; x-only warning; no representative selected,0.0
+U105-EDGE-041,RAW-X037::overlay_blue_fraction_mean,RAW-X037::overlay_purple_fraction_mean,high_redundancy,PRM104_overlay_phase_internal_full58,Pearson=-0.999809; Spearman=-0.997785; x-only warning; no representative selected,0.0
+U105-EDGE-042,RAW-X037::overlay_blue_fraction_mean,RAW-X037::overlay_red_fraction_mean,high_redundancy,PRM104_overlay_phase_internal_full58,Pearson=0.999225; Spearman=0.993356; x-only warning; no representative selected,0.0
+U105-EDGE-043,RAW-X037::overlay_purple_fraction_mean,RAW-X037::overlay_red_fraction_mean,high_redundancy,PRM104_overlay_phase_internal_full58,Pearson=-0.999803; Spearman=-0.997601; x-only warning; no representative selected,0.0
+U107-EDGE-044,RAW-X039::overlay_union_pixel_count_lag1_autocorr,RAW-X035::overlay_pair_total_area_lag1_autocorr,proportional_duplicate,PRM106_profile_dynamics_crossbank_full58,Pearson=1.000000; Spearman=1.000000; residual=4.648e-08; no representative,0.0
+U107-EDGE-045,RAW-X039::overlay_union_pixel_count_normalized_total_variation,RAW-X035::overlay_pair_total_area_normalized_total_variation,proportional_duplicate,PRM106_profile_dynamics_crossbank_full58,Pearson=1.000000; Spearman=1.000000; residual=3.201e-07; no representative,0.0
+U107-EDGE-046,RAW-X038::slice_component_count_peak_to_mean,RAW-X038::slice_component_count_range_over_mean,exact_duplicate,PRM106_profile_dynamics_internal_full58,Pearson=1.000000; Spearman=1.000000; residual=0.000e+00; no representative,0.0
+U107-EDGE-047,RAW-X038::slice_material_area_peak_to_mean,RAW-X038::slice_material_area_range_over_mean,exact_duplicate,PRM106_profile_dynamics_internal_full58,Pearson=1.000000; Spearman=1.000000; residual=0.000e+00; no representative,0.0
+U107-EDGE-048,RAW-X039::overlay_blue_pixel_count_normalized_total_variation,RAW-X039::overlay_red_pixel_count_normalized_total_variation,high_redundancy,PRM106_profile_dynamics_internal_full58,Pearson=0.998208; Spearman=0.997416; residual=4.144e-02; no representative,0.0
+U109-EDGE-049,RAW-X044::overlay_blue_pixel_count_reflection_asymmetry,RAW-X044::overlay_red_pixel_count_reflection_asymmetry,high_redundancy,PRM108_axial_symmetry_internal_full58,Pearson=0.996472; Spearman=0.990157; residual=3.404e-02; no representative,0.0
+U111-EDGE-050,RAW-X045::slice_material_area_normalized_profile_entropy,LIT-X023::axis_power_fraction_z,high_redundancy,PRM110_axial_shape_entropy_crossbank_full58,Pearson=-0.982822; Spearman=-0.985912; residual=7.532e-01; no representative,0.0
+U111-EDGE-051,RAW-X046::overlay_purple_pixel_count_normalized_profile_entropy,LIT-X023::axis_power_fraction_z,high_redundancy,PRM110_axial_shape_entropy_crossbank_full58,Pearson=-0.984144; Spearman=-0.985912; residual=7.534e-01; no representative,0.0
+U111-EDGE-052,RAW-X046::overlay_union_pixel_count_normalized_profile_entropy,LIT-X023::axis_power_fraction_z,high_redundancy,PRM110_axial_shape_entropy_crossbank_full58,Pearson=-0.980744; Spearman=-0.984558; residual=7.530e-01; no representative,0.0
+U111-EDGE-053,RAW-X045::slice_material_area_axial_position_excess_kurtosis,RAW-X046::overlay_purple_pixel_count_axial_position_excess_kurtosis,high_redundancy,PRM110_axial_shape_entropy_internal_full58,Pearson=0.998852; Spearman=0.993417; residual=1.436e-03; no representative,0.0
+U111-EDGE-054,RAW-X045::slice_material_area_axial_position_excess_kurtosis,RAW-X046::overlay_union_pixel_count_axial_position_excess_kurtosis,high_redundancy,PRM110_axial_shape_entropy_internal_full58,Pearson=0.999147; Spearman=0.996124; residual=1.178e-03; no representative,0.0
+U111-EDGE-055,RAW-X045::slice_material_area_normalized_profile_entropy,RAW-X046::overlay_purple_pixel_count_normalized_profile_entropy,high_redundancy,PRM110_axial_shape_entropy_internal_full58,Pearson=0.999709; Spearman=0.998831; residual=4.802e-04; no representative,0.0
+U111-EDGE-056,RAW-X045::slice_material_area_normalized_profile_entropy,RAW-X046::overlay_union_pixel_count_normalized_profile_entropy,high_redundancy,PRM110_axial_shape_entropy_internal_full58,Pearson=0.999578; Spearman=0.998339; residual=5.115e-04; no representative,0.0
+U111-EDGE-057,RAW-X046::overlay_blue_pixel_count_normalized_profile_entropy,RAW-X046::overlay_red_pixel_count_normalized_profile_entropy,high_redundancy,PRM110_axial_shape_entropy_internal_full58,Pearson=0.997368; Spearman=0.989111; residual=1.169e-02; no representative,0.0
+U111-EDGE-058,RAW-X046::overlay_purple_pixel_count_axial_position_excess_kurtosis,RAW-X046::overlay_union_pixel_count_axial_position_excess_kurtosis,high_redundancy,PRM110_axial_shape_entropy_internal_full58,Pearson=0.996057; Spearman=0.985666; residual=2.601e-03; no representative,0.0
+U111-EDGE-059,RAW-X046::overlay_purple_pixel_count_normalized_profile_entropy,RAW-X046::overlay_union_pixel_count_normalized_profile_entropy,high_redundancy,PRM110_axial_shape_entropy_internal_full58,Pearson=0.998969; Spearman=0.996985; residual=9.138e-04; no representative,0.0
+U113-EDGE-060,RAW-X047::overlay_purple_pixel_count_weighted_axial_q75_position,RAW-X047::slice_material_area_weighted_axial_q75_position,high_redundancy,PRM112_axial_weighted_quantile_location_internal_full58,Pearson=0.997576; Spearman=0.985627; residual=1.093e-03; no representative,0.0
+U117-EDGE-061,RAW-X049::raw_component_count_mean,RAW-X034::slice_component_count_mean,high_redundancy,PRM116_component_filter_sensitivity_crossbank_full58,Pearson=0.999881; Spearman=0.999615; residual=9.427e-03; no representative,0.0
+U117-EDGE-062,RAW-X049::raw_component_count_mean,RAW-X035::overlay_pair_component_count_mean,high_redundancy,PRM116_component_filter_sensitivity_crossbank_full58,Pearson=1.000000; Spearman=1.000000; residual=1.265e-04; no representative,0.0
+U117-EDGE-063,RAW-X049::raw_component_count_population_std,RAW-X034::slice_component_count_population_std,high_redundancy,PRM116_component_filter_sensitivity_crossbank_full58,Pearson=0.999849; Spearman=0.999062; residual=1.101e-02; no representative,0.0
+U117-EDGE-064,RAW-X049::raw_component_count_q10,RAW-X034::slice_component_count_q10,high_redundancy,PRM116_component_filter_sensitivity_crossbank_full58,Pearson=0.999835; Spearman=0.999535; residual=1.704e-02; no representative,0.0
+U117-EDGE-065,RAW-X049::raw_component_count_q90,RAW-X034::slice_component_count_q90,high_redundancy,PRM116_component_filter_sensitivity_crossbank_full58,Pearson=0.999054; Spearman=0.995282; residual=2.659e-02; no representative,0.0
+U119-EDGE-066,RAW-X050::raw_component_count_iqr,RAW-X034::slice_component_count_iqr,exact_duplicate,PRM118_slice_component_filter_sensitivity_crossbank_full58,Pearson=1.000000; Spearman=1.000000; residual=0.000e+00; no representative,0.0
+U119-EDGE-067,RAW-X050::raw_component_count_mad,RAW-X034::slice_component_count_mad,high_redundancy,PRM118_slice_component_filter_sensitivity_crossbank_full58,Pearson=0.999996; Spearman=0.998134; residual=2.319e-03; no representative,0.0
+U119-EDGE-068,RAW-X050::raw_component_count_mean,RAW-X034::slice_component_count_mean,high_redundancy,PRM118_slice_component_filter_sensitivity_crossbank_full58,Pearson=1.000000; Spearman=0.999985; residual=1.296e-04; no representative,0.0
+U119-EDGE-069,RAW-X050::raw_component_count_mean,RAW-X035::overlay_pair_component_count_mean,high_redundancy,PRM118_slice_component_filter_sensitivity_crossbank_full58,Pearson=0.999879; Spearman=0.999631; residual=9.508e-03; no representative,0.0
+U119-EDGE-070,RAW-X050::raw_component_count_mean,RAW-X049::raw_component_count_mean,high_redundancy,PRM118_slice_component_filter_sensitivity_crossbank_full58,Pearson=0.999880; Spearman=0.999631; residual=9.469e-03; no representative,0.0
+U119-EDGE-071,RAW-X050::raw_component_count_population_std,RAW-X034::slice_component_count_population_std,high_redundancy,PRM118_slice_component_filter_sensitivity_crossbank_full58,Pearson=1.000000; Spearman=0.999985; residual=1.788e-04; no representative,0.0
+U119-EDGE-072,RAW-X050::raw_component_count_population_std,RAW-X049::raw_component_count_population_std,high_redundancy,PRM118_slice_component_filter_sensitivity_crossbank_full58,Pearson=0.999850; Spearman=0.999077; residual=1.098e-02; no representative,0.0
+U119-EDGE-073,RAW-X050::raw_component_count_q10,RAW-X034::slice_component_count_q10,high_redundancy,PRM118_slice_component_filter_sensitivity_crossbank_full58,Pearson=0.999987; Spearman=0.999980; residual=4.798e-03; no representative,0.0
+U119-EDGE-074,RAW-X050::raw_component_count_q10,RAW-X049::raw_component_count_q10,high_redundancy,PRM118_slice_component_filter_sensitivity_crossbank_full58,Pearson=0.999792; Spearman=0.999393; residual=1.896e-02; no representative,0.0
+U119-EDGE-075,RAW-X050::raw_component_count_q90,RAW-X034::slice_component_count_q90,exact_duplicate,PRM118_slice_component_filter_sensitivity_crossbank_full58,Pearson=1.000000; Spearman=1.000000; residual=0.000e+00; no representative,0.0
+U119-EDGE-076,RAW-X050::raw_component_count_q90,RAW-X049::raw_component_count_q90,high_redundancy,PRM118_slice_component_filter_sensitivity_crossbank_full58,Pearson=0.999054; Spearman=0.995282; residual=2.659e-02; no representative,0.0
+U121-EDGE-077,RAW-X051::pair_effective_component_count_q90,RAW-X049::raw_component_count_q90,high_redundancy,PRM120_pair_component_composition_crossbank_full58,Pearson=0.986093; Spearman=0.986814; residual=1.021e-01; no representative,0.0
+U121-EDGE-078,RAW-X051::pair_top2_component_area_share_iqr,RAW-X048::pair_largest_component_share_iqr,high_redundancy,PRM120_pair_component_composition_crossbank_full58,Pearson=0.991901; Spearman=0.986219; residual=9.210e-02; no representative,0.0
+U121-EDGE-079,RAW-X051::pair_top2_component_area_share_q10,RAW-X048::pair_largest_component_share_q10,high_redundancy,PRM120_pair_component_composition_crossbank_full58,Pearson=0.998254; Spearman=0.999938; residual=4.639e-02; no representative,0.0
+U121-EDGE-080,RAW-X051::pair_component_area_cv_q10,RAW-X051::pair_component_area_gini_q10,high_redundancy,PRM120_pair_component_composition_internal_full58,Pearson=0.989953; Spearman=0.996362; residual=1.280e-01; no representative,0.0
+U121-EDGE-081,RAW-X051::pair_component_area_cv_q50,RAW-X051::pair_component_area_gini_q50,high_redundancy,PRM120_pair_component_composition_internal_full58,Pearson=0.982625; Spearman=0.995078; residual=1.215e-01; no representative,0.0
+U123-EDGE-077,RAW-X052::overlay_purple_pixel_count_normalized_rms_adjacent_gradient,RAW-X036::overlay_blue_pixel_count_population_std,high_redundancy,PRM122_xonly,no representative,0.0
+U123-EDGE-078,RAW-X052::overlay_purple_pixel_count_normalized_rms_adjacent_gradient,RAW-X036::overlay_red_pixel_count_population_std,high_redundancy,PRM122_xonly,no representative,0.0
+U123-EDGE-079,RAW-X052::overlay_blue_pixel_count_normalized_q90_adjacent_jump,RAW-X052::overlay_red_pixel_count_normalized_q90_adjacent_jump,high_redundancy,PRM122_xonly,no representative,0.0
+U123-EDGE-080,RAW-X052::overlay_purple_pixel_count_normalized_max_adjacent_jump,RAW-X052::slice_material_area_normalized_max_adjacent_jump,high_redundancy,PRM122_xonly,no representative,0.0
+U123-EDGE-081,RAW-X052::overlay_purple_pixel_count_normalized_q90_adjacent_jump,RAW-X052::overlay_union_pixel_count_normalized_q90_adjacent_jump,high_redundancy,PRM122_xonly,no representative,0.0
+U125-EDGE-087,RAW-X053::red_blue_absolute_balance_q50,RAW-X053::red_blue_signed_balance_iqr,high_redundancy,PRM124_xonly,no representative,0.0
+U125-EDGE-088,RAW-X053::red_blue_signed_balance_q10,RAW-X053::red_blue_signed_balance_q90,high_redundancy,PRM124_xonly,no representative,0.0
+U127-EDGE-089,RAW-X054::kept_component_density_per_mpx_iqr,RAW-X054::raw_component_density_per_mpx_iqr,high_redundancy,PRM126_xonly,no representative,0.0
+U127-EDGE-090,RAW-X054::kept_component_density_per_mpx_mean,RAW-X054::raw_component_density_per_mpx_mean,high_redundancy,PRM126_xonly,no representative,0.0
+U127-EDGE-091,RAW-X054::kept_component_density_per_mpx_population_std,RAW-X054::raw_component_density_per_mpx_population_std,high_redundancy,PRM126_xonly,no representative,0.0
+U127-EDGE-092,RAW-X054::kept_component_density_per_mpx_q10,RAW-X054::raw_component_density_per_mpx_q10,high_redundancy,PRM126_xonly,no representative,0.0
+U127-EDGE-093,RAW-X054::kept_component_density_per_mpx_q50,RAW-X054::raw_component_density_per_mpx_q50,high_redundancy,PRM126_xonly,no representative,0.0
+U127-EDGE-094,RAW-X054::kept_component_density_per_mpx_q90,RAW-X054::raw_component_density_per_mpx_q90,high_redundancy,PRM126_xonly,no representative,0.0
+U127-EDGE-095,RAW-X054::removed_component_density_per_mpx_mean,RAW-X054::removed_component_density_per_mpx_population_std,high_redundancy,PRM126_xonly,no representative,0.0
+U129-EDGE-096,RAW-X055::blue_purple_lag0_spearman_correlation,RAW-X055::red_purple_lag0_spearman_correlation,high_redundancy,PRM128_xonly,no representative,0.0
+U131-EDGE-097,RAW-X056::purple_fraction_q50,RAW-X053::phase_composition_entropy_q50,high_redundancy,PRM130_xonly,no representative,0.0
+U131-EDGE-098,RAW-X056::purple_fraction_q90,RAW-X053::phase_composition_entropy_q10,high_redundancy,PRM130_xonly,no representative,0.0
+U131-EDGE-099,RAW-X056::blue_fraction_iqr,RAW-X056::red_fraction_iqr,high_redundancy,PRM130_xonly,no representative,0.0
+U131-EDGE-100,RAW-X056::blue_fraction_q10,RAW-X056::red_fraction_q10,high_redundancy,PRM130_xonly,no representative,0.0
+U131-EDGE-101,RAW-X056::blue_fraction_q50,RAW-X056::red_fraction_q50,high_redundancy,PRM130_xonly,no representative,0.0
+U131-EDGE-102,RAW-X056::blue_fraction_q90,RAW-X056::red_fraction_q90,high_redundancy,PRM130_xonly,no representative,0.0
+U133-EDGE-103,RAW-X057::slice_component_raw_count_excess_kurtosis,RAW-X038::slice_component_count_excess_kurtosis,high_redundancy,PRM132_xonly,no representative,0.0
+U133-EDGE-104,RAW-X057::slice_component_raw_count_normalized_total_variation,RAW-X034::slice_component_count_normalized_total_variation,high_redundancy,PRM132_xonly,no representative,0.0
+U133-EDGE-105,RAW-X057::slice_component_raw_count_q95_q05_span,RAW-X034::slice_component_count_q90,high_redundancy,PRM132_xonly,no representative,0.0
+U133-EDGE-106,RAW-X057::slice_component_raw_count_q95_q05_span,RAW-X050::raw_component_count_q90,high_redundancy,PRM132_xonly,no representative,0.0
+U133-EDGE-107,RAW-X057::slice_component_raw_count_skewness,RAW-X038::slice_component_count_moment_skewness,high_redundancy,PRM132_xonly,no representative,0.0
+U133-EDGE-108,RAW-X057::slice_material_fraction_coefficient_variation,RAW-X034::slice_material_area_population_std,high_redundancy,PRM132_xonly,no representative,0.0
+U133-EDGE-109,RAW-X057::slice_material_fraction_coefficient_variation,RAW-X036::overlay_purple_pixel_count_population_std,high_redundancy,PRM132_xonly,no representative,0.0
+U133-EDGE-110,RAW-X057::slice_material_fraction_coefficient_variation,RAW-X036::overlay_union_pixel_count_population_std,high_redundancy,PRM132_xonly,no representative,0.0
+U133-EDGE-111,RAW-X057::slice_material_fraction_excess_kurtosis,RAW-X038::slice_material_area_excess_kurtosis,high_redundancy,PRM132_xonly,no representative,0.0
+U133-EDGE-112,RAW-X057::slice_material_fraction_normalized_total_variation,RAW-X034::slice_material_area_normalized_total_variation,high_redundancy,PRM132_xonly,no representative,0.0
+U133-EDGE-113,RAW-X057::slice_material_fraction_skewness,RAW-X038::slice_material_area_moment_skewness,high_redundancy,PRM132_xonly,no representative,0.0
+U135-EDGE-114,RAW-X058::overlay_component_kept_count_coefficient_variation,RAW-X057::slice_component_raw_count_coefficient_variation,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-115,RAW-X058::overlay_component_kept_count_excess_kurtosis,RAW-X038::slice_component_count_excess_kurtosis,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-116,RAW-X058::overlay_component_kept_count_excess_kurtosis,RAW-X057::slice_component_raw_count_excess_kurtosis,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-117,RAW-X058::overlay_component_kept_count_normalized_total_variation,RAW-X034::slice_component_count_normalized_total_variation,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-118,RAW-X058::overlay_component_kept_count_normalized_total_variation,RAW-X057::slice_component_raw_count_normalized_total_variation,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-119,RAW-X058::overlay_component_kept_count_q95_q05_span,RAW-X034::slice_component_count_q90,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-120,RAW-X058::overlay_component_kept_count_q95_q05_span,RAW-X050::raw_component_count_q90,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-121,RAW-X058::overlay_component_kept_count_q95_q05_span,RAW-X057::slice_component_raw_count_q95_q05_span,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-122,RAW-X058::overlay_component_kept_count_skewness,RAW-X038::slice_component_count_moment_skewness,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-123,RAW-X058::overlay_component_kept_count_skewness,RAW-X057::slice_component_raw_count_skewness,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-124,RAW-X058::overlay_component_raw_count_coefficient_variation,RAW-X057::slice_component_raw_count_coefficient_variation,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-125,RAW-X058::overlay_component_raw_count_excess_kurtosis,RAW-X038::slice_component_count_excess_kurtosis,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-126,RAW-X058::overlay_component_raw_count_excess_kurtosis,RAW-X057::slice_component_raw_count_excess_kurtosis,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-127,RAW-X058::overlay_component_raw_count_normalized_total_variation,RAW-X034::slice_component_count_normalized_total_variation,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-128,RAW-X058::overlay_component_raw_count_normalized_total_variation,RAW-X057::slice_component_raw_count_normalized_total_variation,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-129,RAW-X058::overlay_component_raw_count_q95_q05_span,RAW-X034::slice_component_count_q90,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-130,RAW-X058::overlay_component_raw_count_q95_q05_span,RAW-X050::raw_component_count_q90,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-131,RAW-X058::overlay_component_raw_count_q95_q05_span,RAW-X057::slice_component_raw_count_q95_q05_span,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-132,RAW-X058::overlay_component_raw_count_skewness,RAW-X038::slice_component_count_moment_skewness,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-133,RAW-X058::overlay_component_raw_count_skewness,RAW-X057::slice_component_raw_count_skewness,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-134,RAW-X058::overlay_component_kept_count_coefficient_variation,RAW-X058::overlay_component_raw_count_coefficient_variation,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-135,RAW-X058::overlay_component_kept_count_excess_kurtosis,RAW-X058::overlay_component_raw_count_excess_kurtosis,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-136,RAW-X058::overlay_component_kept_count_normalized_total_variation,RAW-X058::overlay_component_raw_count_normalized_total_variation,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-137,RAW-X058::overlay_component_kept_count_q95_q05_span,RAW-X058::overlay_component_raw_count_q95_q05_span,high_redundancy,PRM134_xonly,no representative,0.0
+U135-EDGE-138,RAW-X058::overlay_component_kept_count_skewness,RAW-X058::overlay_component_raw_count_skewness,high_redundancy,PRM134_xonly,no representative,0.0
+U137-EDGE-139,RAW-X059::purple_fraction_coefficient_variation,RAW-X040::overlay_purple_fraction_population_std,high_redundancy,PRM136_xonly,no representative,0.0
+U137-EDGE-140,RAW-X059::blue_fraction_mean_abs_adjacent_change,RAW-X059::purple_fraction_mean_abs_adjacent_change,high_redundancy,PRM136_xonly,no representative,0.0
+U137-EDGE-141,RAW-X059::blue_fraction_mean_abs_adjacent_change,RAW-X059::red_fraction_mean_abs_adjacent_change,high_redundancy,PRM136_xonly,no representative,0.0
+U137-EDGE-142,RAW-X059::blue_fraction_q95_q05_span,RAW-X059::red_fraction_q95_q05_span,high_redundancy,PRM136_xonly,no representative,0.0
+U137-EDGE-143,RAW-X059::purple_fraction_mean_abs_adjacent_change,RAW-X059::red_fraction_mean_abs_adjacent_change,high_redundancy,PRM136_xonly,no representative,0.0
+U139-EDGE-144,RAW-X060::all_component_area_coefficient_variation,RAW-X048::component_area_cv,high_redundancy,PRM138_xonly,no representative,0.0
+U139-EDGE-145,RAW-X060::all_component_area_q95_q05_span,RAW-X048::component_area_q95_mm2,high_redundancy,PRM138_xonly,no representative,0.0
+U139-EDGE-146,RAW-X060::kept_component_area_coefficient_variation,RAW-X048::component_area_cv,high_redundancy,PRM138_xonly,no representative,0.0
+U139-EDGE-147,RAW-X060::kept_component_area_q95_q05_span,RAW-X048::component_area_q95_mm2,high_redundancy,PRM138_xonly,no representative,0.0
+U139-EDGE-148,RAW-X060::all_component_area_coefficient_variation,RAW-X060::kept_component_area_coefficient_variation,high_redundancy,PRM138_xonly,no representative,0.0
+U139-EDGE-149,RAW-X060::all_component_area_excess_kurtosis,RAW-X060::kept_component_area_excess_kurtosis,high_redundancy,PRM138_xonly,no representative,0.0
+U139-EDGE-150,RAW-X060::all_component_area_normalized_total_variation,RAW-X060::kept_component_area_normalized_total_variation,high_redundancy,PRM138_xonly,no representative,0.0
+U139-EDGE-151,RAW-X060::all_component_area_q95_q05_span,RAW-X060::kept_component_area_q95_q05_span,high_redundancy,PRM138_xonly,no representative,0.0
+U139-EDGE-152,RAW-X060::all_component_area_skewness,RAW-X060::kept_component_area_skewness,high_redundancy,PRM138_xonly,no representative,0.0
+U141-EDGE-153,RAW-X061::slice_kept_component_density_coefficient_variation,RAW-X061::slice_raw_component_density_coefficient_variation,high_redundancy,PRM140_xonly,no representative,0.0
+U141-EDGE-154,RAW-X061::slice_kept_component_density_excess_kurtosis,RAW-X061::slice_raw_component_density_excess_kurtosis,high_redundancy,PRM140_xonly,no representative,0.0
+U141-EDGE-155,RAW-X061::slice_kept_component_density_normalized_total_variation,RAW-X061::slice_raw_component_density_normalized_total_variation,high_redundancy,PRM140_xonly,no representative,0.0
+U141-EDGE-156,RAW-X061::slice_kept_component_density_q95_q05_span,RAW-X061::slice_raw_component_density_q95_q05_span,high_redundancy,PRM140_xonly,no representative,0.0
+U141-EDGE-157,RAW-X061::slice_kept_component_density_skewness,RAW-X061::slice_raw_component_density_skewness,high_redundancy,PRM140_xonly,no representative,0.0
+U145-EDGE-158,RAW-X063::slice_kept_mean_piece_area_coefficient_variation,RAW-X063::slice_raw_mean_piece_area_coefficient_variation,high_redundancy,PRM144_xonly,no representative,0.0
+U145-EDGE-159,RAW-X063::slice_kept_mean_piece_area_excess_kurtosis,RAW-X063::slice_raw_mean_piece_area_excess_kurtosis,high_redundancy,PRM144_xonly,no representative,0.0
+U145-EDGE-160,RAW-X063::slice_kept_mean_piece_area_normalized_total_variation,RAW-X063::slice_raw_mean_piece_area_normalized_total_variation,high_redundancy,PRM144_xonly,no representative,0.0
+U145-EDGE-161,RAW-X063::slice_kept_mean_piece_area_q95_q05_span,RAW-X063::slice_raw_mean_piece_area_q95_q05_span,high_redundancy,PRM144_xonly,no representative,0.0
+U145-EDGE-162,RAW-X063::slice_kept_mean_piece_area_skewness,RAW-X063::slice_raw_mean_piece_area_skewness,high_redundancy,PRM144_xonly,no representative,0.0
+U147-EDGE-163,RAW-X064::purple_share_coefficient_variation,RAW-X040::overlay_purple_fraction_population_std,high_redundancy,PRM146_xonly,no representative,0.0
+U147-EDGE-164,RAW-X064::purple_share_coefficient_variation,RAW-X059::purple_fraction_coefficient_variation,high_redundancy,PRM146_xonly,no representative,0.0
+U147-EDGE-165,RAW-X064::purple_share_normalized_total_variation,RAW-X059::blue_fraction_mean_abs_adjacent_change,high_redundancy,PRM146_xonly,no representative,0.0
+U147-EDGE-166,RAW-X064::purple_share_normalized_total_variation,RAW-X059::purple_fraction_mean_abs_adjacent_change,high_redundancy,PRM146_xonly,no representative,0.0
+U147-EDGE-167,RAW-X064::purple_share_normalized_total_variation,RAW-X059::red_fraction_mean_abs_adjacent_change,high_redundancy,PRM146_xonly,no representative,0.0
+U147-EDGE-168,RAW-X064::purple_share_q95_q05_span,RAW-X059::purple_fraction_q95_q05_span,high_redundancy,PRM146_xonly,no representative,0.0
+U147-EDGE-169,RAW-X064::red_blue_signed_balance_q95_q05_span,RAW-X053::red_blue_absolute_balance_q90,high_redundancy,PRM146_xonly,no representative,0.0
+U147-EDGE-170,RAW-X064::red_blue_absolute_balance_zero_fraction,RAW-X064::red_blue_signed_balance_zero_fraction,high_redundancy,PRM146_xonly,no representative,0.0
+U149-EDGE-171,RAW-X065::pair_effective_count_q95_q05_span,RAW-X051::pair_effective_component_count_population_std,high_redundancy,PRM148_xonly,no representative,0.0
+U149-EDGE-172,RAW-X065::pair_effective_count_q95_q05_span,RAW-X051::pair_effective_component_count_q90,high_redundancy,PRM148_xonly,no representative,0.0
+U149-EDGE-173,RAW-X065::pair_effective_count_q95_q05_span,RAW-X057::slice_component_raw_count_q95_q05_span,high_redundancy,PRM148_xonly,no representative,0.0
+U149-EDGE-174,RAW-X065::pair_effective_count_q95_q05_span,RAW-X058::overlay_component_kept_count_q95_q05_span,high_redundancy,PRM148_xonly,no representative,0.0
+U149-EDGE-175,RAW-X065::pair_effective_count_q95_q05_span,RAW-X058::overlay_component_raw_count_q95_q05_span,high_redundancy,PRM148_xonly,no representative,0.0

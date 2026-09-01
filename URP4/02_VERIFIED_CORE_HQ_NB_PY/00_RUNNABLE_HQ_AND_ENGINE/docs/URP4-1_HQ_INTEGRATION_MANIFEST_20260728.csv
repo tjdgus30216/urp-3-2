@@ -1,0 +1,14 @@
+integration_id,from_component,to_component,interface,execution_status,scientific_status,evidence
+HQ-I001,MASTER CONTROLLER,FrozenRunConfig,validate_and_freeze,passed,confirmed,URP4_1_HQ.ipynb Cell 1-3
+HQ-I002,FrozenRunConfig,geometry source router,route_id plus source hash,passed,confirmed,9-case fast smoke
+HQ-I003,Lattice Type A generator,generated STL,GenerationRequest to GeometryArtifact,passed,likely,HQ lattice generation smoke
+HQ-I004,TPMS generator,generated STL,GenerationRequest to GeometryArtifact,passed,likely,HQ TPMS generation smoke
+HQ-I005,Voxel generator,generated STL,GenerationRequest to GeometryArtifact,passed,likely,HQ Voxel generation smoke
+HQ-I006,generated STL,native image pipeline,STL to saved PNG readback primitive tables,passed,confirmed,generated fixture P1000/Z801 full smoke
+HQ-I007,imported STL,oriented winding image pipeline,STL to transient mask to saved PNG readback,passed,likely,L28 VF30 P1000/Z801 exact repeat
+HQ-I008,primitive tables,RUN-139 scalar service,PrimitiveTables to nine ScalarResult rows,passed,confirmed,both full smokes returned nine rows
+HQ-I009,original STP,strict reference preflight,STP B-rep QA,passed,confirmed,L28 original STP smoke
+HQ-I010,original STP,RUN-139 descriptor service,direct B-rep descriptor adapter,blocked,unresolved,fail-closed guard passed
+HQ-I011,training registry,HQ interface,method IDs and source hashes only,passed,likely,14 source hashes pass; execution locked
+HQ-I012,HQ outputs,CSV/XLSX/QA/status export,hash-addressed run directory,passed,confirmed,smoke and audit manifests
+

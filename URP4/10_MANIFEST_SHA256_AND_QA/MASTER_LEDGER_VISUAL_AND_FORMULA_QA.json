@@ -1,0 +1,15 @@
+{
+  "qa_id": "MASTER-LEDGER-V1.3-VISUAL-FORMULA-QA",
+  "status": "PASS",
+  "tool": "@oai/artifact-tool 2.8.6+",
+  "checks": {
+    "cutoff_v1_3": true,
+    "schema_v1_3": true,
+    "c1_completed": true,
+    "active_running_zero": true,
+    "req_013_pass": true,
+    "formula_error_scan_zero": true,
+    "all_13_sheets_rendered_and_visually_reviewed": true
+  },
+  "preview_policy": "QA previews retained outside release staging to avoid packaging support-file clutter."
+}

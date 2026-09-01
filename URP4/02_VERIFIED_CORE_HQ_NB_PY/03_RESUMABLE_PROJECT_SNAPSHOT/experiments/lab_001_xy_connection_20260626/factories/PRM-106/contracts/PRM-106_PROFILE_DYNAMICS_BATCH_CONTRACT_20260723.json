@@ -1,0 +1,55 @@
+{
+  "work_id": "PRM-106",
+  "title": "PROFILE_DYNAMICS_BC_THIRD_RAW_TABLE_COHORT_NO_Y",
+  "purpose": "Generate a 22-candidate Grade B/C batch from already hash-verified SLICE-004 slice and overlay pixel-readback profiles. The batch characterises through-axis distribution shape and pair-to-pair variation without creating a new image, mask, mesh or slice.",
+  "source_contract": {
+    "raw_artifacts": ["slice_pixel_readback.csv", "overlay_pixel_readback.csv"],
+    "models": 58,
+    "slice_rows_per_model": 801,
+    "overlay_pair_rows_per_model": 800,
+    "raw_file_count": 116,
+    "source_hashes_must_match_frozen_SLICE004_manifest": true
+  },
+  "expected": {
+    "models": 58,
+    "new_candidates": 22,
+    "grade_B_candidates": 4,
+    "grade_C_candidates": 18,
+    "values": 1276,
+    "crossbank_relations": 3762,
+    "internal_relations": 231,
+    "diagnostic_pair_values": 44
+  },
+  "candidate_schema": {
+    "RAW-X038": "slice material-area and component-count profile skewness, excess kurtosis, peak-to-mean and range-over-mean",
+    "RAW-X039": "red/blue/purple/union overlay count profile lag-1 autocorrelation and normalized total variation",
+    "RAW-X040": "red/blue/purple overlay phase-fraction profile population standard deviation and lag-1 autocorrelation",
+    "units": "all outputs are dimensionless profile-shape, normalized-variation or correlation measures",
+    "denominator_policy": "all verified profiles are nonconstant and all overlay union denominators must be positive; fail rather than impute"
+  },
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/TOUR-C001/analysis_factory/reports/TOUR-C001-T4R-SLICE-004_output_manifest.csv", "sha256": "53f0b5292020ee8b5274f42dbb1af7b4501fe26703fec6ed298d6a83f712903c"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM105_xreg_v0_5_values_long.csv", "sha256": "c2bedcc44ff0180496d5feb79c8b697ac613ee9d18db0bc0a4b70d45ac487e68"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM105_xreg_v0_5_candidate_bank.csv", "sha256": "f12c47f0363461abcd188e264a5faccd5d4e856a85e980db451795f4c7933287"},
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/PRM-105/reports/PRM105_independent_QA_summary.json", "sha256": "3ffa22587da154ee8d2ecd2fdcd9df6164a4ded5b9a5626442607b560752a322"}
+  ],
+  "relation_policy": {
+    "scope": "full58_x_only",
+    "exact_duplicate": "np.allclose rtol=1e-10 atol=1e-12",
+    "proportional_duplicate": "normalised L2 residual <= 1e-6",
+    "high_redundancy": "absolute Pearson >= 0.98 and absolute Spearman >= 0.98"
+  },
+  "locks": {
+    "performance_y_read": 0,
+    "x_y_analysis": 0,
+    "model_fit": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "new_masks_or_slicing": 0,
+    "NB_CURRENT_mutation": 0,
+    "LEGACY_PY_mutation": 0,
+    "original_Excel_mutation": 0
+  },
+  "status": "preregistered_pending_execution",
+  "next_step_if_pass": "PRM-107 XREG-v0.6 consolidation/block audit only"
+}

@@ -1,0 +1,15 @@
+{
+  "enabled": false,
+  "target_y": "",
+  "method_ids": [
+    "TRAIN-METHOD-01",
+    "TRAIN-METHOD-02",
+    "TRAIN-METHOD-03",
+    "TRAIN-METHOD-04",
+    "TRAIN-METHOD-05"
+  ],
+  "required_feature_identity": "semantic feature IDs with source/population/unit lineage",
+  "required_row_identity": "model/family/direction/replicate provenance",
+  "split_policy": "grouped/family-aware",
+  "status": "interface_only_fail_closed_until_official_y"
+}

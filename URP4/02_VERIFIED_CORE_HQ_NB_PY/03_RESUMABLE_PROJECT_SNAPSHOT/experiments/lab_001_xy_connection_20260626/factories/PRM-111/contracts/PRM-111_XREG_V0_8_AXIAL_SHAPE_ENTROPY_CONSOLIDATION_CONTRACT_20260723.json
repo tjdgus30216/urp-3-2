@@ -1,0 +1,47 @@
+{
+  "work_id": "PRM-111",
+  "title": "XREG_V0_8_AXIAL_SHAPE_ENTROPY_CONSOLIDATION_NO_Y",
+  "purpose": "Append exactly the independently verified PRM-110 axial-position-shape/entropy cohort to immutable XREG-v0.7 and encode three crossbank plus seven internal high-redundancy relations without selecting a representative.",
+  "expected": {
+    "prior_candidates": 217,
+    "new_candidates": 24,
+    "total_candidates": 241,
+    "models": 58,
+    "prior_values": 12586,
+    "new_values": 1392,
+    "total_values": 13978,
+    "finite_values": 13976,
+    "inherited_missing": 2,
+    "new_missing": 0,
+    "prior_blocks": 175,
+    "changed_or_new_components": 19,
+    "total_blocks": 193,
+    "prior_edges": 49,
+    "new_edges": 10,
+    "total_edges": 59
+  },
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM109_xreg_v0_7_candidate_bank.csv", "sha256": "7bd30f33874cc6dc2d84cd77144bac3b6c9333400eea6c70e299b5353483cb5c"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM109_xreg_v0_7_values_long.csv", "sha256": "26461272a051503d2583219a75126f8bc9680ebbd6ff7b09a31916f0a1f44714"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM109_unified_redundancy_edge_registry.csv", "sha256": "04f9e3e950d70224a31caa7cbaa5eb6bdf8867dc5f6533c94ead952244501376"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM109_unified_redundancy_block_registry.csv", "sha256": "bd7a1de431766e0008b51b8245905ee516d6c85ae9cd199e20ef8ca78f844aa5"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM110_axial_shape_entropy_candidate_registry.csv", "sha256": "da90b5c3ebf5f9dd344fc2fc9fad67377435b3b5c411269331ca1e7b7959f598"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM110_axial_shape_entropy_values_long.csv", "sha256": "4b5af34f114d1ec473bd983d0eb6a9070bea2a342a45768c76ab0f3cf4271111"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM110_axial_shape_entropy_vs_XREG_v0_7_redundancy.csv", "sha256": "dfe58cc37cb2b8994e3226a46af8b2a552ea2abcc5e1015a3a723252aadb8e66"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM110_axial_shape_entropy_internal_redundancy.csv", "sha256": "50c40953ca3c4c2958b296d4fcf399d24c0e5ebb8379d1333dcee82c1a512f5d"},
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/PRM-110/reports/PRM110_independent_QA_summary.json", "sha256": "79cbe19692e51a6570195e49a101f89507e580b4ebee5f76924bda0d6bad4fc4"}
+  ],
+  "block_policy": "Graph closure of 49 predecessor edges plus all ten frozen PRM-110 high-redundancy relations. Preserve unchanged predecessor block IDs. Reissue deterministic U111 IDs only for the merged existing entropy component and the 18 new-only components. No removal, winner, selection or promotion.",
+  "locks": {
+    "performance_y_read": 0,
+    "x_y_analysis": 0,
+    "model_fit": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "new_masks_or_slicing": 0,
+    "NB_CURRENT_mutation": 0,
+    "LEGACY_PY_mutation": 0,
+    "original_Excel_mutation": 0
+  },
+  "status": "preregistered_pending_execution"
+}

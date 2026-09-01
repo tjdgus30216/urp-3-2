@@ -1,0 +1,14 @@
+check_id,status,evidence
+IQ01,passed,canonical project-local KMK312 executable
+IQ02,passed,ROUTE-VALID-004 policy QA accepted
+IQ03,passed,F1 paired-confirmed Route C preflight
+IQ04,passed,F1 warning propagated
+IQ05,passed,technical development separated from production
+IQ06,passed,no geometry/slice/descriptor/y/model execution
+IQ07,passed,manifest records canonical sys.executable
+IQ08,passed,config and policy hashes present
+IQ09,passed,versioned notebook kernel and cell map
+IQ10,passed,notebook has no executed code cells
+IQ11,passed,fixture fail-closed regression suite
+IQ12,passed,protected assets unchanged
+IQ13,passed,runtime discovery correction does not invalidate prior science

@@ -1,0 +1,14 @@
+﻿requirement_id,requirement,status,evidence,notes
+REQ-001,Immutable v1.0 preserved,PASS,experiments/lab_001_xy_connection_20260626/results/HANDOFF-SYNC-001/HANDOFF-CUTOFF-20260731-001,v1.1 uses a new folder.
+REQ-002,C1 stale running state removed from v1.1,PASS,experiments/lab_001_xy_connection_20260626/results/STRICT-STEP-026/STRICT-STEP-026-20260731-001/RUN_STATE.json,status=completed
+REQ-003,C1 independent QA,PASS,experiments/lab_001_xy_connection_20260626/results/STRICT-STEP-026/STRICT-STEP-026-20260731-001/INDEPENDENT_QA.json,9/9; exactly once per POSTRUN report
+REQ-004,Training source audit,PASS,experiments/lab_001_xy_connection_20260626/results/TRAIN-AUDIT-001/TRAIN-AUDIT-001-20260731-001/REPORT.md,9/9 audit
+REQ-005,Training blocker honesty,PASS,experiments/lab_001_xy_connection_20260626/results/TRAIN-PARITY-004/TRAIN-PARITY-004-20260801-001/REPORT.md,BLOCKED_BY_SOURCE_RUNTIME
+REQ-006,AI Lattice intake and pilot evidence,PASS,experiments/lab_001_xy_connection_20260626/data/processed/COMP-FACTORY-002/COMP-FACTORY-002-AI-LATTICE-PILOT-20260731-144749/INDEPENDENT_QA_SUMMARY.json,36/36
+REQ-007,B/C/L and Voronoi source intake and technical pilot evidence,PASS,07_COMPRESSION_DATA_AND_PILOT/COMP-FACTORY-004_HANDOFF/REPORT.md,167 exact joins; both grouped pilot QA-v2 10/10 PASS_WITH_WARNINGS; no promotion
+REQ-008,2026-08-02 research calculation is explicitly bounded and separated from packaging,PASS,COMP-FACTORY-004_BCL_VORONOI_20260802/MERGE_PACKET.md,Packaging did not rerun research; only completed technical pilot evidence was incorporated.
+REQ-009,Protected assets remain read-only,PASS,10_MANIFEST_SHA256_AND_QA/PROTECTED_ASSET_SNAPSHOT.csv,hash snapshot and copied-source equality
+REQ-010,Final v1.3 ZIP CRC/hash/extraction test,PASS,Adjacent URP4-1_DOCTOR_HANDOFF_20260802_v1_4_r2.zip.sha256 and URP4-1_DOCTOR_HANDOFF_20260802_v1_4_r2_INDEPENDENT_PACKAGE_QA.json,Valid only with adjacent receipt and extracted read-only verifier PASS.
+REQ-011,"COMP-FACTORY-004 producer, QA, dependency, config and reproduction guide included",PASS,07_COMPRESSION_DATA_AND_PILOT/COMP-FACTORY-004_PIPELINE_SOURCE,Exact source copies and SHA registry; syntax/help audit passed under KMK312.
+REQ-012,Eleven compression source workbooks preserved and externally deliverable,PASS,04_REFERENCE_INPUTS/doctor_compression_data_20260802/SOURCE_MANIFEST.csv,11/11 source-copy hashes pass; large raw workbooks remain an external Drive asset.
+REQ-013,"Modified/built algorithms, concise descriptions, result data and resumable layout included",PASS,00_READ_ME_FIRST/ALGORITHM_AND_RESULT_GUIDE_KO.txt; ALGORITHM_PIPELINE_INDEX.csv; ALGORITHM_FILE_INDEX.csv; 02_VERIFIED_CORE_HQ_NB_PY/03_RESUMABLE_PROJECT_SNAPSHOT/RESUME_RUNBOOK.md,"161 selected research scripts plus HQ/engine, Training and compression source; caches/superseded bulk output/transient full PNG excluded."

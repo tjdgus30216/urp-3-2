@@ -1,0 +1,258 @@
+{
+  "run_id": "TRAIN-PARITY-004-20260801-001",
+  "qa_execution_count": 1,
+  "executed_at_kst": "2026-08-01T12:58:47+09:00",
+  "overall_status": "PASS",
+  "passed": 21,
+  "total": 21,
+  "qa_scope": "blocked evidence packet integrity; no producer rerun",
+  "checks": [
+    {
+      "qa_id": "IQA-001",
+      "check": "producer artifacts before IQA",
+      "observed": 14,
+      "expected": 14,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-002",
+      "check": "authorized target/repeat",
+      "observed": [
+        "TRAIN2NF::HI",
+        0
+      ],
+      "expected": [
+        "TRAIN2NF::HI",
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-003",
+      "check": "authorized stages and P8",
+      "observed": [
+        [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        false
+      ],
+      "expected": [
+        [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        false
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-004",
+      "check": "preflight hashes/contracts",
+      "observed": 15,
+      "expected": 15,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-005",
+      "check": "producer decision",
+      "observed": "BLOCKED_BY_SOURCE_RUNTIME",
+      "expected": "BLOCKED_BY_SOURCE_RUNTIME",
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-006",
+      "check": "source native exit",
+      "observed": [
+        "native_runtime_crash",
+        "0xC06D007F"
+      ],
+      "expected": [
+        "native_runtime_crash",
+        "0xC06D007F"
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-007",
+      "check": "source partial pre-fit stages",
+      "observed": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4_contract_pre_fit"
+      ],
+      "expected": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4_contract_pre_fit"
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-008",
+      "check": "no branch checkpoint",
+      "observed": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-009",
+      "check": "adapter fail-fast nonexecution",
+      "observed": "not_started_due_to_source_runtime_block",
+      "expected": "not_started_due_to_source_runtime_block",
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-010",
+      "check": "runner process count",
+      "observed": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-011",
+      "check": "source/adapter output separation",
+      "observed": [
+        "True",
+        "False"
+      ],
+      "expected": [
+        "True",
+        "False"
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-012",
+      "check": "source prediction rows",
+      "observed": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-013",
+      "check": "adapter prediction rows",
+      "observed": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-014",
+      "check": "comparison rows",
+      "observed": [
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-015",
+      "check": "P8 not executed",
+      "observed": [
+        false,
+        false
+      ],
+      "expected": [
+        false,
+        false
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-016",
+      "check": "no other target/repeat",
+      "observed": [
+        "TRAIN2NF::HI",
+        0,
+        "TRAIN2NF::HI",
+        0
+      ],
+      "expected": [
+        "TRAIN2NF::HI",
+        0,
+        "TRAIN2NF::HI",
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-017",
+      "check": "protected assets unchanged",
+      "observed": 16,
+      "expected": 16,
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-018",
+      "check": "tolerance immutable",
+      "observed": "035fae5cdc64aa566a607cec559dbc205a5ec4ed956593e10fb9d47407276c8e",
+      "expected": "035fae5cdc64aa566a607cec559dbc205a5ec4ed956593e10fb9d47407276c8e",
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-019",
+      "check": "fit/predict accounting honesty",
+      "observed": [
+        "unknown_native_crash_before_ledger_flush",
+        "unknown_native_crash_before_ledger_flush",
+        0,
+        0
+      ],
+      "expected": [
+        "unknown_native_crash_before_ledger_flush",
+        "unknown_native_crash_before_ledger_flush",
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-020",
+      "check": "no automatic retry",
+      "observed": [
+        false,
+        "NOT_AUTHORIZED_REQUIRES_NEW_PREREGISTERED_DIAGNOSTIC"
+      ],
+      "expected": [
+        false,
+        "NOT_AUTHORIZED_REQUIRES_NEW_PREREGISTERED_DIAGNOSTIC"
+      ],
+      "status": "PASS"
+    },
+    {
+      "qa_id": "IQA-021",
+      "check": "WER evidence",
+      "observed": [
+        1000,
+        1001,
+        "KERNELBASE.dll"
+      ],
+      "expected": [
+        1000,
+        1001,
+        "KERNELBASE.dll"
+      ],
+      "status": "PASS"
+    }
+  ]
+}

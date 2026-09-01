@@ -1,0 +1,14 @@
+﻿qa_id,test,expected,observed,status
+TPN-001,HI canonical request accepted,accepted,accepted,PASS
+TPN-002,display name alone cannot select target,UNKNOWN_TARGET,KeyError: 'UNKNOWN_TARGET: ',PASS
+TPN-003,unknown canonical ID rejected,UNKNOWN_TARGET,KeyError: 'UNKNOWN_TARGET: TRAIN2NF::ZZ',PASS
+TPN-004,wrong Excel column rejected,TARGET_EXCEL_COLUMN_IDENTITY_MISMATCH,ValueError: TARGET_EXCEL_COLUMN_IDENTITY_MISMATCH,PASS
+TPN-005,wrong value hash rejected,TARGET_VALUE_HASH_MISMATCH,ValueError: TARGET_VALUE_HASH_MISMATCH,PASS
+TPN-006,wrong NaN mask hash rejected,TARGET_NAN_MASK_HASH_MISMATCH,ValueError: TARGET_NAN_MASK_HASH_MISMATCH,PASS
+TPN-007,malformed display metadata rejected,TARGET_DISPLAY_METADATA_MISMATCH,ValueError: TARGET_DISPLAY_METADATA_MISMATCH,PASS
+TPN-008,wrong target policy hash rejected,TARGET_POLICY_HASH_MISMATCH,ValueError: TARGET_POLICY_HASH_MISMATCH,PASS
+TPN-009,TRAIN2NF::GC final-refit hold enforced,FINAL_REFIT_HOLD,PermissionError: FINAL_REFIT_HOLD: TRAIN2NF::GC,PASS
+TPN-010,TRAIN2NF::HE final-refit hold enforced,FINAL_REFIT_HOLD,PermissionError: FINAL_REFIT_HOLD: TRAIN2NF::HE,PASS
+TPN-011,TRAIN2NF::HK final-refit hold enforced,FINAL_REFIT_HOLD,PermissionError: FINAL_REFIT_HOLD: TRAIN2NF::HK,PASS
+TPN-012,superseded false hold removed for TRAIN2NF::FW,accepted,accepted,PASS
+TPN-013,superseded false hold removed for TRAIN2NF::GA,accepted,accepted,PASS

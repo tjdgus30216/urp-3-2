@@ -1,0 +1,46 @@
+﻿feature_id,feature_name_raw,column_name,feature_role,status,unit
+SFX001,Type,x__Type,excluded_provenance,excluded,source_header_or_unresolved
+SFX002,Source,x__Source,excluded_provenance,excluded,source_header_or_unresolved
+SFX003,Target VF,x__Target VF,condition_sensitivity,available_unselected,source_header_or_unresolved
+SFX004,Actual VF,x__Actual VF,physical_condition_candidate,available_unselected,source_header_or_unresolved
+SFX005,Node 개수,x__Node 개수,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX006,Strut 개수,x__Strut 개수,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX007,Global: Strut No. at Nodes-AVG,x__Global: Strut No. at Nodes-AVG,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX008,Global: Strut No. at Nodes-STDEV,x__Global: Strut No. at Nodes-STDEV,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX009,Node: Strut count - AVG,x__Node: Strut count - AVG,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX010,Node: Strut count - STDEV,x__Node: Strut count - STDEV,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX011,Global: Length - AVG,x__Global: Length - AVG,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX012,Global: Length - STDEV,x__Global: Length - STDEV,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX013,Global: Angle-Z (weighted with length)-AVG,x__Global: Angle-Z (weighted with length)-AVG,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX014,Global: Angle-Z (weighted with length)-STDEV,x__Global: Angle-Z (weighted with length)-STDEV,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX015,Node: Length - AVG,x__Node: Length - AVG,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX016,Node: Length - STDEV,x__Node: Length - STDEV,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX017,Node: Angle-Z (weighted with length)-AVG,x__Node: Angle-Z (weighted with length)-AVG,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX018,Node: Angle-Z (weighted with length)-STDEV,x__Node: Angle-Z (weighted with length)-STDEV,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX019,Global: l/d AVG,x__Global: l/d AVG,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX020,Global: l/d STDEV,x__Global: l/d STDEV,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX021,Node: l/d AVG,x__Node: l/d AVG,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX022,Node: l/d STDEV,x__Node: l/d STDEV,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX023,Global: Angle-X (weighted with length)-AVG,x__Global: Angle-X (weighted with length)-AVG,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX024,Global: Angle-X (weighted with length)-STDEV,x__Global: Angle-X (weighted with length)-STDEV,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX025,Node: Angle-X (weighted with length)-AVG,x__Node: Angle-X (weighted with length)-AVG,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX026,Node: Angle-X (weighted with length)-STDEV,x__Node: Angle-X (weighted with length)-STDEV,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX027,Global: Angle-Y (weighted with length)-AVG,x__Global: Angle-Y (weighted with length)-AVG,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX028,Global: Angle-Y (weighted with length)-STDEV,x__Global: Angle-Y (weighted with length)-STDEV,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX029,Node: Angle-Y (weighted with length)-AVG,x__Node: Angle-Y (weighted with length)-AVG,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX030,Node: Angle-Y (weighted with length)-STDEV,x__Node: Angle-Y (weighted with length)-STDEV,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX031,connected_components,x__connected_components,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX032,maxwell_index_M_3D,x__maxwell_index_M_3D,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX033,total_strut_length_mm,x__total_strut_length_mm,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX034,mean_radius_mm,x__mean_radius_mm,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX035,std_radius_mm,x__std_radius_mm,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX036,mean_diameter_mm,x__mean_diameter_mm,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX037,surface_area_mm2,x__surface_area_mm2,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX038,surface_to_solid_volume_1_per_mm,x__surface_to_solid_volume_1_per_mm,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX039,solid_volume_mm3_approx,x__solid_volume_mm3_approx,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX040,bbox_x_mm,x__bbox_x_mm,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX041,bbox_y_mm,x__bbox_y_mm,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX042,bbox_z_mm,x__bbox_z_mm,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX043,mass_center_x_mm,x__mass_center_x_mm,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX044,mass_center_y_mm,x__mass_center_y_mm,structural_descriptor_unselected,available_unselected,source_header_or_unresolved
+SFX045,mass_center_z_mm,x__mass_center_z_mm,structural_descriptor_unselected,available_unselected,source_header_or_unresolved

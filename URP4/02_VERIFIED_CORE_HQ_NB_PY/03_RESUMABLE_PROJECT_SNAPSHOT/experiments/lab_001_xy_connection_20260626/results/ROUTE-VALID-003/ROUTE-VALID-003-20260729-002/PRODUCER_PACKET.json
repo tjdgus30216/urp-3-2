@@ -1,0 +1,14 @@
+{
+  "work_id": "ROUTE-VALID-003_F1_STEP_REFERENCE_PIXEL_PHASE_AND_RESOLUTION_STRESS_TEST_NO_Y",
+  "run_id": "ROUTE-VALID-003-20260729-002",
+  "status": "completed_pending_independent_QA",
+  "runtime": "KMK312 / Python 3.12.12",
+  "route_A_new_masks": 144,
+  "route_B_new_masks": 144,
+  "route_C_reused_masks": 144,
+  "A_B_comparisons": 144,
+  "A_C_comparisons": 144,
+  "elapsed_s": 265.3214408999993,
+  "protected_files_unchanged": true,
+  "scope": "selected 9 slices x 4 resolutions x 4 phases only; no full Z801/descriptors/y"
+}

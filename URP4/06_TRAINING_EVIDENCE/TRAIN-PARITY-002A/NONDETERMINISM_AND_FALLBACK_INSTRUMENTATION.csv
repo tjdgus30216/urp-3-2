@@ -1,0 +1,10 @@
+﻿instrument_id,event,source_symbol,mechanism,yield_relevance,status
+INST-001,unordered set/dict traversal,build_corr_blocks,input/result order and hashes,high,implemented_no_fit
+INST-002,same-score tie,choose_within_tolerance,tie count/best score/rule/result,high,implemented_no_fit
+INST-003,PYTHONHASHSEED,process runtime,runtime contract hash and environment,high,implemented_no_fit
+INST-004,random seed,branch request/runtime,event payload and parameter hash,high,implemented_no_fit
+INST-005,exception including suppressed path,SourceTrace,Python exception trace before handler suppression,high,implemented_no_fit
+INST-006,None return,SourceTrace/branch wrapper,function/line and branch event,high,implemented_no_fit
+INST-007,fallback/branch rejection,branch wrapper,event schema and source return trace,medium,implemented_no_fit
+INST-008,feature order/membership,branch output contract,feature_set hash plus ordered IDs,high,implemented_no_fit
+INST-009,final refit state,external policy plus Cell E1 lineage,requested/held/generated/missing reason,high,implemented_no_fit

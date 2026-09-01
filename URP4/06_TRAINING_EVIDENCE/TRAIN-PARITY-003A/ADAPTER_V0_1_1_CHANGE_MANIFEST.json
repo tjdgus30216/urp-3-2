@@ -1,0 +1,108 @@
+{
+  "adapter_version": "TRAIN-2ND-NEWFEATURE-EXACT-ADAPTER-v0.1.1",
+  "predecessor_adapter_version": "TRAIN-2ND-NEWFEATURE-EXACT-ADAPTER-v0.1",
+  "allowed_change_scope": [
+    "canonical target registry",
+    "display metadata",
+    "hold membership",
+    "target-policy hash binding",
+    "fail-closed target lookup",
+    "contract tests"
+  ],
+  "numerical_logic_changed": false,
+  "files_before_patch": [
+    {
+      "file": "__init__.py",
+      "sha256": "19355532375d989b3eb445affff7381e385d740862596342e5412a1d68a2666b"
+    },
+    {
+      "file": "branches.py",
+      "sha256": "edd49b12702a2d6c8346bf7bf6ced8a3efb147aa49293c1873d03ca55c0c177d"
+    },
+    {
+      "file": "contracts.py",
+      "sha256": "738f32316d0bd27e6249cd88f56cd50420f2a0f405187a21bb9746c337f43273"
+    },
+    {
+      "file": "hashing.py",
+      "sha256": "f423d9dd4d8a72786dd358756b0e62c0abca3e8abf782267ef032511ac8f5dc9"
+    },
+    {
+      "file": "instrumentation.py",
+      "sha256": "501a5b21e3bd12da9440dd2b2a063112c3bc0e0dfcb0584ea4e6f16fdc8dd073"
+    },
+    {
+      "file": "ledgers.py",
+      "sha256": "57f8aa32c4aa8c465b4af48b823ee39ab0ce5a1e7d47a0b111ce43f5ee339897"
+    },
+    {
+      "file": "no_fit_guard.py",
+      "sha256": "1456d09edc3e96d88b386592cd94a9d0c8342779f0ac39260c7483bd92511365"
+    },
+    {
+      "file": "source_exact_runtime.py",
+      "sha256": "1be35f910422585584f5a0d0c191e82470b3a39ccbd6d3899de4f9a862b6018f"
+    }
+  ],
+  "copied_pre_patch_hashes": {
+    "branches.py": "edd49b12702a2d6c8346bf7bf6ced8a3efb147aa49293c1873d03ca55c0c177d",
+    "contracts.py": "738f32316d0bd27e6249cd88f56cd50420f2a0f405187a21bb9746c337f43273",
+    "hashing.py": "f423d9dd4d8a72786dd358756b0e62c0abca3e8abf782267ef032511ac8f5dc9",
+    "instrumentation.py": "501a5b21e3bd12da9440dd2b2a063112c3bc0e0dfcb0584ea4e6f16fdc8dd073",
+    "ledgers.py": "57f8aa32c4aa8c465b4af48b823ee39ab0ce5a1e7d47a0b111ce43f5ee339897",
+    "no_fit_guard.py": "1456d09edc3e96d88b386592cd94a9d0c8342779f0ac39260c7483bd92511365",
+    "source_exact_runtime.py": "1be35f910422585584f5a0d0c191e82470b3a39ccbd6d3899de4f9a862b6018f",
+    "__init__.py": "19355532375d989b3eb445affff7381e385d740862596342e5412a1d68a2666b"
+  },
+  "unchanged_numerical_files_expected": [
+    "branches.py",
+    "hashing.py",
+    "instrumentation.py",
+    "ledgers.py",
+    "no_fit_guard.py",
+    "source_exact_runtime.py",
+    "__init__.py"
+  ],
+  "changed_file_expected": "contracts.py",
+  "files_after_patch": [
+    {
+      "file": "__init__.py",
+      "sha256": "19355532375d989b3eb445affff7381e385d740862596342e5412a1d68a2666b"
+    },
+    {
+      "file": "branches.py",
+      "sha256": "edd49b12702a2d6c8346bf7bf6ced8a3efb147aa49293c1873d03ca55c0c177d"
+    },
+    {
+      "file": "contracts.py",
+      "sha256": "efd4d7819dfa78be77be7b34b9437646eb6014983df868a51f07647ab69a9bbb"
+    },
+    {
+      "file": "hashing.py",
+      "sha256": "f423d9dd4d8a72786dd358756b0e62c0abca3e8abf782267ef032511ac8f5dc9"
+    },
+    {
+      "file": "instrumentation.py",
+      "sha256": "501a5b21e3bd12da9440dd2b2a063112c3bc0e0dfcb0584ea4e6f16fdc8dd073"
+    },
+    {
+      "file": "ledgers.py",
+      "sha256": "57f8aa32c4aa8c465b4af48b823ee39ab0ce5a1e7d47a0b111ce43f5ee339897"
+    },
+    {
+      "file": "no_fit_guard.py",
+      "sha256": "1456d09edc3e96d88b386592cd94a9d0c8342779f0ac39260c7483bd92511365"
+    },
+    {
+      "file": "source_exact_runtime.py",
+      "sha256": "1be35f910422585584f5a0d0c191e82470b3a39ccbd6d3899de4f9a862b6018f"
+    }
+  ],
+  "numerical_files_hash_unchanged": true,
+  "contracts_changed": true,
+  "target_policy_hash": "216cdd04c52becf105e5c5b5e7036d180291bef483a6cce5b8ca53c9a1123539",
+  "fit_calls": 0,
+  "predict_calls": 0,
+  "prediction_rows": 0,
+  "metric_rows": 0
+}

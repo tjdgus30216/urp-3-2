@@ -1,0 +1,16 @@
+﻿check_id,check,passed,observed
+IQA-01,manifest status PASS,True,PASS
+IQA-02,all source hashes passed,True,6/6
+IQA-03,performance rows 228,True,228
+IQA-04,structural rows 170,True,170
+IQA-05,eligible exact joins 167,True,167
+IQA-06,BCL joins 137,True,137
+IQA-07,Voronoi joins 30,True,30
+IQA-08,row registry partition,True,"{'eligible_exact_model_label_join': 167, 'x_only_missing_performance': 3, 'y_only_missing_structural_factors': 61}"
+IQA-09,16 targets,True,16
+IQA-10,joined y values complete,True,0
+IQA-11,feature registry 45,True,45
+IQA-12,no feature promotion,True,"['available_unselected', 'excluded']"
+IQA-13,joined model keys unique,True,167
+IQA-14,Voronoi key format,True,normalized explicit IDs
+IQA-15,producer output manifest matches,True,all

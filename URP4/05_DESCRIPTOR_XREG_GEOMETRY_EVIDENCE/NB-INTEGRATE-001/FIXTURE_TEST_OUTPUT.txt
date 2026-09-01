@@ -1,0 +1,14 @@
+test_confirmed_pair_is_development_only (__main__.RoutePolicyTests.test_confirmed_pair_is_development_only) ... ok
+test_f1_warning_propagates_to_manifest (__main__.RoutePolicyTests.test_f1_warning_propagates_to_manifest) ... ok
+test_generated_clean_route_is_status_only (__main__.RoutePolicyTests.test_generated_clean_route_is_status_only) ... ok
+test_hash_mismatch_fails_closed (__main__.RoutePolicyTests.test_hash_mismatch_fails_closed) ... ok
+test_likely_pair_fails_closed (__main__.RoutePolicyTests.test_likely_pair_fails_closed) ... ok
+test_orientation_hold_fails_closed (__main__.RoutePolicyTests.test_orientation_hold_fails_closed) ... ok
+test_production_request_fails_closed (__main__.RoutePolicyTests.test_production_request_fails_closed) ... ok
+test_repair_config_fails_closed (__main__.RoutePolicyTests.test_repair_config_fails_closed) ... ok
+test_stl_only_fails_closed (__main__.RoutePolicyTests.test_stl_only_fails_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.032s
+
+OK

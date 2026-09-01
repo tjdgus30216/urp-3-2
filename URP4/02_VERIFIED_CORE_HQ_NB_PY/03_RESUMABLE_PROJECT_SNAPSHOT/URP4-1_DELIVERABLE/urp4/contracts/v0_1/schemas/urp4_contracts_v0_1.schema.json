@@ -1,0 +1,496 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://urp4.local/contracts/urp4_contracts_v0_1.schema.json",
+  "title": "URP4-1 common contract bundle v0.1",
+  "oneOf": [
+    { "$ref": "#/$defs/generation_request" },
+    { "$ref": "#/$defs/geometry_artifact" },
+    { "$ref": "#/$defs/descriptor_result" },
+    { "$ref": "#/$defs/dataset_manifest" },
+    { "$ref": "#/$defs/training_run_manifest" }
+  ],
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "non_empty_string": {
+      "type": "string",
+      "minLength": 1
+    },
+    "execution_status": {
+      "enum": [
+        "pending",
+        "running",
+        "passed",
+        "failed",
+        "partial",
+        "quarantined",
+        "ready_for_merge",
+        "merged"
+      ]
+    },
+    "scientific_status": {
+      "enum": ["confirmed", "likely", "provisional", "unresolved", "rejected"]
+    },
+    "modeling_status": {
+      "enum": [
+        "fixed_primary",
+        "primary_candidate",
+        "sensitivity",
+        "family_specific",
+        "hold",
+        "excluded"
+      ]
+    },
+    "identity_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "sha256"],
+      "properties": {
+        "id": { "$ref": "#/$defs/non_empty_string" },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "source_artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_alias", "path", "sha256"],
+      "properties": {
+        "source_alias": { "$ref": "#/$defs/non_empty_string" },
+        "path": { "$ref": "#/$defs/non_empty_string" },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "role": { "type": "string" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "producer",
+        "runtime_alias",
+        "source_aliases",
+        "source_artifacts",
+        "parent_object_ids",
+        "code_identity",
+        "config_identity"
+      ],
+      "properties": {
+        "producer": { "$ref": "#/$defs/non_empty_string" },
+        "runtime_alias": { "$ref": "#/$defs/non_empty_string" },
+        "source_aliases": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/non_empty_string" },
+          "uniqueItems": true
+        },
+        "source_artifacts": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/source_artifact" }
+        },
+        "parent_object_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/non_empty_string" },
+          "uniqueItems": true
+        },
+        "code_identity": { "$ref": "#/$defs/identity_reference" },
+        "config_identity": { "$ref": "#/$defs/identity_reference" },
+        "notes": { "type": "string" }
+      }
+    },
+    "base_envelope": {
+      "type": "object",
+      "required": [
+        "contract_version",
+        "object_type",
+        "object_id",
+        "identity_sha256",
+        "created_at_utc",
+        "execution_status",
+        "scientific_status",
+        "provenance",
+        "payload"
+      ],
+      "properties": {
+        "contract_version": { "const": "URP4-CONTRACT-v0.1" },
+        "object_type": { "$ref": "#/$defs/non_empty_string" },
+        "object_id": {
+          "type": "string",
+          "pattern": "^[A-Z]+::[A-Z0-9._-]+::sha256-[0-9a-f]{12}$"
+        },
+        "identity_sha256": { "$ref": "#/$defs/sha256" },
+        "created_at_utc": { "type": "string", "format": "date-time" },
+        "execution_status": { "$ref": "#/$defs/execution_status" },
+        "scientific_status": { "$ref": "#/$defs/scientific_status" },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "payload": { "type": "object" }
+      }
+    },
+    "physical_size_mm": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y", "z"],
+      "properties": {
+        "x": { "type": "number", "exclusiveMinimum": 0 },
+        "y": { "type": "number", "exclusiveMinimum": 0 },
+        "z": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    },
+    "theta_value": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["parameter_id", "normalized_name", "value", "unit", "value_type", "applicable_family"],
+      "properties": {
+        "parameter_id": { "$ref": "#/$defs/non_empty_string" },
+        "raw_parameter_name": { "type": "string" },
+        "normalized_name": { "$ref": "#/$defs/non_empty_string" },
+        "value": { "type": ["number", "integer", "string", "boolean"] },
+        "unit": { "$ref": "#/$defs/non_empty_string" },
+        "value_type": { "enum": ["continuous", "discrete", "categorical", "boolean"] },
+        "applicable_family": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/non_empty_string" }
+        }
+      }
+    },
+    "generation_request_payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "generator_id",
+        "generator_version",
+        "generator_family",
+        "theta_schema_id",
+        "theta_values",
+        "generation_config",
+        "physical_size_mm",
+        "target_vf",
+        "random_seed",
+        "requested_geometry_formats",
+        "base_geometry_id",
+        "legacy_ids"
+      ],
+      "properties": {
+        "generator_id": { "$ref": "#/$defs/non_empty_string" },
+        "generator_version": { "$ref": "#/$defs/non_empty_string" },
+        "generator_family": { "enum": ["lattice", "tpms", "voxel", "external_import"] },
+        "theta_schema_id": { "$ref": "#/$defs/non_empty_string" },
+        "theta_values": { "type": "array", "items": { "$ref": "#/$defs/theta_value" } },
+        "generation_config": { "type": "object" },
+        "physical_size_mm": { "$ref": "#/$defs/physical_size_mm" },
+        "target_vf": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "random_seed": { "type": ["integer", "null"], "minimum": 0 },
+        "requested_geometry_formats": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["stl", "stp", "step", "inp", "voxel_mask", "mesh", "brep"] }
+        },
+        "base_geometry_id": { "type": ["string", "null"] },
+        "legacy_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "generation_request": {
+      "allOf": [
+        { "$ref": "#/$defs/base_envelope" },
+        {
+          "type": "object",
+          "properties": {
+            "object_type": { "const": "GenerationRequest" },
+            "payload": { "$ref": "#/$defs/generation_request_payload" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "geometry_qa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["technical_status", "topology_status"],
+      "properties": {
+        "technical_status": { "$ref": "#/$defs/non_empty_string" },
+        "topology_status": { "$ref": "#/$defs/non_empty_string" },
+        "connected_region_count": { "type": ["integer", "null"], "minimum": 0 },
+        "boundary_edge_count": { "type": ["integer", "null"], "minimum": 0 },
+        "nonmanifold_edge_count": { "type": ["integer", "null"], "minimum": 0 }
+      }
+    },
+    "geometry_artifact_payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "model_id",
+        "base_geometry_id",
+        "model_family",
+        "geometry_role",
+        "geometry_format",
+        "path",
+        "geometry_sha256",
+        "size_bytes",
+        "units",
+        "physical_size_mm",
+        "generation_request_id",
+        "parent_geometry_artifact_id",
+        "observed_vf",
+        "qa",
+        "legacy_ids"
+      ],
+      "properties": {
+        "model_id": { "$ref": "#/$defs/non_empty_string" },
+        "base_geometry_id": { "$ref": "#/$defs/non_empty_string" },
+        "model_family": { "$ref": "#/$defs/non_empty_string" },
+        "geometry_role": { "enum": ["raw", "normalized", "generated", "imported", "print_slice_source"] },
+        "geometry_format": { "enum": ["stl", "stp", "step", "inp", "voxel_mask", "mesh", "brep"] },
+        "path": { "$ref": "#/$defs/non_empty_string" },
+        "geometry_sha256": { "$ref": "#/$defs/sha256" },
+        "size_bytes": { "type": "integer", "minimum": 0 },
+        "units": { "const": "mm" },
+        "physical_size_mm": { "$ref": "#/$defs/physical_size_mm" },
+        "generation_request_id": { "type": ["string", "null"] },
+        "parent_geometry_artifact_id": { "type": ["string", "null"] },
+        "observed_vf": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "qa": { "$ref": "#/$defs/geometry_qa" },
+        "legacy_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "geometry_artifact": {
+      "allOf": [
+        { "$ref": "#/$defs/base_envelope" },
+        {
+          "type": "object",
+          "properties": {
+            "object_type": { "const": "GeometryArtifact" },
+            "payload": { "$ref": "#/$defs/geometry_artifact_payload" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "artifact_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifact_kind", "path", "sha256"],
+      "properties": {
+        "artifact_kind": { "$ref": "#/$defs/non_empty_string" },
+        "path": { "$ref": "#/$defs/non_empty_string" },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "descriptor_result_payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "descriptor_schema_version",
+        "descriptor_schema_sha256",
+        "geometry_artifact_id",
+        "geometry_sha256",
+        "descriptor_id",
+        "formula_id",
+        "population_id",
+        "backend_id",
+        "statistic",
+        "unit",
+        "value",
+        "population_n",
+        "applicable_family",
+        "scientific_status",
+        "modeling_status",
+        "scalar_output_id",
+        "run_id",
+        "artifact_refs",
+        "legacy_ids"
+      ],
+      "properties": {
+        "descriptor_schema_version": { "$ref": "#/$defs/non_empty_string" },
+        "descriptor_schema_sha256": { "$ref": "#/$defs/sha256" },
+        "geometry_artifact_id": { "$ref": "#/$defs/non_empty_string" },
+        "geometry_sha256": { "$ref": "#/$defs/sha256" },
+        "descriptor_id": { "$ref": "#/$defs/non_empty_string" },
+        "formula_id": { "$ref": "#/$defs/non_empty_string" },
+        "population_id": { "$ref": "#/$defs/non_empty_string" },
+        "backend_id": { "$ref": "#/$defs/non_empty_string" },
+        "statistic": { "$ref": "#/$defs/non_empty_string" },
+        "unit": { "$ref": "#/$defs/non_empty_string" },
+        "value": { "type": "number" },
+        "population_n": { "type": "integer", "minimum": 0 },
+        "applicable_family": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/non_empty_string" }
+        },
+        "scientific_status": { "$ref": "#/$defs/scientific_status" },
+        "modeling_status": { "$ref": "#/$defs/modeling_status" },
+        "scalar_output_id": {
+          "type": "string",
+          "pattern": "^SCALAR::[A-Z0-9._-]+::sha256-[0-9a-f]{12}$"
+        },
+        "run_id": { "$ref": "#/$defs/non_empty_string" },
+        "artifact_refs": { "type": "array", "items": { "$ref": "#/$defs/artifact_reference" } },
+        "legacy_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "descriptor_result": {
+      "allOf": [
+        { "$ref": "#/$defs/base_envelope" },
+        {
+          "type": "object",
+          "properties": {
+            "object_type": { "const": "DescriptorResult" },
+            "payload": { "$ref": "#/$defs/descriptor_result_payload" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "manifest_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manifest_id", "path", "sha256"],
+      "properties": {
+        "manifest_id": { "$ref": "#/$defs/non_empty_string" },
+        "path": { "$ref": "#/$defs/non_empty_string" },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "dataset_manifest_payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dataset_version",
+        "data_path",
+        "data_sha256",
+        "grain",
+        "row_count",
+        "model_count",
+        "descriptor_schema_version",
+        "descriptor_schema_sha256",
+        "primary_key_fields",
+        "source_object_ids",
+        "source_manifest_refs",
+        "feature_ids",
+        "target_ids",
+        "grouping_keys",
+        "domain_policy_id",
+        "missingness_policy",
+        "excluded_ids",
+        "legacy_ids"
+      ],
+      "properties": {
+        "dataset_version": { "$ref": "#/$defs/non_empty_string" },
+        "data_path": { "$ref": "#/$defs/non_empty_string" },
+        "data_sha256": { "$ref": "#/$defs/sha256" },
+        "grain": { "enum": ["geometry", "family_summary", "replicate_sample", "descriptor_observation", "fixture_only"] },
+        "row_count": { "type": "integer", "minimum": 0 },
+        "model_count": { "type": "integer", "minimum": 0 },
+        "descriptor_schema_version": { "$ref": "#/$defs/non_empty_string" },
+        "descriptor_schema_sha256": { "$ref": "#/$defs/sha256" },
+        "primary_key_fields": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/non_empty_string" } },
+        "source_object_ids": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/non_empty_string" } },
+        "source_manifest_refs": { "type": "array", "items": { "$ref": "#/$defs/manifest_reference" } },
+        "feature_ids": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/non_empty_string" } },
+        "target_ids": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/non_empty_string" } },
+        "grouping_keys": { "type": "array", "minItems": 1, "uniqueItems": true, "contains": { "const": "base_geometry_id" }, "items": { "$ref": "#/$defs/non_empty_string" } },
+        "domain_policy_id": { "$ref": "#/$defs/non_empty_string" },
+        "missingness_policy": { "$ref": "#/$defs/non_empty_string" },
+        "excluded_ids": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/non_empty_string" } },
+        "legacy_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "dataset_manifest": {
+      "allOf": [
+        { "$ref": "#/$defs/base_envelope" },
+        {
+          "type": "object",
+          "properties": {
+            "object_type": { "const": "DatasetManifest" },
+            "payload": { "$ref": "#/$defs/dataset_manifest_payload" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "split_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["strategy", "grouped", "grouping_keys", "outer_cv", "inner_cv", "selection_scope", "random_seed"],
+      "properties": {
+        "strategy": { "enum": ["leave_one_family_out", "group_k_fold", "predefined_grouped", "fixture_only"] },
+        "grouped": { "const": true },
+        "grouping_keys": { "type": "array", "minItems": 1, "uniqueItems": true, "contains": { "const": "base_geometry_id" }, "items": { "$ref": "#/$defs/non_empty_string" } },
+        "outer_cv": { "$ref": "#/$defs/non_empty_string" },
+        "inner_cv": { "$ref": "#/$defs/non_empty_string" },
+        "selection_scope": { "enum": ["nested_within_outer_fold", "fixed_no_selection", "fixture_only"] },
+        "random_seed": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "leakage_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["check_id", "status", "evidence"],
+      "properties": {
+        "check_id": { "$ref": "#/$defs/non_empty_string" },
+        "status": { "enum": ["pass", "fail", "not_run", "not_applicable"] },
+        "evidence": { "type": "string" }
+      }
+    },
+    "training_run_manifest_payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "training_run_label",
+        "dataset_manifest_id",
+        "dataset_version",
+        "dataset_sha256",
+        "target_id",
+        "objective_direction",
+        "performance_domain",
+        "feature_ids",
+        "method_id",
+        "split_contract",
+        "runtime_alias",
+        "result_artifacts",
+        "leakage_checks",
+        "inverse_design_claim_authorized",
+        "legacy_ids"
+      ],
+      "properties": {
+        "training_run_label": { "$ref": "#/$defs/non_empty_string" },
+        "dataset_manifest_id": { "$ref": "#/$defs/non_empty_string" },
+        "dataset_version": { "$ref": "#/$defs/non_empty_string" },
+        "dataset_sha256": { "$ref": "#/$defs/sha256" },
+        "target_id": { "$ref": "#/$defs/non_empty_string" },
+        "objective_direction": { "enum": ["maximize", "minimize"] },
+        "performance_domain": { "$ref": "#/$defs/non_empty_string" },
+        "feature_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/non_empty_string" } },
+        "method_id": { "$ref": "#/$defs/non_empty_string" },
+        "split_contract": { "$ref": "#/$defs/split_contract" },
+        "runtime_alias": { "$ref": "#/$defs/non_empty_string" },
+        "result_artifacts": { "type": "array", "items": { "$ref": "#/$defs/artifact_reference" } },
+        "leakage_checks": { "type": "array", "items": { "$ref": "#/$defs/leakage_check" } },
+        "inverse_design_claim_authorized": { "type": "boolean" },
+        "legacy_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "training_run_manifest": {
+      "allOf": [
+        { "$ref": "#/$defs/base_envelope" },
+        {
+          "type": "object",
+          "properties": {
+            "object_type": { "const": "TrainingRunManifest" },
+            "payload": { "$ref": "#/$defs/training_run_manifest_payload" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    }
+  }
+}
+

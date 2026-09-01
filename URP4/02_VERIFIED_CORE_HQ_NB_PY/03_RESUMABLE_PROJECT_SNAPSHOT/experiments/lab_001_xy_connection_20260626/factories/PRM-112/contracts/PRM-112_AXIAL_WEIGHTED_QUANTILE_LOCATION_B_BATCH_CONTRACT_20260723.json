@@ -1,0 +1,30 @@
+{
+  "work_id": "PRM-112",
+  "title": "AXIAL_WEIGHTED_QUANTILE_LOCATION_B_BATCH_NO_Y",
+  "purpose": "Generate 24 robust weighted axial-location quantile candidates from the hash-verified SLICE-004 ordered profiles without creating images, masks, meshes, or slices.",
+  "source_contract": {
+    "models": 58,
+    "raw_file_count": 116,
+    "slice_rows_per_model": 801,
+    "overlay_rows_per_model": 800,
+    "profiles": ["slice material area", "slice connected-component count min2", "overlay red pixel count", "overlay blue pixel count", "overlay purple pixel count", "overlay union pixel count"],
+    "all_profiles_nonnegative_with_positive_sum": true
+  },
+  "expected": {"models": 58, "new_candidates": 24, "grade_B_candidates": 24, "grade_C_candidates": 0, "values": 1392, "crossbank_relations": 5784, "internal_relations": 276, "diagnostic_pair_values": 48},
+  "candidate_schema": {
+    "RAW-X047": "weighted axial q10, q25, q75 and q90 positions for two slice and four overlay count profiles",
+    "position_grid": "uniform normalized coordinates from 0 to 1 inclusive over frozen ordered rows",
+    "weighted_quantile_location": "minimum z_norm_i such that cumulative(profile)/sum(profile) >= q, q in {0.10,0.25,0.75,0.90}",
+    "interpretation_limit": "robust 1D distribution-location descriptors only; not a full 3D topology, connectivity, or performance estimator"
+  },
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/TOUR-C001/analysis_factory/reports/TOUR-C001-T4R-SLICE-004_output_manifest.csv", "sha256": "53f0b5292020ee8b5274f42dbb1af7b4501fe26703fec6ed298d6a83f712903c"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM111_xreg_v0_8_candidate_bank.csv", "sha256": "947ceba858982a26cffe55efab17175f384d23d57ba4205b5a21b2891330d023"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM111_xreg_v0_8_values_long.csv", "sha256": "abcdac89fa55d8283076c7a0c22d4b0ab5be205273b83ee1cdd552102b616fe3"},
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/PRM-111/reports/PRM111_independent_QA_summary.json", "sha256": "4ea8aa40a10231daa6f416e91b21669951581c66759258bedf82107b5b960c79"}
+  ],
+  "relation_policy": {"scope": "full58_x_only", "exact_duplicate": "np.allclose rtol=1e-10 atol=1e-12", "proportional_duplicate": "normalised L2 residual <= 1e-6", "high_redundancy": "absolute Pearson >= 0.98 and absolute Spearman >= 0.98"},
+  "locks": {"performance_y_read": 0, "x_y_analysis": 0, "model_fit": 0, "feature_selection": 0, "feature_promotion": 0, "new_masks_or_slicing": 0, "NB_CURRENT_mutation": 0, "LEGACY_PY_mutation": 0, "original_Excel_mutation": 0},
+  "status": "preregistered_pending_execution",
+  "next_step_if_pass": "PRM-113 XREG-v0.9 consolidation/block audit only"
+}

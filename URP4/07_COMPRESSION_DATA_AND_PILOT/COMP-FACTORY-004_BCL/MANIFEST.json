@@ -1,0 +1,101 @@
+{
+  "run_id": "COMP-FACTORY-004-BCL-FS4-20260802-001",
+  "cohort": "bcl",
+  "status": "PASS",
+  "started_at_kst": "2026-08-02T02:26:23.540609+09:00",
+  "completed_at_kst": "2026-08-02T02:26:31.847403+09:00",
+  "runtime": {
+    "sys_executable": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+    "python": "3.12.12",
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "counts": {
+    "rows": 137,
+    "outer_groups": [
+      "B",
+      "C",
+      "L"
+    ],
+    "features": 38,
+    "targets": 16,
+    "methods": 4,
+    "oof_predictions": 8768
+  },
+  "outputs": [
+    {
+      "file": "best_target_y_vs_oof_prediction.png",
+      "bytes": 121317,
+      "sha256": "C42630C13C4094445C7391A5940B3E232477379EF9B142DB304EB3D136BDB4F4"
+    },
+    {
+      "file": "feature_redundancy_edges.csv",
+      "bytes": 375,
+      "sha256": "5C30E9C842D0D28BC3F7324FC8E19D3875BE156C851D93DB0A7D51B5DAAB6BBB"
+    },
+    {
+      "file": "feature_selection_frequency.csv",
+      "bytes": 12945,
+      "sha256": "FE10F84236140FF66A930F76F905E7420E6A6C9FED67FF554AF6A3023F7DD587"
+    },
+    {
+      "file": "feature_x_only_census.csv",
+      "bytes": 3936,
+      "sha256": "5A8DF039AC06A82EA574C54F0F976F4213F0BB989498DEDB2068AE4CA4FDD05A"
+    },
+    {
+      "file": "fold_local_feature_selection.csv",
+      "bytes": 62185,
+      "sha256": "759EE79D954653AFA75AB7CE6E36152F42B704E8211993401516CF6BDE1BD3DF"
+    },
+    {
+      "file": "method_execution_details.csv",
+      "bytes": 55624,
+      "sha256": "02A47176AAAD0EED1801B66245951F4859021AC1B51322A2C6AAD417781F0661"
+    },
+    {
+      "file": "metrics.csv",
+      "bytes": 66438,
+      "sha256": "89460CCA3F86113407A6420FACF8B7E0C6F2FA04D3228F23923D6E51CCE9D9F8"
+    },
+    {
+      "file": "oof_predictions.csv",
+      "bytes": 1035426,
+      "sha256": "A57997F4CDB32977113EFE611C5E2A3D99ED97DB1955BCC54CACB7FDFD04B695"
+    },
+    {
+      "file": "outer_fold_registry.csv",
+      "bytes": 4854,
+      "sha256": "AE85F73FC096C409BAB51C52ADC6C9F025C4805C5DB3087A70B69CA4A66E7F42"
+    },
+    {
+      "file": "producer_QA.csv",
+      "bytes": 431,
+      "sha256": "9A1C3B8572C7939AFFCAF44073D8F9CDFD852D02CABBEA3A4939A81DABEF3FE3"
+    },
+    {
+      "file": "REPORT.md",
+      "bytes": 4033,
+      "sha256": "750F6D7B77E41EC590C1F35E1ABDBFE9E8F43EA444BDEF86B845C1E41AD2146E"
+    },
+    {
+      "file": "source_hash_audit.csv",
+      "bytes": 863,
+      "sha256": "FAEF6F9E35A5F341FCEB721F7ED368E92468D14CE2A68C7778BA1EB3DA1C8615"
+    },
+    {
+      "file": "target_screening_pooled_r2.png",
+      "bytes": 77851,
+      "sha256": "36AFEC6A689C3780114F0723DB41C9A63F4D0D2756341653717CFE7CAB08329A"
+    },
+    {
+      "file": "target_screening_summary.csv",
+      "bytes": 3980,
+      "sha256": "218D300392CEED783138411B8C156CDEA2F30360FC9F3D9F4F9EC677DDD55961"
+    }
+  ]
+}

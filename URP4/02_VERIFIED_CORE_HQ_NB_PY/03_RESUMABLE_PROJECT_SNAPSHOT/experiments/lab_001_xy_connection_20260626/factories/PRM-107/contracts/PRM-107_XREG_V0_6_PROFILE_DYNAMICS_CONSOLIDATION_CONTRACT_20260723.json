@@ -1,0 +1,47 @@
+{
+  "work_id": "PRM-107",
+  "title": "XREG_V0_6_PROFILE_DYNAMICS_CONSOLIDATION_AND_BLOCK_POLICY_NO_Y",
+  "purpose": "Append exactly the independently verified PRM-106 profile-dynamics cohort to immutable XREG-v0.5 and encode two proportional, two exact and one high-redundancy relation without selecting a representative.",
+  "expected": {
+    "prior_candidates": 171,
+    "new_candidates": 22,
+    "total_candidates": 193,
+    "models": 58,
+    "prior_values": 9918,
+    "new_values": 1276,
+    "total_values": 11194,
+    "finite_values": 11192,
+    "inherited_missing": 2,
+    "new_missing": 0,
+    "prior_blocks": 135,
+    "total_blocks": 152,
+    "prior_edges": 43,
+    "new_edges": 5,
+    "total_edges": 48,
+    "new_changed_or_new_block_ids": 19
+  },
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM105_xreg_v0_5_candidate_bank.csv", "sha256": "f12c47f0363461abcd188e264a5faccd5d4e856a85e980db451795f4c7933287"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM105_xreg_v0_5_values_long.csv", "sha256": "c2bedcc44ff0180496d5feb79c8b697ac613ee9d18db0bc0a4b70d45ac487e68"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM105_unified_redundancy_edge_registry.csv", "sha256": "b9d5a1a3dc20979d64d64df238c79c4dd3c64f1fc1c7a43270d71548f73e05e7"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM105_unified_redundancy_block_registry.csv", "sha256": "121fd38a3f7ac2083b536506bee81b8241b026fbc8d029970dd401985a9c4852"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM106_profile_dynamics_candidate_registry.csv", "sha256": "d222da14e83a7e940d539193bf5377a304ecf96a358ce03ba8c5e862efa3b053"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM106_profile_dynamics_values_long.csv", "sha256": "cc8d3310c1560708190e2a6ffa3f22b3519921850d693c89a02097493507b1d0"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM106_profile_dynamics_vs_XREG_v0_5_redundancy.csv", "sha256": "bb4d76bf920f42d27507b197e5912ef3fdf05cfac825296c9ebe7920a3a9236a"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM106_profile_dynamics_internal_redundancy.csv", "sha256": "f53270e85b808ce8ca0f089ec49bc79e0f11df377f24406944f77cf23bc55bb4"},
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/PRM-106/reports/PRM106_independent_QA_summary.json", "sha256": "997a0bf4d15a316d807174ab1e9a33e17aed36dcc7cfb7c18d24fd0ed24e2fde"}
+  ],
+  "block_policy": "Graph closure of 43 predecessor edges plus the five frozen PRM-106 exact/proportional/high relations. Preserve unchanged predecessor block IDs; issue deterministic U107 IDs only for changed or new components. No removal, winner, selection or promotion.",
+  "locks": {
+    "performance_y_read": 0,
+    "x_y_analysis": 0,
+    "model_fit": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "new_masks_or_slicing": 0,
+    "NB_CURRENT_mutation": 0,
+    "LEGACY_PY_mutation": 0,
+    "original_Excel_mutation": 0
+  },
+  "status": "preregistered_pending_execution"
+}

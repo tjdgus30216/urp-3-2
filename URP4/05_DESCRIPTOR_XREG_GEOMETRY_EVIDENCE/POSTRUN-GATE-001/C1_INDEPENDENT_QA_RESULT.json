@@ -1,0 +1,24 @@
+{
+  "run_id": "STRICT-STEP-026-20260731-001",
+  "status": "passed",
+  "qa_runtime": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\tools\\envs\\KMK312\\python.exe",
+  "checks": {
+    "run_id": true,
+    "completed_counts": true,
+    "source_step_sha256": true,
+    "slice_manifest_801": true,
+    "overlay_manifest_800": true,
+    "direct_scalar_40": true,
+    "nine_anchor_pngs": true,
+    "bulk_png_evicted": true,
+    "all_scalar_finite": true
+  },
+  "artifact_hashes": {
+    "contract_manifest": "7aaf2e86b8982c0f1d9c843e419ef4a74a2ccf97457b950103787ab7e3c2bc70",
+    "run_state": "631ad313e9e38140f3d3a9d9f6daa5b6c033243ee873cae58f407972ac17f7aa",
+    "slice_png_manifest": "84a520421eb9a276af46752423754bf5d8d9428691f6cb79769d8a1c8d752882",
+    "overlay_png_manifest": "57a6929d36929905fe1ee5f10d49f4dba9520f272d75df85882690cde3a0971b",
+    "direct_legacy_scalar_table": "21adcebd3f2737b8523e380a9b1d06010a5aeec146f38888903eb2b9ea711372"
+  },
+  "scope_boundary": "artifact QA only; no slicing, no PNG regeneration, no LEGACY-PY modification, no Excel/y/training access"
+}

@@ -1,0 +1,20 @@
+{
+  "work_id": "PRM-101",
+  "title": "XREG_V0_3_THIRD_WAVE_FULL58_CONSOLIDATION_AND_BLOCK_POLICY_NO_Y",
+  "created_at_kst": "2026-07-23",
+  "purpose": "Append only the six executed PRM-100 full58 technical outputs to an immutable XREG-v0.2 snapshot; preserve direct/derived lineage and record a non-selecting x-only redundancy block policy.",
+  "expected": {"prior_candidates": 108, "new_candidates": 6, "total_candidates": 114, "models": 58, "prior_values": 6264, "new_values": 348, "total_values": 6612, "prior_blocks": 89, "new_singleton_blocks": 5, "total_blocks": 94, "prior_edges": 23, "new_edges": 2, "total_edges": 25},
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM096_enriched_xreg_v0_2_candidate_bank.csv", "sha256": "d8e5efc3b0377499520ed12e390ec813d01cefb15cab8dc07730cd44be911ef1"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM096_xreg_v0_2_values_long.csv", "sha256": "28b7aa16287c90e824d1232603273583365644adc9b21d60436c7d362b16e305"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM096_unified_redundancy_edge_registry.csv", "sha256": "2f108402cd36938aef6d347cd492862380302459809bdf21b73f7c2da0f25ab2"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM096_unified_redundancy_block_registry.csv", "sha256": "b80a5a9964b34ae028d4ee4b484e8ae4ebdae7a456d365ebaaac5e127fe27424"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM099_third_wave_full58_six_values_long.csv", "sha256": "a795d0253df8aec08a837ce0a71bd3fa633b600f14f591fbb0ab76226df2a58f"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM100_full58_coverage_variation.csv", "sha256": "fe493cc3a50054bfe37eeb0aa357044994bd1707be9bb2ba0aa390684b7bbff5"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM100_full58_vs_XREG_redundancy.csv", "sha256": "0f88def26845c794e635dc81c918bc5de20857706b73c5f233d752e7de78b9d4"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM100_internal_six_redundancy.csv", "sha256": "630ffbb40619f5134ec074a88a7d29ba283d7e557fb675b06e9dc25d4a13ec30"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM100_difficult_pair_diagnostic.csv", "sha256": "2207ee02d1fd1786a35395407e8a3db234d050f66326f64308a23157451fe0a6"}
+  ],
+  "locks": {"performance_y_read": 0, "x_y_analysis": 0, "model_fit": 0, "feature_selection": 0, "feature_promotion": 0, "active_roster_mutation": 0, "new_full58_calculation": 0, "new_masks_or_slicing": 0, "NB_CURRENT_mutation": 0, "LEGACY_PY_mutation": 0, "original_Excel_mutation": 0},
+  "policy": {"selection": "none", "X024_abs_auc": "retain lineage but block from primary consideration with U096-BLK-044", "X019_and_X024_total_variation": "retain as likely_resolution_qualified_not_selected", "predictive_claim": "prohibited"}
+}

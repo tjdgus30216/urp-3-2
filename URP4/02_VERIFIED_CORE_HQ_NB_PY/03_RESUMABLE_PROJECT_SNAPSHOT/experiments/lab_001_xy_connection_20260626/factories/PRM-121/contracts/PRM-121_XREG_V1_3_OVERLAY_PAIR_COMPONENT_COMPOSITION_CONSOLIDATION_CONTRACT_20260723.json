@@ -1,0 +1,20 @@
+{
+  "work_id": "PRM-121",
+  "title": "XREG_V1_3_OVERLAY_PAIR_COMPONENT_COMPOSITION_CONSOLIDATION_NO_Y",
+  "purpose": "Append verified PRM-120 overlay pair component-composition candidates to XREG-v1.2 and encode declared crossbank/internal high-redundancy relations without selection.",
+  "expected": {"prior_candidates": 299, "new_candidates": 24, "total_candidates": 323, "prior_values": 17342, "new_values": 1392, "total_values": 18734, "finite_values": 18732, "prior_blocks": 240, "changed_or_new_components": 22, "total_blocks": 259, "prior_edges": 76, "new_crossbank_edges": 3, "new_internal_edges": 2, "total_edges": 81, "merged_predecessor_members": 5},
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM119_xreg_v1_2_candidate_bank.csv", "sha256": "ddf5ddf595d6ec7e33cebe2626c8c4e22038ddeb24142821fdea36599bab8a9c"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM119_xreg_v1_2_values_long.csv", "sha256": "3685614fcd774e28100d791c949b2f4115acc524f2e9523bf2f2ee11a93e7cb7"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM119_unified_redundancy_edge_registry.csv", "sha256": "5861d15f9532f6ac487a3cffd4534a200a349bd1c9b04060162995231b4fb4ee"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM119_unified_redundancy_block_registry.csv", "sha256": "f1da2a7779192b07450bec01ef50b4a37bd2eb7e2bef87d3fc8a8b6662fd1290"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM120_overlay_pair_component_composition_candidate_registry.csv", "sha256": "98f490498219941db2034eb14180ab72c53a4203ff1167a2c123b088e3d379c5"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM120_overlay_pair_component_composition_values_long.csv", "sha256": "b5fb11b87fbcb5ecef4103d2fac40725fef7e6590859b81ce3e74c5fc4c99a52"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM120_overlay_pair_component_composition_vs_XREG_v1_2_redundancy.csv", "sha256": "2f1bb12d1baee13170b1add2a4deebe603b0b53398f37e118836b9ac373e43a9"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM120_overlay_pair_component_composition_internal_redundancy.csv", "sha256": "c88d7fbd22ecb2e1525b82e9a888dcf7ca8970132ceb98598890f8c19086a472"},
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/PRM-120/reports/PRM120_independent_QA_summary.json", "sha256": "79cbe19692e51a6570195e49a101f89507e580b4ebee5f76924bda0d6bad4fc4"}
+  ],
+  "relation_policy": {"scope": "full58_x_only", "include_relations": ["exact_duplicate", "proportional_duplicate", "high_redundancy"], "selection_effect": "none"},
+  "locks": {"performance_y_read": 0, "x_y_analysis": 0, "model_fit": 0, "feature_selection": 0, "feature_promotion": 0, "new_masks_or_slicing": 0, "NB_CURRENT_mutation": 0, "LEGACY_PY_mutation": 0, "original_Excel_mutation": 0},
+  "status": "preregistered_pending_execution"
+}

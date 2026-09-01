@@ -1,0 +1,11 @@
+{
+  "outer_train_row_hash": "a7c9825cd9a6153e2f35776a6a629f780f8ae0f0983db2bc95d94162c40f85c2",
+  "outer_test_row_hash": "659c0b5689995013006fd789711a453f8c3e5a57f20055537447f07eee75f686",
+  "outer_train_rows": 148,
+  "outer_test_rows": 45,
+  "inner_contract_hash": "ac473a7070dcea9967b5b16f78793a22d5a3370c19e2ed3114ab50d35399fd5d",
+  "inner_splits": 24,
+  "leakage": 0,
+  "xkey_hash": "727c5bef0d0a84c0a08ded52c34f88727148731a185854c7295652af515495ab",
+  "group_id_hash": "c40a22be1e5b7a933d4033e86a143cce06143423b97d25872757dffeb5aab1b3"
+}

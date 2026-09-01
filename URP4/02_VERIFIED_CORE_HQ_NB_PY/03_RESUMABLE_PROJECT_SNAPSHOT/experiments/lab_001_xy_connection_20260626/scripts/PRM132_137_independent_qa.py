@@ -1,0 +1,11 @@
+from __future__ import annotations
+import json
+from pathlib import Path
+import numpy as np,pandas as pd
+R=Path(__file__).resolve().parents[3];T=R/'experiments/lab_001_xy_connection_20260626/reports/tables';O=R/'experiments/lab_001_xy_connection_20260626/factories/PRM-137/reports';O.mkdir(parents=True,exist_ok=True)
+def check(batch,cons,version,prior):
+ g=pd.read_csv(T/f'PRM{batch}_candidate_registry.csv');v=pd.read_csv(T/f'PRM{batch}_values_long.csv');b=pd.read_csv(T/f'PRM{cons}_xreg_{version}_candidate_bank.csv');bv=pd.read_csv(T/f'PRM{cons}_xreg_{version}_values_long.csv');p=pd.read_csv(T/f'PRM{prior}_xreg_{"v1_8" if prior==131 else ("v1_9" if prior==133 else "v2_0")}_values_long.csv'); old=bv[bv.candidate_id.isin(p.candidate_id)].sort_values(['model_id','candidate_id']).reset_index(drop=True); ref=p.sort_values(['model_id','candidate_id']).reset_index(drop=True); new=bv[bv.candidate_id.isin(g.candidate_id)].sort_values(['model_id','candidate_id']).reset_index(drop=True); nref=v.sort_values(['model_id','candidate_id']).reset_index(drop=True);return dict(batch=batch,registry=len(g),finite=int(np.isfinite(v.value).sum()),bank=len(b),bank_values=len(bv),blocks=b.unified_block_id.nunique(),replay_prior=bool(len(old)==len(ref) and np.allclose(old.value,ref.value,rtol=1e-12,atol=1e-12,equal_nan=True)),replay_cohort=bool(len(new)==len(nref) and np.allclose(new.value,nref.value,rtol=1e-12,atol=1e-12)),no_y=bool(b.y_evidence.astype(str).str.lower().eq('false').all() and not b.active_feature.any() and not b.promoted.any()))
+def main():
+ rows=[check(132,133,'v1_9',131),check(134,135,'v2_0',133),check(136,137,'v2_1',135)];q=pd.DataFrame(rows);ok=all(r['registry']==12 and r['finite']==696 and r['replay_prior'] and r['replay_cohort'] and r['no_y'] for r in rows);q['status']='PASS' if ok else 'FAIL';q.to_csv(O/'PRM132_137_independent_QA.csv',index=False,encoding='utf-8-sig');s={'status':'PASS' if ok else 'FAIL','cycles':3,'checks':'3/3' if ok else 'failed','final_bank':rows[-1]['bank'],'final_values':rows[-1]['bank_values'],'performance_y_read':0};(O/'PRM132_137_independent_QA_summary.json').write_text(json.dumps(s,indent=2),encoding='utf8');print(json.dumps(s));
+ if not ok:raise SystemExit(1)
+if __name__=='__main__':main()

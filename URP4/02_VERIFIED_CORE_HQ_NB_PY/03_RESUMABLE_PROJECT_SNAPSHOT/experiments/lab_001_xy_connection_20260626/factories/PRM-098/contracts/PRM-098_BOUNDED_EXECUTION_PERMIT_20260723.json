@@ -1,0 +1,58 @@
+{
+  "work_id": "PRM-098",
+  "title": "BOUNDED_THIRD_WAVE_SYNTHETIC_TRUTH_COST_CANARY_AND_REPRESENTATIVE_PANEL",
+  "created_at_kst": "2026-07-23T01:41:29.929389+09:00",
+  "status": "authorized_bounded_progressive_execution",
+  "parent_contract_path": "experiments\\lab_001_xy_connection_20260626\\factories\\PRM-097\\contracts\\PRM-097_THIRD_WAVE_FORMULA_TEST_CONTRACT_20260723.json",
+  "parent_contract_sha256": "dd0a9b064fac5197d9057b5de4080c7e9ecd373135ece647ac4a95df1120b93e",
+  "pre_execution_amendment": {
+    "amendment_id": "P098-A01",
+    "source_contract": "PRM097 X019-F01",
+    "original_text": "numerator and denominator must use the same V128 mask, axis and statistic",
+    "corrected_pre_execution_text": "numerator and denominator must use the same current-resolution mask, axis and statistic",
+    "reason": "PRM097 independently froze V64/V96/V128/V192 resolution rows; V128 token is a clerical specialization inconsistent with that panel",
+    "result_seen_before_amendment": false,
+    "scientific_change": true,
+    "scope_change": "none; same-parent rule generalized to every preregistered resolution",
+    "status": "confirmed_pre_execution_amendment"
+  },
+  "candidate_groups": [
+    "LIT-X006",
+    "LIT-X008",
+    "LIT-X019",
+    "LIT-X024",
+    "LIT-X028",
+    "LIT-X031"
+  ],
+  "representative_models": [
+    "B3",
+    "C1",
+    "L1",
+    "F1",
+    "T8",
+    "T9"
+  ],
+  "ordered_stages": [
+    "synthetic_truth",
+    "serial_V064_cost_canary",
+    "progressive_representative_panel_V064_V096_V128_V192",
+    "control_tower_return"
+  ],
+  "authorized_actions": {
+    "synthetic_truth": 1,
+    "serial_V064_cost_canary": 1,
+    "representative_panel": 1,
+    "create_six_V192_masks_after_gate": 1
+  },
+  "locks": {
+    "full58": 0,
+    "performance_y_read": 0,
+    "model_fit": 0,
+    "feature_selection": 0,
+    "feature_promotion": 0,
+    "NB_CURRENT_mutation": 0,
+    "LEGACY_PY_mutation": 0,
+    "original_Excel_mutation": 0
+  },
+  "stop_policy": "group stops on synthetic failure, nondeterminism, resource cap or unchanged EQG-11 failure; no automatic retry or threshold tuning"
+}

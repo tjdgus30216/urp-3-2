@@ -1,0 +1,15 @@
+{
+  "work_id": "PRM-102",
+  "title": "BC_RAW_TABLE_BATCH_CANDIDATE_WAVE_NO_Y",
+  "purpose": "Reuse only hash-frozen SLICE-004 slice/overlay raw tables to generate a 29-output B/C batch; no new image, mask, mesh, slice or raw algorithm.",
+  "expected": {"models": 58, "candidates": 29, "value_rows": 1682, "grade_B": 23, "grade_C": 6, "raw_files_verified": 116, "xreg_reference_candidates": 114},
+  "inputs": [
+    {"path": "experiments/lab_001_xy_connection_20260626/factories/TOUR-C001/analysis_factory/reports/TOUR-C001-T4R-SLICE-004_output_manifest.csv", "sha256": "53f0b5292020ee8b5274f42dbb1af7b4501fe26703fec6ed298d6a83f712903c"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM101_xreg_v0_3_values_long.csv", "sha256": "104e4599c17421381227f93e2d98051b26c27bbb031c1bc7500666267ff6183d"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM101_xreg_v0_3_candidate_bank.csv", "sha256": "a1662a1737dcd8c0ff1e34c0eb00e4b9c69fc179e4b33f35ac4c7ffba1e3b823"},
+    {"path": "experiments/lab_001_xy_connection_20260626/reports/tables/PRM101_unified_redundancy_edge_registry.csv", "sha256": "a2c6b4a5e1a2ad1c8687e1b64d17274687b8a1be8f4e49dede1dc1291a27fb8e"}
+  ],
+  "grade_policy": {"A": "new raw algorithm, new mask/mesh or resolution-risk route; representative/multiresolution/lineage gate before full58", "B": "new statistic from verified V128 slice/component/raw table; batch 10-30 with automated coverage/lineage/x-only QA", "C": "derived ratio/normalization/profile summary from verified values; batch lineage/x-only QA only"},
+  "locks": {"performance_y_read": 0, "x_y_analysis": 0, "model_fit": 0, "feature_selection": 0, "feature_promotion": 0, "new_masks_or_slicing": 0, "NB_CURRENT_mutation": 0, "LEGACY_PY_mutation": 0, "original_Excel_mutation": 0},
+  "claim_boundary": "candidate bank expansion only; all outputs unselected"
+}

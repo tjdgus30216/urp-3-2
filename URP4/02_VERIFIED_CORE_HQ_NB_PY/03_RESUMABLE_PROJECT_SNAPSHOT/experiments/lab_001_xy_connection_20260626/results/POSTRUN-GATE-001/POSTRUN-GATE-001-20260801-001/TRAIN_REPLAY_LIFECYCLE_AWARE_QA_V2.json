@@ -1,0 +1,51 @@
+{
+  "qa_id": "TRAIN-REPLAY-LIFECYCLE-QA-V2-20260801-001",
+  "supersedes_interpretation_of": "TRAIN-REPLAY-001 QA-018 only",
+  "does_not_overwrite": [
+    "TRAIN-REPLAY-001/independent_qa.json",
+    "TRAIN-REPLAY-001/independent_qa_checks.csv"
+  ],
+  "original_qa_018": {
+    "status": "failed",
+    "observed": {
+      "c1_pid_running": false,
+      "temporary_slice_count": 0,
+      "temporary_overlay_count": 0,
+      "stderr_bytes": 283
+    },
+    "problem": "The check assumed that a completed process and policy-evicted temporary PNGs must remain live/present."
+  },
+  "terminal_evidence": {
+    "run_id": "STRICT-STEP-026-20260731-001",
+    "run_state_status": "completed",
+    "completed_slices": 801,
+    "completed_overlays": 800,
+    "direct_scalar_rows": 40,
+    "bulk_pngs_evicted": 1601,
+    "anchor_pngs_retained": 9,
+    "c1_independent_qa": "passed",
+    "c1_independent_qa_checks": "9/9",
+    "stderr_bytes": 283,
+    "stderr_classification": "warning",
+    "stderr_content": "CuPy could not detect CUDA_PATH; no traceback or scientific calculation failure"
+  },
+  "v2_checks": {
+    "terminal_run_state_completed": true,
+    "slice_manifest_and_count_complete": true,
+    "overlay_manifest_and_count_complete": true,
+    "direct_scalar_table_40_and_finite": true,
+    "bulk_png_eviction_matches_policy": true,
+    "nine_anchor_pngs_retained": true,
+    "independent_c1_artifact_qa_passed": true,
+    "stderr_preserved_and_classified_as_warning": true
+  },
+  "qa_018_v2_status": "passed",
+  "original_qa_018_disposition": "rejected_as_lifecycle_contract_error",
+  "boundary": "This correction does not change QA-015, final-refit completeness, adapter parity, model quality, or any y-based scientific claim.",
+  "evidence_paths": [
+    "experiments/lab_001_xy_connection_20260626/results/STRICT-STEP-026/STRICT-STEP-026-20260731-001/RUN_STATE.json",
+    "experiments/lab_001_xy_connection_20260626/results/STRICT-STEP-026/STRICT-STEP-026-20260731-001/INDEPENDENT_QA.json",
+    "experiments/lab_001_xy_connection_20260626/results/STRICT-STEP-026/worker_logs/STRICT-STEP-026-20260731-001.stderr.log",
+    "experiments/lab_001_xy_connection_20260626/results/TRAIN-REPLAY-001/TRAIN-REPLAY-001-20260731-001/runtime_environment.json"
+  ]
+}
