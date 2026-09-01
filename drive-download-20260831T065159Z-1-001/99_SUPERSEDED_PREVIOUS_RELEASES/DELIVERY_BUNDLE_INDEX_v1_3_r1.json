@@ -1,0 +1,24 @@
+{
+  "release": "URP4-1_PROFESSOR_HANDOFF_20260802_v1_3_r1",
+  "cutoff": "HANDOFF-CUTOFF-20260802-002",
+  "schema": "PROJECT_SCHEMA v1.3",
+  "verdict": "FINAL_HANDOFF_RELEASE_READY_V1_3",
+  "canonical_zip": {
+    "name": "URP4-1_PROFESSOR_HANDOFF_20260802_v1_3_r1.zip",
+    "url": "https://drive.google.com/file/d/1gsQf33MDYchw8VxAxoMk7fuSzPnExyAh/view?usp=drivesdk",
+    "bytes": 108280382,
+    "members": 1140,
+    "sha256": "dd9e4bf7961e5dbdfa05af1d4b8c0a671dbb01c46672b7ac119fc9864b6e0a34",
+    "sharing": "not_shared"
+  },
+  "sha256_receipt": {
+    "url": "https://drive.google.com/file/d/1GFmXNc9bzD2baE0pXymzxH2tUpQWds6G/view?usp=drivesdk",
+    "bytes": 113,
+    "sharing": "not_shared"
+  },
+  "external_assets": {
+    "geometry_archive": "https://drive.google.com/file/d/19yIGDRtUWQPRmaV3WyQvBa5S-QZgxpYh/view?usp=drivesdk",
+    "compression_source_workbooks": "https://drive.google.com/drive/folders/1XR1xMdQC9ePp_aWe-wsZB-kfYuGJRcmg"
+  },
+  "required_human_action": "Add the professor's verified Google account as Viewer; do not enable public sharing by default."
+}

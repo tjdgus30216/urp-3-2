@@ -1,0 +1,45 @@
+{
+  "qa_id": "SUBMIT-CLOSE-001-DOCTOR-DELIVERY-RECONCILIATION-v1.4-r2",
+  "checked_at_kst": "2026-08-02T22:00:00+09:00",
+  "canonical_release": "URP4-1_DOCTOR_HANDOFF_20260802_v1_4_r2",
+  "canonical_zip_sha256": "8c3d5b0c706abcc57eab36cc7070a1d07ad94177c8fc72d4c55b4c1ad99d958e",
+  "canonical_zip_bytes": 108337731,
+  "canonical_zip_members": 1147,
+  "canonical_zip_changed": false,
+  "checks": {
+    "email_hash_matches_bundle_index": true,
+    "doctor_viewer_packet_hash_matches_bundle_index": true,
+    "drive_root_professor_named_files": 0,
+    "current_facing_unexplained_recipient_conflicts": 0,
+    "ai_start_unexplained_recipient_conflicts": 0,
+    "official_index_records_present": {
+      "RUN-370": true,
+      "DEC-374": true,
+      "LAB-CHG-325": true,
+      "CHG-359": true,
+      "ROADMAP_LOG": true
+    },
+    "doctor_viewer_todo_present": true,
+    "remote_drive_current_root_readback": true,
+    "remote_drive_superseded_folder_readback": true
+  },
+  "allowed_historical_aliases": [
+    "PROFESSOR_HANDOFF",
+    "PROFESSOR_GENERATORS",
+    "PROFESSOR_TRAINING",
+    "06_PROFESSOR_DECISIONS_NEEDED",
+    "professor_training_20260709"
+  ],
+  "allowed_alias_rule": "Exact historical filenames and provenance paths may retain PROFESSOR tokens only when explicitly labeled as historical aliases. They do not identify the actual provider or recipient.",
+  "actual_provider_and_recipient": "박사님",
+  "drive_organization": {
+    "current_root": "current DOCTOR v1.4-r2 package, QA, README, geometry and compression assets",
+    "chuck_only": "00_CHUCK_BEFORE_SENDING",
+    "superseded": "99_SUPERSEDED_PREVIOUS_RELEASES",
+    "predecessor_files_preserved": 28,
+    "predecessor_files_deleted": 0
+  },
+  "sharing_state": "not_shared; Chuck must grant the doctor's verified Google account Viewer access",
+  "scientific_result_changed": false,
+  "verdict": "PASS"
+}

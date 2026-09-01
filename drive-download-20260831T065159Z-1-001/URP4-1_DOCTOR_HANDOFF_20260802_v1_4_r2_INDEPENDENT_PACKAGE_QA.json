@@ -1,0 +1,86 @@
+{
+  "qa_id": "SUBMIT-CLOSE-001-v1.4-r2-extracted-package-QA",
+  "release": "URP4-1_DOCTOR_HANDOFF_20260802_v1_4_r2",
+  "final_verdict": "FINAL_HANDOFF_RELEASE_READY_V1_4_R2",
+  "zip_path": "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\results\\SUBMIT-CLOSE-001\\URP4-1_DOCTOR_HANDOFF_20260802_v1_4_r2.zip",
+  "zip_sha256": "8c3d5b0c706abcc57eab36cc7070a1d07ad94177c8fc72d4c55b4c1ad99d958e",
+  "zip_bytes": 108337731,
+  "zip_members": 1147,
+  "zip_crc_bad": null,
+  "duplicate_member_names": [],
+  "short_path_extract": "C:\\U13QA14R2",
+  "manifest_rows": 1146,
+  "manifest_bad": [],
+  "resumable_verifier_returncode": 0,
+  "resumable_verifier": {
+    "verifier": "00_VERIFY_RESUMABLE_HANDOFF.py",
+    "read_only": true,
+    "python": "3.12.12 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 20:05:38) [MSC v.1929 64 bit (AMD64)]",
+    "checks": [
+      {
+        "check": "required:URP4_1_HQ.ipynb",
+        "passed": true,
+        "detail": "C:\\U13QA14R2\\URP4\\02_VERIFIED_CORE_HQ_NB_PY\\03_RESUMABLE_PROJECT_SNAPSHOT\\URP4_1_HQ.ipynb"
+      },
+      {
+        "check": "required:urp4",
+        "passed": true,
+        "detail": "C:\\U13QA14R2\\URP4\\02_VERIFIED_CORE_HQ_NB_PY\\03_RESUMABLE_PROJECT_SNAPSHOT\\URP4-1_DELIVERABLE\\urp4"
+      },
+      {
+        "check": "required:RAW_SLICE_TABLES_XREG_V2_7.zip",
+        "passed": true,
+        "detail": "C:\\U13QA14R2\\URP4\\02_VERIFIED_CORE_HQ_NB_PY\\03_RESUMABLE_PROJECT_SNAPSHOT\\RAW_SLICE_TABLES_XREG_V2_7.zip"
+      },
+      {
+        "check": "required:RAW_SLICE_TABLE_MANIFEST.csv",
+        "passed": true,
+        "detail": "C:\\U13QA14R2\\URP4\\02_VERIFIED_CORE_HQ_NB_PY\\03_RESUMABLE_PROJECT_SNAPSHOT\\RAW_SLICE_TABLE_MANIFEST.csv"
+      },
+      {
+        "check": "required:STRICT_STEP_026_c1_direct_legacy_py_xonly.py",
+        "passed": true,
+        "detail": "C:\\U13QA14R2\\URP4\\02_VERIFIED_CORE_HQ_NB_PY\\03_RESUMABLE_PROJECT_SNAPSHOT\\experiments\\lab_001_xy_connection_20260626\\scripts\\STRICT_STEP_026_c1_direct_legacy_py_xonly.py"
+      },
+      {
+        "check": "required:INDEPENDENT_QA.json",
+        "passed": true,
+        "detail": "C:\\U13QA14R2\\URP4\\02_VERIFIED_CORE_HQ_NB_PY\\03_RESUMABLE_PROJECT_SNAPSHOT\\experiments\\lab_001_xy_connection_20260626\\results\\STRICT-STEP-026\\STRICT-STEP-026-20260731-001\\INDEPENDENT_QA.json"
+      },
+      {
+        "check": "algorithm_index_paths",
+        "passed": true,
+        "detail": "rows=161 missing=0"
+      },
+      {
+        "check": "algorithm_index_hashes",
+        "passed": true,
+        "detail": "mismatched=0"
+      },
+      {
+        "check": "python_ast_parse",
+        "passed": true,
+        "detail": "files=259 failures=0"
+      },
+      {
+        "check": "raw_table_archive_crc",
+        "passed": true,
+        "detail": "first_bad=None"
+      },
+      {
+        "check": "raw_table_manifest",
+        "passed": true,
+        "detail": "manifest=469 archive=469 bad=0"
+      },
+      {
+        "check": "c1_copied_independent_qa",
+        "passed": true,
+        "detail": "C:\\U13QA14R2\\URP4\\02_VERIFIED_CORE_HQ_NB_PY\\03_RESUMABLE_PROJECT_SNAPSHOT\\experiments\\lab_001_xy_connection_20260626\\results\\STRICT-STEP-026\\STRICT-STEP-026-20260731-001\\INDEPENDENT_QA.json"
+      }
+    ],
+    "passed": true
+  },
+  "stderr": "",
+  "base_v1_2_sha256_unchanged": true,
+  "prior_v1_4_r1_sha256_unchanged": true
+}

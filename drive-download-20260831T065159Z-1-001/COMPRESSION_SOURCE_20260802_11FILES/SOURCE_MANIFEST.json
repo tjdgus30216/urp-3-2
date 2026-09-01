@@ -1,0 +1,112 @@
+﻿[
+    {
+        "file_name":  "New_VF30.xlsx",
+        "group_folder":  "01_bcl_vf30",
+        "source_path":  "C:\\Users\\chuck\\Downloads\\New_VF30.xlsx",
+        "preserved_path":  "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\doctor_compression_data_20260802\\01_bcl_vf30\\New_VF30.xlsx",
+        "bytes":  291688761,
+        "sha256":  "B75A9A8F749ADB6C01D530BA3164F86865BC3CE3FFE730BE692EAD31777100FA",
+        "copy_hash_match":  true,
+        "intake_date_kst":  "2026-08-02"
+    },
+    {
+        "file_name":  "Compression_Worked_VF30.xlsx",
+        "group_folder":  "01_bcl_vf30",
+        "source_path":  "C:\\Users\\chuck\\Downloads\\Compression_Worked_VF30.xlsx",
+        "preserved_path":  "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\doctor_compression_data_20260802\\01_bcl_vf30\\Compression_Worked_VF30.xlsx",
+        "bytes":  95385837,
+        "sha256":  "2F434FFE7BE0CD8C53D2E31A9A7F6D4FD3DCD845971405241CEDD14CE5773B9D",
+        "copy_hash_match":  true,
+        "intake_date_kst":  "2026-08-02"
+    },
+    {
+        "file_name":  "Compression_VF30_Summary.xlsx",
+        "group_folder":  "01_bcl_vf30",
+        "source_path":  "C:\\Users\\chuck\\Downloads\\Compression_VF30_Summary.xlsx",
+        "preserved_path":  "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\doctor_compression_data_20260802\\01_bcl_vf30\\Compression_VF30_Summary.xlsx",
+        "bytes":  14861,
+        "sha256":  "9D3D040F4371565E6E2757C538994E8C52A69268B071555795F74C1496C1C369",
+        "copy_hash_match":  true,
+        "intake_date_kst":  "2026-08-02"
+    },
+    {
+        "file_name":  "New_VF45.xlsx",
+        "group_folder":  "02_bcl_vf45",
+        "source_path":  "C:\\Users\\chuck\\Downloads\\New_VF45.xlsx",
+        "preserved_path":  "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\doctor_compression_data_20260802\\02_bcl_vf45\\New_VF45.xlsx",
+        "bytes":  311721224,
+        "sha256":  "FDB63F82A7664A96110FB9E94A97152334AC6855A39CD13729F2E1DA9F9683F9",
+        "copy_hash_match":  true,
+        "intake_date_kst":  "2026-08-02"
+    },
+    {
+        "file_name":  "Compression_Worked_VF45.xlsx",
+        "group_folder":  "02_bcl_vf45",
+        "source_path":  "C:\\Users\\chuck\\Downloads\\Compression_Worked_VF45.xlsx",
+        "preserved_path":  "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\doctor_compression_data_20260802\\02_bcl_vf45\\Compression_Worked_VF45.xlsx",
+        "bytes":  103596853,
+        "sha256":  "7D5D4DC75B7E975F858DD5E716D25074A83E65E24D41C2D565BDF0CEEF98B2CA",
+        "copy_hash_match":  true,
+        "intake_date_kst":  "2026-08-02"
+    },
+    {
+        "file_name":  "Compression_VF45_Summary.xlsx",
+        "group_folder":  "02_bcl_vf45",
+        "source_path":  "C:\\Users\\chuck\\Downloads\\Compression_VF45_Summary.xlsx",
+        "preserved_path":  "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\doctor_compression_data_20260802\\02_bcl_vf45\\Compression_VF45_Summary.xlsx",
+        "bytes":  15118,
+        "sha256":  "A727217DB7F42A63052F14FAA3B1C8780AA5D8CB83675ACCC3393E96AD17B8FA",
+        "copy_hash_match":  true,
+        "intake_date_kst":  "2026-08-02"
+    },
+    {
+        "file_name":  "New_VF60.xlsx",
+        "group_folder":  "03_bcl_vf60",
+        "source_path":  "C:\\Users\\chuck\\Downloads\\New_VF60.xlsx",
+        "preserved_path":  "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\doctor_compression_data_20260802\\03_bcl_vf60\\New_VF60.xlsx",
+        "bytes":  348771087,
+        "sha256":  "9D2B11CEA91A40AC2E4C4580DA1DADA0AFAC9AC41B42114BFE5EC178FB230E28",
+        "copy_hash_match":  true,
+        "intake_date_kst":  "2026-08-02"
+    },
+    {
+        "file_name":  "Compression_Worked_VF60.xlsx",
+        "group_folder":  "03_bcl_vf60",
+        "source_path":  "C:\\Users\\chuck\\Downloads\\Compression_Worked_VF60.xlsx",
+        "preserved_path":  "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\doctor_compression_data_20260802\\03_bcl_vf60\\Compression_Worked_VF60.xlsx",
+        "bytes":  107698048,
+        "sha256":  "B7BFEC3A055E3DE16B36C3559354C6C33DAB4385CF52E7654BAC579EF97B9F2D",
+        "copy_hash_match":  true,
+        "intake_date_kst":  "2026-08-02"
+    },
+    {
+        "file_name":  "Compression_VF60_Summary.xlsx",
+        "group_folder":  "03_bcl_vf60",
+        "source_path":  "C:\\Users\\chuck\\Downloads\\Compression_VF60_Summary.xlsx",
+        "preserved_path":  "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\doctor_compression_data_20260802\\03_bcl_vf60\\Compression_VF60_Summary.xlsx",
+        "bytes":  14985,
+        "sha256":  "D1928CFA41A9C8C41350CEC9094D6792DE6E5336E63A479BC0497DB4858E9EE2",
+        "copy_hash_match":  true,
+        "intake_date_kst":  "2026-08-02"
+    },
+    {
+        "file_name":  "Compression_Worked_Voronoi.xlsx",
+        "group_folder":  "04_voronoi",
+        "source_path":  "C:\\Users\\chuck\\Downloads\\Compression_Worked_Voronoi.xlsx",
+        "preserved_path":  "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\doctor_compression_data_20260802\\04_voronoi\\Compression_Worked_Voronoi.xlsx",
+        "bytes":  149897709,
+        "sha256":  "7701B00D5D8F0948928911555C526E642A9B527EB60AC7AC9B53C3473216D563",
+        "copy_hash_match":  true,
+        "intake_date_kst":  "2026-08-02"
+    },
+    {
+        "file_name":  "Voronoi_Summary.xlsx",
+        "group_folder":  "04_voronoi",
+        "source_path":  "C:\\Users\\chuck\\Downloads\\Voronoi_Summary.xlsx",
+        "preserved_path":  "C:\\Users\\chuck\\Documents\\Codex\\2026-06-22\\a2f23dee1d9a824b840a0175ca9a1f4b-https-app-notion-com-p\\experiments\\lab_001_xy_connection_20260626\\data\\raw\\doctor_compression_data_20260802\\04_voronoi\\Voronoi_Summary.xlsx",
+        "bytes":  17284,
+        "sha256":  "7722E15B9C34B864C1A95236CE0BBCB1155BB6E446AF0F6CA5C1B273D43304F0",
+        "copy_hash_match":  true,
+        "intake_date_kst":  "2026-08-02"
+    }
+]

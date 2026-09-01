@@ -1,0 +1,39 @@
+{
+  "release": "URP4-1_DOCTOR_HANDOFF_20260802_v1_4_r2",
+  "cutoff": "HANDOFF-CUTOFF-20260802-002",
+  "schema": "PROJECT_SCHEMA v1.3",
+  "zip": {
+    "file_name": "URP4-1_DOCTOR_HANDOFF_20260802_v1_4_r2.zip",
+    "url": "https://drive.google.com/file/d/1VX2VdeuIBRDSOb07dpDpWAxSXu8vySUH/view?usp=drivesdk",
+    "sha256": "8c3d5b0c706abcc57eab36cc7070a1d07ad94177c8fc72d4c55b4c1ad99d958e",
+    "bytes": 108337731,
+    "members": 1147
+  },
+  "sha256_receipt_url": "https://drive.google.com/file/d/1yaKURYErvHSgWWE0PcO4QBxvQ9eIME0x/view?usp=drivesdk",
+  "independent_package_qa_url": "https://drive.google.com/file/d/1YjJqBzeVkgj8l_GM5lnMNNALQHLIwPV8/view?usp=drivesdk",
+  "delivery_readme_url": "https://drive.google.com/file/d/1CinlmgUG_iHVxrgbqq8KJKZR4oOUVgv0/view?usp=drivesdk",
+  "all_files_tree_readme_url": "https://drive.google.com/file/d/1UYJeLo8qGr0W0dvhbw_bj_SSFRnaB60Y/view?usp=drivesdk",
+  "delivery_folder_url": "https://drive.google.com/drive/folders/1ofJz1N5ycdijVTuNtpeGn0xben08WWV0",
+  "geometry_archive_url": "https://drive.google.com/file/d/19yIGDRtUWQPRmaV3WyQvBa5S-QZgxpYh/view?usp=drivesdk",
+  "compression_source_folder_url": "https://drive.google.com/drive/folders/1XR1xMdQC9ePp_aWe-wsZB-kfYuGJRcmg",
+  "email_draft": {
+    "relative_path": "00_CHUCK_BEFORE_SENDING/EMAIL_TO_DOCTOR_v1_4_r2.md",
+    "url": "https://drive.google.com/file/d/1_-ad9OoLmYxGwF_QiPQpn1vfRU1WOPh0/view?usp=drivesdk",
+    "sha256": "c03707c82813ce52e4657f91d567c06381a5ab683db4b14a8352793a66910398",
+    "bytes": 3070,
+    "audience": "Chuck; copy the body into email to the doctor"
+  },
+  "viewer_input_packet": {
+    "relative_path": "00_CHUCK_BEFORE_SENDING/CHUCK_INPUT_PACKET_GRANT_DOCTOR_VIEWER_v1_4_r2.md",
+    "url": "https://drive.google.com/file/d/1Lg7Fho1U9PPmgQzNP2SpQciCr-LLt9G7/view?usp=drivesdk",
+    "sha256": "0c4fc26cc8df069cd9579b2e7a492c10b710b502d06dd8fe87af6ac935c91673",
+    "bytes": 974
+  },
+  "delivery_reconciliation_qa": {
+    "relative_path": "DELIVERY_RECONCILIATION_QA_v1_4_r2.json",
+    "url": "https://drive.google.com/file/d/1X1R08Wtv0E6Dxd3dykpUq0esiAVBGyfU/view?usp=drivesdk",
+    "verdict": "PASS"
+  },
+  "sharing_state": "not_shared; Chuck must grant the doctor Viewer access",
+  "verdict": "FINAL_HANDOFF_RELEASE_READY_V1_4_R2"
+}
