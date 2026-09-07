@@ -1,0 +1,6 @@
+{
+  "plateau_stress": {"mode": "target", "target": 5.0, "scale": 2.0, "weight": 1.0},
+  "densification_strain": {"mode": "maximize", "min": 0.45, "scale": 0.20, "weight": 1.0},
+  "absorbed_energy_to_densification": {"mode": "maximize", "scale": 5.0, "weight": 1.2},
+  "peak_stress": {"mode": "minimize", "max": 10.0, "scale": 4.0, "weight": 0.6}
+}

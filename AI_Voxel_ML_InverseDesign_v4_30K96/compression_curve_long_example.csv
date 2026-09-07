@@ -1,0 +1,4 @@
+specimen_id,design_id,geometry_id,replicate_id,strain,stress_MPa,test_fidelity,material_batch,print_batch,strain_rate_s-1,temperature_C
+SPEC_001,D_example,G_example,1,0.000,0.000,experiment,B01,P01,0.001,23
+SPEC_001,D_example,G_example,1,0.010,0.850,experiment,B01,P01,0.001,23
+SPEC_001,D_example,G_example,1,0.020,1.300,experiment,B01,P01,0.001,23
